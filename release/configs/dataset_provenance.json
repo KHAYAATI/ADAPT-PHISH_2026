@@ -8,9 +8,10 @@
     "version": "1 (2024-07-04)",
     "license": "Open Database License (ODbL) / Database Contents License",
     "raw_source": "https://www.kaggle.com/datasets/haozhang1579/crawling2024 and .../crawling2024-phishing-dataset-1 (raw crawl, released 2024-06-23)",
-    "labeling": "per source pages: phishing URLs from PhishTank, legitimate URLs from Alexa, crawled pages; labels 1 = phishing, 0 = legitimate, after manual data cleaning (new_url_info.csv); 50,000 rows at 1:1 drawn from 56,115 crawled pages; column 'index' = row id in the raw crawl. Collection period not stated beyond the release date. Independent check: blind manual audit, cell R1",
+    "labeling": "per source pages: phishing URLs from PhishTank, legitimate URLs from Alexa, crawled pages; labels 1 = phishing, 0 = legitimate, after manual data cleaning by the uploader (new_url_info.csv); 50,000 rows at 1:1 drawn from 56,115 crawled pages; column 'index' = row id in the raw crawl. Collection period not stated beyond the release date. Used exactly as published: no label was changed or re-examined.",
     "role_in_revision": "external domain-shift corpus with documented sources; every headline result is also reported WITHOUT it (cell R3)",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/Crawling2024.csv"
   },
   "PhreshTrain": {
     "source": "PhreshPhish v1.0.1 TRAIN split, per-class rows 0-149,999 in shard order; 53 URL/HTML features",
@@ -20,7 +21,8 @@
     "version": "1.0.1",
     "license": "CC BY 4.0",
     "labeling": "PhreshPhish labels (phish/benign); 100% agreement on the URL join",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/phreshphish_features.csv"
   },
   "PhreshTest": {
     "source": "PhreshPhish v1.0.1 TRAIN split, per-class rows 150,000-199,999 in shard order (held-out part of the same split, NOT the official test split); 53 URL/HTML features",
@@ -30,16 +32,22 @@
     "version": "1.0.1",
     "license": "CC BY 4.0",
     "labeling": "PhreshPhish labels (phish/benign); 100% agreement on the URL join",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/phreshphish_test_features.csv"
   },
   "Mendeley": {
     "source": "Mendeley Data (Hannousse & Yahiouche, Web page phishing detection)",
     "url": "https://doi.org/10.17632/c2gw7fy2j4.3",
     "version": "3",
     "note": "same byte size (3,661,166) as dataset_phishing.csv of the Kaggle copy shashwatwork/web-page-phishing-detection-dataset (CC BY 4.0)",
-    "license": "NOT_STATED_BY_SOURCE",
-    "accessed": "NOT_STATED_BY_SOURCE",
-    "labeling": "NOT_STATED_BY_SOURCE"
+    "license": "CC BY 4.0 (verified on the dataset page, 10 Nov 2026)",
+    "accessed": "NOT_RECORDED",
+    "labeling": "phishing URLs from PhishTank and OpenPhish, legitimate URLs from Alexa and Yandex (Hannousse & Yahiouche, 2021)",
+    "title": "Web page phishing detection",
+    "authors": "Abdelhakim Hannousse, Salima Yahiouche",
+    "published": "2021-06-25 (version 3)",
+    "page_description": "11,430 URLs with 87 features (56 URL, 24 page content, 7 external services); balanced 50% phishing / 50% legitimate; constructed May 2020",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/MendeleyPhishingWebsites.csv"
   },
   "CompPhish": {
     "source": "Mendeley Data (CompPhish)",
@@ -47,7 +55,8 @@
     "version": "4",
     "license": "CC BY 4.0",
     "labeling": "PhishTank/OpenPhish phishing vs DataForSEO top-ranked benign domains (source description)",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/CompPhish.csv"
   },
   "D4v": {
     "source": "Mendeley Data (PhishBench-External)",
@@ -56,24 +65,27 @@
     "license": "CC BY 4.0",
     "labeling": "PhishTank phishing vs Tranco benign (source description)",
     "note": "record lists no files; consistency checked on content: 1,000 rows = 500 + 500, URL + 27 features + label Results",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/D4v.csv"
   },
   "WebPagePhishing": {
     "source": "Kaggle copy of Hannousse & Yahiouche, Web page phishing detection (Mendeley Data V2, doi:10.17632/c2gw7fy2j4.2)",
     "url": "https://www.kaggle.com/datasets/manishkc06/web-page-phishing-detection",
     "uploader": "Kaggle user 'manishkc06'",
     "version": "1 (2020-10-31); file phishing_data.csv, 3,751,619 bytes",
-    "license": "Other (specified in description)",
+    "license": "Other (as stated on the Kaggle page); copy of Mendeley Data record c2gw7fy2j4, version 2 (version 3 of the record is CC BY 4.0)",
     "role_in_revision": "audit only: excluded because all its normalized URLs occur in the Mendeley corpus",
-    "accessed": "NOT_STATED_BY_SOURCE",
-    "labeling": "NOT_STATED_BY_SOURCE"
+    "accessed": "NOT_RECORDED",
+    "labeling": "NOT_STATED_BY_SOURCE",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/Web_page_phishing_detection.csv"
   },
   "PhishTank": {
     "source": "PhishTank verified feed",
     "url": "https://phishtank.org/developer_info.php",
     "labeling": "community-verified phishing (all rows phishing)",
     "version": "NOT_STATED_BY_SOURCE",
-    "license": "NOT_STATED_BY_SOURCE",
-    "accessed": "NOT_STATED_BY_SOURCE"
+    "license": "PhishTank terms of use (Cisco end user license agreement linked from phishtank.org): data free of charge, commercial and non-commercial use allowed; not an open-content licence, redistribution terms to be checked in the agreement",
+    "accessed": "NOT_RECORDED",
+    "mirror": "https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish/blob/main/PhishTank.csv"
   }
 }
