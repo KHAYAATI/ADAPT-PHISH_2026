@@ -9,6 +9,8 @@ Code, manifests, logs and results of the article *ADAPT-PHISH: Leakage-Audited C
 | `paper_scripts/` | Scripts that regenerate the result tables (`t_*.py`) and figures (`figs.py`) of the article from the run outputs. |
 | `verification/` | Checks of data provenance: SHA-256 of the Kaggle copies and D4v, and the HTML-feature check of the PhreshPhish files. |
 
+`release/configs/dataset_provenance.json` was corrected after the run (licences verified on the source pages, mirror links); `release/results/reports__dataset_provenance.json` is the record written by the run. `release/notebook/` holds the executed notebook with short cell titles; its code and outputs are those of the run.
+
 ## Data
 The corpora are not redistributed here and are used exactly as published, with their original labels. The eight files used, byte-identical to the SHA-256 digests in Table 3 of the article, are mirrored at https://huggingface.co/datasets/KhayatiMohamed/DataAdaptPhish. The official PhreshPhish test split is read from its public release (commit `eca603e`). The notebook verifies every digest and stops if a file differs.
 
