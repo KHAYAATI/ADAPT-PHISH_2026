@@ -1,0 +1,53 @@
+feature,Mendeley,PhreshTrain,max_|AUC-0.5|,STRONG_UNIVARIATE,SIGN_INVERSION,flag,action
+url::path_depth,0.6145,0.21,0.29,False,True,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens)
+struct::path_depth,0.6241,0.2169,0.2831,False,True,SIGN_INVERSION,audited only (not a model input)
+url::n_slashes,0.6214,0.2191,0.2809,False,True,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens)
+url::n_special,0.6233,0.2926,0.2074,False,True,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens)
+url::n_letters,0.6348,0.3095,0.1905,False,True,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens)
+url::url_len,0.6609,0.3271,0.1729,False,True,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens)
+url::path_url_ratio,0.4985,0.1704,0.3296,True,False,STRONG_UNIVARIATE,kept
+url::path_len,0.5568,0.2048,0.2952,False,False,,kept
+url::longest_path_token,0.5999,0.2635,0.2365,False,False,,kept
+url::host_len,0.6067,0.731,0.231,False,False,,kept
+url::host_entropy,0.6303,0.7309,0.2309,False,False,,kept
+url::digit_ratio,0.7009,0.5636,0.2009,False,False,,kept
+url::n_digits,0.7005,0.5535,0.2005,False,False,,kept
+struct::is_root,0.4137,0.694,0.194,False,False,,audited only (not a model input)
+url::url_entropy,0.6687,0.4579,0.1687,False,False,,kept
+url::mean_host_token,0.5949,0.6481,0.1481,False,False,,kept
+url::special_ratio,0.3527,0.5097,0.1473,False,False,,kept
+url::n_suspicious_words,0.6273,0.5478,0.1273,False,False,,kept
+url::letter_ratio,0.3843,0.4029,0.1157,False,False,,kept
+url::n_host_digits,0.5992,0.6095,0.1095,False,False,,kept
+url::host_digit_ratio,0.5982,0.6078,0.1078,False,False,,kept
+url::query_len,0.5985,0.5375,0.0985,False,False,,kept
+url::n_query_params,0.5978,0.5375,0.0978,False,False,,kept
+url::n_question,0.5967,0.5375,0.0967,False,False,,kept
+url::n_dots,0.5965,0.4672,0.0965,False,False,,kept
+url::n_equals,0.5964,0.5312,0.0964,False,False,,kept
+url::longest_host_token,0.5632,0.5915,0.0915,False,False,,kept
+url::n_hyphens,0.502,0.4202,0.0798,False,False,,kept
+url::php_ext,0.5795,0.51,0.0795,False,False,,kept
+url::n_uppercase,0.5618,0.5337,0.0618,False,False,,kept
+url::is_https,0.4393,0.4464,0.0607,False,False,,kept
+url::n_ampersand,0.5587,0.519,0.0587,False,False,,kept
+url::upper_ratio,0.5564,0.5342,0.0564,False,False,,kept
+url::risky_tld,0.5078,0.5554,0.0554,False,False,,kept
+url::tld_len,0.4549,0.4491,0.0509,False,False,,kept
+url::n_host_dots,0.5041,0.4656,0.0344,False,False,,kept
+url::n_subdomains,0.5041,0.4656,0.0344,False,False,,kept
+url::n_underscores,0.5169,0.4747,0.0253,False,False,,kept
+url::n_at,0.5198,0.501,0.0198,False,False,,kept
+url::tld_in_path,0.5122,0.5018,0.0122,False,False,,kept
+url::ip_host,0.5087,0.5012,0.0087,False,False,,kept
+url::shortener,0.5048,0.5082,0.0082,False,False,,kept
+url::hex_escapes,0.5059,0.5053,0.0059,False,False,,kept
+url::n_percent,0.5059,0.5053,0.0059,False,False,,kept
+url::fragment_len,0.5016,0.5028,0.0028,False,False,,kept
+url::n_tilde,0.5024,0.5002,0.0024,False,False,,kept
+url::double_slash_path,0.502,0.5002,0.002,False,False,,kept
+struct::monitoring_params,0.5006,0.5011,0.0011,False,False,,audited only (not a model input)
+url::punycode,0.5009,0.5002,0.0009,False,False,,kept
+url::has_userinfo,,0.5005,0.0005,False,False,,kept
+url::has_port,0.4999,0.5004,0.0004,False,False,,kept
+url::exec_ext,0.5002,0.5001,0.0002,False,False,,kept

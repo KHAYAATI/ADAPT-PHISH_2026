@@ -1,0 +1,9 @@
+dataset,rows_in,label_conflict_rows,exact_duplicates,normalized_duplicates,rows_out,conflict_%
+Mendeley,11430,0,1,235,11194,0.0
+PhreshTrain,300000,0,0,132,299868,0.0
+PhreshTest,100000,0,0,22,99978,0.0
+Crawling2024,50000,5,252,1083,48660,0.01
+CompPhish,15358,0,7,177,15174,0.0
+D4v,1000,0,2,5,993,0.0
+PhishTank,73184,0,3,689,72492,0.0
+WebPagePhishing,11481,0,3481,121,7879,0.0

@@ -1,0 +1,21 @@
+model,max |Δp| vs stored PhreshTest scores
+ADAPT-X2 stack (P),2.785128888627142e-08
+ADAPT-PHISH v2 (P),0.0
+BiGRU tuned,1.3708439738913114e-07
+URLNet tuned,3.4596137746256694e-08
+LightGBM (P) tuned,0.0
+LightGBM + n-grams tuned,0.0
+char n-gram LR tuned,0.0
+"Baseline stack (P): tuned baselines, no ADAPT",4.4023726053499246e-08
+ADAPT-PHISH v2-KD (P),0.0
+BiGRU-KD tuned,1.0507501735368407e-07
+ADAPT-X (P),0.0
+ADAPT-PHISH (P),0.0
+LightGBM (P),0.0
+char-LR,0.0
+LightGBM (P) + hashed char n-grams,0.0
+URLNet-style char+word CNN,5.0266136919496773e-08
+BiGRU character model,3.553465172112524e-08
+Pretrained google/canine-s (fine-tuned),2.5150340920987446e-08
+Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),0.0
+"Simple stack (P): LightGBM + char-LR, no neural",0.0

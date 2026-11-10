@@ -1,0 +1,68 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Categories of the false positives of ADAPT-X (P) at the frozen 1 \% rule vs their share among benign rows.}
+\label{tab:rev_R7_false_positive_categories}
+\begin{tabular}{llrrr}
+\toprule
+dataset & category & share of false positives & share of all benign rows & false positives \\
+\midrule
+Crawling2024 & root URL (no path) & 0.0805 & 0.5086 & 1937 \\
+Crawling2024 & URL with a path & 0.9195 & 0.4914 & 1937 \\
+Crawling2024 & IP host & 0.0000 & 0.0000 & 1937 \\
+Crawling2024 & hosted on a platform (private public suffix) & 0.0015 & 0.0013 & 1937 \\
+Crawling2024 & $\geq$ 3 subdomains & 0.0010 & 0.0001 & 1937 \\
+Crawling2024 & has a query string & 0.7414 & 0.1375 & 1937 \\
+Crawling2024 & contains a suspicious keyword & 0.2917 & 0.1395 & 1937 \\
+Crawling2024 & risky TLD & 0.0299 & 0.0091 & 1937 \\
+Crawling2024 & shortener host & 0.0010 & 0.0002 & 1937 \\
+Crawling2024 & punycode host & 0.0057 & 0.0006 & 1937 \\
+Crawling2024 & short URL (TRAIN tercile 1) & 0.1193 & 0.5954 & 1937 \\
+Crawling2024 & medium URL (tercile 2) & 0.0986 & 0.1449 & 1937 \\
+Crawling2024 & long URL (tercile 3) & 0.7821 & 0.2598 & 1937 \\
+Crawling2024 & registrable domain unseen in TRAIN & 0.8379 & 0.8377 & 1937 \\
+CompPhish & root URL (no path) & 0.6975 & 0.8778 & 119 \\
+CompPhish & URL with a path & 0.3025 & 0.1222 & 119 \\
+CompPhish & IP host & 0.0000 & 0.0000 & 119 \\
+CompPhish & hosted on a platform (private public suffix) & 0.0000 & 0.0013 & 119 \\
+CompPhish & $\geq$ 3 subdomains & 0.0000 & 0.0004 & 119 \\
+CompPhish & has a query string & 0.7647 & 0.0331 & 119 \\
+CompPhish & contains a suspicious keyword & 0.0756 & 0.0158 & 119 \\
+CompPhish & risky TLD & 0.1429 & 0.0105 & 119 \\
+CompPhish & shortener host & 0.0084 & 0.0004 & 119 \\
+CompPhish & punycode host & 0.0168 & 0.0004 & 119 \\
+CompPhish & short URL (TRAIN tercile 1) & 0.2269 & 0.9429 & 119 \\
+CompPhish & medium URL (tercile 2) & 0.1008 & 0.0331 & 119 \\
+CompPhish & long URL (tercile 3) & 0.6723 & 0.0240 & 119 \\
+CompPhish & registrable domain unseen in TRAIN & 0.9076 & 0.7334 & 119 \\
+D4v & root URL (no path) & 1.0000 & 1.0000 & 5 \\
+D4v & URL with a path & 0.0000 & 0.0000 & 5 \\
+D4v & IP host & 0.0000 & 0.0000 & 5 \\
+D4v & hosted on a platform (private public suffix) & 0.0000 & 0.0000 & 5 \\
+D4v & $\geq$ 3 subdomains & 0.0000 & 0.0000 & 5 \\
+D4v & has a query string & 0.0000 & 0.0000 & 5 \\
+D4v & contains a suspicious keyword & 0.0000 & 0.0041 & 5 \\
+D4v & risky TLD & 0.0000 & 0.0000 & 5 \\
+D4v & shortener host & 0.2000 & 0.0041 & 5 \\
+D4v & punycode host & 0.0000 & 0.0000 & 5 \\
+D4v & short URL (TRAIN tercile 1) & 1.0000 & 1.0000 & 5 \\
+D4v & medium URL (tercile 2) & 0.0000 & 0.0000 & 5 \\
+D4v & long URL (tercile 3) & 0.0000 & 0.0000 & 5 \\
+D4v & registrable domain unseen in TRAIN & 0.6000 & 0.6379 & 5 \\
+PhreshTest & root URL (no path) & 0.3167 & 0.0710 & 60 \\
+PhreshTest & URL with a path & 0.6833 & 0.9290 & 60 \\
+PhreshTest & IP host & 0.0000 & 0.0000 & 60 \\
+PhreshTest & hosted on a platform (private public suffix) & 0.1333 & 0.0026 & 60 \\
+PhreshTest & $\geq$ 3 subdomains & 0.0167 & 0.0105 & 60 \\
+PhreshTest & has a query string & 0.0167 & 0.0001 & 60 \\
+PhreshTest & contains a suspicious keyword & 0.1833 & 0.0612 & 60 \\
+PhreshTest & risky TLD & 0.2500 & 0.0027 & 60 \\
+PhreshTest & shortener host & 0.0000 & 0.0000 & 60 \\
+PhreshTest & punycode host & 0.0167 & 0.0001 & 60 \\
+PhreshTest & short URL (TRAIN tercile 1) & 0.5000 & 0.2003 & 60 \\
+PhreshTest & medium URL (tercile 2) & 0.3500 & 0.3843 & 60 \\
+PhreshTest & long URL (tercile 3) & 0.1500 & 0.4154 & 60 \\
+PhreshTest & registrable domain unseen in TRAIN & 0.7333 & 0.4386 & 60 \\
+\bottomrule
+\end{tabular}
+\end{table*}

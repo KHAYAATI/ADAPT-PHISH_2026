@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Corpus identifiability of benign URLs from the raw model-input string (character n-grams).}
+\label{tab:rev_R8_string_level_identifiability}
+\begin{tabular}{llrr}
+\toprule
+probe & task & 5-fold AUC & reference \\
+\midrule
+char 3–5-gram LR on the model-input string, benign TRAIN rows & Mendeley vs PhreshPhish & 0.9408 & engineered features before/after filter: \{'all canonical features': 0.8510240112375949, 'after shortcut filter (portable view P)': 0.7648999817571512\} \\
+char 3–5-gram LR on the model-input string, benign rows (diagnostic; external labels select benign rows only) & 4-corpus one-vs-rest macro & 0.9083 &  \\
+\bottomrule
+\end{tabular}
+\end{table*}

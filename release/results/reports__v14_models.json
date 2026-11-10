@@ -1,0 +1,623 @@
+{
+  "headline": [
+    "ADAPT-X2 stack (P)",
+    "ADAPT-PHISH v2 (P) seed-ens",
+    "ADAPT-PHISH v2 (E) seed-ens",
+    "BiGRU tuned seed-ens",
+    "URLNet tuned seed-ens",
+    "LightGBM (P) tuned seed-ens",
+    "LightGBM + n-grams tuned seed-ens",
+    "char n-gram LR tuned",
+    "ADAPT-X2 stack (E)",
+    "Baseline stack (P): tuned baselines, no ADAPT",
+    "ADAPT-PHISH v2-KD (P) seed-ens",
+    "BiGRU-KD tuned seed-ens"
+  ],
+  "all": [
+    "ADAPT-PHISH v2 (P) s42",
+    "ADAPT-PHISH v2 (E) s42",
+    "ADAPT-PHISH v2 (P) s123",
+    "ADAPT-PHISH v2 (E) s123",
+    "ADAPT-PHISH v2 (P) s2024",
+    "ADAPT-PHISH v2 (E) s2024",
+    "ADAPT-PHISH v2 (P) s3407",
+    "ADAPT-PHISH v2 (E) s3407",
+    "ADAPT-PHISH v2 (P) s777",
+    "ADAPT-PHISH v2 (E) s777",
+    "ADAPT-PHISH v2 (P) seed-ens",
+    "ADAPT-PHISH v2 (E) seed-ens",
+    "BiGRU tuned s42",
+    "BiGRU tuned s123",
+    "BiGRU tuned s2024",
+    "BiGRU tuned s3407",
+    "BiGRU tuned s777",
+    "BiGRU tuned seed-ens",
+    "URLNet tuned s42",
+    "URLNet tuned s123",
+    "URLNet tuned s2024",
+    "URLNet tuned s3407",
+    "URLNet tuned s777",
+    "URLNet tuned seed-ens",
+    "LightGBM (P) tuned s42",
+    "LightGBM (P) tuned s123",
+    "LightGBM (P) tuned s2024",
+    "LightGBM (P) tuned s3407",
+    "LightGBM (P) tuned s777",
+    "LightGBM (P) tuned seed-ens",
+    "LightGBM + n-grams tuned s42",
+    "LightGBM + n-grams tuned s123",
+    "LightGBM + n-grams tuned s2024",
+    "LightGBM + n-grams tuned s3407",
+    "LightGBM + n-grams tuned s777",
+    "LightGBM + n-grams tuned seed-ens",
+    "char n-gram LR tuned",
+    "ADAPT-X2 stack (P)",
+    "ADAPT-X2 stack (E)",
+    "Baseline stack (P): tuned baselines, no ADAPT",
+    "ADAPT-PHISH v2-KD (P) s42",
+    "ADAPT-PHISH v2-KD (P) s123",
+    "ADAPT-PHISH v2-KD (P) s2024",
+    "ADAPT-PHISH v2-KD (P) s3407",
+    "ADAPT-PHISH v2-KD (P) s777",
+    "ADAPT-PHISH v2-KD (P) seed-ens",
+    "BiGRU-KD tuned s42",
+    "BiGRU-KD tuned s123",
+    "BiGRU-KD tuned s2024",
+    "BiGRU-KD tuned s3407",
+    "BiGRU-KD tuned s777",
+    "BiGRU-KD tuned seed-ens",
+    "ADAPT-PHISH v2 (P) 2x budget s42",
+    "BiGRU tuned 2x budget s42"
+  ],
+  "best_configs": {
+    "ADAPT-PHISH v2": {
+      "trial": 15,
+      "config": {
+        "url_rnn": "patch",
+        "d": 128,
+        "url_layers": 2,
+        "lr": 0.0005,
+        "dann_weight": 0.1,
+        "native_drop": 0.7,
+        "alpha": 1.0,
+        "md_p": 0.2,
+        "dro": true,
+        "wd": 0.0001,
+        "ema": 0.99
+      },
+      "score": 0.959427396725021,
+      "worst_corpus_roc_auc": 0.9584646380142424,
+      "default_score": 0.934123659193395
+    },
+    "BiGRU": {
+      "trial": 8,
+      "config": {
+        "d": 96,
+        "h": 128,
+        "lr": 0.002,
+        "alpha": 0.5,
+        "wd": 0.001,
+        "ema": 0.998
+      },
+      "score": 0.9552730910486289,
+      "worst_corpus_roc_auc": 0.9543087126775502,
+      "default_score": 0.9512003248445161
+    },
+    "URLNet-style": {
+      "trial": 3,
+      "config": {
+        "d": 32,
+        "nf": 64,
+        "lr": 0.0005,
+        "alpha": 0.5,
+        "wd": 0.0001,
+        "ema": 0.998
+      },
+      "score": 0.939262723978802,
+      "worst_corpus_roc_auc": 0.9383226370444872,
+      "default_score": 0.9284654828162275
+    },
+    "LightGBM (P)": {
+      "trial": 15,
+      "config": {
+        "num_leaves": 127,
+        "learning_rate": 0.05,
+        "min_child_samples": 200,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.9207032430355425,
+      "worst_corpus_roc_auc": 0.9197672587812575,
+      "default_score": 0.9180304474023218
+    },
+    "LightGBM (P) + hashed n-grams": {
+      "trial": 6,
+      "config": {
+        "num_leaves": 15,
+        "learning_rate": 0.1,
+        "min_child_samples": 200,
+        "colsample_bytree": 0.3,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.9554929316408427,
+      "worst_corpus_roc_auc": 0.9545241267700184,
+      "default_score": 0.9512670296611402
+    },
+    "char n-gram LR": {
+      "trial": 4,
+      "config": {
+        "ngram": [
+          1,
+          5
+        ],
+        "C": 0.5,
+        "max_features": 300000,
+        "min_df": 3
+      },
+      "score": 0.9303356915986106,
+      "worst_corpus_roc_auc": 0.9293786439252052,
+      "default_score": 0.904306928598489
+    }
+  },
+  "info": {
+    "ADAPT-PHISH v2 s42": {
+      "train_seconds": 5994.3295813000295,
+      "epochs_run": 16,
+      "best_epoch": 8,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2 s123": {
+      "train_seconds": 5462.5687271999195,
+      "epochs_run": 14,
+      "best_epoch": 6,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2 s2024": {
+      "train_seconds": 5964.407674200018,
+      "epochs_run": 16,
+      "best_epoch": 8,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2 s3407": {
+      "train_seconds": 6117.620470699971,
+      "epochs_run": 16,
+      "best_epoch": 8,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2 s777": {
+      "train_seconds": 5375.026674699853,
+      "epochs_run": 14,
+      "best_epoch": 6,
+      "parameters": 1360929
+    },
+    "BiGRU tuned s42": {
+      "name": "v14 BiGRU tuned",
+      "seed": 42,
+      "best_epoch": 4,
+      "best_val_selection": 0.9655010157670664,
+      "epochs_run": 12,
+      "train_seconds": 1676.5134376999922,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU tuned s123": {
+      "name": "v14 BiGRU tuned",
+      "seed": 123,
+      "best_epoch": 6,
+      "best_val_selection": 0.9662661561507536,
+      "epochs_run": 14,
+      "train_seconds": 1954.8515552000026,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU tuned s2024": {
+      "name": "v14 BiGRU tuned",
+      "seed": 2024,
+      "best_epoch": 3,
+      "best_val_selection": 0.9616275314419483,
+      "epochs_run": 11,
+      "train_seconds": 1532.5997559000389,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU tuned s3407": {
+      "name": "v14 BiGRU tuned",
+      "seed": 3407,
+      "best_epoch": 4,
+      "best_val_selection": 0.9592926586083307,
+      "epochs_run": 12,
+      "train_seconds": 1673.6744900000049,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU tuned s777": {
+      "name": "v14 BiGRU tuned",
+      "seed": 777,
+      "best_epoch": 6,
+      "best_val_selection": 0.9619714047535671,
+      "epochs_run": 14,
+      "train_seconds": 1953.4912501999643,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet tuned s42": {
+      "name": "v14 URLNet tuned",
+      "seed": 42,
+      "best_epoch": 9,
+      "best_val_selection": 0.9484245455540187,
+      "epochs_run": 17,
+      "train_seconds": 404.165507800004,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet tuned s123": {
+      "name": "v14 URLNet tuned",
+      "seed": 123,
+      "best_epoch": 8,
+      "best_val_selection": 0.9420831514873648,
+      "epochs_run": 16,
+      "train_seconds": 379.2335019999882,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet tuned s2024": {
+      "name": "v14 URLNet tuned",
+      "seed": 2024,
+      "best_epoch": 10,
+      "best_val_selection": 0.9408298611203153,
+      "epochs_run": 18,
+      "train_seconds": 427.65277569997124,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet tuned s3407": {
+      "name": "v14 URLNet tuned",
+      "seed": 3407,
+      "best_epoch": 7,
+      "best_val_selection": 0.9382927696443917,
+      "epochs_run": 15,
+      "train_seconds": 356.8049722999567,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet tuned s777": {
+      "name": "v14 URLNet tuned",
+      "seed": 777,
+      "best_epoch": 10,
+      "best_val_selection": 0.9404971809739588,
+      "epochs_run": 18,
+      "train_seconds": 427.18428159999894,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "LightGBM (P) tuned s42": {
+      "train_seconds": 9.602214800019283,
+      "trees": 132
+    },
+    "LightGBM (P) tuned s123": {
+      "train_seconds": 10.154277199995704,
+      "trees": 148
+    },
+    "LightGBM (P) tuned s2024": {
+      "train_seconds": 9.276586599997245,
+      "trees": 111
+    },
+    "LightGBM (P) tuned s3407": {
+      "train_seconds": 9.49710659997072,
+      "trees": 120
+    },
+    "LightGBM (P) tuned s777": {
+      "train_seconds": 9.629397200013045,
+      "trees": 135
+    },
+    "LightGBM + n-grams tuned s42": {
+      "train_seconds": 258.8916741000139,
+      "trees": 674
+    },
+    "LightGBM + n-grams tuned s123": {
+      "train_seconds": 278.5534091000445,
+      "trees": 743
+    },
+    "LightGBM + n-grams tuned s2024": {
+      "train_seconds": 274.7595828999765,
+      "trees": 725
+    },
+    "LightGBM + n-grams tuned s3407": {
+      "train_seconds": 300.6063664999674,
+      "trees": 840
+    },
+    "LightGBM + n-grams tuned s777": {
+      "train_seconds": 261.8057147000218,
+      "trees": 675
+    },
+    "char n-gram LR tuned": {
+      "train_seconds": 154.06815970002208
+    },
+    "ADAPT-PHISH v2-KD (P) s42": {
+      "train_seconds": 5397.97434850008,
+      "epochs_run": 14,
+      "best_epoch": 6,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2-KD (P) s123": {
+      "train_seconds": 5775.651333200047,
+      "epochs_run": 15,
+      "best_epoch": 7,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2-KD (P) s2024": {
+      "train_seconds": 6065.3786406000145,
+      "epochs_run": 16,
+      "best_epoch": 8,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2-KD (P) s3407": {
+      "train_seconds": 5993.159112700028,
+      "epochs_run": 16,
+      "best_epoch": 8,
+      "parameters": 1360929
+    },
+    "ADAPT-PHISH v2-KD (P) s777": {
+      "train_seconds": 9623.886436400062,
+      "epochs_run": 26,
+      "best_epoch": 18,
+      "parameters": 1360929
+    },
+    "BiGRU-KD tuned s42": {
+      "name": "v14 BiGRU tuned KD",
+      "seed": 42,
+      "best_epoch": 14,
+      "best_val_selection": 0.9709182664091747,
+      "epochs_run": 22,
+      "train_seconds": 3064.4963449999923,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.5
+      },
+      "finished": true
+    },
+    "BiGRU-KD tuned s123": {
+      "name": "v14 BiGRU tuned KD",
+      "seed": 123,
+      "best_epoch": 4,
+      "best_val_selection": 0.9686253115533419,
+      "epochs_run": 12,
+      "train_seconds": 1670.0812932999688,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.5
+      },
+      "finished": true
+    },
+    "BiGRU-KD tuned s2024": {
+      "name": "v14 BiGRU tuned KD",
+      "seed": 2024,
+      "best_epoch": 20,
+      "best_val_selection": 0.9708583812856534,
+      "epochs_run": 28,
+      "train_seconds": 3898.481491900049,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.5
+      },
+      "finished": true
+    },
+    "BiGRU-KD tuned s3407": {
+      "name": "v14 BiGRU tuned KD",
+      "seed": 3407,
+      "best_epoch": 7,
+      "best_val_selection": 0.9677840468449284,
+      "epochs_run": 15,
+      "train_seconds": 2113.790375300043,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.5
+      },
+      "finished": true
+    },
+    "BiGRU-KD tuned s777": {
+      "name": "v14 BiGRU tuned KD",
+      "seed": 777,
+      "best_epoch": 16,
+      "best_val_selection": 0.9689752026979442,
+      "epochs_run": 24,
+      "train_seconds": 3486.7396791999927,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.5
+      },
+      "finished": true
+    },
+    "ADAPT-PHISH v2 (P) 2x budget s42": {
+      "train_seconds": 8247.128125300049,
+      "epochs_run": 14,
+      "epoch_samples": 514334
+    },
+    "BiGRU tuned 2x budget s42": {
+      "name": "v14 BiGRU tuned budget2x",
+      "seed": 42,
+      "best_epoch": 6,
+      "best_val_selection": 0.966720185633099,
+      "epochs_run": 14,
+      "train_seconds": 8770.756871699996,
+      "parameters": 231425,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 514334,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.002,
+        "wd": 0.001,
+        "ema": 0.998,
+        "kd": 0.0
+      },
+      "finished": true
+    }
+  },
+  "rules": {
+    "enabled": true,
+    "tune_trials": 10,
+    "tune_epochs": 8,
+    "tune_epoch_samples": 120000,
+    "tune_seed": 42,
+    "distill": true,
+    "kd_weight": 0.5,
+    "budget_x2": true,
+    "robustness": true,
+    "loco_neural": true,
+    "reuse_v13": false
+  }
+}

@@ -1,0 +1,46 @@
+A,B,rows_A,rows_B,original_url_shared,original_url_%_of_B_rows,normalized_url_shared,normalized_url_%_of_B_rows,encoder_key_shared,encoder_key_%_of_B_rows,hostname_shared,hostname_%_of_B_rows,registrable_domain_shared,registrable_domain_%_of_B_rows,row_hash_shared,row_hash_%_of_B_rows,level,training_side
+Mendeley,PhreshTrain,11194,299868,15,0.005,17,0.006,20,0.007,653,11.691,845,16.224,17,0.006,corpus (before purge),
+Mendeley,PhreshTest,11194,99978,4,0.004,4,0.004,4,0.004,429,11.562,580,16.1,4,0.004,corpus (before purge),
+Mendeley,Crawling2024,11194,48660,49,0.101,51,0.105,72,0.156,420,4.782,711,7.277,51,0.105,corpus (before purge),
+Mendeley,CompPhish,11194,15174,20,0.132,24,0.158,32,0.211,347,4.798,476,9.226,24,0.158,corpus (before purge),
+Mendeley,D4v,11194,993,0,0.0,1,0.101,4,0.403,17,3.021,87,13.494,1,0.101,corpus (before purge),
+Mendeley,PhishTank,11194,72492,25,0.034,26,0.036,27,0.043,63,14.059,103,22.058,26,0.036,corpus (before purge),
+PhreshTrain,PhreshTest,299868,99978,0,0.0,76,0.076,3530,3.585,15636,47.276,17591,64.56,76,0.076,corpus (before purge),
+PhreshTrain,Crawling2024,299868,48660,2171,4.462,2197,4.515,2243,4.634,4121,20.964,4871,34.599,2196,4.513,corpus (before purge),
+PhreshTrain,CompPhish,299868,15174,481,3.17,514,3.387,691,4.679,2789,23.639,3100,33.136,510,3.361,corpus (before purge),
+PhreshTrain,D4v,299868,993,16,1.611,18,1.813,26,2.618,90,12.991,274,36.354,17,1.712,corpus (before purge),
+PhreshTrain,PhishTank,299868,72492,8532,11.77,8579,11.834,8560,11.899,4129,42.784,3073,53.225,8579,11.834,corpus (before purge),
+PhreshTest,Crawling2024,99978,48660,667,1.371,675,1.387,698,1.445,2062,16.087,2948,29.194,674,1.385,corpus (before purge),
+PhreshTest,CompPhish,99978,15174,155,1.021,167,1.101,247,1.661,1721,16.126,2045,25.511,165,1.087,corpus (before purge),
+PhreshTest,D4v,99978,993,6,0.604,6,0.604,8,0.806,65,9.869,226,30.816,6,0.604,corpus (before purge),
+PhreshTest,PhishTank,99978,72492,2867,3.955,2879,3.971,2882,4.01,1526,38.382,1276,49.752,2879,3.971,corpus (before purge),
+Crawling2024,CompPhish,48660,15174,450,2.966,498,3.282,1039,6.94,2671,21.484,3422,33.544,496,3.269,corpus (before purge),
+Crawling2024,D4v,48660,993,0,0.0,76,7.654,98,9.869,130,15.609,260,33.736,75,7.553,corpus (before purge),
+Crawling2024,PhishTank,48660,72492,3997,5.514,4020,5.545,3986,5.539,2643,38.276,2319,49.101,4020,5.545,corpus (before purge),
+CompPhish,D4v,15174,993,7,0.705,39,3.927,139,13.998,70,10.977,224,31.319,39,3.927,corpus (before purge),
+CompPhish,PhishTank,15174,72492,904,1.247,906,1.25,956,1.33,580,35.997,571,46.671,904,1.247,corpus (before purge),
+D4v,PhishTank,993,72492,26,0.036,26,0.036,27,0.037,40,29.842,72,37.935,26,0.036,corpus (before purge),
+Mendeley,Web_page_phishing_detection,11194,7879,7779,98.731,7879,100.0,7755,99.645,6039,100.0,5357,100.0,7879,100.0,corpus (before purge),
+TRAIN,VALIDATION,257167,53878,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,final (after purge),True
+TRAIN,PhreshTest,257167,96319,0,0.0,0,0.0,0,0.0,10659,37.912,12328,53.417,0,0.0,final (after purge),True
+VALIDATION,PhreshTest,53878,96319,0,0.0,0,0.0,0,0.0,2504,7.63,3002,9.881,0,0.0,final (after purge),True
+TRAIN,Crawling2024,257167,46322,0,0.0,0,0.0,0,0.0,2132,13.346,3449,23.961,0,0.0,final (after purge),True
+VALIDATION,Crawling2024,53878,46322,0,0.0,0,0.0,0,0.0,524,4.352,843,8.288,0,0.0,final (after purge),True
+TRAIN,CompPhish,257167,9353,0,0.0,0,0.0,0,0.0,1178,16.476,1411,21.8,0,0.0,final (after purge),True
+VALIDATION,CompPhish,53878,9353,0,0.0,0,0.0,0,0.0,285,3.774,355,6.426,0,0.0,final (after purge),True
+TRAIN,D4v,257167,962,0,0.0,0,0.0,0,0.0,52,8.732,204,29.21,0,0.0,final (after purge),True
+VALIDATION,D4v,53878,962,0,0.0,0,0.0,0,0.0,17,2.495,50,6.133,0,0.0,final (after purge),True
+development (all rows),PhreshTest,311045,96319,0,0.0,0,0.0,0,0.0,13163,45.541,15330,63.298,0,0.0,final (after purge),True
+development (all rows),Crawling2024,311045,46322,0,0.0,0,0.0,0,0.0,2656,17.698,4292,32.248,0,0.0,final (after purge),True
+development (all rows),CompPhish,311045,9353,0,0.0,0,0.0,0,0.0,1463,20.25,1766,28.226,0,0.0,final (after purge),True
+development (all rows),D4v,311045,962,0,0.0,0,0.0,0,0.0,69,11.227,254,35.343,0,0.0,final (after purge),True
+TRAIN,TrackA_pool,257167,5073,0,0.0,0,0.0,0,0.0,608,18.096,720,30.692,0,0.0,final (after purge),True
+TrackA_pool,CompPhish (external test),5073,9353,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,final (after purge),False
+TRAIN,PhishTank,257167,63822,0,0.0,0,0.0,0,0.0,326,34.165,464,43.925,0,0.0,final (after purge),True
+VALIDATION,PhishTank,53878,63822,0,0.0,0,0.0,0,0.0,65,1.051,113,3.148,0,0.0,final (after purge),True
+Mendeley,PhishTank,11194,63822,0,0.0,0,0.0,0,0.0,39,12.873,83,20.408,0,0.0,final (after purge),True
+PhreshTrain,PhishTank,299868,63822,0,0.0,0,0.0,0,0.0,382,35.068,552,46.894,0,0.0,final (after purge),True
+PhreshTest,PhishTank,96319,63822,2839,4.448,2849,4.464,2852,4.481,1483,36.083,1223,47.003,2849,4.464,final (after purge),False
+Crawling2024,PhishTank,46322,63822,3030,4.748,3045,4.771,3021,4.77,2113,30.96,1910,41.403,3045,4.771,final (after purge),False
+CompPhish,PhishTank,9353,63822,614,0.962,616,0.965,631,0.998,325,19.796,336,23.18,616,0.965,final (after purge),False
+D4v,PhishTank,962,63822,26,0.041,26,0.041,27,0.042,39,29.134,66,36.843,26,0.041,final (after purge),False

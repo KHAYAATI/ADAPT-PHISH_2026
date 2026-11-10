@@ -1,0 +1,7 @@
+test,rows_before,purged_same_normalized_url_as_development,purged_same_model_input_as_development,rows_after,registrable_domain_in_TRAIN_%,rows_moved
+PhreshTest,99978.0,80.0,3579.0,96319.0,53.42,
+Crawling2024,48660.0,2248.0,90.0,46322.0,23.96,
+CompPhish,15174.0,537.0,211.0,14426.0,24.93,
+D4v,993.0,19.0,12.0,962.0,29.21,
+CompPhish -> Track-A pool,,,,,,5073.0
+PhishTank (stream),72492.0,8605.0,65.0,63822.0,,

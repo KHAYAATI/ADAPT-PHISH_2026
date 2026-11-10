@@ -1,0 +1,13 @@
+features,corpus,one_vs_rest_AUC,note
+all canonical features,CompPhish,0.8757,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+all canonical features,Crawling2024,0.9131,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+all canonical features,Mendeley,0.8199,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+all canonical features,PhreshPhish,0.9224,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+all canonical features,MACRO (OvR),0.8828,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+after shortcut filter,CompPhish,0.8739,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+after shortcut filter,Crawling2024,0.909,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+after shortcut filter,Mendeley,0.752,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+after shortcut filter,PhreshPhish,0.9136,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+after shortcut filter,MACRO (OvR),0.8621,DIAGNOSTIC on BENIGN rows; external labels used only to select benign rows; no design decision uses it
+all canonical features,"Mendeley vs PhreshTrain (TRAIN benign, binary)",0.851,input-level identifiability (target of fix A2: toward ≤ 0.6)
+after shortcut filter (portable view P),"Mendeley vs PhreshTrain (TRAIN benign, binary)",0.7649,input-level identifiability (target of fix A2: toward ≤ 0.6)

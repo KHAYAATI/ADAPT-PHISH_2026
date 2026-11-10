@@ -1,0 +1,16 @@
+dataset,label,rows,monitoring_artifacts,affected_%
+Mendeley,0,5715,5,0.087
+Mendeley,1,5715,11,0.192
+PhreshTrain,0,150000,0,0.0
+PhreshTrain,1,150000,372,0.248
+PhreshTest,0,50000,0,0.0
+PhreshTest,1,50000,131,0.262
+Crawling2024,0,25000,94,0.376
+Crawling2024,1,25000,103,0.412
+CompPhish,0,8154,36,0.442
+CompPhish,1,7204,14,0.194
+D4v,0,500,0,0.0
+D4v,1,500,1,0.2
+PhishTank,1,73184,246,0.336
+WebPagePhishing,0,5740,4,0.07
+WebPagePhishing,1,5741,9,0.157

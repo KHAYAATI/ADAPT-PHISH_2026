@@ -1,0 +1,30 @@
+A (reference),B (evaluated),rows B,normalized URL: rows of B found in A,model-input string (encoder key): rows of B found in A,model-input bytes after truncation: rows of B found in A,"truncation-only collisions (bytes equal, strings differ)",registrable domain: rows of B found in A,"canonical feature vector (P view, rounded): rows of B found in A"
+TRAIN,VALIDATION,53878,0,0,0,0,0,4588.0
+TRAIN,PhreshTest,96319,0,0,5,5,51451,14252.0
+VALIDATION,PhreshTest,96319,0,0,0,0,9517,4343.0
+development (all rows),PhreshTest,96319,0,0,5,5,60968,
+TRAIN,Crawling2024,46322,0,0,0,0,11099,9751.0
+VALIDATION,Crawling2024,46322,0,0,0,0,3839,4516.0
+development (all rows),Crawling2024,46322,0,0,0,0,14938,
+TRAIN,CompPhish,9353,0,0,0,0,2039,2975.0
+VALIDATION,CompPhish,9353,0,0,0,0,601,1693.0
+development (all rows),CompPhish,9353,0,0,0,0,2640,
+TRAIN,D4v,962,0,0,0,0,281,259.0
+VALIDATION,D4v,962,0,0,0,0,59,87.0
+development (all rows),D4v,962,0,0,0,0,340,
+PhreshTest,Crawling2024,46322,670,696,696,0,12734,7820.0
+PhreshTest,CompPhish,9353,101,155,154,0,2134,2211.0
+PhreshTest,D4v,962,6,8,8,0,294,141.0
+Crawling2024,CompPhish,9353,317,665,665,0,2962,2480.0
+Crawling2024,D4v,962,73,94,94,0,320,43.0
+CompPhish,D4v,962,29,87,87,0,183,38.0
+TRAIN,TrackA_pool,5073,0,0,0,0,1557,1541.0
+VALIDATION,TrackA_pool,5073,0,0,0,0,272,853.0
+TrackA_pool,CompPhish,9353,0,0,0,0,0,1781.0
+TRAIN,PhishTank,63822,0,0,1,1,28034,14372.0
+VALIDATION,PhishTank,63822,0,0,0,0,2009,783.0
+development (all rows),PhishTank,63822,0,0,1,1,30043,
+PhreshTest,PhishTank,63822,2849,2860,2860,0,29998,14497.0
+Crawling2024,PhishTank,63822,3045,3044,3044,0,26424,6353.0
+CompPhish,PhishTank,63822,616,637,637,0,14794,4660.0
+D4v,PhishTank,63822,26,27,27,0,23514,1953.0

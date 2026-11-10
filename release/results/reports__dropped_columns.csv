@@ -1,0 +1,48 @@
+dataset,column,reason,phase
+Crawling2024,index,identifier (never a feature; kept as metadata if listed),G0
+Crawling2024,url_url_pre,string column (contract),G0
+Crawling2024,url_url_suf,string column (contract),G0
+CompPhish,serial_number,identifier (never a feature; kept as metadata if listed),G0
+D4v,Using the IP Address,D4v coded feature: not a model input (portable view),G0
+D4v,Long URL,D4v coded feature: not a model input (portable view),G0
+D4v,URL Shortening Services,D4v coded feature: not a model input (portable view),G0
+D4v,URL having @ Symbol,D4v coded feature: not a model input (portable view),G0
+D4v,Redirecting using //,D4v coded feature: not a model input (portable view),G0
+D4v,Prefix/Suffix with - in Domain,D4v coded feature: not a model input (portable view),G0
+D4v,Sub Domain and Multi Sub Domains,D4v coded feature: not a model input (portable view),G0
+D4v,HTTPS,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Domain Registration Length,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Favicon,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,HTTPS Token in Domain,D4v coded feature: not a model input (portable view),G0
+D4v,Request URL,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,URL of Anchor,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Links in Meta/Script/Link Tags,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Server Form Handler (SFH),D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Submitting to Email,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Abnormal URL,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Website Forwarding,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Status Bar Customization,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Using Pop-up Window,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Age of Domain,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,DNS Record,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Website Traffic,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,PageRank,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Google Index,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Number of Links Pointing to Page,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+D4v,Statistical-Reports Based Feature,D4v coded feature: not a model input (portable view); Group C if network-based,G0
+PhishTank,phish_id,identifier (never a feature; kept as metadata if listed),G0
+PhishTank,phish_detail_url,identifier (never a feature; kept as metadata if listed),G0
+TRAIN,url::has_port,quasi-constant in TRAIN,G2
+TRAIN,url::has_userinfo,quasi-constant in TRAIN,G2
+TRAIN,url::punycode,quasi-constant in TRAIN,G2
+TRAIN,url::double_slash_path,quasi-constant in TRAIN,G2
+TRAIN,url::exec_ext,quasi-constant in TRAIN,G2
+TRAIN,nb_or,quasi-constant in TRAIN,G2
+TRAIN,nb_star,quasi-constant in TRAIN,G2
+TRAIN,path_extension,quasi-constant in TRAIN,G2
+TRAIN,punycode,quasi-constant in TRAIN,G2
+TRAIN,ratio_intErrors,quasi-constant in TRAIN,G2
+TRAIN,ratio_intRedirection,quasi-constant in TRAIN,G2
+TRAIN,ratio_nullHyperlinks,quasi-constant in TRAIN,G2
+TRAIN,sfh,quasi-constant in TRAIN,G2
+TRAIN,submit_email,quasi-constant in TRAIN,G2

@@ -1,0 +1,13 @@
+
+===== R16b_ADAPTIVE_REWRITE_ATTACK =====
+Traceback (most recent call last):
+  File "C:\Users\MES\AppData\Local\Temp\ipykernel_2464\3885140682.py", line 20, in rev_phase
+    yield
+  File "C:\Users\MES\AppData\Local\Temp\ipykernel_2464\2232765511.py", line 14, in <module>
+    r_ = np.random.default_rng(SEED + 7); new = [PERTURB[pname](str(u), r_) for u in base_urls]
+  File "C:\Users\MES\AppData\Local\Temp\ipykernel_2464\2232765511.py", line 14, in <listcomp>
+    r_ = np.random.default_rng(SEED + 7); new = [PERTURB[pname](str(u), r_) for u in base_urls]
+  File "C:\Users\MES\AppData\Local\Temp\ipykernel_2464\1723782169.py", line 13, in p_idn
+    s, net, rest = _parts(u); host = net.split("@")[-1].split(":")[0]; labels = host.split(".")
+TypeError: 'list' object is not callable
+

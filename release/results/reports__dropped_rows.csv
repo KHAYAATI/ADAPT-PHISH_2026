@@ -1,0 +1,29 @@
+dataset,reason,count,phase
+Mendeley,exact duplicate,1,G1
+Mendeley,normalized-URL duplicate,235,G1
+PhreshTrain,normalized-URL duplicate,132,G1
+PhreshTest,normalized-URL duplicate,22,G1
+Crawling2024,label conflict (all conflicting rows dropped),5,G1
+Crawling2024,exact duplicate,252,G1
+Crawling2024,normalized-URL duplicate,1083,G1
+CompPhish,exact duplicate,7,G1
+CompPhish,normalized-URL duplicate,177,G1
+D4v,exact duplicate,2,G1
+D4v,normalized-URL duplicate,5,G1
+PhishTank,exact duplicate,3,G1
+PhishTank,normalized-URL duplicate,689,G1
+WebPagePhishing,exact duplicate,3481,G1
+WebPagePhishing,normalized-URL duplicate,121,G1
+Web_page_phishing_detection,whole corpus excluded: duplicate of Mendeley (100.0 % shared URLs),7879,G1
+development,same normalized URL in Mendeley and PhreshTrain (conflict or duplicate),17,G1
+PhreshTest,test row whose normalized URL is in the development files (leakage purge),80,G1
+PhreshTest,test row whose model input (scheme/www/monitoring-free URL) is in the development files (leakage purge),3579,G1
+Crawling2024,test row whose normalized URL is in the development files (leakage purge),2248,G1
+Crawling2024,test row whose model input (scheme/www/monitoring-free URL) is in the development files (leakage purge),90,G1
+CompPhish,test row whose normalized URL is in the development files (leakage purge),537,G1
+CompPhish,test row whose model input (scheme/www/monitoring-free URL) is in the development files (leakage purge),211,G1
+D4v,test row whose normalized URL is in the development files (leakage purge),19,G1
+D4v,test row whose model input (scheme/www/monitoring-free URL) is in the development files (leakage purge),12,G1
+CompPhish,moved to the Track-A controlled-drift pool (excluded from the external-test claim),5073,G1
+PhishTank,normalized URL in the development files (TRAIN/VALIDATION/Mendeley/PhreshTrain) — leakage purge (fix A1),8605,G1
+PhishTank,model input in the development files — leakage purge (fix A1),65,G1

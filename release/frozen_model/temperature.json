@@ -1,0 +1,527 @@
+{
+  "ADAPT-PHISH (P) s42": {
+    "temperature": 1.4150495374531271,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) s42": {
+    "temperature": 1.3048572006006274,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (P) s123": {
+    "temperature": 1.607476844856051,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) s123": {
+    "temperature": 1.3665329346888244,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (P) s2024": {
+    "temperature": 1.2619354761348025,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) s2024": {
+    "temperature": 1.0387225547967458,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (P) s3407": {
+    "temperature": 1.821684598373226,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) s3407": {
+    "temperature": 1.7100041797539733,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (P) s777": {
+    "temperature": 1.5000019664265054,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) s777": {
+    "temperature": 1.3573934540392152,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (P) seed-ens": {
+    "temperature": 1.3331719569395872,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH (E) seed-ens": {
+    "temperature": 1.2087029544445846,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) s42": {
+    "temperature": 1.0198365994500422,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) s123": {
+    "temperature": 1.0288572075091054,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) s2024": {
+    "temperature": 1.0336241760985478,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) s3407": {
+    "temperature": 1.0492452275522854,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) s777": {
+    "temperature": 0.9968902373160649,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) seed-ens": {
+    "temperature": 1.0193450781181324,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) s42": {
+    "temperature": 1.1756810575125578,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) s123": {
+    "temperature": 1.197606254802527,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) s2024": {
+    "temperature": 1.1996543820420476,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) s3407": {
+    "temperature": 1.1505271923924683,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) s777": {
+    "temperature": 1.1982927042527367,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (E) seed-ens": {
+    "temperature": 1.1774392909366636,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "char 3-5-gram LR": {
+    "temperature": 1.2229876610772576,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-X stack (P)": {
+    "temperature": 1.05227658122101,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-X stack (E)": {
+    "temperature": 1.046469001009394,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Sanity: url_len only (LR)": {
+    "temperature": 1.0228743644632052,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Sanity: has_path only (LR)": {
+    "temperature": 0.9725182679938442,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Sanity: url_len + path depth (LR)": {
+    "temperature": 1.161355268040043,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams s42": {
+    "temperature": 1.1559922988331697,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams s123": {
+    "temperature": 1.1253151351103265,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams s2024": {
+    "temperature": 1.1014711886035156,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams s3407": {
+    "temperature": 1.1728567579212879,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams s777": {
+    "temperature": 1.1574881144333522,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) + hashed char n-grams seed-ens": {
+    "temperature": 1.135739447057933,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN s42": {
+    "temperature": 2.394048062155442,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN s123": {
+    "temperature": 2.573153400632753,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN s2024": {
+    "temperature": 2.419340333419245,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN s3407": {
+    "temperature": 2.162051233047731,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN s777": {
+    "temperature": 2.3994816801511063,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet-style char+word CNN seed-ens": {
+    "temperature": 1.932977438493706,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model s42": {
+    "temperature": 2.526872636472058,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model s123": {
+    "temperature": 2.612754236181459,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model s2024": {
+    "temperature": 2.422510028804138,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model s3407": {
+    "temperature": 2.4051742774291993,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model s777": {
+    "temperature": 2.249617173931662,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU character model seed-ens": {
+    "temperature": 2.085536612508657,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Pretrained google/canine-s (fine-tuned)": {
+    "temperature": 2.317550683204257,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)": {
+    "temperature": 1.9099252274356178,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Simple stack (P): LightGBM + char-LR, no neural": {
+    "temperature": 1.0563604908966497,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) s42": {
+    "temperature": 1.548358036366166,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) s42": {
+    "temperature": 1.3823566814558026,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) s123": {
+    "temperature": 1.4728731849133865,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) s123": {
+    "temperature": 1.332054578087694,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) s2024": {
+    "temperature": 1.6591701740725902,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) s2024": {
+    "temperature": 1.4552482794462938,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) s3407": {
+    "temperature": 1.507623943144944,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) s3407": {
+    "temperature": 1.2932642067271747,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) s777": {
+    "temperature": 1.3895593010571536,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) s777": {
+    "temperature": 1.213156797245608,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) seed-ens": {
+    "temperature": 1.4053826236799907,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (E) seed-ens": {
+    "temperature": 1.236610311112302,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned s42": {
+    "temperature": 1.9477657034605445,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned s123": {
+    "temperature": 2.174640623748706,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned s2024": {
+    "temperature": 1.6767405021668493,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned s3407": {
+    "temperature": 1.9717754000398524,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned s777": {
+    "temperature": 2.217625513588796,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned seed-ens": {
+    "temperature": 1.8061100483691925,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned s42": {
+    "temperature": 2.2323498465997025,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned s123": {
+    "temperature": 2.3583355027712343,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned s2024": {
+    "temperature": 2.6277816795960813,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned s3407": {
+    "temperature": 2.387630642787072,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned s777": {
+    "temperature": 2.5414438712779983,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "URLNet tuned seed-ens": {
+    "temperature": 2.0152567369411085,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned s42": {
+    "temperature": 1.0373755075897932,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned s123": {
+    "temperature": 1.0679260015345933,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned s2024": {
+    "temperature": 0.9865771228502909,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned s3407": {
+    "temperature": 1.0081624628700754,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned s777": {
+    "temperature": 1.0406334461885534,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM (P) tuned seed-ens": {
+    "temperature": 1.021108790929222,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned s42": {
+    "temperature": 1.056816881280053,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned s123": {
+    "temperature": 1.0784140133633902,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned s2024": {
+    "temperature": 1.0880956845808765,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned s3407": {
+    "temperature": 1.1118927515378747,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned s777": {
+    "temperature": 1.0625716114736519,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "LightGBM + n-grams tuned seed-ens": {
+    "temperature": 1.069814442224773,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "char n-gram LR tuned": {
+    "temperature": 0.8040458762047442,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-X2 stack (P)": {
+    "temperature": 1.0449764425700971,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-X2 stack (E)": {
+    "temperature": 1.0377179389698101,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "Baseline stack (P): tuned baselines, no ADAPT": {
+    "temperature": 1.0467731630782593,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) s42": {
+    "temperature": 1.2432268965472035,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) s123": {
+    "temperature": 1.2696244827742333,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) s2024": {
+    "temperature": 1.3324150677539017,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) s3407": {
+    "temperature": 1.3191090270285393,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) s777": {
+    "temperature": 1.303684024822358,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2-KD (P) seed-ens": {
+    "temperature": 1.205920208232918,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned s42": {
+    "temperature": 1.2224378010687071,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned s123": {
+    "temperature": 1.2782356113283406,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned s2024": {
+    "temperature": 1.1857371714661502,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned s3407": {
+    "temperature": 1.3182179924106434,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned s777": {
+    "temperature": 1.2491439171592331,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU-KD tuned seed-ens": {
+    "temperature": 1.1781860305116048,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "ADAPT-PHISH v2 (P) 2x budget s42": {
+    "temperature": 1.2995809556784261,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  },
+  "BiGRU tuned 2x budget s42": {
+    "temperature": 2.3501826237814623,
+    "fitted_on": "VALIDATION only",
+    "weighting": "each (corpus, label) cell equal total weight"
+  }
+}

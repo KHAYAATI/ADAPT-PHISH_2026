@@ -1,0 +1,348 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Frozen models on the evaluation rows that have no near duplicate and no shared path template in the development data.}
+\label{tab:rev_R5_metrics_without_near_duplicates}
+\begin{tabular}{llrrrrr}
+\toprule
+dataset & subset & n & model & roc\_auc & mcc & fpr \\
+\midrule
+PhreshTest & ALL & 96319 & ADAPT-X (P) & 0.9954 & 0.9293 & 0.0379 \\
+PhreshTest & ALL & 96319 & ADAPT-PHISH (P) & 0.9798 & 0.8420 & 0.0483 \\
+PhreshTest & ALL & 96319 & LightGBM (P) & 0.9752 & 0.8334 & 0.0702 \\
+PhreshTest & ALL & 96319 & char-LR & 0.9942 & 0.9261 & 0.0288 \\
+PhreshTest & ALL & 96319 & ADAPT-X (E) & 0.9987 & 0.9678 & 0.0179 \\
+PhreshTest & ALL & 96319 & ADAPT-PHISH (E) & 0.9922 & 0.9187 & 0.0288 \\
+PhreshTest & ALL & 96319 & LightGBM (E) & 0.9968 & 0.9527 & 0.0148 \\
+PhreshTest & ALL & 96319 & Sanity: url\_len only (LR) & 0.3341 & 0.0650 & 0.0172 \\
+PhreshTest & ALL & 96319 & Sanity: has\_path only (LR) & 0.7008 & 0.4551 & 0.0710 \\
+PhreshTest & ALL & 96319 & Sanity: url\_len + path depth (LR) & 0.7405 & 0.3002 & 0.0513 \\
+PhreshTest & ALL & 96319 & LightGBM (P) + hashed char n-grams & 0.9947 & 0.9260 & 0.0281 \\
+PhreshTest & ALL & 96319 & URLNet-style char+word CNN & 0.9880 & 0.8874 & 0.0420 \\
+PhreshTest & ALL & 96319 & BiGRU character model & 0.9927 & 0.9159 & 0.0318 \\
+PhreshTest & ALL & 96319 & Pretrained google/canine-s (fine-tuned) & 0.9930 & 0.9243 & 0.0336 \\
+PhreshTest & ALL & 96319 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9905 & 0.9048 & 0.0363 \\
+PhreshTest & ALL & 96319 & Simple stack (P): LightGBM + char-LR, no neural & 0.9956 & 0.9315 & 0.0383 \\
+PhreshTest & ALL & 96319 & ADAPT-X2 stack (P) & 0.9932 & 0.9117 & 0.0511 \\
+PhreshTest & ALL & 96319 & ADAPT-PHISH v2 (P) & 0.9878 & 0.8813 & 0.0639 \\
+PhreshTest & ALL & 96319 & ADAPT-PHISH v2 (E) & 0.9948 & 0.9353 & 0.0346 \\
+PhreshTest & ALL & 96319 & BiGRU tuned & 0.9878 & 0.8856 & 0.0456 \\
+PhreshTest & ALL & 96319 & URLNet tuned & 0.9900 & 0.8894 & 0.0637 \\
+PhreshTest & ALL & 96319 & LightGBM (P) tuned & 0.9768 & 0.8384 & 0.0839 \\
+PhreshTest & ALL & 96319 & LightGBM + n-grams tuned & 0.9928 & 0.9118 & 0.0470 \\
+PhreshTest & ALL & 96319 & char n-gram LR tuned & 0.9894 & 0.8987 & 0.0369 \\
+PhreshTest & ALL & 96319 & ADAPT-X2 stack (E) & 0.9958 & 0.9414 & 0.0281 \\
+PhreshTest & ALL & 96319 & Baseline stack (P): tuned baselines, no ADAPT & 0.9935 & 0.9137 & 0.0412 \\
+PhreshTest & ALL & 96319 & ADAPT-PHISH v2-KD (P) & 0.9905 & 0.8964 & 0.0635 \\
+PhreshTest & ALL & 96319 & BiGRU-KD tuned & 0.9922 & 0.9126 & 0.0356 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-X (P) & 0.9953 & 0.9285 & 0.0373 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-PHISH (P) & 0.9810 & 0.8463 & 0.0465 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & LightGBM (P) & 0.9765 & 0.8378 & 0.0693 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & char-LR & 0.9938 & 0.9229 & 0.0291 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-X (E) & 0.9986 & 0.9670 & 0.0182 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-PHISH (E) & 0.9929 & 0.9230 & 0.0286 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & LightGBM (E) & 0.9968 & 0.9529 & 0.0151 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Sanity: url\_len only (LR) & 0.3034 & 0.0566 & 0.0180 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Sanity: has\_path only (LR) & 0.7186 & 0.4870 & 0.0744 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Sanity: url\_len + path depth (LR) & 0.7377 & 0.2986 & 0.0538 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & LightGBM (P) + hashed char n-grams & 0.9944 & 0.9238 & 0.0283 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & URLNet-style char+word CNN & 0.9876 & 0.8851 & 0.0410 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & BiGRU character model & 0.9923 & 0.9132 & 0.0314 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Pretrained google/canine-s (fine-tuned) & 0.9927 & 0.9222 & 0.0342 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9902 & 0.9031 & 0.0363 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Simple stack (P): LightGBM + char-LR, no neural & 0.9954 & 0.9300 & 0.0381 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-X2 stack (P) & 0.9932 & 0.9108 & 0.0497 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-PHISH v2 (P) & 0.9882 & 0.8821 & 0.0614 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-PHISH v2 (E) & 0.9953 & 0.9380 & 0.0337 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & BiGRU tuned & 0.9876 & 0.8847 & 0.0438 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & URLNet tuned & 0.9896 & 0.8869 & 0.0627 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & LightGBM (P) tuned & 0.9780 & 0.8418 & 0.0832 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & LightGBM + n-grams tuned & 0.9926 & 0.9093 & 0.0468 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & char n-gram LR tuned & 0.9890 & 0.8966 & 0.0364 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-X2 stack (E) & 0.9961 & 0.9436 & 0.0276 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & Baseline stack (P): tuned baselines, no ADAPT & 0.9934 & 0.9119 & 0.0402 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & ADAPT-PHISH v2-KD (P) & 0.9905 & 0.8962 & 0.0616 \\
+PhreshTest & no near-duplicate \& no shared template & 88800 & BiGRU-KD tuned & 0.9919 & 0.9108 & 0.0349 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-X (P) & 0.9886 & 0.8847 & 0.0614 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-PHISH (P) & 0.9650 & 0.7761 & 0.0674 \\
+PhreshTest & … ∩ unseen domain & 41884 & LightGBM (P) & 0.9589 & 0.7765 & 0.1068 \\
+PhreshTest & … ∩ unseen domain & 41884 & char-LR & 0.9841 & 0.8691 & 0.0490 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-X (E) & 0.9967 & 0.9460 & 0.0328 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-PHISH (E) & 0.9882 & 0.8980 & 0.0462 \\
+PhreshTest & … ∩ unseen domain & 41884 & LightGBM (E) & 0.9928 & 0.9275 & 0.0261 \\
+PhreshTest & … ∩ unseen domain & 41884 & Sanity: url\_len only (LR) & 0.3062 & -0.0050 & 0.0138 \\
+PhreshTest & … ∩ unseen domain & 41884 & Sanity: has\_path only (LR) & 0.7636 & 0.5369 & 0.1430 \\
+PhreshTest & … ∩ unseen domain & 41884 & Sanity: url\_len + path depth (LR) & 0.7530 & 0.3368 & 0.0737 \\
+PhreshTest & … ∩ unseen domain & 41884 & LightGBM (P) + hashed char n-grams & 0.9873 & 0.8802 & 0.0507 \\
+PhreshTest & … ∩ unseen domain & 41884 & URLNet-style char+word CNN & 0.9707 & 0.8108 & 0.0607 \\
+PhreshTest & … ∩ unseen domain & 41884 & BiGRU character model & 0.9816 & 0.8566 & 0.0488 \\
+PhreshTest & … ∩ unseen domain & 41884 & Pretrained google/canine-s (fine-tuned) & 0.9823 & 0.8684 & 0.0603 \\
+PhreshTest & … ∩ unseen domain & 41884 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9773 & 0.8419 & 0.0563 \\
+PhreshTest & … ∩ unseen domain & 41884 & Simple stack (P): LightGBM + char-LR, no neural & 0.9889 & 0.8886 & 0.0634 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-X2 stack (P) & 0.9852 & 0.8648 & 0.0764 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-PHISH v2 (P) & 0.9773 & 0.8288 & 0.0888 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-PHISH v2 (E) & 0.9920 & 0.9157 & 0.0533 \\
+PhreshTest & … ∩ unseen domain & 41884 & BiGRU tuned & 0.9736 & 0.8202 & 0.0623 \\
+PhreshTest & … ∩ unseen domain & 41884 & URLNet tuned & 0.9751 & 0.8196 & 0.0936 \\
+PhreshTest & … ∩ unseen domain & 41884 & LightGBM (P) tuned & 0.9602 & 0.7777 & 0.1277 \\
+PhreshTest & … ∩ unseen domain & 41884 & LightGBM + n-grams tuned & 0.9844 & 0.8628 & 0.0787 \\
+PhreshTest & … ∩ unseen domain & 41884 & char n-gram LR tuned & 0.9760 & 0.8357 & 0.0541 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-X2 stack (E) & 0.9929 & 0.9240 & 0.0442 \\
+PhreshTest & … ∩ unseen domain & 41884 & Baseline stack (P): tuned baselines, no ADAPT & 0.9853 & 0.8620 & 0.0627 \\
+PhreshTest & … ∩ unseen domain & 41884 & ADAPT-PHISH v2-KD (P) & 0.9805 & 0.8476 & 0.0924 \\
+PhreshTest & … ∩ unseen domain & 41884 & BiGRU-KD tuned & 0.9814 & 0.8577 & 0.0540 \\
+Crawling2024 & ALL & 46322 & ADAPT-X (P) & 0.9205 & 0.5656 & 0.4212 \\
+Crawling2024 & ALL & 46322 & ADAPT-PHISH (P) & 0.8992 & 0.6506 & 0.2418 \\
+Crawling2024 & ALL & 46322 & LightGBM (P) & 0.8552 & 0.4850 & 0.4239 \\
+Crawling2024 & ALL & 46322 & char-LR & 0.8900 & 0.5508 & 0.3945 \\
+Crawling2024 & ALL & 46322 & ADAPT-X (E) & 0.9114 & 0.6137 & 0.3308 \\
+Crawling2024 & ALL & 46322 & ADAPT-PHISH (E) & 0.8992 & 0.5738 & 0.3816 \\
+Crawling2024 & ALL & 46322 & LightGBM (E) & 0.8385 & 0.5623 & 0.1942 \\
+Crawling2024 & ALL & 46322 & Sanity: url\_len only (LR) & 0.6706 & 0.0519 & 0.0298 \\
+Crawling2024 & ALL & 46322 & Sanity: has\_path only (LR) & 0.5022 & 0.0044 & 0.5086 \\
+Crawling2024 & ALL & 46322 & Sanity: url\_len + path depth (LR) & 0.7902 & 0.4012 & 0.0449 \\
+Crawling2024 & ALL & 46322 & LightGBM (P) + hashed char n-grams & 0.8725 & 0.5139 & 0.4501 \\
+Crawling2024 & ALL & 46322 & URLNet-style char+word CNN & 0.8641 & 0.5563 & 0.3669 \\
+Crawling2024 & ALL & 46322 & BiGRU character model & 0.8962 & 0.6369 & 0.2931 \\
+Crawling2024 & ALL & 46322 & Pretrained google/canine-s (fine-tuned) & 0.8989 & 0.6057 & 0.3356 \\
+Crawling2024 & ALL & 46322 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.8869 & 0.6068 & 0.3056 \\
+Crawling2024 & ALL & 46322 & Simple stack (P): LightGBM + char-LR, no neural & 0.9142 & 0.5381 & 0.4585 \\
+Crawling2024 & ALL & 46322 & ADAPT-X2 stack (P) & 0.8914 & 0.5387 & 0.4542 \\
+Crawling2024 & ALL & 46322 & ADAPT-PHISH v2 (P) & 0.8984 & 0.5468 & 0.4224 \\
+Crawling2024 & ALL & 46322 & ADAPT-PHISH v2 (E) & 0.8984 & 0.4435 & 0.5799 \\
+Crawling2024 & ALL & 46322 & BiGRU tuned & 0.8928 & 0.6225 & 0.2987 \\
+Crawling2024 & ALL & 46322 & URLNet tuned & 0.8699 & 0.5167 & 0.4566 \\
+Crawling2024 & ALL & 46322 & LightGBM (P) tuned & 0.8574 & 0.4490 & 0.4906 \\
+Crawling2024 & ALL & 46322 & LightGBM + n-grams tuned & 0.8611 & 0.4476 & 0.5451 \\
+Crawling2024 & ALL & 46322 & char n-gram LR tuned & 0.8769 & 0.5417 & 0.3888 \\
+Crawling2024 & ALL & 46322 & ADAPT-X2 stack (E) & 0.8952 & 0.4792 & 0.5273 \\
+Crawling2024 & ALL & 46322 & Baseline stack (P): tuned baselines, no ADAPT & 0.8873 & 0.5765 & 0.3917 \\
+Crawling2024 & ALL & 46322 & ADAPT-PHISH v2-KD (P) & 0.9001 & 0.5219 & 0.4714 \\
+Crawling2024 & ALL & 46322 & BiGRU-KD tuned & 0.8878 & 0.6136 & 0.3268 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-X (P) & 0.9201 & 0.5630 & 0.4221 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-PHISH (P) & 0.8993 & 0.6504 & 0.2402 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & LightGBM (P) & 0.8551 & 0.4834 & 0.4229 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & char-LR & 0.8888 & 0.5469 & 0.3963 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-X (E) & 0.9112 & 0.6123 & 0.3301 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-PHISH (E) & 0.8993 & 0.5734 & 0.3802 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & LightGBM (E) & 0.8386 & 0.5653 & 0.1909 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Sanity: url\_len only (LR) & 0.6689 & 0.0516 & 0.0302 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Sanity: has\_path only (LR) & 0.5044 & 0.0088 & 0.5143 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Sanity: url\_len + path depth (LR) & 0.7961 & 0.4051 & 0.0455 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & LightGBM (P) + hashed char n-grams & 0.8712 & 0.5102 & 0.4520 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & URLNet-style char+word CNN & 0.8632 & 0.5541 & 0.3663 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & BiGRU character model & 0.8950 & 0.6340 & 0.2933 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Pretrained google/canine-s (fine-tuned) & 0.8985 & 0.6015 & 0.3379 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.8852 & 0.6034 & 0.3065 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Simple stack (P): LightGBM + char-LR, no neural & 0.9136 & 0.5351 & 0.4598 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-X2 stack (P) & 0.8903 & 0.5366 & 0.4543 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-PHISH v2 (P) & 0.8979 & 0.5455 & 0.4215 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-PHISH v2 (E) & 0.8979 & 0.4419 & 0.5795 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & BiGRU tuned & 0.8921 & 0.6203 & 0.2981 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & URLNet tuned & 0.8689 & 0.5147 & 0.4562 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & LightGBM (P) tuned & 0.8575 & 0.4468 & 0.4905 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & LightGBM + n-grams tuned & 0.8592 & 0.4439 & 0.5475 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & char n-gram LR tuned & 0.8758 & 0.5382 & 0.3897 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-X2 stack (E) & 0.8944 & 0.4772 & 0.5275 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & Baseline stack (P): tuned baselines, no ADAPT & 0.8860 & 0.5739 & 0.3921 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & ADAPT-PHISH v2-KD (P) & 0.8995 & 0.5202 & 0.4711 \\
+Crawling2024 & no near-duplicate \& no shared template & 45480 & BiGRU-KD tuned & 0.8867 & 0.6111 & 0.3268 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-X (P) & 0.8980 & 0.5105 & 0.4395 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-PHISH (P) & 0.8784 & 0.6075 & 0.2382 \\
+Crawling2024 & … ∩ unseen domain & 34544 & LightGBM (P) & 0.8242 & 0.4287 & 0.4328 \\
+Crawling2024 & … ∩ unseen domain & 34544 & char-LR & 0.8582 & 0.4802 & 0.4142 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-X (E) & 0.8906 & 0.5670 & 0.3377 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-PHISH (E) & 0.8784 & 0.5310 & 0.3854 \\
+Crawling2024 & … ∩ unseen domain & 34544 & LightGBM (E) & 0.8131 & 0.5239 & 0.1836 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Sanity: url\_len only (LR) & 0.6690 & -0.0203 & 0.0231 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Sanity: has\_path only (LR) & 0.5162 & 0.0321 & 0.5507 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Sanity: url\_len + path depth (LR) & 0.7959 & 0.4502 & 0.0383 \\
+Crawling2024 & … ∩ unseen domain & 34544 & LightGBM (P) + hashed char n-grams & 0.8460 & 0.4567 & 0.4695 \\
+Crawling2024 & … ∩ unseen domain & 34544 & URLNet-style char+word CNN & 0.8316 & 0.5007 & 0.3618 \\
+Crawling2024 & … ∩ unseen domain & 34544 & BiGRU character model & 0.8748 & 0.5866 & 0.2928 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Pretrained google/canine-s (fine-tuned) & 0.8713 & 0.5500 & 0.3489 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.8614 & 0.5484 & 0.3089 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Simple stack (P): LightGBM + char-LR, no neural & 0.8908 & 0.4815 & 0.4802 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-X2 stack (P) & 0.8693 & 0.4884 & 0.4685 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-PHISH v2 (P) & 0.8768 & 0.4986 & 0.4337 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-PHISH v2 (E) & 0.8768 & 0.3930 & 0.6012 \\
+Crawling2024 & … ∩ unseen domain & 34544 & BiGRU tuned & 0.8709 & 0.5759 & 0.2947 \\
+Crawling2024 & … ∩ unseen domain & 34544 & URLNet tuned & 0.8383 & 0.4671 & 0.4544 \\
+Crawling2024 & … ∩ unseen domain & 34544 & LightGBM (P) tuned & 0.8258 & 0.3918 & 0.5060 \\
+Crawling2024 & … ∩ unseen domain & 34544 & LightGBM + n-grams tuned & 0.8339 & 0.3869 & 0.5730 \\
+Crawling2024 & … ∩ unseen domain & 34544 & char n-gram LR tuned & 0.8472 & 0.4792 & 0.3960 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-X2 stack (E) & 0.8734 & 0.4266 & 0.5503 \\
+Crawling2024 & … ∩ unseen domain & 34544 & Baseline stack (P): tuned baselines, no ADAPT & 0.8648 & 0.5261 & 0.4013 \\
+Crawling2024 & … ∩ unseen domain & 34544 & ADAPT-PHISH v2-KD (P) & 0.8772 & 0.4707 & 0.4872 \\
+Crawling2024 & … ∩ unseen domain & 34544 & BiGRU-KD tuned & 0.8648 & 0.5638 & 0.3288 \\
+CompPhish & ALL & 9353 & ADAPT-X (P) & 0.9531 & 0.7533 & 0.1741 \\
+CompPhish & ALL & 9353 & ADAPT-PHISH (P) & 0.9301 & 0.7341 & 0.0997 \\
+CompPhish & ALL & 9353 & LightGBM (P) & 0.8980 & 0.5975 & 0.2238 \\
+CompPhish & ALL & 9353 & char-LR & 0.9147 & 0.6507 & 0.2265 \\
+CompPhish & ALL & 9353 & ADAPT-X (E) & 0.9495 & 0.7821 & 0.1195 \\
+CompPhish & ALL & 9353 & ADAPT-PHISH (E) & 0.9301 & 0.6920 & 0.1926 \\
+CompPhish & ALL & 9353 & LightGBM (E) & 0.8993 & 0.6596 & 0.0571 \\
+CompPhish & ALL & 9353 & Sanity: url\_len only (LR) & 0.8837 & 0.0599 & 0.0044 \\
+CompPhish & ALL & 9353 & Sanity: has\_path only (LR) & 0.3021 & -0.4304 & 0.8778 \\
+CompPhish & ALL & 9353 & Sanity: url\_len + path depth (LR) & 0.6337 & 0.4310 & 0.0371 \\
+CompPhish & ALL & 9353 & LightGBM (P) + hashed char n-grams & 0.9378 & 0.7140 & 0.1821 \\
+CompPhish & ALL & 9353 & URLNet-style char+word CNN & 0.9464 & 0.7867 & 0.0872 \\
+CompPhish & ALL & 9353 & BiGRU character model & 0.9523 & 0.8128 & 0.0912 \\
+CompPhish & ALL & 9353 & Pretrained google/canine-s (fine-tuned) & 0.9240 & 0.6998 & 0.1911 \\
+CompPhish & ALL & 9353 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9500 & 0.7827 & 0.1050 \\
+CompPhish & ALL & 9353 & Simple stack (P): LightGBM + char-LR, no neural & 0.9424 & 0.7030 & 0.2164 \\
+CompPhish & ALL & 9353 & ADAPT-X2 stack (P) & 0.9547 & 0.7597 & 0.1713 \\
+CompPhish & ALL & 9353 & ADAPT-PHISH v2 (P) & 0.9501 & 0.7480 & 0.1755 \\
+CompPhish & ALL & 9353 & ADAPT-PHISH v2 (E) & 0.9501 & 0.6588 & 0.2938 \\
+CompPhish & ALL & 9353 & BiGRU tuned & 0.9571 & 0.8191 & 0.0794 \\
+CompPhish & ALL & 9353 & URLNet tuned & 0.9438 & 0.7461 & 0.1678 \\
+CompPhish & ALL & 9353 & LightGBM (P) tuned & 0.9014 & 0.5782 & 0.2780 \\
+CompPhish & ALL & 9353 & LightGBM + n-grams tuned & 0.9361 & 0.6710 & 0.2459 \\
+CompPhish & ALL & 9353 & char n-gram LR tuned & 0.9229 & 0.7023 & 0.1701 \\
+CompPhish & ALL & 9353 & ADAPT-X2 stack (E) & 0.9498 & 0.6981 & 0.2421 \\
+CompPhish & ALL & 9353 & Baseline stack (P): tuned baselines, no ADAPT & 0.9534 & 0.7909 & 0.1264 \\
+CompPhish & ALL & 9353 & ADAPT-PHISH v2-KD (P) & 0.9546 & 0.7249 & 0.2084 \\
+CompPhish & ALL & 9353 & BiGRU-KD tuned & 0.9530 & 0.8048 & 0.0990 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-X (P) & 0.9519 & 0.7486 & 0.1747 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-PHISH (P) & 0.9286 & 0.7308 & 0.0995 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & LightGBM (P) & 0.8992 & 0.5968 & 0.2239 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & char-LR & 0.9147 & 0.6500 & 0.2274 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-X (E) & 0.9476 & 0.7757 & 0.1202 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-PHISH (E) & 0.9286 & 0.6857 & 0.1923 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & LightGBM (E) & 0.9010 & 0.6635 & 0.0573 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Sanity: url\_len only (LR) & 0.8803 & 0.0620 & 0.0044 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Sanity: has\_path only (LR) & 0.3126 & -0.4140 & 0.8821 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Sanity: url\_len + path depth (LR) & 0.6469 & 0.4488 & 0.0370 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & LightGBM (P) + hashed char n-grams & 0.9379 & 0.7131 & 0.1829 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & URLNet-style char+word CNN & 0.9446 & 0.7855 & 0.0876 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & BiGRU character model & 0.9511 & 0.8123 & 0.0914 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Pretrained google/canine-s (fine-tuned) & 0.9256 & 0.7015 & 0.1919 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9500 & 0.7858 & 0.1053 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Simple stack (P): LightGBM + char-LR, no neural & 0.9420 & 0.7017 & 0.2174 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-X2 stack (P) & 0.9539 & 0.7573 & 0.1716 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-PHISH v2 (P) & 0.9488 & 0.7430 & 0.1754 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-PHISH v2 (E) & 0.9488 & 0.6510 & 0.2947 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & BiGRU tuned & 0.9558 & 0.8182 & 0.0796 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & URLNet tuned & 0.9421 & 0.7417 & 0.1683 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & LightGBM (P) tuned & 0.9025 & 0.5765 & 0.2786 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & LightGBM + n-grams tuned & 0.9357 & 0.6691 & 0.2467 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & char n-gram LR tuned & 0.9216 & 0.7004 & 0.1708 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-X2 stack (E) & 0.9487 & 0.6924 & 0.2427 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & Baseline stack (P): tuned baselines, no ADAPT & 0.9526 & 0.7902 & 0.1267 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & ADAPT-PHISH v2-KD (P) & 0.9538 & 0.7207 & 0.2088 \\
+CompPhish & no near-duplicate \& no shared template & 9064 & BiGRU-KD tuned & 0.9525 & 0.8059 & 0.0993 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-X (P) & 0.9415 & 0.7112 & 0.2119 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-PHISH (P) & 0.9206 & 0.7190 & 0.1134 \\
+CompPhish & … ∩ unseen domain & 7072 & LightGBM (P) & 0.8873 & 0.5777 & 0.2557 \\
+CompPhish & … ∩ unseen domain & 7072 & char-LR & 0.9002 & 0.6085 & 0.2658 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-X (E) & 0.9355 & 0.7448 & 0.1454 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-PHISH (E) & 0.9206 & 0.6729 & 0.2150 \\
+CompPhish & … ∩ unseen domain & 7072 & LightGBM (E) & 0.8841 & 0.6462 & 0.0678 \\
+CompPhish & … ∩ unseen domain & 7072 & Sanity: url\_len only (LR) & 0.8981 & 0.0527 & 0.0052 \\
+CompPhish & … ∩ unseen domain & 7072 & Sanity: has\_path only (LR) & 0.3281 & -0.3920 & 0.9004 \\
+CompPhish & … ∩ unseen domain & 7072 & Sanity: url\_len + path depth (LR) & 0.6930 & 0.4697 & 0.0399 \\
+CompPhish & … ∩ unseen domain & 7072 & LightGBM (P) + hashed char n-grams & 0.9266 & 0.6753 & 0.2228 \\
+CompPhish & … ∩ unseen domain & 7072 & URLNet-style char+word CNN & 0.9344 & 0.7605 & 0.1032 \\
+CompPhish & … ∩ unseen domain & 7072 & BiGRU character model & 0.9428 & 0.7887 & 0.1042 \\
+CompPhish & … ∩ unseen domain & 7072 & Pretrained google/canine-s (fine-tuned) & 0.9131 & 0.6728 & 0.2181 \\
+CompPhish & … ∩ unseen domain & 7072 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9414 & 0.7604 & 0.1222 \\
+CompPhish & … ∩ unseen domain & 7072 & Simple stack (P): LightGBM + char-LR, no neural & 0.9301 & 0.6591 & 0.2635 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-X2 stack (P) & 0.9456 & 0.7280 & 0.2043 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-PHISH v2 (P) & 0.9462 & 0.7283 & 0.2064 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-PHISH v2 (E) & 0.9462 & 0.6282 & 0.3422 \\
+CompPhish & … ∩ unseen domain & 7072 & BiGRU tuned & 0.9487 & 0.7974 & 0.0907 \\
+CompPhish & … ∩ unseen domain & 7072 & URLNet tuned & 0.9313 & 0.7102 & 0.1957 \\
+CompPhish & … ∩ unseen domain & 7072 & LightGBM (P) tuned & 0.8908 & 0.5570 & 0.3185 \\
+CompPhish & … ∩ unseen domain & 7072 & LightGBM + n-grams tuned & 0.9256 & 0.6293 & 0.2942 \\
+CompPhish & … ∩ unseen domain & 7072 & char n-gram LR tuned & 0.9084 & 0.6666 & 0.1994 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-X2 stack (E) & 0.9447 & 0.6704 & 0.2867 \\
+CompPhish & … ∩ unseen domain & 7072 & Baseline stack (P): tuned baselines, no ADAPT & 0.9431 & 0.7622 & 0.1509 \\
+CompPhish & … ∩ unseen domain & 7072 & ADAPT-PHISH v2-KD (P) & 0.9477 & 0.7014 & 0.2465 \\
+CompPhish & … ∩ unseen domain & 7072 & BiGRU-KD tuned & 0.9444 & 0.7814 & 0.1160 \\
+D4v & ALL & 962 & ADAPT-X (P) & 0.9433 & 0.6299 & 0.3436 \\
+D4v & ALL & 962 & ADAPT-PHISH (P) & 0.9551 & 0.8236 & 0.0370 \\
+D4v & ALL & 962 & LightGBM (P) & 0.8707 & 0.5363 & 0.3642 \\
+D4v & ALL & 962 & char-LR & 0.8862 & 0.5743 & 0.3272 \\
+D4v & ALL & 962 & ADAPT-X (E) & 0.8956 & 0.4786 & 0.4650 \\
+D4v & ALL & 962 & ADAPT-PHISH (E) & 0.9551 & 0.7297 & 0.2202 \\
+D4v & ALL & 962 & LightGBM (E) & 0.7603 & 0.5871 & 0.1276 \\
+D4v & ALL & 962 & Sanity: url\_len only (LR) & 0.9576 & 0.0000 & 0.0000 \\
+D4v & ALL & 962 & Sanity: has\_path only (LR) & 0.1943 & -0.6654 & 1.0000 \\
+D4v & ALL & 962 & Sanity: url\_len + path depth (LR) & 0.5140 & 0.3451 & 0.0021 \\
+D4v & ALL & 962 & LightGBM (P) + hashed char n-grams & 0.8793 & 0.3568 & 0.6091 \\
+D4v & ALL & 962 & URLNet-style char+word CNN & 0.9412 & 0.7863 & 0.0658 \\
+D4v & ALL & 962 & BiGRU character model & 0.9691 & 0.8305 & 0.0597 \\
+D4v & ALL & 962 & Pretrained google/canine-s (fine-tuned) & 0.9368 & 0.6326 & 0.2942 \\
+D4v & ALL & 962 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9729 & 0.8337 & 0.0885 \\
+D4v & ALL & 962 & Simple stack (P): LightGBM + char-LR, no neural & 0.9207 & 0.5226 & 0.4486 \\
+D4v & ALL & 962 & ADAPT-X2 stack (P) & 0.9377 & 0.5715 & 0.3971 \\
+D4v & ALL & 962 & ADAPT-PHISH v2 (P) & 0.9416 & 0.6684 & 0.2757 \\
+D4v & ALL & 962 & ADAPT-PHISH v2 (E) & 0.9416 & 0.4707 & 0.5556 \\
+D4v & ALL & 962 & BiGRU tuned & 0.9658 & 0.8420 & 0.0432 \\
+D4v & ALL & 962 & URLNet tuned & 0.9457 & 0.7295 & 0.1852 \\
+D4v & ALL & 962 & LightGBM (P) tuned & 0.8701 & 0.4090 & 0.5350 \\
+D4v & ALL & 962 & LightGBM + n-grams tuned & 0.8745 & 0.3233 & 0.6420 \\
+D4v & ALL & 962 & char n-gram LR tuned & 0.9079 & 0.6861 & 0.1934 \\
+D4v & ALL & 962 & ADAPT-X2 stack (E) & 0.9308 & 0.4724 & 0.5247 \\
+D4v & ALL & 962 & Baseline stack (P): tuned baselines, no ADAPT & 0.9398 & 0.6678 & 0.2654 \\
+D4v & ALL & 962 & ADAPT-PHISH v2-KD (P) & 0.9505 & 0.6160 & 0.3601 \\
+D4v & ALL & 962 & BiGRU-KD tuned & 0.9712 & 0.8337 & 0.0885 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-X (P) & 0.9425 & 0.6285 & 0.3423 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-PHISH (P) & 0.9549 & 0.8252 & 0.0371 \\
+D4v & no near-duplicate \& no shared template & 951 & LightGBM (P) & 0.8704 & 0.5345 & 0.3649 \\
+D4v & no near-duplicate \& no shared template & 951 & char-LR & 0.8848 & 0.5720 & 0.3258 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-X (E) & 0.8939 & 0.4762 & 0.4639 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-PHISH (E) & 0.9549 & 0.7294 & 0.2206 \\
+D4v & no near-duplicate \& no shared template & 951 & LightGBM (E) & 0.7588 & 0.5878 & 0.1258 \\
+D4v & no near-duplicate \& no shared template & 951 & Sanity: url\_len only (LR) & 0.9569 & 0.0000 & 0.0000 \\
+D4v & no near-duplicate \& no shared template & 951 & Sanity: has\_path only (LR) & 0.1953 & -0.6657 & 1.0000 \\
+D4v & no near-duplicate \& no shared template & 951 & Sanity: url\_len + path depth (LR) & 0.5093 & 0.3468 & 0.0021 \\
+D4v & no near-duplicate \& no shared template & 951 & LightGBM (P) + hashed char n-grams & 0.8794 & 0.3571 & 0.6082 \\
+D4v & no near-duplicate \& no shared template & 951 & URLNet-style char+word CNN & 0.9409 & 0.7878 & 0.0639 \\
+D4v & no near-duplicate \& no shared template & 951 & BiGRU character model & 0.9684 & 0.8284 & 0.0598 \\
+D4v & no near-duplicate \& no shared template & 951 & Pretrained google/canine-s (fine-tuned) & 0.9364 & 0.6291 & 0.2948 \\
+D4v & no near-duplicate \& no shared template & 951 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9732 & 0.8361 & 0.0887 \\
+D4v & no near-duplicate \& no shared template & 951 & Simple stack (P): LightGBM + char-LR, no neural & 0.9197 & 0.5206 & 0.4474 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-X2 stack (P) & 0.9366 & 0.5697 & 0.3959 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-PHISH v2 (P) & 0.9407 & 0.6652 & 0.2763 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-PHISH v2 (E) & 0.9407 & 0.4672 & 0.5567 \\
+D4v & no near-duplicate \& no shared template & 951 & BiGRU tuned & 0.9651 & 0.8400 & 0.0433 \\
+D4v & no near-duplicate \& no shared template & 951 & URLNet tuned & 0.9453 & 0.7285 & 0.1835 \\
+D4v & no near-duplicate \& no shared template & 951 & LightGBM (P) tuned & 0.8699 & 0.4091 & 0.5340 \\
+D4v & no near-duplicate \& no shared template & 951 & LightGBM + n-grams tuned & 0.8734 & 0.3205 & 0.6412 \\
+D4v & no near-duplicate \& no shared template & 951 & char n-gram LR tuned & 0.9068 & 0.6846 & 0.1918 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-X2 stack (E) & 0.9296 & 0.4686 & 0.5258 \\
+D4v & no near-duplicate \& no shared template & 951 & Baseline stack (P): tuned baselines, no ADAPT & 0.9387 & 0.6646 & 0.2660 \\
+D4v & no near-duplicate \& no shared template & 951 & ADAPT-PHISH v2-KD (P) & 0.9496 & 0.6128 & 0.3608 \\
+D4v & no near-duplicate \& no shared template & 951 & BiGRU-KD tuned & 0.9707 & 0.8318 & 0.0887 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-X (P) & 0.9272 & 0.5710 & 0.4045 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-PHISH (P) & 0.9533 & 0.8016 & 0.0453 \\
+D4v & … ∩ unseen domain & 673 & LightGBM (P) & 0.8651 & 0.5072 & 0.4078 \\
+D4v & … ∩ unseen domain & 673 & char-LR & 0.8517 & 0.4881 & 0.3948 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-X (E) & 0.8751 & 0.3783 & 0.5599 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-PHISH (E) & 0.9533 & 0.6938 & 0.2718 \\
+D4v & … ∩ unseen domain & 673 & LightGBM (E) & 0.7770 & 0.5770 & 0.1456 \\
+D4v & … ∩ unseen domain & 673 & Sanity: url\_len only (LR) & 0.9541 & 0.0000 & 0.0000 \\
+D4v & … ∩ unseen domain & 673 & Sanity: has\_path only (LR) & 0.1827 & -0.6661 & 1.0000 \\
+D4v & … ∩ unseen domain & 673 & Sanity: url\_len + path depth (LR) & 0.4945 & 0.3118 & 0.0032 \\
+D4v & … ∩ unseen domain & 673 & LightGBM (P) + hashed char n-grams & 0.8639 & 0.3489 & 0.6214 \\
+D4v & … ∩ unseen domain & 673 & URLNet-style char+word CNN & 0.9131 & 0.7366 & 0.0777 \\
+D4v & … ∩ unseen domain & 673 & BiGRU character model & 0.9563 & 0.7807 & 0.0906 \\
+D4v & … ∩ unseen domain & 673 & Pretrained google/canine-s (fine-tuned) & 0.9174 & 0.5620 & 0.3689 \\
+D4v & … ∩ unseen domain & 673 & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.9619 & 0.7905 & 0.1327 \\
+D4v & … ∩ unseen domain & 673 & Simple stack (P): LightGBM + char-LR, no neural & 0.8985 & 0.4520 & 0.5210 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-X2 stack (P) & 0.9222 & 0.4963 & 0.4790 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-PHISH v2 (P) & 0.9393 & 0.6312 & 0.3333 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-PHISH v2 (E) & 0.9393 & 0.4320 & 0.6278 \\
+D4v & … ∩ unseen domain & 673 & BiGRU tuned & 0.9511 & 0.7893 & 0.0680 \\
+D4v & … ∩ unseen domain & 673 & URLNet tuned & 0.9190 & 0.6593 & 0.2362 \\
+D4v & … ∩ unseen domain & 673 & LightGBM (P) tuned & 0.8593 & 0.4075 & 0.5405 \\
+D4v & … ∩ unseen domain & 673 & LightGBM + n-grams tuned & 0.8556 & 0.2937 & 0.6699 \\
+D4v & … ∩ unseen domain & 673 & char n-gram LR tuned & 0.8768 & 0.6133 & 0.2362 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-X2 stack (E) & 0.9245 & 0.4064 & 0.6149 \\
+D4v & … ∩ unseen domain & 673 & Baseline stack (P): tuned baselines, no ADAPT & 0.9214 & 0.5992 & 0.3301 \\
+D4v & … ∩ unseen domain & 673 & ADAPT-PHISH v2-KD (P) & 0.9433 & 0.5722 & 0.4304 \\
+D4v & … ∩ unseen domain & 673 & BiGRU-KD tuned & 0.9576 & 0.7844 & 0.1230 \\
+\bottomrule
+\end{tabular}
+\end{table*}

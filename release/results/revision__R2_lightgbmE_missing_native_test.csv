@@ -1,0 +1,3 @@
+VALIDATION corpus,"LightGBM (E), natives present (mean)","LightGBM (E), natives present (std)","LightGBM (E), natives set to missing (as on external corpora) (mean)","LightGBM (E), natives set to missing (as on external corpora) (std)",LightGBM (P) (never sees natives) (mean),LightGBM (P) (never sees natives) (std)
+Mendeley,0.9787167743345467,0.0002679406566048392,0.8862654324614155,0.004724216622929813,0.9186595603515872,0.0017583037371692086
+PhreshPhish,0.9912755848400584,0.0002893771648919603,0.9356692916756195,0.0024128961046030782,0.9593859664062153,0.0009290169452469334

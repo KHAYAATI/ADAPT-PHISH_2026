@@ -1,0 +1,41 @@
+dataset,native tokens in corpus,comparison,max |logit_E − logit_P|,ROC-AUC P,ROC-AUC E,T_P,T_E
+PhreshTest,True,ADAPT-PHISH seed 42: forward pass E vs P,8.15625,0.9732250246044825,0.9871917969601063,1.4150495374531271,1.3048572006006274
+PhreshTest,True,ADAPT-PHISH seed 123: forward pass E vs P,7.625,0.9753299077468994,0.9904243041596752,1.607476844856051,1.3665329346888244
+PhreshTest,True,ADAPT-PHISH seed 2024: forward pass E vs P,7.09375,0.9643783593419357,0.9882307172920137,1.2619354761348025,1.0387225547967458
+PhreshTest,True,ADAPT-PHISH seed 3407: forward pass E vs P,9.734375,0.9775023801388006,0.9907353573213329,1.821684598373226,1.7100041797539733
+PhreshTest,True,ADAPT-PHISH seed 777: forward pass E vs P,9.671875,0.9761448968485623,0.9909528320607738,1.5000019664265054,1.3573934540392152
+PhreshTest,True,"v13 seed ensemble (mean RAW logit, one temperature)",8.19375,0.9798469651708299,0.9922370824200293,1.3331719569395872,1.2087029544445846
+PhreshTest,True,"v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy",5.799773838158472,0.9795766535088708,0.9921489810156243,,
+PhreshTest,True,"LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 70 native columns entirely missing here)",,0.9751652718729468,0.9967938776914782,,
+PhreshTest,True,"ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989}",,0.9953949773954818,,,
+PhreshTest,True,"ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425}",,,0.9987016916018859,,
+Crawling2024,False,ADAPT-PHISH seed 42: forward pass E vs P,0.0,0.8970883014602944,0.8970883014602944,1.4150495374531271,1.3048572006006274
+Crawling2024,False,ADAPT-PHISH seed 123: forward pass E vs P,0.0,0.8825456804681765,0.8825456804681765,1.607476844856051,1.3665329346888244
+Crawling2024,False,ADAPT-PHISH seed 2024: forward pass E vs P,0.0,0.8871959424627883,0.8871959424627883,1.2619354761348025,1.0387225547967458
+Crawling2024,False,ADAPT-PHISH seed 3407: forward pass E vs P,0.0,0.8748372527250707,0.8748372527250707,1.821684598373226,1.7100041797539733
+Crawling2024,False,ADAPT-PHISH seed 777: forward pass E vs P,0.0,0.8814861321410128,0.8814861321410128,1.5000019664265054,1.3573934540392152
+Crawling2024,False,"v13 seed ensemble (mean RAW logit, one temperature)",0.0,0.8991635509568505,0.8991635509568505,1.3331719569395872,1.2087029544445846
+Crawling2024,False,"v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy",0.6735444242712907,0.9000722272224435,0.9001533971483453,,
+Crawling2024,False,"LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here)",,0.8551700617844527,0.8385272082970305,,
+Crawling2024,False,"ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989}",,0.9205167309102691,,,
+Crawling2024,False,"ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425}",,,0.9114229512105281,,
+CompPhish,False,ADAPT-PHISH seed 42: forward pass E vs P,0.0,0.9078873730612367,0.9078873730612367,1.4150495374531271,1.3048572006006274
+CompPhish,False,ADAPT-PHISH seed 123: forward pass E vs P,0.0,0.9171036531709557,0.9171036531709557,1.607476844856051,1.3665329346888244
+CompPhish,False,ADAPT-PHISH seed 2024: forward pass E vs P,0.0,0.9322182643223889,0.9322182643223889,1.2619354761348025,1.0387225547967458
+CompPhish,False,ADAPT-PHISH seed 3407: forward pass E vs P,0.0,0.9153133574707952,0.9153133574707952,1.821684598373226,1.7100041797539733
+CompPhish,False,ADAPT-PHISH seed 777: forward pass E vs P,0.0,0.9209064410988814,0.9209064410988814,1.5000019664265054,1.3573934540392152
+CompPhish,False,"v13 seed ensemble (mean RAW logit, one temperature)",0.0,0.9300575946401647,0.9300575946401647,1.3331719569395872,1.2087029544445846
+CompPhish,False,"v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy",0.6687796989822203,0.9307837152466752,0.9311136434240276,,
+CompPhish,False,"LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here)",,0.8980477353367705,0.8992508703277782,,
+CompPhish,False,"ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989}",,0.9531432334075847,,,
+CompPhish,False,"ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425}",,,0.9495104014443472,,
+D4v,False,ADAPT-PHISH seed 42: forward pass E vs P,0.0,0.9249533146591971,0.9249533146591971,1.4150495374531271,1.3048572006006274
+D4v,False,ADAPT-PHISH seed 123: forward pass E vs P,0.0,0.9355115502991321,0.9355115502991321,1.607476844856051,1.3665329346888244
+D4v,False,ADAPT-PHISH seed 2024: forward pass E vs P,0.0,0.9450993360307086,0.9450993360307086,1.2619354761348025,1.0387225547967458
+D4v,False,ADAPT-PHISH seed 3407: forward pass E vs P,0.0,0.9383342843310163,0.9383342843310163,1.821684598373226,1.7100041797539733
+D4v,False,ADAPT-PHISH seed 777: forward pass E vs P,0.0,0.9278927620430888,0.9278927620430888,1.5000019664265054,1.3573934540392152
+D4v,False,"v13 seed ensemble (mean RAW logit, one temperature)",0.0,0.9550999412110522,0.9550999412110522,1.3331719569395872,1.2087029544445846
+D4v,False,"v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy",0.6462815541409084,0.9559255801085865,0.9560855206280042,,
+D4v,False,"LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here)",,0.8707313172182454,0.7602599681848048,,
+D4v,False,"ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989}",,0.9432773109243697,,,
+D4v,False,"ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights {'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425}",,,0.895597745270948,,

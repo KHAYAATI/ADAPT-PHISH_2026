@@ -1,0 +1,48 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Number of (test set × metric × threshold rule) cells in which A is better than B (point estimates) and AUC cells significant after Holm.}
+\label{tab:rev_R15_v14_dimension_counts}
+\begin{tabular}{llrrrrrr}
+\toprule
+A & B & dimensions & A better & A worse & tie & AUC cells significantly better (Holm) & AUC cells significantly worse (Holm) \\
+\midrule
+ADAPT-X2 stack (P) & ADAPT-PHISH v2 (P) & 42 & 25 & 16 & 1 & 2 & 2 \\
+ADAPT-X2 stack (P) & BiGRU tuned & 42 & 15 & 25 & 2 & 2 & 2 \\
+ADAPT-X2 stack (P) & URLNet tuned & 42 & 27 & 13 & 2 & 4 & 0 \\
+ADAPT-X2 stack (P) & LightGBM (P) tuned & 42 & 38 & 4 & 0 & 7 & 0 \\
+ADAPT-X2 stack (P) & LightGBM + n-grams tuned & 42 & 30 & 12 & 0 & 8 & 0 \\
+ADAPT-X2 stack (P) & char n-gram LR tuned & 42 & 31 & 11 & 0 & 6 & 0 \\
+ADAPT-X2 stack (P) & Baseline stack (P): tuned baselines, no ADAPT & 42 & 14 & 23 & 5 & 2 & 2 \\
+ADAPT-X2 stack (P) & ADAPT-PHISH v2-KD (P) & 42 & 18 & 22 & 2 & 2 & 2 \\
+ADAPT-X2 stack (P) & BiGRU-KD tuned & 42 & 20 & 19 & 3 & 2 & 2 \\
+ADAPT-X2 stack (P) & ADAPT-X (P) & 42 & 16 & 26 & 0 & 0 & 4 \\
+ADAPT-X2 stack (P) & ADAPT-PHISH (P) & 42 & 25 & 16 & 1 & 4 & 1 \\
+ADAPT-X2 stack (P) & LightGBM (P) & 42 & 38 & 4 & 0 & 7 & 0 \\
+ADAPT-X2 stack (P) & char-LR & 42 & 18 & 23 & 1 & 4 & 2 \\
+ADAPT-X2 stack (P) & LightGBM (P) + hashed char n-grams & 42 & 27 & 15 & 0 & 6 & 2 \\
+ADAPT-X2 stack (P) & URLNet-style char+word CNN & 42 & 22 & 16 & 4 & 4 & 0 \\
+ADAPT-X2 stack (P) & BiGRU character model & 42 & 16 & 22 & 4 & 1 & 2 \\
+ADAPT-X2 stack (P) & Pretrained google/canine-s (fine-tuned) & 42 & 18 & 24 & 0 & 2 & 1 \\
+ADAPT-X2 stack (P) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 42 & 22 & 19 & 1 & 2 & 2 \\
+ADAPT-X2 stack (P) & Simple stack (P): LightGBM + char-LR, no neural & 42 & 24 & 18 & 0 & 1 & 4 \\
+ADAPT-PHISH v2 (P) & BiGRU tuned & 42 & 14 & 24 & 4 & 1 & 1 \\
+ADAPT-PHISH v2 (P) & URLNet tuned & 42 & 22 & 19 & 1 & 2 & 2 \\
+ADAPT-PHISH v2 (P) & BiGRU character model & 42 & 16 & 25 & 1 & 1 & 3 \\
+ADAPT-PHISH v2 (P) & URLNet-style char+word CNN & 42 & 19 & 22 & 1 & 2 & 0 \\
+ADAPT-PHISH v2 (P) & ADAPT-PHISH (P) & 42 & 24 & 16 & 2 & 4 & 0 \\
+ADAPT-PHISH v2 (P) & LightGBM + n-grams tuned & 42 & 27 & 15 & 0 & 4 & 2 \\
+ADAPT-PHISH v2 (P) & char n-gram LR tuned & 42 & 24 & 18 & 0 & 4 & 2 \\
+ADAPT-PHISH v2 (P) & Pretrained google/canine-s (fine-tuned) & 42 & 15 & 27 & 0 & 1 & 2 \\
+ADAPT-PHISH v2 (P) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 42 & 14 & 25 & 3 & 1 & 4 \\
+ADAPT-PHISH v2-KD (P) & BiGRU-KD tuned & 42 & 14 & 26 & 2 & 2 & 4 \\
+ADAPT-PHISH v2-KD (P) & BiGRU tuned & 42 & 21 & 19 & 2 & 3 & 0 \\
+ADAPT-PHISH v2-KD (P) & URLNet tuned & 42 & 28 & 12 & 2 & 2 & 0 \\
+ADAPT-PHISH v2-KD (P) & LightGBM + n-grams tuned & 42 & 30 & 12 & 0 & 6 & 2 \\
+ADAPT-PHISH v2-KD (P) & char n-gram LR tuned & 42 & 30 & 12 & 0 & 6 & 0 \\
+ADAPT-PHISH v2-KD (P) & ADAPT-PHISH v2 (P) & 42 & 32 & 8 & 2 & 2 & 0 \\
+ADAPT-PHISH v2-KD (P) & Pretrained google/canine-s (fine-tuned) & 42 & 19 & 23 & 0 & 2 & 2 \\
+ADAPT-PHISH v2-KD (P) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 42 & 17 & 23 & 2 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table*}

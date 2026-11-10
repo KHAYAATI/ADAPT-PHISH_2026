@@ -1,0 +1,11 @@
+{
+  "Mendeley": "DEVELOPMENT (TRAIN/VALIDATION)",
+  "PhreshTrain": "DEVELOPMENT (TRAIN/VALIDATION)",
+  "PhreshTest": "IID TEST (+ unseen-domain subset)",
+  "Crawling2024": "DOMAIN-SHIFT TEST",
+  "CompPhish": "EXTERNAL TEST (70 %) + Track-A adaptation pool (30 %)",
+  "D4v": "EXTERNAL TEST (small sample)",
+  "PhishTank": "TEMPORAL STREAM ONLY (purged of development URLs; never trained on offline; PhishTankNovel = primary)",
+  "WebPagePhishing": "EXCLUDED (duplicate of Mendeley, audit only)",
+  "Aljofey2022": "EXCLUDED (no URL)"
+}

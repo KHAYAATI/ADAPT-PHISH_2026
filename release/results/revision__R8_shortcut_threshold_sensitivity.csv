@@ -1,0 +1,17 @@
+strong |AUC−0.5| >,inversion hi / lo,sign inversions,strong univariate (not inverted),is the a-priori setting
+0.2,0.55 / 0.45,"url::longest_path_token, url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::path_len, url::url_len",5,False
+0.2,0.60 / 0.40,"url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::url_len",7,False
+0.2,0.65 / 0.35,url::url_len,11,False
+0.2,0.70 / 0.30,,11,False
+0.25,0.55 / 0.45,"url::longest_path_token, url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::path_len, url::url_len",1,False
+0.25,0.60 / 0.40,"url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::url_len",2,False
+0.25,0.65 / 0.35,url::url_len,5,False
+0.25,0.70 / 0.30,,5,False
+0.3,0.55 / 0.45,"url::longest_path_token, url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::path_len, url::url_len",1,False
+0.3,0.60 / 0.40,"url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::url_len",1,True
+0.3,0.65 / 0.35,url::url_len,1,False
+0.3,0.70 / 0.30,,1,False
+0.35,0.55 / 0.45,"url::longest_path_token, url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::path_len, url::url_len",0,False
+0.35,0.60 / 0.40,"url::n_letters, url::n_slashes, url::n_special, url::path_depth, url::url_len",0,False
+0.35,0.65 / 0.35,url::url_len,0,False
+0.35,0.70 / 0.30,,0,False

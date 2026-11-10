@@ -1,0 +1,612 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Operating point re-selected on k labelled legitimate URLs of the target corpus (split-conformal quantile; domain-disjoint evaluation rows).}
+\label{tab:rev_R6_target_domain_recalibration}
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & model & target FPR & k & threshold & FPR\_mean & FPR\_p97\_5 & TPR\_mean & share of reps with FPR $\leq$ target \\
+\midrule
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0055 & 0.0056 & 0.1999 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0055 & 0.0056 & 0.1998 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0055 & 0.0057 & 0.1998 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0055 & 0.0061 & 0.1996 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0054 & 0.0063 & 0.1999 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0013 & 0.0047 & 0.0649 & 0.6000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0054 & 0.0074 & 0.2007 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0014 & 0.0056 & 0.0693 & 0.4600 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0227 & 0.0229 & 0.5610 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0226 & 0.0231 & 0.5608 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0118 & 0.0352 & 0.3292 & 0.5600 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0226 & 0.0233 & 0.5611 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0105 & 0.0241 & 0.3329 & 0.5600 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0225 & 0.0240 & 0.5620 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0107 & 0.0236 & 0.3538 & 0.4800 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0226 & 0.0251 & 0.5624 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0100 & 0.0207 & 0.3554 & 0.5600 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0229 & 0.0276 & 0.5657 & 0.0000 \\
+CompPhish & ADAPT-PHISH (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0102 & 0.0203 & 0.3694 & 0.5800 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0105 & 0.0106 & 0.4822 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0104 & 0.0107 & 0.4822 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0104 & 0.0109 & 0.4825 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0105 & 0.0114 & 0.4835 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0103 & 0.0120 & 0.4847 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0014 & 0.0060 & 0.1089 & 0.5600 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0104 & 0.0125 & 0.4880 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0015 & 0.0045 & 0.1077 & 0.5200 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0198 & 0.0200 & 0.6547 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0197 & 0.0202 & 0.6547 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0108 & 0.0335 & 0.4124 & 0.5400 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0198 & 0.0204 & 0.6549 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0097 & 0.0234 & 0.4139 & 0.5800 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0199 & 0.0215 & 0.6562 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0109 & 0.0260 & 0.4510 & 0.4800 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0196 & 0.0216 & 0.6573 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0100 & 0.0182 & 0.4568 & 0.6000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0196 & 0.0236 & 0.6614 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2 (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0097 & 0.0162 & 0.4683 & 0.6000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0084 & 0.0085 & 0.4668 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0083 & 0.0085 & 0.4670 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0083 & 0.0087 & 0.4675 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0084 & 0.0090 & 0.4689 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0084 & 0.0096 & 0.4707 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0013 & 0.0054 & 0.1352 & 0.6800 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0082 & 0.0103 & 0.4742 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0015 & 0.0039 & 0.1351 & 0.4600 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0201 & 0.0204 & 0.6757 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0201 & 0.0206 & 0.6757 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0105 & 0.0320 & 0.4373 & 0.6200 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0201 & 0.0207 & 0.6759 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0094 & 0.0205 & 0.4434 & 0.5400 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0201 & 0.0216 & 0.6773 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0107 & 0.0243 & 0.4857 & 0.5000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0201 & 0.0223 & 0.6785 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0101 & 0.0194 & 0.4938 & 0.5000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0203 & 0.0253 & 0.6826 & 0.0000 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0098 & 0.0176 & 0.5022 & 0.5600 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0009 & 0.0010 & 0.1083 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0009 & 0.0010 & 0.1084 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0009 & 0.0010 & 0.1086 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0010 & 0.0011 & 0.1090 & 0.3800 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0009 & 0.0012 & 0.1095 & 0.6200 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0014 & 0.0078 & 0.1187 & 0.6200 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0011 & 0.0015 & 0.1105 & 0.4600 \\
+CompPhish & ADAPT-X (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0015 & 0.0046 & 0.1341 & 0.4600 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0227 & 0.0229 & 0.6598 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0226 & 0.0231 & 0.6598 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0108 & 0.0406 & 0.4165 & 0.6200 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0226 & 0.0233 & 0.6599 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0108 & 0.0317 & 0.4631 & 0.5200 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0225 & 0.0240 & 0.6612 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0104 & 0.0229 & 0.5006 & 0.5200 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0225 & 0.0247 & 0.6621 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0095 & 0.0178 & 0.5054 & 0.5800 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0230 & 0.0273 & 0.6657 & 0.0000 \\
+CompPhish & ADAPT-X (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0101 & 0.0185 & 0.5204 & 0.6200 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0031 & 0.0031 & 0.2340 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0030 & 0.0031 & 0.2342 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0030 & 0.0032 & 0.2345 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0031 & 0.0034 & 0.2354 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0030 & 0.0038 & 0.2365 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0015 & 0.0058 & 0.0835 & 0.5600 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0031 & 0.0046 & 0.2387 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0019 & 0.0066 & 0.1035 & 0.4000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0196 & 0.0198 & 0.6774 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0195 & 0.0200 & 0.6774 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0102 & 0.0383 & 0.3912 & 0.6600 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0195 & 0.0202 & 0.6775 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0106 & 0.0268 & 0.4207 & 0.5000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0196 & 0.0210 & 0.6787 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0109 & 0.0251 & 0.4496 & 0.5200 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0194 & 0.0217 & 0.6800 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0098 & 0.0173 & 0.4374 & 0.5400 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0195 & 0.0240 & 0.6834 & 0.0000 \\
+CompPhish & ADAPT-X2 stack (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0099 & 0.0190 & 0.4409 & 0.5800 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & frozen VALIDATION threshold & 0.0031 & 0.0031 & 0.2496 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & frozen VALIDATION threshold & 0.0030 & 0.0031 & 0.2498 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & frozen VALIDATION threshold & 0.0030 & 0.0032 & 0.2501 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 500 & frozen VALIDATION threshold & 0.0031 & 0.0034 & 0.2511 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0030 & 0.0038 & 0.2522 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0015 & 0.0066 & 0.0827 & 0.5600 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0031 & 0.0046 & 0.2544 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0019 & 0.0065 & 0.1015 & 0.4000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & frozen VALIDATION threshold & 0.0196 & 0.0198 & 0.6803 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & frozen VALIDATION threshold & 0.0195 & 0.0200 & 0.6803 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0101 & 0.0415 & 0.3876 & 0.6600 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & frozen VALIDATION threshold & 0.0195 & 0.0202 & 0.6805 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0107 & 0.0306 & 0.4142 & 0.5000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 500 & frozen VALIDATION threshold & 0.0196 & 0.0210 & 0.6817 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0112 & 0.0253 & 0.4542 & 0.5200 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0194 & 0.0215 & 0.6829 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0097 & 0.0183 & 0.4338 & 0.5600 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0195 & 0.0237 & 0.6864 & 0.0000 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0100 & 0.0193 & 0.4383 & 0.5800 \\
+CompPhish & BiGRU tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0082 & 0.0083 & 0.4065 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0082 & 0.0083 & 0.4068 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0082 & 0.0085 & 0.4073 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 500 & frozen VALIDATION threshold & 0.0081 & 0.0090 & 0.4088 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0079 & 0.0092 & 0.4105 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0011 & 0.0041 & 0.0620 & 0.6400 \\
+CompPhish & BiGRU tuned & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0081 & 0.0098 & 0.4140 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0014 & 0.0052 & 0.0707 & 0.4400 \\
+CompPhish & BiGRU tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.0206 & 0.0208 & 0.6644 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.0205 & 0.0210 & 0.6645 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0120 & 0.0456 & 0.4054 & 0.4800 \\
+CompPhish & BiGRU tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.0205 & 0.0213 & 0.6647 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0103 & 0.0241 & 0.4075 & 0.4800 \\
+CompPhish & BiGRU tuned & 0.0100 & 500 & frozen VALIDATION threshold & 0.0205 & 0.0219 & 0.6661 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0112 & 0.0247 & 0.4601 & 0.4600 \\
+CompPhish & BiGRU tuned & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0204 & 0.0223 & 0.6674 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0092 & 0.0173 & 0.4331 & 0.6200 \\
+CompPhish & BiGRU tuned & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0204 & 0.0245 & 0.6712 & 0.0000 \\
+CompPhish & BiGRU tuned & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0097 & 0.0152 & 0.4647 & 0.5600 \\
+CompPhish & LightGBM (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0027 & 0.0027 & 0.1217 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0026 & 0.0027 & 0.1218 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0027 & 0.0028 & 0.1218 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0026 & 0.0029 & 0.1216 & 0.0200 \\
+CompPhish & LightGBM (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0027 & 0.0033 & 0.1220 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0016 & 0.0051 & 0.0609 & 0.6000 \\
+CompPhish & LightGBM (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0027 & 0.0042 & 0.1221 & 0.0400 \\
+CompPhish & LightGBM (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0014 & 0.0065 & 0.0435 & 0.6000 \\
+CompPhish & LightGBM (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0237 & 0.0240 & 0.4397 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0236 & 0.0242 & 0.4395 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0106 & 0.0342 & 0.2442 & 0.5000 \\
+CompPhish & LightGBM (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0237 & 0.0245 & 0.4396 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0108 & 0.0331 & 0.2665 & 0.5000 \\
+CompPhish & LightGBM (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0237 & 0.0252 & 0.4399 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0109 & 0.0235 & 0.2776 & 0.4600 \\
+CompPhish & LightGBM (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0236 & 0.0261 & 0.4401 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0093 & 0.0176 & 0.2694 & 0.5800 \\
+CompPhish & LightGBM (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0238 & 0.0276 & 0.4425 & 0.0000 \\
+CompPhish & LightGBM (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0101 & 0.0197 & 0.2840 & 0.5800 \\
+CompPhish & URLNet tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0009 & 0.0010 & 0.2211 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0010 & 0.0010 & 0.2212 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0009 & 0.0010 & 0.2214 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 500 & frozen VALIDATION threshold & 0.0009 & 0.0011 & 0.2222 & 0.4400 \\
+CompPhish & URLNet tuned & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0010 & 0.0012 & 0.2232 & 0.6200 \\
+CompPhish & URLNet tuned & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0010 & 0.0029 & 0.2194 & 0.6200 \\
+CompPhish & URLNet tuned & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0010 & 0.0015 & 0.2246 & 0.6200 \\
+CompPhish & URLNet tuned & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0012 & 0.0039 & 0.2301 & 0.6200 \\
+CompPhish & URLNet tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.0110 & 0.0111 & 0.5410 & 0.0000 \\
+CompPhish & URLNet tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & URLNet tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.0110 & 0.0113 & 0.5412 & 0.0200 \\
+CompPhish & URLNet tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0090 & 0.0253 & 0.4496 & 0.6200 \\
+CompPhish & URLNet tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.0110 & 0.0115 & 0.5413 & 0.0600 \\
+CompPhish & URLNet tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0107 & 0.0302 & 0.4973 & 0.5200 \\
+CompPhish & URLNet tuned & 0.0100 & 500 & frozen VALIDATION threshold & 0.0110 & 0.0118 & 0.5424 & 0.0600 \\
+CompPhish & URLNet tuned & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0110 & 0.0225 & 0.5241 & 0.4600 \\
+CompPhish & URLNet tuned & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0111 & 0.0126 & 0.5439 & 0.0400 \\
+CompPhish & URLNet tuned & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0106 & 0.0178 & 0.5261 & 0.5000 \\
+CompPhish & URLNet tuned & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0112 & 0.0138 & 0.5465 & 0.1600 \\
+CompPhish & URLNet tuned & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0109 & 0.0175 & 0.5320 & 0.4400 \\
+CompPhish & char-LR & 0.0010 & 50 & frozen VALIDATION threshold & 0.0017 & 0.0017 & 0.1874 & 0.0000 \\
+CompPhish & char-LR & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & char-LR & 0.0010 & 100 & frozen VALIDATION threshold & 0.0017 & 0.0017 & 0.1875 & 0.0000 \\
+CompPhish & char-LR & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & char-LR & 0.0010 & 200 & frozen VALIDATION threshold & 0.0017 & 0.0018 & 0.1878 & 0.0000 \\
+CompPhish & char-LR & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & char-LR & 0.0010 & 500 & frozen VALIDATION threshold & 0.0017 & 0.0019 & 0.1886 & 0.0000 \\
+CompPhish & char-LR & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & char-LR & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0017 & 0.0021 & 0.1894 & 0.0000 \\
+CompPhish & char-LR & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0040 & 0.1263 & 0.6600 \\
+CompPhish & char-LR & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0018 & 0.0025 & 0.1914 & 0.0800 \\
+CompPhish & char-LR & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0013 & 0.0036 & 0.1503 & 0.4400 \\
+CompPhish & char-LR & 0.0100 & 50 & frozen VALIDATION threshold & 0.0200 & 0.0202 & 0.5827 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+CompPhish & char-LR & 0.0100 & 100 & frozen VALIDATION threshold & 0.0199 & 0.0204 & 0.5827 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0093 & 0.0350 & 0.4141 & 0.6400 \\
+CompPhish & char-LR & 0.0100 & 200 & frozen VALIDATION threshold & 0.0199 & 0.0206 & 0.5826 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0096 & 0.0284 & 0.4595 & 0.6600 \\
+CompPhish & char-LR & 0.0100 & 500 & frozen VALIDATION threshold & 0.0199 & 0.0214 & 0.5835 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0104 & 0.0239 & 0.5150 & 0.6200 \\
+CompPhish & char-LR & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0199 & 0.0216 & 0.5842 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0101 & 0.0161 & 0.5183 & 0.4600 \\
+CompPhish & char-LR & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0203 & 0.0243 & 0.5869 & 0.0000 \\
+CompPhish & char-LR & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0107 & 0.0189 & 0.5255 & 0.5400 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0164 & 0.0165 & 0.3198 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0164 & 0.0165 & 0.3199 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0164 & 0.0166 & 0.3199 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0164 & 0.0166 & 0.3188 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0164 & 0.0167 & 0.3191 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0008 & 0.0023 & 0.0053 & 0.6200 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0165 & 0.0169 & 0.3186 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0009 & 0.0027 & 0.0062 & 0.6800 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0715 & 0.0716 & 0.6675 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0715 & 0.0717 & 0.6675 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0093 & 0.0372 & 0.1466 & 0.6400 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0716 & 0.0718 & 0.6675 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0121 & 0.0296 & 0.2102 & 0.5000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0715 & 0.0719 & 0.6671 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0103 & 0.0179 & 0.1906 & 0.4600 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0715 & 0.0721 & 0.6671 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0093 & 0.0144 & 0.1740 & 0.6200 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0716 & 0.0727 & 0.6670 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0106 & 0.0162 & 0.2016 & 0.4200 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0412 & 0.0413 & 0.5092 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0412 & 0.0414 & 0.5092 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0412 & 0.0414 & 0.5092 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0412 & 0.0416 & 0.5085 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0412 & 0.0416 & 0.5087 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0035 & 0.0311 & 0.7000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0412 & 0.0418 & 0.5085 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0009 & 0.0020 & 0.0320 & 0.6200 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0885 & 0.0886 & 0.6981 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0885 & 0.0887 & 0.6981 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0094 & 0.0401 & 0.1864 & 0.6400 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0885 & 0.0887 & 0.6981 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0112 & 0.0329 & 0.2314 & 0.4800 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0884 & 0.0888 & 0.6976 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0103 & 0.0207 & 0.2263 & 0.5400 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0884 & 0.0893 & 0.6977 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0095 & 0.0157 & 0.2203 & 0.5400 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0886 & 0.0895 & 0.6976 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0100 & 0.0149 & 0.2313 & 0.5800 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0455 & 0.0455 & 0.4992 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0455 & 0.0456 & 0.4993 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0455 & 0.0457 & 0.4993 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0454 & 0.0458 & 0.4984 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0454 & 0.0459 & 0.4987 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0028 & 0.0250 & 0.6200 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0455 & 0.0461 & 0.4983 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0011 & 0.0031 & 0.0280 & 0.5600 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0941 & 0.0943 & 0.7202 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0942 & 0.0944 & 0.7203 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0088 & 0.0318 & 0.1427 & 0.6800 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0942 & 0.0945 & 0.7203 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0111 & 0.0231 & 0.1861 & 0.4600 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0941 & 0.0945 & 0.7195 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0100 & 0.0201 & 0.1730 & 0.6000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0942 & 0.0950 & 0.7197 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0093 & 0.0146 & 0.1676 & 0.5800 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0943 & 0.0954 & 0.7195 & 0.0000 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0103 & 0.0168 & 0.1883 & 0.5000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0018 & 0.0018 & 0.1270 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0018 & 0.0018 & 0.1270 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0018 & 0.0018 & 0.1270 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0018 & 0.0019 & 0.1257 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0018 & 0.0019 & 0.1261 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0032 & 0.0574 & 0.6800 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0018 & 0.0020 & 0.1256 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0010 & 0.0032 & 0.0649 & 0.6200 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0782 & 0.0783 & 0.7679 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0782 & 0.0784 & 0.7679 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0088 & 0.0280 & 0.2359 & 0.6600 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0782 & 0.0784 & 0.7679 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0094 & 0.0263 & 0.2627 & 0.5200 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0781 & 0.0786 & 0.7674 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0110 & 0.0206 & 0.2907 & 0.5400 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0782 & 0.0788 & 0.7675 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0102 & 0.0204 & 0.2861 & 0.5000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0783 & 0.0792 & 0.7673 & 0.0000 \\
+Crawling2024 & ADAPT-X (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0102 & 0.0151 & 0.2868 & 0.5000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0261 & 0.0261 & 0.2329 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0261 & 0.0262 & 0.2329 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0261 & 0.0263 & 0.2329 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0261 & 0.0263 & 0.2319 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0261 & 0.0265 & 0.2323 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0036 & 0.0028 & 0.6600 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0261 & 0.0266 & 0.2318 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0010 & 0.0031 & 0.0030 & 0.6200 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0990 & 0.0992 & 0.7174 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0990 & 0.0993 & 0.7174 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0073 & 0.0323 & 0.0457 & 0.7400 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0991 & 0.0993 & 0.7174 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0115 & 0.0354 & 0.0811 & 0.5000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0990 & 0.0995 & 0.7168 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0108 & 0.0215 & 0.0706 & 0.5000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0990 & 0.0997 & 0.7169 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0101 & 0.0158 & 0.0592 & 0.5200 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0992 & 0.1003 & 0.7166 & 0.0000 \\
+Crawling2024 & ADAPT-X2 stack (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0101 & 0.0142 & 0.0583 & 0.4800 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & frozen VALIDATION threshold & 0.0310 & 0.0311 & 0.2398 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & frozen VALIDATION threshold & 0.0310 & 0.0312 & 0.2398 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & frozen VALIDATION threshold & 0.0311 & 0.0313 & 0.2398 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 500 & frozen VALIDATION threshold & 0.0311 & 0.0313 & 0.2389 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0310 & 0.0315 & 0.2392 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0034 & 0.0023 & 0.6600 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0311 & 0.0317 & 0.2388 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0010 & 0.0034 & 0.0025 & 0.6200 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & frozen VALIDATION threshold & 0.1049 & 0.1051 & 0.7154 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & frozen VALIDATION threshold & 0.1049 & 0.1052 & 0.7154 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0070 & 0.0311 & 0.0329 & 0.7400 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & frozen VALIDATION threshold & 0.1050 & 0.1052 & 0.7154 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0119 & 0.0330 & 0.0665 & 0.4800 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 500 & frozen VALIDATION threshold & 0.1049 & 0.1053 & 0.7148 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0110 & 0.0218 & 0.0530 & 0.5000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 1000 & frozen VALIDATION threshold & 0.1049 & 0.1055 & 0.7149 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0102 & 0.0150 & 0.0418 & 0.5000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 2000 & frozen VALIDATION threshold & 0.1051 & 0.1061 & 0.7146 & 0.0000 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0103 & 0.0143 & 0.0417 & 0.5000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0410 & 0.0411 & 0.4061 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0410 & 0.0411 & 0.4061 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0410 & 0.0412 & 0.4061 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 500 & frozen VALIDATION threshold & 0.0410 & 0.0412 & 0.4056 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0410 & 0.0415 & 0.4058 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0007 & 0.0020 & 0.0041 & 0.7200 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0411 & 0.0418 & 0.4055 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0012 & 0.0037 & 0.0066 & 0.6000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.1038 & 0.1039 & 0.7246 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.1038 & 0.1041 & 0.7246 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0085 & 0.0330 & 0.0755 & 0.7600 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.1038 & 0.1041 & 0.7246 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0113 & 0.0315 & 0.1095 & 0.5000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 500 & frozen VALIDATION threshold & 0.1038 & 0.1043 & 0.7241 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0093 & 0.0192 & 0.0850 & 0.6400 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 1000 & frozen VALIDATION threshold & 0.1038 & 0.1043 & 0.7242 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0093 & 0.0172 & 0.0833 & 0.6600 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 2000 & frozen VALIDATION threshold & 0.1039 & 0.1051 & 0.7240 & 0.0000 \\
+Crawling2024 & BiGRU tuned & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0098 & 0.0153 & 0.0890 & 0.6600 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0094 & 0.0094 & 0.1503 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0094 & 0.0094 & 0.1503 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0094 & 0.0094 & 0.1503 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 500 & frozen VALIDATION threshold & 0.0094 & 0.0095 & 0.1486 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0094 & 0.0095 & 0.1491 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0008 & 0.0028 & 0.0201 & 0.6800 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0094 & 0.0097 & 0.1484 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0010 & 0.0025 & 0.0240 & 0.5800 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0488 & 0.0489 & 0.4861 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0489 & 0.0490 & 0.4862 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0105 & 0.0562 & 0.1454 & 0.6800 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0489 & 0.0491 & 0.4862 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0125 & 0.0301 & 0.2047 & 0.4400 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 500 & frozen VALIDATION threshold & 0.0488 & 0.0493 & 0.4852 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0100 & 0.0192 & 0.1670 & 0.5600 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0488 & 0.0493 & 0.4854 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0097 & 0.0141 & 0.1585 & 0.4800 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0489 & 0.0500 & 0.4852 & 0.0000 \\
+Crawling2024 & LightGBM (P) & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0105 & 0.0166 & 0.1706 & 0.5200 \\
+Crawling2024 & URLNet tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0358 & 0.0359 & 0.2941 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0358 & 0.0359 & 0.2941 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0358 & 0.0360 & 0.2941 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 500 & frozen VALIDATION threshold & 0.0358 & 0.0361 & 0.2930 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0357 & 0.0362 & 0.2935 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0010 & 0.0031 & 0.0121 & 0.5600 \\
+Crawling2024 & URLNet tuned & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0359 & 0.0368 & 0.2932 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0008 & 0.0023 & 0.0104 & 0.6800 \\
+Crawling2024 & URLNet tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.1091 & 0.1093 & 0.6526 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.1091 & 0.1093 & 0.6526 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0107 & 0.0315 & 0.0879 & 0.6400 \\
+Crawling2024 & URLNet tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.1091 & 0.1094 & 0.6526 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0107 & 0.0232 & 0.0867 & 0.4200 \\
+Crawling2024 & URLNet tuned & 0.0100 & 500 & frozen VALIDATION threshold & 0.1091 & 0.1096 & 0.6518 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0105 & 0.0189 & 0.0840 & 0.5400 \\
+Crawling2024 & URLNet tuned & 0.0100 & 1000 & frozen VALIDATION threshold & 0.1091 & 0.1098 & 0.6521 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0098 & 0.0193 & 0.0789 & 0.7000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 2000 & frozen VALIDATION threshold & 0.1092 & 0.1102 & 0.6518 & 0.0000 \\
+Crawling2024 & URLNet tuned & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0102 & 0.0153 & 0.0808 & 0.4200 \\
+Crawling2024 & char-LR & 0.0010 & 50 & frozen VALIDATION threshold & 0.0133 & 0.0133 & 0.1685 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & char-LR & 0.0010 & 100 & frozen VALIDATION threshold & 0.0133 & 0.0133 & 0.1685 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & char-LR & 0.0010 & 200 & frozen VALIDATION threshold & 0.0133 & 0.0134 & 0.1685 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & char-LR & 0.0010 & 500 & frozen VALIDATION threshold & 0.0133 & 0.0135 & 0.1680 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 500 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & char-LR & 0.0010 & 1000 & frozen VALIDATION threshold & 0.0133 & 0.0136 & 0.1681 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 1000 & recalibrated on k target benign URLs & 0.0009 & 0.0027 & 0.0117 & 0.6200 \\
+Crawling2024 & char-LR & 0.0010 & 2000 & frozen VALIDATION threshold & 0.0133 & 0.0137 & 0.1679 & 0.0000 \\
+Crawling2024 & char-LR & 0.0010 & 2000 & recalibrated on k target benign URLs & 0.0009 & 0.0031 & 0.0104 & 0.7000 \\
+Crawling2024 & char-LR & 0.0100 & 50 & frozen VALIDATION threshold & 0.0878 & 0.0879 & 0.7201 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+Crawling2024 & char-LR & 0.0100 & 100 & frozen VALIDATION threshold & 0.0878 & 0.0880 & 0.7201 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0093 & 0.0377 & 0.1156 & 0.6600 \\
+Crawling2024 & char-LR & 0.0100 & 200 & frozen VALIDATION threshold & 0.0878 & 0.0880 & 0.7201 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0097 & 0.0255 & 0.1230 & 0.5600 \\
+Crawling2024 & char-LR & 0.0100 & 500 & frozen VALIDATION threshold & 0.0877 & 0.0883 & 0.7194 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 500 & recalibrated on k target benign URLs & 0.0098 & 0.0206 & 0.1283 & 0.5400 \\
+Crawling2024 & char-LR & 0.0100 & 1000 & frozen VALIDATION threshold & 0.0878 & 0.0883 & 0.7195 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 1000 & recalibrated on k target benign URLs & 0.0103 & 0.0174 & 0.1366 & 0.4400 \\
+Crawling2024 & char-LR & 0.0100 & 2000 & frozen VALIDATION threshold & 0.0878 & 0.0887 & 0.7193 & 0.0000 \\
+Crawling2024 & char-LR & 0.0100 & 2000 & recalibrated on k target benign URLs & 0.0108 & 0.0149 & 0.1419 & 0.4000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.2067 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.2073 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.2083 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0022 & 0.0023 & 0.6165 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0020 & 0.0026 & 0.6154 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0113 & 0.0351 & 0.6787 & 0.5000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0021 & 0.0035 & 0.6136 & 1.0000 \\
+D4v & ADAPT-PHISH (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0091 & 0.0334 & 0.6893 & 0.6400 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4447 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4448 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4469 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0021 & 0.0023 & 0.6257 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0020 & 0.0026 & 0.6251 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0094 & 0.0285 & 0.7220 & 0.6000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0016 & 0.0035 & 0.6240 & 1.0000 \\
+D4v & ADAPT-PHISH v2 (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0085 & 0.0353 & 0.7370 & 0.6200 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4347 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4361 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.4396 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6490 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6486 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0084 & 0.0359 & 0.7794 & 0.6000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6479 & 1.0000 \\
+D4v & ADAPT-PHISH v2-KD (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0091 & 0.0307 & 0.7998 & 0.6200 \\
+D4v & ADAPT-X (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0637 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0641 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0652 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0106 & 0.0115 & 0.6471 & 0.3600 \\
+D4v & ADAPT-X (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0097 & 0.0130 & 0.6457 & 0.4200 \\
+D4v & ADAPT-X (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0072 & 0.0227 & 0.4283 & 0.7200 \\
+D4v & ADAPT-X (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0099 & 0.0175 & 0.6425 & 0.3800 \\
+D4v & ADAPT-X (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0112 & 0.0474 & 0.5638 & 0.5200 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1356 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1363 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1382 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6202 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6190 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0082 & 0.0357 & 0.6973 & 0.7000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6160 & 1.0000 \\
+D4v & ADAPT-X2 stack (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0096 & 0.0315 & 0.7205 & 0.6000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1505 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1512 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1534 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6329 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6316 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0085 & 0.0423 & 0.6952 & 0.7000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6291 & 1.0000 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0095 & 0.0315 & 0.7124 & 0.6000 \\
+D4v & BiGRU tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.3740 & 1.0000 \\
+D4v & BiGRU tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & BiGRU tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.3749 & 1.0000 \\
+D4v & BiGRU tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & BiGRU tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.3784 & 1.0000 \\
+D4v & BiGRU tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & BiGRU tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6318 & 1.0000 \\
+D4v & BiGRU tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & BiGRU tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6314 & 1.0000 \\
+D4v & BiGRU tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0098 & 0.0305 & 0.8273 & 0.5800 \\
+D4v & BiGRU tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.6306 & 1.0000 \\
+D4v & BiGRU tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0075 & 0.0237 & 0.8213 & 0.6800 \\
+D4v & LightGBM (P) & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0880 & 1.0000 \\
+D4v & LightGBM (P) & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & LightGBM (P) & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0881 & 1.0000 \\
+D4v & LightGBM (P) & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & LightGBM (P) & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.0875 & 1.0000 \\
+D4v & LightGBM (P) & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & LightGBM (P) & 0.0100 & 50 & frozen VALIDATION threshold & 0.0022 & 0.0023 & 0.4798 & 1.0000 \\
+D4v & LightGBM (P) & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & LightGBM (P) & 0.0100 & 100 & frozen VALIDATION threshold & 0.0020 & 0.0026 & 0.4794 & 1.0000 \\
+D4v & LightGBM (P) & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0110 & 0.0529 & 0.4921 & 0.6200 \\
+D4v & LightGBM (P) & 0.0100 & 200 & frozen VALIDATION threshold & 0.0021 & 0.0035 & 0.4801 & 1.0000 \\
+D4v & LightGBM (P) & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0089 & 0.0369 & 0.5578 & 0.6600 \\
+D4v & URLNet tuned & 0.0010 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1041 & 1.0000 \\
+D4v & URLNet tuned & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & URLNet tuned & 0.0010 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1047 & 1.0000 \\
+D4v & URLNet tuned & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & URLNet tuned & 0.0010 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.1065 & 1.0000 \\
+D4v & URLNet tuned & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & URLNet tuned & 0.0100 & 50 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.5053 & 1.0000 \\
+D4v & URLNet tuned & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & URLNet tuned & 0.0100 & 100 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.5062 & 1.0000 \\
+D4v & URLNet tuned & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0082 & 0.0331 & 0.7050 & 0.6600 \\
+D4v & URLNet tuned & 0.0100 & 200 & frozen VALIDATION threshold & 0.0000 & 0.0000 & 0.5080 & 1.0000 \\
+D4v & URLNet tuned & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0080 & 0.0272 & 0.7504 & 0.6800 \\
+D4v & char-LR & 0.0010 & 50 & frozen VALIDATION threshold & 0.0104 & 0.0115 & 0.1095 & 0.0000 \\
+D4v & char-LR & 0.0010 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & char-LR & 0.0010 & 100 & frozen VALIDATION threshold & 0.0099 & 0.0130 & 0.1097 & 0.0000 \\
+D4v & char-LR & 0.0010 & 100 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & char-LR & 0.0010 & 200 & frozen VALIDATION threshold & 0.0097 & 0.0140 & 0.1103 & 0.0200 \\
+D4v & char-LR & 0.0010 & 200 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & char-LR & 0.0100 & 50 & frozen VALIDATION threshold & 0.0411 & 0.0459 & 0.5688 & 0.0000 \\
+D4v & char-LR & 0.0100 & 50 & recalibrated on k target benign URLs & 0.0000 & 0.0000 & 0.0000 & 1.0000 \\
+D4v & char-LR & 0.0100 & 100 & frozen VALIDATION threshold & 0.0418 & 0.0492 & 0.5671 & 0.0000 \\
+D4v & char-LR & 0.0100 & 100 & recalibrated on k target benign URLs & 0.0082 & 0.0371 & 0.0867 & 0.7000 \\
+D4v & char-LR & 0.0100 & 200 & frozen VALIDATION threshold & 0.0408 & 0.0524 & 0.5630 & 0.0000 \\
+D4v & char-LR & 0.0100 & 200 & recalibrated on k target benign URLs & 0.0106 & 0.0342 & 0.1098 & 0.4800 \\
+\bottomrule
+\end{tabular}
+\end{table*}

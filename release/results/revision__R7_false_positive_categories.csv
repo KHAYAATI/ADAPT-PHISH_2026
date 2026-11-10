@@ -1,0 +1,57 @@
+dataset,category,share of false positives,share of all benign rows,false positives
+Crawling2024,root URL (no path),0.08053691275167785,0.5085991118288252,1937
+Crawling2024,URL with a path,0.9194630872483222,0.49140088817117483,1937
+Crawling2024,IP host,0.0,0.0,1937
+Crawling2024,hosted on a platform (private public suffix),0.0015487867836861124,0.0012515139281388777,1937
+Crawling2024,≥ 3 subdomains,0.0010325245224574084,0.00012111425111021397,1937
+Crawling2024,has a query string,0.7413526071244192,0.13746467501009285,1937
+Crawling2024,contains a suspicious keyword,0.2916881775942179,0.13948324586192976,1937
+Crawling2024,risky TLD,0.029943211151264842,0.009123940250302786,1937
+Crawling2024,shortener host,0.0010325245224574084,0.00016148566814695197,1937
+Crawling2024,punycode host,0.005678884873515746,0.0005651998385143318,1937
+Crawling2024,short URL (TRAIN tercile 1),0.11925658234383067,0.5953572870407752,1937
+Crawling2024,medium URL (tercile 2),0.0986060918946825,0.14485264432781592,1937
+Crawling2024,long URL (tercile 3),0.7821373257614869,0.25979006863140897,1937
+Crawling2024,registrable domain unseen in TRAIN,0.8378936499741869,0.8376665320952765,1937
+CompPhish,root URL (no path),0.6974789915966386,0.8778306374881065,119
+CompPhish,URL with a path,0.3025210084033613,0.12216936251189343,119
+CompPhish,IP host,0.0,0.0,119
+CompPhish,hosted on a platform (private public suffix),0.0,0.0013320647002854425,119
+CompPhish,≥ 3 subdomains,0.0,0.00038058991436726926,119
+CompPhish,has a query string,0.7647058823529411,0.03311132254995243,119
+CompPhish,contains a suspicious keyword,0.07563025210084033,0.015794481446241675,119
+CompPhish,risky TLD,0.14285714285714285,0.010466222645099905,119
+CompPhish,shortener host,0.008403361344537815,0.00038058991436726926,119
+CompPhish,punycode host,0.01680672268907563,0.00038058991436726926,119
+CompPhish,short URL (TRAIN tercile 1),0.226890756302521,0.9429115128449096,119
+CompPhish,medium URL (tercile 2),0.10084033613445378,0.03311132254995243,119
+CompPhish,long URL (tercile 3),0.6722689075630253,0.023977164605137963,119
+CompPhish,registrable domain unseen in TRAIN,0.907563025210084,0.7333967649857279,119
+D4v,root URL (no path),1.0,1.0,5
+D4v,URL with a path,0.0,0.0,5
+D4v,IP host,0.0,0.0,5
+D4v,hosted on a platform (private public suffix),0.0,0.0,5
+D4v,≥ 3 subdomains,0.0,0.0,5
+D4v,has a query string,0.0,0.0,5
+D4v,contains a suspicious keyword,0.0,0.00411522633744856,5
+D4v,risky TLD,0.0,0.0,5
+D4v,shortener host,0.2,0.00411522633744856,5
+D4v,punycode host,0.0,0.0,5
+D4v,short URL (TRAIN tercile 1),1.0,1.0,5
+D4v,medium URL (tercile 2),0.0,0.0,5
+D4v,long URL (tercile 3),0.0,0.0,5
+D4v,registrable domain unseen in TRAIN,0.6,0.6378600823045267,5
+PhreshTest,root URL (no path),0.31666666666666665,0.07099549774887444,60
+PhreshTest,URL with a path,0.6833333333333333,0.9290045022511255,60
+PhreshTest,IP host,0.0,0.0,60
+PhreshTest,hosted on a platform (private public suffix),0.13333333333333333,0.0026013006503251626,60
+PhreshTest,≥ 3 subdomains,0.016666666666666666,0.010485242621310654,60
+PhreshTest,has a query string,0.016666666666666666,6.003001500750375e-05,60
+PhreshTest,contains a suspicious keyword,0.18333333333333332,0.06117058529264632,60
+PhreshTest,risky TLD,0.25,0.0026813406703351675,60
+PhreshTest,shortener host,0.0,0.0,60
+PhreshTest,punycode host,0.016666666666666666,6.003001500750375e-05,60
+PhreshTest,short URL (TRAIN tercile 1),0.5,0.20030015007503751,60
+PhreshTest,medium URL (tercile 2),0.35,0.3842921460730365,60
+PhreshTest,long URL (tercile 3),0.15,0.41540770385192594,60
+PhreshTest,registrable domain unseen in TRAIN,0.7333333333333333,0.43863931965982994,60

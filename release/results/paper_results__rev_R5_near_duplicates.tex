@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Near-duplicate audit: MinHash (64 hashes, 16×4 LSH) on character 5-gram shingles of the model input, and shared path templates.}
+\label{tab:rev_R5_near_duplicates}
+\begin{tabular}{llrrrrr}
+\toprule
+evaluated set & rows & rows with a near duplicate in development (est. Jaccard $\geq$ 0.8) & share & same path+query template ($\geq$ 12 chars) as a development URL & … of which on a registrable domain unseen in TRAIN & rows with neither \\
+\midrule
+PhreshTest & 96319 & 4719 & 0.0490 & 3459 & 2029 & 88800 \\
+Crawling2024 & 46322 & 140 & 0.0030 & 741 & 644 & 45480 \\
+CompPhish & 9353 & 54 & 0.0058 & 240 & 217 & 9064 \\
+D4v & 962 & 4 & 0.0042 & 7 & 6 & 951 \\
+PhishTank & 63822 & 304 & 0.0048 & 782 & 630 & 62749 \\
+\bottomrule
+\end{tabular}
+\end{table*}

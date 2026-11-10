@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Decision of the shortcut filter, one row per feature.}
+\label{tab:rev_R8_shortcut_decisions_one_row_per_feature}
+\begin{tabular}{llrr}
+\toprule
+feature & flag & decision & rule \\
+\midrule
+url::path\_depth & SIGN\_INVERSION & REMOVED from portable view P (and from E canonical tokens) & forced (a priori) \\
+struct::path\_depth & SIGN\_INVERSION & audited only (not a model input) & data-driven inversion \\
+url::n\_slashes & SIGN\_INVERSION & REMOVED from portable view P (and from E canonical tokens) & data-driven inversion \\
+url::n\_special & SIGN\_INVERSION & REMOVED from portable view P (and from E canonical tokens) & data-driven inversion \\
+url::n\_letters & SIGN\_INVERSION & REMOVED from portable view P (and from E canonical tokens) & data-driven inversion \\
+url::url\_len & SIGN\_INVERSION & REMOVED from portable view P (and from E canonical tokens) & data-driven inversion \\
+url::path\_url\_ratio & STRONG\_UNIVARIATE & kept &  \\
+\bottomrule
+\end{tabular}
+\end{table*}

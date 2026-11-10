@@ -1,0 +1,51 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Paired statistical tests (cluster bootstrap by domain, McNemar, Wilcoxon across seeds).}
+\label{tab:stats}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+test & dataset & A & B & delta\_roc\_auc (A−B) & delta\_roc\_auc\_ci95 & p\_bootstrap(Δauc $\leq$ 0) & mcnemar\_p & wilcoxon\_p & n\_pairs (seeds) \\
+\midrule
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0155 & [0.0119, 0.0201] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0202 & [0.0156, 0.0255] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & char 3-5-gram LR & 0.0012 & [0.0008, 0.0017] & 0.0000 & 0.0045 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & LightGBM (E) seed-ens & -0.0014 & [-0.0021, -0.0007] & 1.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0250 & [0.0224, 0.0282] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0317 & [0.0286, 0.0354] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & char 3-5-gram LR & 0.0039 & [0.0030, 0.0047] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & PhreshTest & ADAPT-X stack (P) & LightGBM (E) seed-ens & -0.0041 & [-0.0055, -0.0025] & 1.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0214 & [0.0148, 0.0299] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0653 & [0.0551, 0.0771] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & char 3-5-gram LR & 0.0305 & [0.0247, 0.0367] & 0.0000 & 0.9549 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.0820 & [0.0642, 0.1026] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0204 & [0.0115, 0.0312] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0741 & [0.0618, 0.0846] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & char 3-5-gram LR & 0.0386 & [0.0319, 0.0446] & 0.0000 & 0.0958 & -- & -- \\
+paired cluster bootstrap + McNemar & Crawling2024 & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.0856 & [0.0714, 0.0992] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0231 & [0.0127, 0.0349] & 0.0000 & 0.3794 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0551 & [0.0450, 0.0669] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & char 3-5-gram LR & 0.0385 & [0.0296, 0.0495] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.0539 & [0.0439, 0.0629] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & 0.0207 & [0.0102, 0.0307] & 0.0000 & 0.0573 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0577 & [0.0478, 0.0675] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & char 3-5-gram LR & 0.0430 & [0.0340, 0.0535] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & CompPhish & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.0612 & [0.0487, 0.0737] & 0.0000 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & -0.0118 & [-0.0299, 0.0071] & 0.8975 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0725 & [0.0473, 0.0977] & 0.0000 & 0.0101 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & char 3-5-gram LR & 0.0571 & [0.0434, 0.0723] & 0.0000 & 0.0650 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.1830 & [0.1292, 0.2340] & 0.0000 & 0.5839 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & ADAPT-PHISH (P) seed-ens & -0.0259 & [-0.0490, -0.0054] & 0.9950 & 0.0000 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & LightGBM (P) seed-ens & 0.0625 & [0.0381, 0.0901] & 0.0000 & 0.1735 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & char 3-5-gram LR & 0.0747 & [0.0563, 0.0952] & 0.0000 & 0.0183 & -- & -- \\
+paired cluster bootstrap + McNemar & D4v & ADAPT-X stack (P) & LightGBM (E) seed-ens & 0.1472 & [0.1094, 0.1852] & 0.0000 & 0.8855 & -- & -- \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & A-contam: CompPhish pool, corrupted labels & ECRAC (A0 full) & Frozen (static) & -- & -- & -- & -- & 0.0000 & 20.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & A-contam: CompPhish pool, corrupted labels & ECRAC (A0 full) & Naive (periodic fine-tuning = A8) & -- & -- & -- & -- & 0.0362 & 20.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & A-contam: CompPhish pool, corrupted labels & ECRAC (A0 full) & Drift + Replay & -- & -- & -- & -- & 0.0000 & 20.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & C: controlled drift & ECRAC (A0 full) & Frozen (static) & -- & -- & -- & -- & 0.0007 & 25.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & C: controlled drift & ECRAC (A0 full) & Naive (periodic fine-tuning = A8) & -- & -- & -- & -- & 0.2099 & 25.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & C: controlled drift & ECRAC (A0 full) & Drift + Replay & -- & -- & -- & -- & 0.0000 & 25.0000 \\
+Wilcoxon across (scenario, seed) — final\_target\_f1 & C: controlled drift & ECRAC (A0 full) & Replay-only & -- & -- & -- & -- & 0.0000 & 25.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

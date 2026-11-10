@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Closure of the comments still open after v14 (numbers read from this run's tables).}
+\label{tab:rev_R21_reviewer_comment_closure}
+\begin{tabular}{llrr}
+\toprule
+comment & reviewers & experiment (this run) & verdict (fixed rule) \\
+\midrule
+Forward-in-time evaluation with contemporaneous legitimate traffic & R1 1.5, R2 2.3, R6 6.7, R8 8.5, M8 & R18b (temporal re-split) + R18 (dated weekly stream, Track D) & done; mean ROC-AUC change early -> later -0.029; best on the later period: Stack of all models \\
+Official PhreshPhish test split (later than every training row) and provenance of PhreshTest & R1 1.5, R2 2.3, R3 3.1, R6 6.7, R8 8.5, M1, M8 & R22 & done; mean ROC-AUC change PhreshTest -> official test -0.013; best on the official test: Simple stack (P): LightGBM + char-LR, no neural \\
+Pretrained URL transformer (URLTran-style BERT fine-tuned on URLs) & R1 1.7, R4 4.4, M3 & R19 & done (CUDA budget, stated); vs tuned BiGRU: 2 test sets better, 2 worse (CI excludes 0) \\
+Re-tune ECRAC on separate (development) streams & M8 & R20 & done; useful gain (> +0.01 on at least one track) \\
+Label poisoning by an attacker who chooses the labels & R5 5.7 & R20b & tested (campaign + score-aware attacker) \\
+Full-capacity architecture profile (d = 128, 3 layers, all rows) & R6 6.5, M2 & training profile of the reloaded models: full & done \\
+Corpus identifiability <= 0.6 (protocol target) & M5 & G1 identifiability probe (benign rows) & target NOT met: reported as a negative result \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,20 @@
+modalities: ['url', 'feat']
+fusion: xattn_gate
+md_p: 0.2
+aux_weight: 0.3
+dann_weight: 0.3
+epochs: 40
+lr: 0.0005
+feat_encoder: fte
+name_aware: True
+tok_drop: 0.1
+native_drop: 0.5
+alpha: 0.5
+dro: True
+allow: []
+url_field: clean
+d: 128
+url_layers: 3
+url_rnn: none
+wd: 0.0001
+ema: 0.0

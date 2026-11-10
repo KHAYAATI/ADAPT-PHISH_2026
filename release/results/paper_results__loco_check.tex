@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Leave-one-development-corpus-out check (train on one corpus, evaluate on the other's VALIDATION rows; source thresholds).}
+\label{tab:loco}
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+trained on & evaluated on (unseen corpus, VALIDATION rows) & model & view & roc\_auc & pr\_auc & f1 & mcc & recall & fpr & oracle\_tpr@fpr=1\% & ece \\
+\midrule
+PhreshPhish & Mendeley & ADAPT-PHISH & P & 0.7981 & 0.7247 & 0.7510 & 0.5071 & 0.7547 & 0.2476 & 0.0054 & 0.1616 \\
+PhreshPhish & Mendeley & ADAPT-PHISH & E & 0.7909 & 0.7208 & 0.7243 & 0.4663 & 0.7116 & 0.2459 & 0.0045 & 0.1678 \\
+PhreshPhish & Mendeley & LightGBM & P & 0.7796 & 0.7300 & 0.7414 & 0.4734 & 0.7691 & 0.2964 & 0.0198 & 0.1567 \\
+PhreshPhish & Mendeley & LightGBM & E & 0.7565 & 0.7051 & 0.5443 & 0.3140 & 0.4304 & 0.1465 & 0.0314 & 0.2289 \\
+PhreshPhish & Mendeley & char 3-5-gram LR & P & 0.8026 & 0.7759 & 0.7085 & 0.4325 & 0.6999 & 0.2677 & 0.1312 & 0.1689 \\
+PhreshPhish & Mendeley & ADAPT-X stack & P & 0.8236 & 0.7910 & 0.7442 & 0.4752 & 0.7790 & 0.3051 & 0.1096 & 0.1688 \\
+Mendeley & PhreshPhish & ADAPT-PHISH & P & 0.8490 & 0.8179 & 0.7503 & 0.5328 & 0.7575 & 0.2241 & 0.1835 & 0.0814 \\
+Mendeley & PhreshPhish & ADAPT-PHISH & E & 0.8401 & 0.8088 & 0.7233 & 0.5074 & 0.6918 & 0.1892 & 0.1579 & 0.0975 \\
+Mendeley & PhreshPhish & LightGBM & P & 0.8679 & 0.8415 & 0.7590 & 0.5616 & 0.7424 & 0.1831 & 0.2366 & 0.0713 \\
+Mendeley & PhreshPhish & LightGBM & E & 0.8581 & 0.8275 & 0.6815 & 0.4798 & 0.6027 & 0.1423 & 0.2118 & 0.0670 \\
+Mendeley & PhreshPhish & char 3-5-gram LR & P & 0.8403 & 0.8016 & 0.7363 & 0.5284 & 0.7076 & 0.1836 & 0.0976 & 0.0744 \\
+Mendeley & PhreshPhish & ADAPT-X stack & P & 0.8905 & 0.8557 & 0.7996 & 0.6330 & 0.7878 & 0.1564 & 0.1549 & 0.0669 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,5 @@
+{
+  "feature_only": "needs a label-independent covariate perturbation of raw URLs (not synthesised: would fabricate data)",
+  "prediction_only": "not separable from feature drift with real rows",
+  "uncertainty_only": "not separable with real rows"
+}

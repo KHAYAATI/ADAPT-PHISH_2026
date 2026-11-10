@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Linear probes of the frozen URL embedding (VALIDATION rows): recovery of features removed by the shortcut filter.}
+\label{tab:rev_R8_probe_url_embedding}
+\begin{tabular}{llrr}
+\toprule
+encoder & target (removed or structural feature) & 5-fold R² mean & sd \\
+\midrule
+trained ADAPT-PHISH URL encoder (frozen) & url\_len & 0.7779 & 0.0063 \\
+trained ADAPT-PHISH URL encoder (frozen) & path depth & 0.7266 & 0.0078 \\
+trained ADAPT-PHISH URL encoder (frozen) & n\_slashes & 0.6117 & 0.0093 \\
+trained ADAPT-PHISH URL encoder (frozen) & path\_url\_ratio & 0.8528 & 0.0082 \\
+trained ADAPT-PHISH URL encoder (frozen) & is\_root (AUC) & 0.9968 & -- \\
+same architecture, random initialization (control) & url\_len & 0.9394 & 0.0043 \\
+same architecture, random initialization (control) & path depth & 0.8073 & 0.0125 \\
+same architecture, random initialization (control) & n\_slashes & 0.6763 & 0.0181 \\
+same architecture, random initialization (control) & path\_url\_ratio & 0.7799 & 0.0050 \\
+same architecture, random initialization (control) & is\_root (AUC) & 0.9948 & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

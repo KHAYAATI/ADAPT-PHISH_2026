@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Model size and inference latency on cuda (16 threads); feature extraction 0.257 ms/URL, byte encoding 0.007 ms/URL (not included).}
+\label{tab:rev_R10_computational_cost}
+\begin{tabular}{llrrrr}
+\toprule
+model & parameters (neural + linear) & trees & batch latency (ms/URL, 2000 URLs) & single-URL latency median (ms) & single-URL latency p95 (ms) \\
+\midrule
+ADAPT-X (P) & 7559050 & 887.0000 & 3.4811 & 322.4916 & 422.8175 \\
+ADAPT-PHISH (P) & 7259045 & -- & 2.8190 & 258.5844 & 278.6121 \\
+LightGBM (P) & 0 & 887.0000 & 0.0935 & 50.6456 & 81.4573 \\
+char-LR & 300001 & -- & 0.2286 & 1.3005 & 2.0174 \\
+ADAPT-X (E) & 7559050 & 1977.0000 & 3.2323 & 465.4752 & 537.6674 \\
+ADAPT-PHISH (E) & 7259045 & -- & 4.1357 & 289.5132 & 315.2257 \\
+LightGBM (E) & 0 & 1977.0000 & 0.2431 & 167.3775 & 236.9874 \\
+Sanity: url\_len only (LR) & 2 & -- & 0.1127 & 2.7087 & 3.4030 \\
+Sanity: has\_path only (LR) & 2 & -- & 0.0021 & 3.0500 & 3.3669 \\
+Sanity: url\_len + path depth (LR) & 3 & -- & 0.0028 & 4.7975 & 6.7224 \\
+LightGBM (P) + hashed char n-grams & 0 & 2109.0000 & 0.4388 & 52.4120 & 56.0340 \\
+URLNet-style char+word CNN & 11227525 & -- & 0.4289 & 42.3795 & 55.9307 \\
+BiGRU character model & 363845 & -- & 0.1882 & 47.3134 & 77.1459 \\
+Pretrained google/canine-s (fine-tuned) & 132083713 & -- & 3.2926 & 41.8569 & 48.1003 \\
+Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 11170817 & -- & 0.6202 & 11.0440 & 14.4733 \\
+Simple stack (P): LightGBM + char-LR, no neural & 300004 & 887.0000 & 0.2692 & 45.2750 & 49.7914 \\
+ADAPT-X2 stack (P) & 19489302 & 3657.0000 & 3.4425 & 443.7404 & 518.1536 \\
+ADAPT-PHISH v2 (P) & 6804645 & -- & 2.2959 & 288.5826 & 329.9471 \\
+ADAPT-PHISH v2 (E) & 6804645 & -- & 2.3692 & 319.1110 & 356.3308 \\
+BiGRU tuned & 1157125 & -- & 0.2535 & 47.3703 & 65.9081 \\
+URLNet tuned & 11227525 & -- & 0.1011 & 38.9797 & 47.0691 \\
+LightGBM (P) tuned & 0 & 646.0000 & 0.0878 & 44.4841 & 50.5138 \\
+LightGBM + n-grams tuned & 0 & 3657.0000 & 0.1379 & 49.8118 & 51.2158 \\
+char n-gram LR tuned & 300001 & -- & 0.2984 & 1.3311 & 1.5855 \\
+ADAPT-X2 stack (E) & 19489302 & 3657.0000 & 3.1201 & 479.4253 & 570.3587 \\
+Baseline stack (P): tuned baselines, no ADAPT & 12684656 & 3657.0000 & 0.8199 & 147.1942 & 169.8960 \\
+ADAPT-PHISH v2-KD (P) & 6804645 & -- & 2.3640 & 284.5355 & 309.9858 \\
+BiGRU-KD tuned & 1157125 & -- & 0.2471 & 47.3838 & 69.2747 \\
+\bottomrule
+\end{tabular}
+\end{table*}

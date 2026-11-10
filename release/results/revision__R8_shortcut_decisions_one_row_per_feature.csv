@@ -1,0 +1,8 @@
+feature,flag,decision,rule
+url::path_depth,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens),forced (a priori)
+struct::path_depth,SIGN_INVERSION,audited only (not a model input),data-driven inversion
+url::n_slashes,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens),data-driven inversion
+url::n_special,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens),data-driven inversion
+url::n_letters,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens),data-driven inversion
+url::url_len,SIGN_INVERSION,REMOVED from portable view P (and from E canonical tokens),data-driven inversion
+url::path_url_ratio,STRONG_UNIVARIATE,kept,

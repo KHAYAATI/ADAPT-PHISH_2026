@@ -1,0 +1,4 @@
+stack,C,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,char n-gram LR tuned,BiGRU tuned,URLNet tuned,ADAPT-PHISH v2 (E)
+ADAPT-X2 stack (P),0.01,0.2763,0.4902,0.1447,0.2916,-0.0719,
+ADAPT-X2 stack (E),1.0,,0.2026,0.2264,-0.0655,-0.1214,0.8425
+"Baseline stack (P): tuned baselines, no ADAPT",0.01,,0.608,0.1111,0.4636,-0.0626,

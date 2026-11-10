@@ -1,0 +1,78 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Linear trend of recall / FPR over the weekly windows (frozen models).}
+\label{tab:rev_R18_forward_in_time_trend}
+\begin{tabular}{llrrrrr}
+\toprule
+model & threshold rule & weeks & recall slope / week & fpr slope / week & recall first$\rightarrow$last & fpr first$\rightarrow$last \\
+\midrule
+ADAPT-PHISH (P) & val\_fpr@1\% & 52 & -0.0082 & -- & 0.773$\rightarrow$0.493 & nan$\rightarrow$0.008 \\
+ADAPT-PHISH (P) & val\_maxfpr@1\% & 52 & -0.0087 & -- & 0.685$\rightarrow$0.325 & nan$\rightarrow$0.005 \\
+ADAPT-PHISH (P) & val\_mcc & 52 & -0.0043 & -- & 0.936$\rightarrow$0.788 & nan$\rightarrow$0.042 \\
+ADAPT-PHISH v2 (E) & val\_fpr@1\% & 52 & -0.0070 & -- & 0.866$\rightarrow$0.556 & nan$\rightarrow$0.002 \\
+ADAPT-PHISH v2 (E) & val\_maxfpr@1\% & 52 & -0.0080 & -- & 0.801$\rightarrow$0.467 & nan$\rightarrow$0.001 \\
+ADAPT-PHISH v2 (E) & val\_mcc & 52 & -0.0015 & -- & 0.979$\rightarrow$0.890 & nan$\rightarrow$0.033 \\
+ADAPT-PHISH v2 (P) & val\_fpr@1\% & 52 & -0.0071 & -- & 0.834$\rightarrow$0.527 & nan$\rightarrow$0.006 \\
+ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 52 & -0.0075 & -- & 0.798$\rightarrow$0.473 & nan$\rightarrow$0.003 \\
+ADAPT-PHISH v2 (P) & val\_mcc & 52 & -0.0021 & -- & 0.969$\rightarrow$0.873 & nan$\rightarrow$0.061 \\
+ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 52 & -0.0062 & -- & 0.853$\rightarrow$0.552 & nan$\rightarrow$0.002 \\
+ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 52 & -0.0064 & -- & 0.838$\rightarrow$0.535 & nan$\rightarrow$0.001 \\
+ADAPT-PHISH v2-KD (P) & val\_mcc & 52 & -0.0016 & -- & 0.975$\rightarrow$0.892 & nan$\rightarrow$0.063 \\
+ADAPT-X (P) & val\_fpr@1\% & 52 & -0.0060 & -- & 0.881$\rightarrow$0.624 & nan$\rightarrow$0.001 \\
+ADAPT-X (P) & val\_maxfpr@1\% & 52 & -0.0080 & -- & 0.774$\rightarrow$0.408 & nan$\rightarrow$0.000 \\
+ADAPT-X (P) & val\_mcc & 52 & -0.0013 & -- & 0.977$\rightarrow$0.902 & nan$\rightarrow$0.035 \\
+ADAPT-X2 stack (E) & val\_fpr@1\% & 52 & -0.0065 & -- & 0.880$\rightarrow$0.582 & nan$\rightarrow$0.001 \\
+ADAPT-X2 stack (E) & val\_maxfpr@1\% & 52 & -0.0081 & -- & 0.789$\rightarrow$0.439 & nan$\rightarrow$0.001 \\
+ADAPT-X2 stack (E) & val\_mcc & 52 & -0.0015 & -- & 0.978$\rightarrow$0.892 & nan$\rightarrow$0.027 \\
+ADAPT-X2 stack (P) & val\_fpr@1\% & 52 & -0.0061 & -- & 0.866$\rightarrow$0.550 & nan$\rightarrow$0.001 \\
+ADAPT-X2 stack (P) & val\_maxfpr@1\% & 52 & -0.0077 & -- & 0.781$\rightarrow$0.442 & nan$\rightarrow$0.001 \\
+ADAPT-X2 stack (P) & val\_mcc & 52 & -0.0013 & -- & 0.979$\rightarrow$0.898 & nan$\rightarrow$0.052 \\
+Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 52 & -0.0060 & -- & 0.866$\rightarrow$0.560 & nan$\rightarrow$0.001 \\
+Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 52 & -0.0075 & -- & 0.766$\rightarrow$0.440 & nan$\rightarrow$0.001 \\
+Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 52 & -0.0016 & -- & 0.976$\rightarrow$0.894 & nan$\rightarrow$0.044 \\
+BiGRU character model & val\_fpr@1\% & 52 & -0.0063 & -- & 0.834$\rightarrow$0.524 & nan$\rightarrow$0.001 \\
+BiGRU character model & val\_maxfpr@1\% & 52 & -0.0071 & -- & 0.777$\rightarrow$0.471 & nan$\rightarrow$0.000 \\
+BiGRU character model & val\_mcc & 52 & -0.0019 & -- & 0.971$\rightarrow$0.870 & nan$\rightarrow$0.032 \\
+BiGRU tuned & val\_fpr@1\% & 52 & -0.0066 & -- & 0.846$\rightarrow$0.554 & nan$\rightarrow$0.004 \\
+BiGRU tuned & val\_maxfpr@1\% & 52 & -0.0074 & -- & 0.786$\rightarrow$0.493 & nan$\rightarrow$0.003 \\
+BiGRU tuned & val\_mcc & 52 & -0.0027 & -- & 0.963$\rightarrow$0.826 & nan$\rightarrow$0.046 \\
+BiGRU-KD tuned & val\_fpr@1\% & 52 & -0.0060 & -- & 0.863$\rightarrow$0.556 & nan$\rightarrow$0.002 \\
+BiGRU-KD tuned & val\_maxfpr@1\% & 52 & -0.0075 & -- & 0.767$\rightarrow$0.457 & nan$\rightarrow$0.001 \\
+BiGRU-KD tuned & val\_mcc & 52 & -0.0019 & -- & 0.969$\rightarrow$0.866 & nan$\rightarrow$0.038 \\
+LightGBM (P) & val\_fpr@1\% & 52 & -0.0077 & -- & 0.642$\rightarrow$0.268 & nan$\rightarrow$0.003 \\
+LightGBM (P) & val\_maxfpr@1\% & 52 & -0.0071 & -- & 0.568$\rightarrow$0.219 & nan$\rightarrow$0.002 \\
+LightGBM (P) & val\_mcc & 52 & -0.0029 & -- & 0.925$\rightarrow$0.832 & nan$\rightarrow$0.061 \\
+LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 52 & -0.0047 & -- & 0.882$\rightarrow$0.595 & nan$\rightarrow$0.001 \\
+LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 52 & -0.0067 & -- & 0.790$\rightarrow$0.440 & nan$\rightarrow$0.001 \\
+LightGBM (P) + hashed char n-grams & val\_mcc & 52 & -0.0013 & -- & 0.974$\rightarrow$0.913 & nan$\rightarrow$0.025 \\
+LightGBM (P) tuned & val\_fpr@1\% & 52 & -0.0075 & -- & 0.684$\rightarrow$0.357 & nan$\rightarrow$0.003 \\
+LightGBM (P) tuned & val\_maxfpr@1\% & 52 & -0.0078 & -- & 0.628$\rightarrow$0.238 & nan$\rightarrow$0.002 \\
+LightGBM (P) tuned & val\_mcc & 52 & -0.0026 & -- & 0.940$\rightarrow$0.841 & nan$\rightarrow$0.077 \\
+LightGBM + n-grams tuned & val\_fpr@1\% & 52 & -0.0051 & -- & 0.881$\rightarrow$0.590 & nan$\rightarrow$0.003 \\
+LightGBM + n-grams tuned & val\_maxfpr@1\% & 52 & -0.0064 & -- & 0.817$\rightarrow$0.505 & nan$\rightarrow$0.001 \\
+LightGBM + n-grams tuned & val\_mcc & 52 & -0.0012 & -- & 0.977$\rightarrow$0.930 & nan$\rightarrow$0.049 \\
+Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 52 & -0.0056 & -- & 0.833$\rightarrow$0.503 & nan$\rightarrow$0.002 \\
+Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 52 & -0.0062 & -- & 0.774$\rightarrow$0.382 & nan$\rightarrow$0.001 \\
+Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 52 & -0.0023 & -- & 0.968$\rightarrow$0.824 & nan$\rightarrow$0.038 \\
+Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 52 & -0.0042 & -- & 0.883$\rightarrow$0.673 & nan$\rightarrow$0.004 \\
+Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 52 & -0.0047 & -- & 0.854$\rightarrow$0.631 & nan$\rightarrow$0.002 \\
+Pretrained google/canine-s (fine-tuned) & val\_mcc & 52 & -0.0013 & -- & 0.970$\rightarrow$0.890 & nan$\rightarrow$0.027 \\
+Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 52 & -0.0059 & -- & 0.862$\rightarrow$0.601 & nan$\rightarrow$0.001 \\
+Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 52 & -0.0082 & -- & 0.701$\rightarrow$0.319 & nan$\rightarrow$0.000 \\
+Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 52 & -0.0011 & -- & 0.979$\rightarrow$0.922 & nan$\rightarrow$0.040 \\
+URLNet tuned & val\_fpr@1\% & 52 & -0.0068 & -- & 0.807$\rightarrow$0.497 & nan$\rightarrow$0.000 \\
+URLNet tuned & val\_maxfpr@1\% & 52 & -0.0081 & -- & 0.545$\rightarrow$0.208 & nan$\rightarrow$0.000 \\
+URLNet tuned & val\_mcc & 52 & -0.0019 & -- & 0.977$\rightarrow$0.854 & nan$\rightarrow$0.066 \\
+URLNet-style char+word CNN & val\_fpr@1\% & 52 & -0.0066 & -- & 0.805$\rightarrow$0.510 & nan$\rightarrow$0.001 \\
+URLNet-style char+word CNN & val\_maxfpr@1\% & 52 & -0.0078 & -- & 0.555$\rightarrow$0.229 & nan$\rightarrow$0.000 \\
+URLNet-style char+word CNN & val\_mcc & 52 & -0.0027 & -- & 0.965$\rightarrow$0.815 & nan$\rightarrow$0.045 \\
+char n-gram LR tuned & val\_fpr@1\% & 52 & -0.0063 & -- & 0.871$\rightarrow$0.541 & nan$\rightarrow$0.003 \\
+char n-gram LR tuned & val\_maxfpr@1\% & 52 & -0.0080 & -- & 0.795$\rightarrow$0.401 & nan$\rightarrow$0.000 \\
+char n-gram LR tuned & val\_mcc & 52 & -0.0022 & -- & 0.966$\rightarrow$0.822 & nan$\rightarrow$0.042 \\
+char-LR & val\_fpr@1\% & 52 & -0.0051 & -- & 0.858$\rightarrow$0.594 & nan$\rightarrow$0.000 \\
+char-LR & val\_maxfpr@1\% & 52 & -0.0066 & -- & 0.806$\rightarrow$0.454 & nan$\rightarrow$0.000 \\
+char-LR & val\_mcc & 52 & -0.0013 & -- & 0.971$\rightarrow$0.881 & nan$\rightarrow$0.032 \\
+\bottomrule
+\end{tabular}
+\end{table*}

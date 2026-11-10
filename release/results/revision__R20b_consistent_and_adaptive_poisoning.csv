@@ -1,0 +1,25 @@
+scenario,variant,final_target_f1,final_target_recall,final_target_fpr,final_target_campaign_recall,frozen_target_campaign_recall,prequential_mean_f1,update_count (commits),attempted_updates,false_adaptation_rate
+adaptive: 30% least-confident phishing labels -> benign,A4 − trust gate / quarantine,0.8078351990757833,0.8584187408491948,0.20825880114176973,,,0.8126046822391577,1.8,1.8,0.0
+adaptive: 30% least-confident phishing labels -> benign,A7 − adaptation certificate,0.8131292771841684,0.8562713518789653,0.1953187440532826,,,0.8151048563416683,2.0,2.0,0.0
+adaptive: 30% least-confident phishing labels -> benign,Drift + Replay,0.8162327906251198,0.731137140068326,0.046926736441484304,,,0.8312129989372951,8.0,8.0,0.35
+adaptive: 30% least-confident phishing labels -> benign,ECRAC (A0 full),0.8165054845838384,0.8489995119570523,0.1807802093244529,,,0.8153217361130501,2.4,2.4,0.0
+adaptive: 30% least-confident phishing labels -> benign,ECRAC-cal (tau_N calibrated on no-drift development windows),0.8325765166273961,0.8285505124450951,0.1262036156041865,,,0.8264072312562197,8.0,8.0,0.0
+adaptive: 30% least-confident phishing labels -> benign,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",0.8139158817006,0.8530990727183992,0.190523311132255,,,0.8136374476428285,2.2,2.2,0.0
+adaptive: 30% least-confident phishing labels -> benign,Frozen (static),0.7699292577341358,0.8897022938018546,0.328639391056137,,,0.7899715779436971,0.0,0.0,0.0
+adaptive: 30% least-confident phishing labels -> benign,Naive (periodic fine-tuning = A8),0.7821542491516829,0.6719375305026842,0.035318744053282586,,,0.8212950245992017,8.0,8.0,0.5
+campaign: all phishing labels of 30% of domains -> benign,A4 − trust gate / quarantine,0.8342491077031472,0.8470473401659346,0.1436346336822074,0.8357081545064379,0.8772532188841202,0.8256199966888202,4.4,5.6,0.0
+campaign: all phishing labels of 30% of domains -> benign,A7 − adaptation certificate,0.8433375904862052,0.8477794045876037,0.12723120837297813,0.8331330472103005,0.8772532188841202,0.8317913681187632,5.2,5.2,0.0
+campaign: all phishing labels of 30% of domains -> benign,Drift + Replay,0.8455370910426225,0.7878965348950707,0.05895337773549001,0.7716738197424893,0.8772532188841202,0.8401529234470029,8.0,8.0,0.35
+campaign: all phishing labels of 30% of domains -> benign,ECRAC (A0 full),0.8411758105884324,0.843484626647145,0.12639391056137012,0.830901287553648,0.8772532188841202,0.8305418932529174,5.0,5.6,0.0
+campaign: all phishing labels of 30% of domains -> benign,ECRAC-cal (tau_N calibrated on no-drift development windows),0.8453643092016293,0.8443142996583699,0.11950523311132255,0.8314163090128754,0.8772532188841202,0.8327130727645633,6.8,8.0,0.0
+campaign: all phishing labels of 30% of domains -> benign,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",0.8406398792079954,0.8490483162518302,0.1334348239771646,0.8370815450643777,0.8772532188841202,0.8284704746615237,4.8,5.4,0.0
+campaign: all phishing labels of 30% of domains -> benign,Frozen (static),0.7699292577341358,0.8897022938018546,0.328639391056137,0.8772532188841202,0.8772532188841202,0.7899715779436971,0.0,0.0,0.0
+campaign: all phishing labels of 30% of domains -> benign,Naive (periodic fine-tuning = A8),0.8296904975075927,0.7542703757930698,0.04951474785918173,0.7378540772532188,0.8772532188841202,0.8334491349443132,8.0,8.0,0.35
+targeted: 30% of phishing labels -> benign (Table 15 reference),A4 − trust gate / quarantine,0.8326794560988594,0.8513421181063933,0.15117031398667935,,,0.830904171381038,4.2,4.6,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),A7 − adaptation certificate,0.8421860767526986,0.8517813567593947,0.1333967649857279,,,0.8333382244840093,5.0,5.0,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),Drift + Replay,0.8597523415746977,0.8248901903367496,0.07330161750713607,,,0.8454091577741186,8.0,8.0,0.1
+targeted: 30% of phishing labels -> benign (Table 15 reference),ECRAC (A0 full),0.8419048694809966,0.8473401659346023,0.12909609895337776,,,0.8326746154002495,4.8,5.0,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),ECRAC-cal (tau_N calibrated on no-drift development windows),0.8430859009513247,0.8438750610053685,0.12319695528068506,,,0.8353618677821727,6.6,8.0,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",0.8467818816556856,0.8540263543191801,0.1271931493815414,,,0.8321903632056046,5.2,5.8,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),Frozen (static),0.7699292577341358,0.8897022938018546,0.328639391056137,,,0.7899715779436971,0.0,0.0,0.0
+targeted: 30% of phishing labels -> benign (Table 15 reference),Naive (periodic fine-tuning = A8),0.8233534574494665,0.739385065885798,0.043235014272121786,,,0.8348737340556083,8.0,8.0,0.3

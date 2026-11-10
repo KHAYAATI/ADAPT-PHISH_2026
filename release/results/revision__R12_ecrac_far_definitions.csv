@@ -1,0 +1,68 @@
+track,variant,"FAR (mean over all runs, 0 if no candidate)",FAR (runs with ≥ 1 candidate only),runs with ≥ 1 candidate,runs
+"A-contam: CompPhish pool, corrupted labels",A4 − trust gate / quarantine,0.10166666666666666,0.10166666666666666,20.0,20.0
+"A-contam: CompPhish pool, corrupted labels",A7 − adaptation certificate,0.16666666666666666,0.16666666666666666,20.0,20.0
+"A-contam: CompPhish pool, corrupted labels",Drift + Replay,0.125,0.125,20.0,20.0
+"A-contam: CompPhish pool, corrupted labels",ECRAC (A0 full),0.075,0.075,20.0,20.0
+"A-contam: CompPhish pool, corrupted labels",ECRAC-cal (tau_N calibrated on no-drift development windows),0.05625,0.05625,20.0,20.0
+"A-contam: CompPhish pool, corrupted labels",Frozen (static),0.0,,0.0,20.0
+"A-contam: CompPhish pool, corrupted labels",Naive (periodic fine-tuning = A8),0.21875,0.21875,20.0,20.0
+A: CompPhish pool,A1 − evidence consistency,0.0,0.0,5.0,5.0
+A: CompPhish pool,"A1-cal (− evidence consistency, calibrated tau_N)",0.0,0.0,5.0,5.0
+A: CompPhish pool,A2 − Need–Risk separation,0.0,0.0,4.0,5.0
+A: CompPhish pool,A3 − gradient-conflict test,0.0,0.0,4.0,5.0
+A: CompPhish pool,A4 − trust gate / quarantine,0.0,0.0,4.0,5.0
+A: CompPhish pool,A5 − adaptive budget,0.0,0.0,4.0,5.0
+A: CompPhish pool,A6 − rare-class protection,0.0,0.0,4.0,5.0
+A: CompPhish pool,A7 − adaptation certificate,0.0,0.0,4.0,5.0
+A: CompPhish pool,Drift + Replay,0.0,0.0,5.0,5.0
+A: CompPhish pool,Drift-triggered,0.0,0.0,5.0,5.0
+A: CompPhish pool,ECRAC (A0 full),0.0,0.0,4.0,5.0
+A: CompPhish pool,ECRAC-cal (tau_N calibrated on no-drift development windows),0.025,0.025,5.0,5.0
+A: CompPhish pool,Frozen (static),0.0,,0.0,5.0
+A: CompPhish pool,Naive (periodic fine-tuning = A8),0.0,0.0,5.0,5.0
+A: CompPhish pool,Replay-only,0.0,0.0,5.0,5.0
+B-mix: PhishTankNovel + benign,A1 − evidence consistency,0.1488220551378446,0.1488220551378446,5.0,5.0
+B-mix: PhishTankNovel + benign,"A1-cal (− evidence consistency, calibrated tau_N)",0.26153846153846155,0.26153846153846155,5.0,5.0
+B-mix: PhishTankNovel + benign,A2 − Need–Risk separation,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,A3 − gradient-conflict test,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,A4 − trust gate / quarantine,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,A5 − adaptive budget,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,A6 − rare-class protection,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,A7 − adaptation certificate,0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,Drift + Replay,0.06153846153846154,0.06153846153846154,5.0,5.0
+B-mix: PhishTankNovel + benign,Drift-triggered,0.10923076923076921,0.10923076923076921,5.0,5.0
+B-mix: PhishTankNovel + benign,ECRAC (A0 full),0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,ECRAC-cal (tau_N calibrated on no-drift development windows),0.2923076923076923,0.2923076923076923,5.0,5.0
+B-mix: PhishTankNovel + benign,Frozen (static),0.0,,0.0,5.0
+B-mix: PhishTankNovel + benign,Naive (periodic fine-tuning = A8),0.08461538461538462,0.08461538461538462,5.0,5.0
+B-mix: PhishTankNovel + benign,Replay-only,0.08461538461538462,0.08461538461538462,5.0,5.0
+B: PhishTankNovel,A1 − evidence consistency,0.007692307692307693,0.007692307692307693,5.0,5.0
+B: PhishTankNovel,"A1-cal (− evidence consistency, calibrated tau_N)",0.0,0.0,5.0,5.0
+B: PhishTankNovel,A2 − Need–Risk separation,0.0,,0.0,5.0
+B: PhishTankNovel,A3 − gradient-conflict test,0.0,,0.0,5.0
+B: PhishTankNovel,A4 − trust gate / quarantine,0.0,,0.0,5.0
+B: PhishTankNovel,A5 − adaptive budget,0.0,,0.0,5.0
+B: PhishTankNovel,A6 − rare-class protection,0.0,,0.0,5.0
+B: PhishTankNovel,A7 − adaptation certificate,0.0,,0.0,5.0
+B: PhishTankNovel,Drift + Replay,0.2692307692307693,0.2692307692307693,5.0,5.0
+B: PhishTankNovel,Drift-triggered,0.4230769230769231,0.4230769230769231,5.0,5.0
+B: PhishTankNovel,ECRAC (A0 full),0.0,,0.0,5.0
+B: PhishTankNovel,ECRAC-cal (tau_N calibrated on no-drift development windows),0.0,0.0,5.0,5.0
+B: PhishTankNovel,Frozen (static),0.0,,0.0,5.0
+B: PhishTankNovel,Naive (periodic fine-tuning = A8),0.43076923076923085,0.43076923076923085,5.0,5.0
+B: PhishTankNovel,Replay-only,0.2846153846153846,0.2846153846153846,5.0,5.0
+C: controlled drift,A1 − evidence consistency,0.2849206349206349,0.2849206349206349,35.0,35.0
+C: controlled drift,"A1-cal (− evidence consistency, calibrated tau_N)",0.26825396825396824,0.26825396825396824,35.0,35.0
+C: controlled drift,A2 − Need–Risk separation,0.0,0.0,15.0,35.0
+C: controlled drift,A3 − gradient-conflict test,0.0,0.0,15.0,35.0
+C: controlled drift,A4 − trust gate / quarantine,0.0,0.0,15.0,35.0
+C: controlled drift,A5 − adaptive budget,0.0,0.0,15.0,35.0
+C: controlled drift,A6 − rare-class protection,0.0,0.0,15.0,35.0
+C: controlled drift,A7 − adaptation certificate,0.02857142857142857,0.06666666666666667,15.0,35.0
+C: controlled drift,Drift + Replay,0.18608843537414968,0.19156162464985996,34.0,35.0
+C: controlled drift,Drift-triggered,0.26116780045351473,0.26884920634920634,34.0,35.0
+C: controlled drift,ECRAC (A0 full),0.02857142857142857,0.06666666666666667,15.0,35.0
+C: controlled drift,ECRAC-cal (tau_N calibrated on no-drift development windows),0.31206349206349204,0.31206349206349204,35.0,35.0
+C: controlled drift,Frozen (static),0.0,,0.0,35.0
+C: controlled drift,Naive (periodic fine-tuning = A8),0.3028571428571428,0.3028571428571428,35.0,35.0
+C: controlled drift,Replay-only,0.23999999999999996,0.23999999999999996,35.0,35.0

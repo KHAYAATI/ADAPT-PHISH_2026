@@ -1,0 +1,23 @@
+item,value
+source,https://www.kaggle.com/datasets/haozhang1579/crawling-2024
+uploader,Kaggle user 'haozhang1579' (hao zhang)
+title on the page,Crawling2024 (Phishing URL Detection Dataset)
+description on the page,"Phishing website detection dataset containing access information features; 50,000 entries, phishing:legitimate = 1:1"
+version,1 (2024-07-04)
+license,Open Database License (ODbL) / Database Contents License
+accessed,NOT_STATED_BY_SOURCE
+file,Crawling2024.csv
+SHA-256 of the file used,c83267a14828074724ae187a5ae634b5f4b206d0539eff33d27fdd5a72cb2dd8
+rows in file,50000
+columns in file,58
+label column / mapping,"label: {0: 0, 1: 1}"
+label counts after loading,"{""0"": 25000, ""1"": 25000}"
+rows after dedup / conflicts,48660
+rows after the development purge (test set),46322
+unseen-domain rows,35223
+column names shared with phreshphish_features.csv,1 of 58 (label)
+Jaccard of column-name sets (Crawling2024 vs PhreshPhish),0.0089
+normalized URLs shared with PhreshTrain BEFORE purge,2197
+normalized URLs shared with PhreshTest BEFORE purge,675
+model inputs shared with PhreshTrain BEFORE purge,2243
+native feature tokens of Crawling2024 used by any model,0 (0 => its own numeric columns are never a model input; views E and P receive identical inputs)

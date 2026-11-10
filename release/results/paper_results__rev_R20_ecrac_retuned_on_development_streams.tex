@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{ECRAC with tau\_N and evidence switch selected on development streams only (ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500)); tracks as in Table 15, five stream seeds.}
+\label{tab:rev_R20_ecrac_retuned_on_development_streams}
+\begin{tabular}{llrrrrrrr}
+\toprule
+track & variant & final\_target\_f1 & prequential\_mean\_f1 & prequential\_mean\_recall & forgetting (max\_k retain − final) & update\_count (commits) & attempted\_updates & false\_adaptation\_rate \\
+\midrule
+A: CompPhish pool & ECRAC (A0 full) & 0.7959 & 0.7990 & -- & 0.0015 & 1.2000 & 1.2000 & 0.0000 \\
+A: CompPhish pool & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 0.8294 & 0.8184 & -- & 0.0036 & 7.4000 & 8.0000 & 0.0250 \\
+A: CompPhish pool & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & 0.7934 & 0.7991 & -- & 0.0014 & 1.0000 & 1.0000 & 0.0000 \\
+A: CompPhish pool & Frozen (static) & 0.7699 & 0.7900 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+A: CompPhish pool & Naive (periodic fine-tuning = A8) & 0.8654 & 0.8508 & -- & 0.0059 & 8.0000 & 8.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & ECRAC (A0 full) & -- & 0.8825 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & ECRAC-cal (tau\_N calibrated on no-drift development windows) & -- & 0.8846 & -- & 0.0002 & 23.2000 & 26.0000 & 0.2923 \\
+B-mix: PhishTankNovel + benign & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & -- & 0.8938 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & Frozen (static) & -- & 0.8825 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & Naive (periodic fine-tuning = A8) & -- & 0.8923 & -- & 0.0040 & 26.0000 & 26.0000 & 0.0846 \\
+B: PhishTankNovel & ECRAC (A0 full) & -- & -- & 0.9101 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B: PhishTankNovel & ECRAC-cal (tau\_N calibrated on no-drift development windows) & -- & -- & 0.9344 & 0.0077 & 6.8000 & 26.0000 & 0.0000 \\
+B: PhishTankNovel & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & -- & -- & 0.9101 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B: PhishTankNovel & Frozen (static) & -- & -- & 0.9101 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B: PhishTankNovel & Naive (periodic fine-tuning = A8) & -- & -- & 0.9829 & 0.5715 & 26.0000 & 26.0000 & 0.4308 \\
+C: controlled drift & ECRAC (A0 full) & 0.7893 & 0.7411 & -- & 0.0006 & 0.6857 & 0.6857 & 0.0286 \\
+C: controlled drift & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 0.8044 & 0.7505 & -- & 0.0016 & 9.4857 & 9.6857 & 0.3121 \\
+C: controlled drift & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & 0.7889 & 0.7411 & -- & 0.0006 & 0.6857 & 0.6857 & 0.0000 \\
+C: controlled drift & Frozen (static) & 0.7699 & 0.7262 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+C: controlled drift & Naive (periodic fine-tuning = A8) & 0.8088 & 0.7862 & -- & 0.0224 & 10.0000 & 10.0000 & 0.3029 \\
+\bottomrule
+\end{tabular}
+\end{table*}

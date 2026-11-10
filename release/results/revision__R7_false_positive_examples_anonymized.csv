@@ -1,0 +1,47 @@
+dataset,category,anonymized structure,score
+Crawling2024,root URL (no path),a{11}.net/?aa=9&aa=a{15}9a{7}9aaa9a{7}9.a{13}9a{9}9aaa9a{7}9aaa9a{7}9a{7}9a{13}9a{7}9a{33}9a{7}9aaa9a{7}9a9a{13}9aaa9aaa9a{15}9a{11}9aaa9aa.a{5}9aaa9a{8}9a{8}99aa99a9a{6}9a&aaa=9aa9a9a9-a999-99aa-a999-99a99a999aaa,0.996
+Crawling2024,root URL (no path),a{6}.online/#a{5},0.988
+Crawling2024,root URL (no path),a{13}.com/?aa=9&aa=a{15}9a{7}9aaa9a{7}9.a{13}9a{9}9aaa9a{7}9a{11}9a{7}9aaa9a{9}9a{7}9a{36}9a{4}9a{5}9a{4}9aa9a{13}9a{7}9a{15}9aaa9a{7}9aaa9aa.a{6}_a9aa__a{5}_a{6}9_a{6}99aaa-a{4}&aaa=a99a9999-a999-99aa-9999-9aa9a99a99a9,0.996
+Crawling2024,root URL (no path),a{5}.aaa.cn/?aaa_aa=aaa_a{4}_a{4}&a{8}_aaa=a{5}%9a%9a%9a{4}.aaa.aa%9a{8}%9a,0.997
+Crawling2024,root URL (no path),a{5}.a{6}.aa.uk/?a{7}=a{5}://aaa.a{6}.aa.aa/?a{5}=a{4},0.992
+Crawling2024,URL with a path,aaa.a{16}.com/a{5}/a/a{5}/a{6}999/a{5}/aaa/aaa_a-aaa9aa9a{12}9a{6}99aa9aa_a{4}9-9.aaa?a{5}=99&a{8}=aa&a{5}=aaa&a{7}=aaa9a{4}9a{5}9aa9a{18}99aaa9a{14}9a9a{4}9a{4}9aa9aaa9aa99a9a{18}9a{6}9aa9a{6}99aa9a{22}9a{7}9aa9a9aa-a_a{6}9a9_a{4}9a{7}9a{4}99aaa9aa9aa9a{4}9a{19}9a{5}9a{12}99aaa9aaa9a9a{9}_a{9}99aaa9a{4}99aa9a9a{4}9a{4}9a{8}9a{6}9a{9}9a{24}99aaa9a{10}9a{9}9aa99a9a{7}99aaa9a{12}9a{5}9a{4}9a{7}9aa9a{5}9a{4}9a{4}99a9a99aaa9a{4}-9a{4}9aa9aa9a{9}99a{4}_a{8}_a{4}9aaa,0.997
+Crawling2024,URL with a path,aaa.a{16}.com/_a{4}/a{5}?aaa=a{5}%9a%9a%9a{4}.a{6}.aa%9a{7}%9a9aa9aaa9%9a{11}%9a9a9a9a9999999a99aaa99a9a9a9999999999aaa9-9999a9999.aaa%9a{4}%9a{5}%99a{4}%9a{7}&a=9999&a=99,0.997
+Crawling2024,URL with a path,a{16}.com/aa-a{7}/a{6}/a{8}/a{5}/a{7}9_a9a9a{5}999a{5}9a9aa9aa.a{4}9,0.993
+Crawling2024,URL with a path,999a{6}.com/a{5}/a{5}/a{9}9a9a{33}9a{7}9a{5}9aa99a{18}9a{28}9a{9}9a{17}9a{5}9a{7}9a{11}9a{5}9aa99a{18}9a{36}9aa99a{7}9a{7}9aa99a{31}9a9a9aa99aaa9a{14}9a{10}9aaa9a{13}9aaa9a{6}99a{7}9a9a{5}9aa99aaa9a{27}9a{6}9a{19}9a{4}9a{9}9a{17}9aaa9aa9a{4}9aaa9a{7}9aa9a{4}9aaa9a{19}9a{10}9a{4}9a{14}99a{35}9aa99a{18}9a{4}9a{7}9a{19}9aaa9aa9aa9a{5}9a{10}99aaa9a{5}9a{17}9aaa9a9a{4}99a{9}9a{8}9a{4}9a{31}9aa9a{4}9a{5}9a{8}99a{31}9a{6}99a{18}9a{8}9a{19}9a{10}9a{16}9aa9a{4}9aaa9aaa9a{26}9a{4}9a{14}99a{27}9aaa9a{6}9a{4}9a{11}9aa99aaa9aaa9aaa9a9a{17}9a9a9aa99a{7}9a{10}9a{4}9a9a9aaa9a9a{13}9aaa9a{6}99aaa9aaa9a{7}9aa9aa9a{25}9a{7}9aa9a{8}9a{10}9a{4}9a{7}9a{17}9a{8}99aaa9aaa9a{10}99aaa9a{5}9a{17}9a{7}9aa9a{4}9a{14}99a{7}9a{30}9a{19}9a{4}9a{7}9a{15}9aaa9a9a{4}99aaa9a{11}9aa9a{4}9aaa9a{19}9a{5}9a{4}9a{4}9a{14}99a{11}9a{23}9aa9a{19}99a{38}9a{8}9a{7}9aa99a{7}9a9a{45}9a{33}9a{32}9a{11}9a{6}9a{11}9a{19}9a{27}99a{14}9a{31}9a{107}9aaa9a=/,0.988
+Crawling2024,URL with a path,a{5}.com/a{8}.aaa?aaa=a{4}/99-99-99/a9aaa9999aa9aaa9a99aa9999a99a9a9.aaa&a=999&a=999,0.979
+Crawling2024,hosted on a platform (private public suffix),a99a9a{6}99a.a{10}.net/#/a{5},0.984
+Crawling2024,hosted on a platform (private public suffix),a99-aa.a{5}.ru/aa-a{5}.aaa,0.999
+Crawling2024,hosted on a platform (private public suffix),a{13}.a{8}.com/a/a{5}?a{5}=a{5}_a{11}&a{9}=aaa_a{4}&a{5}=aaa9a{19}_a{10}9a{11}9a9a{4}-a{15}9a{9}9a{18},0.966
+Crawling2024,≥ 3 subdomains,aaa.a{8}.a{4}.aaa.mx/a{5}.aaa/a{9}/a{5}/?a{4}=a{5},0.972
+Crawling2024,≥ 3 subdomains,aaa.a{13}.aaa.aa.cr/a{5}/a{5}.aaa,0.952
+CompPhish,root URL (no path),aa99.a{10}.com/?a{5}9=99999999-9999-99aa-a{4}-a99999999999,0.975
+CompPhish,root URL (no path),aa9.9999a999a9a9999.com,0.99
+CompPhish,root URL (no path),a{7}.com/,0.998
+CompPhish,root URL (no path),a{6}.xyz/,0.955
+CompPhish,root URL (no path),aa99.a{14}.net/?a{5}9=99999999-9999-99a9-99aa-99999999aa9a,0.964
+CompPhish,URL with a path,a{7}.a{4}.com/aaa/a{11}_a{10}_9/aaa9a{9}9aaa9a9/aaa/a{4}?a{11}=a{5}9a{5}%9a{4}99a{26}9a{4}%9aa%9a{8}99a{4}999a{6}9a{4}9a{40}9a9a9aa99a{4}%9aa9a{14}%9aa9a{4}9a%9a{4}9a9aa%9aaa9a{7}9aa9a{9}%9a{14}%9a{6}99a{13}9%9a{32}9a{8}99aa%9a{5}9aa9aa%9a9%9a9a{24}9a9aa%9aaa9aa9a{5}999aa9a{8}9a{5}9a{12}9%9aa9a{4}9a{4}%9aa99aa9a{4}9a{17}9a{5}9a{4}9aa9aa9aaa9a{11}%9aa99aaa9a9a{4}%9a{16}9aaa99aaa9a{5}9a%9aa9a{4}%9a%9a&a{10}=a{5}%9a%9a%9a{8}.aaa%9a&a{6}=a{4}%9a%9a%9a{4}.a9.aaa%9a9999%9a99%9a{8}-a{4}%99aaa-aaa999&a{9}=a9a{7}9a{10}99a{5}%9aa9a9aaa999a{6}%9a9a{10}9a{4}9aaa9a{20}9a{16}9a{6}9a{12}99a{12}%9a9%9aaa9aa9a{4}%9a{5}%9aa9aa9aa9a9a{11}9a{5}%9a{4}%9aaa%9aaa9a%9aaa99a{4}9a{8}%9a999a{5}%9a{4}%9aa9a{10}9a{4}9a9a{13}9a9aa99a{17}9aaa9aa9aa9aa99a{4}%9a{11}9a{6}9a{4}9a{15}%9a%9a,0.999
+CompPhish,URL with a path,a{12}.in/a{8}_a{7}/a{5}.a{4},0.967
+CompPhish,URL with a path,aa.a{10}.com/a{4}/aa/a{7}-a9/a{5}.a{4}?aaa=aa9=&a{4}=a999a99a-9999-99a9-9a99-9999a{4}9aa9&aaa=,0.979
+CompPhish,URL with a path,a{8}.a{8}.hu/a/a{5},0.96
+CompPhish,URL with a path,"aaa.a{7}.com/aa/aa/aaa?a=99999&aa=a{6}&aaa=99&a{4}=99999.99999_99aa9a_9a99a,99999.99999_9a99aa_9a999,99999.99999_a9aa9a_9999a&aa_a{6}=99&aa_a{7}=&aa_a{6}=&aa_a{4}=9&aa_a{4}=aa_a{10}",0.967
+D4v,root URL (no path),a{5}.dev,0.993
+D4v,root URL (no path),a{6}.com,0.958
+D4v,root URL (no path),a{7}.com,0.984
+D4v,root URL (no path),a{7}.org,0.955
+D4v,root URL (no path),a{7}.com,0.998
+PhreshTest,root URL (no path),aaa.a{7}.a{5}.com/,0.975
+PhreshTest,root URL (no path),a{6}.a{6}.top/,0.98
+PhreshTest,root URL (no path),a{7}.shop/,0.993
+PhreshTest,root URL (no path),aaa-a{4}-a{6}99999.a{9}.com/,0.954
+PhreshTest,root URL (no path),a{8}.shop/,0.988
+PhreshTest,URL with a path,a{5}-a{10}.a{5}.link/a{6}/a{4}/a{5},0.989
+PhreshTest,URL with a path,a.a{5}.xyz/a99/,0.968
+PhreshTest,URL with a path,a{4}.aaa.au/aa-a{5}/a{5}.aaa,0.977
+PhreshTest,URL with a path,a{12}.a{12}.com/a{4}.aaa,0.964
+PhreshTest,URL with a path,a{16}.com/aa-a{7}/a{6}/a{5}-aaa/aaa/aa/a{5}.a{4},0.972
+PhreshTest,hosted on a platform (private public suffix),a{13}.a{7}.app/,0.97
+PhreshTest,hosted on a platform (private public suffix),a99a{4}9a99aa9.a{10}.net/a{5}.a{4},0.986
+PhreshTest,hosted on a platform (private public suffix),a{15}.aa.a{5}.site/,0.99
+PhreshTest,hosted on a platform (private public suffix),a{8}.a{7}.app/a/,0.985
+PhreshTest,hosted on a platform (private public suffix),a{4}-aaa.a{7}.com/,0.963
+PhreshTest,≥ 3 subdomains,aa9.a{16}.aaa.aa.cr/a{5}/a{5}.aaa,0.972

@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Model ablations: ROC-AUC (P view) at an identical ablation budget; post-freeze analysis.}
+\label{tab:ablations}
+\begin{tabular}{llrrrrr}
+\toprule
+ablation & CompPhish & Crawling2024 & D4v & PhreshTest & VALIDATION (macro of corpora) & benign identifiability (z) \\
+\midrule
+Reference (full model, ablation budget) & 0.8985 & 0.8694 & 0.8978 & 0.9725 & 0.9380 & 0.7627 \\
+C2 − FTE (dense MLP feature encoder) & 0.9183 & 0.8913 & 0.9155 & 0.9624 & 0.9383 & 0.7911 \\
+C2-name − name priors & 0.8993 & 0.8489 & 0.8506 & 0.9865 & 0.9340 & 0.7635 \\
+C3 − canonical URL feature tokens & 0.9224 & 0.8692 & 0.9602 & 0.9575 & 0.9080 & 0.7424 \\
+C5 − corpus-tempered sampling (α = 1) & 0.9036 & 0.8943 & 0.8793 & 0.9746 & 0.9401 & 0.7615 \\
+M1 − hierarchical dropout & 0.9187 & 0.8942 & 0.8744 & 0.9799 & 0.9416 & 0.7708 \\
+M2 − cross-modal attention (gate only) & 0.8966 & 0.8509 & 0.8423 & 0.9871 & 0.9339 & 0.7560 \\
+M3 − availability gate + aux heads (concat) & 0.9214 & 0.8666 & 0.9128 & 0.9738 & 0.9389 & 0.7489 \\
+M4 − label-conditional DANN & 0.8968 & 0.8915 & 0.8985 & 0.9761 & 0.9425 & 0.7676 \\
+− group-DRO (pos-weighted BCE) & 0.8988 & 0.8697 & 0.7789 & 0.9884 & 0.9320 & 0.7614 \\
+− DANN − group-DRO & 0.9110 & 0.8976 & 0.8191 & 0.9889 & 0.9377 & 0.7637 \\
+− native-token dropout & 0.8226 & 0.8356 & 0.7681 & 0.9663 & 0.9100 & 0.7603 \\
+URL-only & 0.8892 & 0.8712 & 0.9328 & 0.9704 & 0.9114 & 0.7495 \\
+features-only & 0.8944 & 0.8217 & 0.8769 & 0.9517 & 0.9292 & 0.7634 \\
+− string normalization (raw URL string) & 0.9085 & 0.8907 & 0.8737 & 0.9735 & 0.9449 & 0.9063 \\
++ shortcut features (no inversion filter) & 0.9040 & 0.8690 & 0.9110 & 0.9752 & 0.9398 & 0.7657 \\
++ is\_https & 0.9113 & 0.8935 & 0.8813 & 0.9754 & 0.9426 & 0.8959 \\
+Group-C sensitivity (NON-DEPLOYABLE) & 0.9027 & 0.8896 & 0.8939 & 0.9771 & 0.9422 & 0.7604 \\
+v2: selected configuration & 0.9480 & 0.8986 & 0.9388 & 0.9832 & 0.9686 & 0.7653 \\
+v2 − recurrent branch & 0.9188 & 0.8799 & 0.9259 & 0.9711 & 0.9434 & 0.7621 \\
+v13 defaults + recurrent branch only & 0.9391 & 0.8862 & 0.9288 & 0.9858 & 0.9638 & 0.7713 \\
+\bottomrule
+\end{tabular}
+\end{table*}

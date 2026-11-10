@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Continual adaptation: Frozen vs Naive vs ECRAC (mean over seeds and scenarios).}
+\label{tab:ecrac}
+\begin{tabular}{llrrrrrrrrrrrr}
+\toprule
+track & variant & final\_target\_f1 & final\_target\_pr\_auc & final\_target\_fpr & final\_target\_ece & prequential\_mean\_f1 & prequential\_mean\_recall & forgetting (max\_k retain − final) & update\_count (commits) & rollback\_rate & quarantine\_rate & false\_adaptation\_rate & update\_latency\_s (mean) \\
+\midrule
+A-contam: CompPhish pool, corrupted labels & Drift + Replay & 0.8495 & 0.9293 & 0.1127 & 0.1122 & 0.8362 & -- & 0.0101 & 8.0000 & 0.0000 & 0.0000 & 0.1250 & 0.2679 \\
+A-contam: CompPhish pool, corrupted labels & ECRAC (A0 full) & 0.8205 & 0.9139 & 0.2048 & 0.0850 & 0.8172 & -- & 0.0035 & 4.4000 & 0.1742 & 0.0304 & 0.0750 & 0.3041 \\
+A-contam: CompPhish pool, corrupted labels & Frozen (static) & 0.7699 & 0.9010 & 0.3286 & 0.1038 & 0.7900 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+A-contam: CompPhish pool, corrupted labels & Naive (periodic fine-tuning = A8) & 0.8377 & 0.9283 & 0.0884 & 0.1397 & 0.8308 & -- & 0.0157 & 8.0000 & 0.0000 & 0.0000 & 0.2188 & 0.2563 \\
+A: CompPhish pool & Drift + Replay & 0.8710 & 0.9396 & 0.1041 & 0.0236 & 0.8518 & -- & 0.0066 & 8.0000 & 0.0000 & 0.0000 & 0.0000 & 0.2834 \\
+A: CompPhish pool & ECRAC (A0 full) & 0.7959 & 0.9083 & 0.2647 & 0.0889 & 0.7990 & -- & 0.0015 & 1.2000 & 0.0000 & 0.0016 & 0.0000 & 0.2446 \\
+A: CompPhish pool & Frozen (static) & 0.7699 & 0.9010 & 0.3286 & 0.1038 & 0.7900 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+A: CompPhish pool & Naive (periodic fine-tuning = A8) & 0.8654 & 0.9373 & 0.0971 & 0.0285 & 0.8508 & -- & 0.0059 & 8.0000 & 0.0000 & 0.0000 & 0.0000 & 0.2838 \\
+A: CompPhish pool & Replay-only & 0.8714 & 0.9397 & 0.1046 & 0.0233 & 0.8523 & -- & 0.0063 & 8.0000 & 0.0000 & 0.0000 & 0.0000 & 0.2897 \\
+B-mix: PhishTankNovel + benign & Drift + Replay & -- & -- & -- & -- & 0.8940 & -- & 0.0038 & 26.0000 & 0.0000 & 0.0000 & 0.0615 & 0.3229 \\
+B-mix: PhishTankNovel + benign & ECRAC (A0 full) & -- & -- & -- & -- & 0.8825 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & Frozen (static) & -- & -- & -- & -- & 0.8825 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B-mix: PhishTankNovel + benign & Naive (periodic fine-tuning = A8) & -- & -- & -- & -- & 0.8923 & -- & 0.0040 & 26.0000 & 0.0000 & 0.0000 & 0.0846 & 0.2679 \\
+B-mix: PhishTankNovel + benign & Replay-only & -- & -- & -- & -- & 0.8940 & -- & 0.0030 & 26.0000 & 0.0000 & 0.0000 & 0.0846 & 0.3283 \\
+B: PhishTankNovel & Drift + Replay & -- & -- & -- & -- & -- & 0.9614 & 0.0229 & 26.0000 & 0.0000 & 0.0000 & 0.2692 & 0.3101 \\
+B: PhishTankNovel & ECRAC (A0 full) & -- & -- & -- & -- & -- & 0.9101 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B: PhishTankNovel & Frozen (static) & -- & -- & -- & -- & -- & 0.9101 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+B: PhishTankNovel & Naive (periodic fine-tuning = A8) & -- & -- & -- & -- & -- & 0.9829 & 0.5715 & 26.0000 & 0.0000 & 0.0000 & 0.4308 & 0.2645 \\
+B: PhishTankNovel & Replay-only & -- & -- & -- & -- & -- & 0.9614 & 0.0225 & 26.0000 & 0.0000 & 0.0000 & 0.2846 & 0.3090 \\
+C: controlled drift & Drift + Replay & 0.8368 & 0.9230 & 0.1232 & 0.0584 & 0.7801 & -- & 0.0055 & 7.1429 & 0.0000 & 0.0000 & 0.1861 & 0.2619 \\
+C: controlled drift & ECRAC (A0 full) & 0.7893 & 0.9051 & 0.2726 & 0.0841 & 0.7411 & -- & 0.0006 & 0.6857 & 0.0000 & 0.0019 & 0.0286 & 0.1200 \\
+C: controlled drift & Frozen (static) & 0.7699 & 0.9010 & 0.3286 & 0.1038 & 0.7262 & -- & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+C: controlled drift & Naive (periodic fine-tuning = A8) & 0.8088 & 0.9249 & 0.0967 & 0.0785 & 0.7862 & -- & 0.0224 & 10.0000 & 0.0000 & 0.0000 & 0.3029 & 0.2566 \\
+C: controlled drift & Replay-only & 0.8364 & 0.9229 & 0.1225 & 0.0589 & 0.7818 & -- & 0.0061 & 10.0000 & 0.0000 & 0.0000 & 0.2400 & 0.2690 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{ECRAC Track D: PhreshTest rows in date order, weekly windows, both classes.}
+\label{tab:rev_R18_trackD_ecrac_forward_in_time}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+variant & seed & windows & prequential\_mean\_f1 & forward\_transfer (preq − static) & final\_retain\_macro\_f1 & final\_retain\_test\_macro\_f1 & update\_count (commits) & rollback\_rate & false\_adaptation\_rate & quarantine\_rate \\
+\midrule
+Frozen (static) & 42 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 0.0000 & 0.0000 & 0.0000 \\
+Naive (periodic fine-tuning = A8) & 42 & 52 & 0.8926 & -0.0073 & 0.8983 & 0.9124 & 52 & 0.0000 & 0.5192 & 0.0000 \\
+Drift + Replay & 42 & 52 & 0.9149 & 0.0150 & 0.8918 & 0.9115 & 52 & 0.0000 & 0.1538 & 0.0000 \\
+ECRAC (A0 full) & 42 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 1.0000 & 0.0000 & 0.0001 \\
+ECRAC-cal (tau\_N calibrated on no-drift development windows) & 42 & 52 & 0.9062 & 0.0063 & 0.8833 & 0.9012 & 44 & 0.1538 & 0.2115 & 0.0001 \\
+Frozen (static) & 123 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 0.0000 & 0.0000 & 0.0000 \\
+Naive (periodic fine-tuning = A8) & 123 & 52 & 0.8983 & -0.0015 & 0.8979 & 0.9083 & 52 & 0.0000 & 0.4231 & 0.0000 \\
+Drift + Replay & 123 & 52 & 0.9151 & 0.0152 & 0.8969 & 0.9184 & 52 & 0.0000 & 0.1731 & 0.0000 \\
+ECRAC (A0 full) & 123 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 1.0000 & 0.0000 & 0.0000 \\
+ECRAC-cal (tau\_N calibrated on no-drift development windows) & 123 & 52 & 0.9041 & 0.0042 & 0.8822 & 0.9003 & 46 & 0.1154 & 0.2115 & 0.0000 \\
+Frozen (static) & 2024 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 0.0000 & 0.0000 & 0.0000 \\
+Naive (periodic fine-tuning = A8) & 2024 & 52 & 0.8905 & -0.0093 & 0.8893 & 0.9064 & 52 & 0.0000 & 0.5000 & 0.0000 \\
+Drift + Replay & 2024 & 52 & 0.9136 & 0.0138 & 0.8956 & 0.9166 & 52 & 0.0000 & 0.1154 & 0.0000 \\
+ECRAC (A0 full) & 2024 & 52 & 0.8999 & 0.0000 & 0.8837 & 0.9027 & 0 & 1.0000 & 0.0000 & 0.0000 \\
+ECRAC-cal (tau\_N calibrated on no-drift development windows) & 2024 & 52 & 0.9060 & 0.0061 & 0.8850 & 0.9017 & 44 & 0.1538 & 0.2308 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

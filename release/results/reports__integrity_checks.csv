@@ -1,0 +1,108 @@
+check,passed,detail
+D: Mendeley label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: Mendeley has no duplicated normalized URL,True,
+D: PhreshTrain label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: PhreshTrain has no duplicated normalized URL,True,
+D: PhreshTest label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: PhreshTest has no duplicated normalized URL,True,
+D: Crawling2024 label-conflict keys removed from the frame,True,"conflict keys=1, conflicting rows dropped=5, rows left=0"
+D: Crawling2024 has no duplicated normalized URL,True,
+D: CompPhish label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: CompPhish has no duplicated normalized URL,True,
+D: D4v label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: D4v has no duplicated normalized URL,True,
+D: PhishTank label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: PhishTank has no duplicated normalized URL,True,
+D: WebPagePhishing label-conflict keys removed from the frame,True,"conflict keys=0, conflicting rows dropped=0, rows left=0"
+D: WebPagePhishing has no duplicated normalized URL,True,
+A1/§4.1: normalized_url_shared = 0 and encoder_key_shared = 0 for every training-side ↔ test/PhishTank pair,True,
+A1: TRAIN ↔ PhishTank normalized_url_shared = 0,True,
+D: Web_page_phishing_detection absent from TRAIN / VALIDATION / tests / PhishTank,True,
+D: source-scoped label conflicts removed from development and each evaluation corpus,True,"{'TRAIN/VALIDATION': 0, 'PhreshTest': 0, 'Crawling2024': 0, 'CompPhish': 0, 'D4v': 0, 'PhishTank': 0}"
+D diagnostic: cross-corpus conflict-key presence recorded (non-blocking),True,"{'TRAIN/VALIDATION': 0, 'PhreshTest': 0, 'Crawling2024': 0, 'CompPhish': 1, 'D4v': 1, 'PhishTank': 0}"
+A3: shortcut table is not empty and lists the structural variables,True,"flagged=['url::path_depth', 'struct::path_depth', 'url::n_slashes', 'url::n_special', 'url::n_letters', 'url::url_len', 'url::path_url_ratio']"
+v13: retain / retain_cal / retain_test are domain-disjoint,True,rows 6267 / 4387 / 6200
+v13: B-mix benign pool and external retention set are domain-disjoint,True,benign pool 10805 rows | external retention 8000 rows
+v13 R2: per-seed forward passes E and P are identical on corpora without native tokens,True,max |Δlogit| = 0.0
+"v13 R5: no training-side ↔ evaluation overlap on normalized URL, model-input string or truncated model-input bytes",False,see revision/R5_overlap_by_key_all_pairs.csv
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, ADAPT-X2 stack (P))",True,max |Δp| = 2.17e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, ADAPT-PHISH v2 (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, BiGRU tuned)",True,max |Δp| = 8.32e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, URLNet tuned)",True,max |Δp| = 7.19e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, LightGBM (P) tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, LightGBM + n-grams tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, char n-gram LR tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, Baseline stack (P): tuned baselines, no ADAPT)",True,max |Δp| = 3.50e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, ADAPT-PHISH v2-KD (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, BiGRU-KD tuned)",True,max |Δp| = 8.64e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, ADAPT-X (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, ADAPT-PHISH (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, LightGBM (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, char-LR)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, LightGBM (P) + hashed char n-grams)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, URLNet-style char+word CNN)",True,max |Δp| = 7.47e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, BiGRU character model)",True,max |Δp| = 5.10e-08
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, Pretrained google/canine-s (fine-tuned))",False,max |Δp| = 8.43e-03
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned))",True,max |Δp| = 1.46e-07
+"R16 pipeline re-run reproduces the stored scores (PhreshTest, Simple stack (P): LightGBM + char-LR, no neural)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, ADAPT-X2 stack (P))",True,max |Δp| = 2.45e-08
+"R16 pipeline re-run reproduces the stored scores (CompPhish, ADAPT-PHISH v2 (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, BiGRU tuned)",True,max |Δp| = 1.01e-07
+"R16 pipeline re-run reproduces the stored scores (CompPhish, URLNet tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, LightGBM (P) tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, LightGBM + n-grams tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, char n-gram LR tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, Baseline stack (P): tuned baselines, no ADAPT)",True,max |Δp| = 4.43e-08
+"R16 pipeline re-run reproduces the stored scores (CompPhish, ADAPT-PHISH v2-KD (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, BiGRU-KD tuned)",True,max |Δp| = 9.61e-08
+"R16 pipeline re-run reproduces the stored scores (CompPhish, ADAPT-X (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, ADAPT-PHISH (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, LightGBM (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, char-LR)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, LightGBM (P) + hashed char n-grams)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, URLNet-style char+word CNN)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (CompPhish, BiGRU character model)",True,max |Δp| = 6.05e-08
+"R16 pipeline re-run reproduces the stored scores (CompPhish, Pretrained google/canine-s (fine-tuned))",False,max |Δp| = 4.73e-01
+"R16 pipeline re-run reproduces the stored scores (CompPhish, Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned))",True,max |Δp| = 5.44e-07
+"R16 pipeline re-run reproduces the stored scores (CompPhish, Simple stack (P): LightGBM + char-LR, no neural)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, ADAPT-X2 stack (P))",True,max |Δp| = 3.61e-05
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, ADAPT-PHISH v2 (P))",False,max |Δp| = 1.38e-04
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, BiGRU tuned)",True,max |Δp| = 2.04e-07
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, URLNet tuned)",True,max |Δp| = 2.04e-07
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, LightGBM (P) tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, LightGBM + n-grams tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, char n-gram LR tuned)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, Baseline stack (P): tuned baselines, no ADAPT)",True,max |Δp| = 5.77e-08
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, ADAPT-PHISH v2-KD (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, BiGRU-KD tuned)",True,max |Δp| = 1.78e-07
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, ADAPT-X (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, ADAPT-PHISH (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, LightGBM (P))",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, char-LR)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, LightGBM (P) + hashed char n-grams)",True,max |Δp| = 0.00e+00
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, URLNet-style char+word CNN)",True,max |Δp| = 1.91e-07
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, BiGRU character model)",True,max |Δp| = 6.15e-08
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, Pretrained google/canine-s (fine-tuned))",False,max |Δp| = 5.07e-01
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned))",True,max |Δp| = 3.38e-07
+"R16 pipeline re-run reproduces the stored scores (Crawling2024, Simple stack (P): LightGBM + char-LR, no neural)",True,max |Δp| = 0.00e+00
+R22 official test labels parsed,True,0 unparsed labels
+R22 constructor reproduces the stored PhreshTest scores (ADAPT-X2 stack (P)),True,max |Δp| = 2.79e-08
+R22 constructor reproduces the stored PhreshTest scores (ADAPT-PHISH v2 (P)),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (BiGRU tuned),True,max |Δp| = 1.37e-07
+R22 constructor reproduces the stored PhreshTest scores (URLNet tuned),True,max |Δp| = 3.46e-08
+R22 constructor reproduces the stored PhreshTest scores (LightGBM (P) tuned),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (LightGBM + n-grams tuned),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (char n-gram LR tuned),True,max |Δp| = 0.00e+00
+"R22 constructor reproduces the stored PhreshTest scores (Baseline stack (P): tuned baselines, no ADAPT)",True,max |Δp| = 4.40e-08
+R22 constructor reproduces the stored PhreshTest scores (ADAPT-PHISH v2-KD (P)),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (BiGRU-KD tuned),True,max |Δp| = 1.05e-07
+R22 constructor reproduces the stored PhreshTest scores (ADAPT-X (P)),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (ADAPT-PHISH (P)),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (LightGBM (P)),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (char-LR),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (LightGBM (P) + hashed char n-grams),True,max |Δp| = 0.00e+00
+R22 constructor reproduces the stored PhreshTest scores (URLNet-style char+word CNN),True,max |Δp| = 5.03e-08
+R22 constructor reproduces the stored PhreshTest scores (BiGRU character model),True,max |Δp| = 3.55e-08
+R22 constructor reproduces the stored PhreshTest scores (Pretrained google/canine-s (fine-tuned)),True,max |Δp| = 2.52e-08
+R22 constructor reproduces the stored PhreshTest scores (Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)),True,max |Δp| = 0.00e+00
+"R22 constructor reproduces the stored PhreshTest scores (Simple stack (P): LightGBM + char-LR, no neural)",True,max |Δp| = 0.00e+00

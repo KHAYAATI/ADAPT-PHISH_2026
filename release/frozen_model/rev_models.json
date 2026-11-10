@@ -1,0 +1,298 @@
+{
+  "headline": [
+    "Sanity: url_len only (LR)",
+    "Sanity: has_path only (LR)",
+    "Sanity: url_len + path depth (LR)",
+    "LightGBM (P) + hashed char n-grams seed-ens",
+    "URLNet-style char+word CNN seed-ens",
+    "BiGRU character model seed-ens",
+    "Pretrained google/canine-s (fine-tuned)",
+    "Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)",
+    "Simple stack (P): LightGBM + char-LR, no neural"
+  ],
+  "all": [
+    "Sanity: url_len only (LR)",
+    "Sanity: has_path only (LR)",
+    "Sanity: url_len + path depth (LR)",
+    "LightGBM (P) + hashed char n-grams s42",
+    "LightGBM (P) + hashed char n-grams s123",
+    "LightGBM (P) + hashed char n-grams s2024",
+    "LightGBM (P) + hashed char n-grams s3407",
+    "LightGBM (P) + hashed char n-grams s777",
+    "LightGBM (P) + hashed char n-grams seed-ens",
+    "URLNet-style char+word CNN s42",
+    "URLNet-style char+word CNN s123",
+    "URLNet-style char+word CNN s2024",
+    "URLNet-style char+word CNN s3407",
+    "URLNet-style char+word CNN s777",
+    "URLNet-style char+word CNN seed-ens",
+    "BiGRU character model s42",
+    "BiGRU character model s123",
+    "BiGRU character model s2024",
+    "BiGRU character model s3407",
+    "BiGRU character model s777",
+    "BiGRU character model seed-ens",
+    "Pretrained google/canine-s (fine-tuned)",
+    "Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)",
+    "Simple stack (P): LightGBM + char-LR, no neural"
+  ],
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    777
+  ],
+  "info": {
+    "LightGBM (P) + hashed char n-grams s42": {
+      "train_seconds": 528.5642952999915,
+      "trees": 435
+    },
+    "LightGBM (P) + hashed char n-grams s123": {
+      "train_seconds": 501.63731859999825,
+      "trees": 401
+    },
+    "LightGBM (P) + hashed char n-grams s2024": {
+      "train_seconds": 459.7317391000106,
+      "trees": 355
+    },
+    "LightGBM (P) + hashed char n-grams s3407": {
+      "train_seconds": 562.2072140999953,
+      "trees": 471
+    },
+    "LightGBM (P) + hashed char n-grams s777": {
+      "train_seconds": 536.3121050999907,
+      "trees": 447
+    },
+    "URLNet-style char+word CNN s42": {
+      "name": "URLNet-style char+word CNN",
+      "seed": 42,
+      "best_epoch": 5,
+      "best_val_selection": 0.9459102669179922,
+      "epochs_run": 13,
+      "train_seconds": 297.9784787999961,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet-style char+word CNN s123": {
+      "name": "URLNet-style char+word CNN",
+      "seed": 123,
+      "best_epoch": 5,
+      "best_val_selection": 0.9392362434807355,
+      "epochs_run": 13,
+      "train_seconds": 296.330845199991,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet-style char+word CNN s2024": {
+      "name": "URLNet-style char+word CNN",
+      "seed": 2024,
+      "best_epoch": 4,
+      "best_val_selection": 0.9409194893716053,
+      "epochs_run": 12,
+      "train_seconds": 274.00106850000157,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet-style char+word CNN s3407": {
+      "name": "URLNet-style char+word CNN",
+      "seed": 3407,
+      "best_epoch": 3,
+      "best_val_selection": 0.934223210825027,
+      "epochs_run": 11,
+      "train_seconds": 250.75679250000394,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "URLNet-style char+word CNN s777": {
+      "name": "URLNet-style char+word CNN",
+      "seed": 777,
+      "best_epoch": 3,
+      "best_val_selection": 0.9367274484618999,
+      "epochs_run": 11,
+      "train_seconds": 251.82498409999243,
+      "parameters": 2245505,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU character model s42": {
+      "name": "BiGRU character model",
+      "seed": 42,
+      "best_epoch": 19,
+      "best_val_selection": 0.9610313539335164,
+      "epochs_run": 27,
+      "train_seconds": 4900.632880999998,
+      "parameters": 72769,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU character model s123": {
+      "name": "BiGRU character model",
+      "seed": 123,
+      "best_epoch": 25,
+      "best_val_selection": 0.9551873953241601,
+      "epochs_run": 33,
+      "train_seconds": 5972.713561899989,
+      "parameters": 72769,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU character model s2024": {
+      "name": "BiGRU character model",
+      "seed": 2024,
+      "best_epoch": 15,
+      "best_val_selection": 0.9581507399678222,
+      "epochs_run": 23,
+      "train_seconds": 4174.147041399992,
+      "parameters": 72769,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU character model s3407": {
+      "name": "BiGRU character model",
+      "seed": 3407,
+      "best_epoch": 23,
+      "best_val_selection": 0.9604408644133505,
+      "epochs_run": 31,
+      "train_seconds": 5544.927277700015,
+      "parameters": 72769,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "BiGRU character model s777": {
+      "name": "BiGRU character model",
+      "seed": 777,
+      "best_epoch": 14,
+      "best_val_selection": 0.9627904785866186,
+      "epochs_run": 22,
+      "train_seconds": 3636.955031099991,
+      "parameters": 72769,
+      "budget": {
+        "epochs": 40,
+        "patience": 8,
+        "epoch_samples": 257167,
+        "batch": 512,
+        "alpha": 0.5,
+        "lr": 0.001,
+        "wd": 0.0001,
+        "ema": 0.0,
+        "kd": 0.0
+      },
+      "finished": true
+    },
+    "Pretrained google/canine-s (fine-tuned)": {
+      "train_seconds": 8501.901767500007,
+      "parameters": 132083713,
+      "max_length": 128,
+      "epochs": 3,
+      "rows_per_epoch": 200000,
+      "lr": 2e-05,
+      "seed": 42
+    },
+    "Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)": {
+      "train_seconds": 1191.2094234999968,
+      "parameters": 11170817,
+      "max_length": 128,
+      "epochs": 3,
+      "rows_per_epoch": 200000,
+      "lr": 5e-05,
+      "seed": 42
+    }
+  },
+  "pretrained": "google/canine-s: COMPLETED; google/bert_uncased_L-4_H-256_A-4: COMPLETED",
+  "hashed_dim": 65536
+}

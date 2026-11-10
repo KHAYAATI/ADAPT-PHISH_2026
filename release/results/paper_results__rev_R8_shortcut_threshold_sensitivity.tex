@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Features flagged by the inversion filter for a grid of thresholds (TRAIN rows).}
+\label{tab:rev_R8_shortcut_threshold_sensitivity}
+\begin{tabular}{llrrr}
+\toprule
+strong |AUC−0.5| > & inversion hi / lo & sign inversions & strong univariate (not inverted) & is the a-priori setting \\
+\midrule
+0.2000 & 0.55 / 0.45 & url::longest\_path\_token, url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::path\_len, url::url\_len & 5 & False \\
+0.2000 & 0.60 / 0.40 & url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::url\_len & 7 & False \\
+0.2000 & 0.65 / 0.35 & url::url\_len & 11 & False \\
+0.2000 & 0.70 / 0.30 &  & 11 & False \\
+0.2500 & 0.55 / 0.45 & url::longest\_path\_token, url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::path\_len, url::url\_len & 1 & False \\
+0.2500 & 0.60 / 0.40 & url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::url\_len & 2 & False \\
+0.2500 & 0.65 / 0.35 & url::url\_len & 5 & False \\
+0.2500 & 0.70 / 0.30 &  & 5 & False \\
+0.3000 & 0.55 / 0.45 & url::longest\_path\_token, url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::path\_len, url::url\_len & 1 & False \\
+0.3000 & 0.60 / 0.40 & url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::url\_len & 1 & True \\
+0.3000 & 0.65 / 0.35 & url::url\_len & 1 & False \\
+0.3000 & 0.70 / 0.30 &  & 1 & False \\
+0.3500 & 0.55 / 0.45 & url::longest\_path\_token, url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::path\_len, url::url\_len & 0 & False \\
+0.3500 & 0.60 / 0.40 & url::n\_letters, url::n\_slashes, url::n\_special, url::path\_depth, url::url\_len & 0 & False \\
+0.3500 & 0.65 / 0.35 & url::url\_len & 0 & False \\
+0.3500 & 0.70 / 0.30 &  & 0 & False \\
+\bottomrule
+\end{tabular}
+\end{table*}

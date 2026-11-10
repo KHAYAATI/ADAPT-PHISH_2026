@@ -1,0 +1,9 @@
+dataset,rows,phishing,legitimate,numeric_features,empty_url_removed,D4V_TOTAL,D4V_LABEL_0,D4V_LABEL_1,D4V_LABEL_MINUS_1,D4V_AFTER_FILTER
+Mendeley,11430,5715,5715,87,0,,,,,
+PhreshTrain,300000,150000,150000,53,0,,,,,
+PhreshTest,100000,50000,50000,53,0,,,,,
+Crawling2024,50000,25000,25000,53,0,,,,,
+CompPhish,15358,7204,8154,70,0,,,,,
+D4v,1000,500,500,0,0,1000.0,500.0,500.0,0.0,1000.0
+PhishTank,73184,73184,0,0,0,,,,,
+WebPagePhishing,11481,5741,5740,87,0,,,,,

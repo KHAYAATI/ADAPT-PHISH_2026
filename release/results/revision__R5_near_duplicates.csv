@@ -1,0 +1,6 @@
+evaluated set,rows,rows with a near duplicate in development (est. Jaccard ≥ 0.8),share,same path+query template (≥ 12 chars) as a development URL,… of which on a registrable domain unseen in TRAIN,rows with neither
+PhreshTest,96319,4719,0.048993448852251376,3459,2029,88800
+Crawling2024,46322,140,0.0030223220068218127,741,644,45480
+CompPhish,9353,54,0.005773548594034,240,217,9064
+D4v,962,4,0.004158004158004158,7,6,951
+PhishTank,63822,304,0.00476324778289618,782,630,62749

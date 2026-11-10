@@ -1,0 +1,20 @@
+# Environment of the v15 run that produced every number of the article (reports/reproducibility.json):
+# Python 3.10.11, Windows 10 (build 19045), CUDA, 16 CPU threads, NVIDIA Quadro P6000.
+# Pinned: the packages whose version is recorded by the run.
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+lightgbm==4.7.0
+torch==2.6.0           # CUDA 12.4 build (2.6.0+cu124) used for the run
+# Not version-pinned by the run record (use a release compatible with the pins above):
+scipy
+tldextract
+matplotlib
+openpyxl
+tqdm
+transformers           # pretrained baselines (google/canine-s, BERT-mini)
+huggingface_hub        # data mirror download
+datasets               # optional load_dataset cross-check
+pyarrow
+jupyter
+# paper scripts (build/): pandas, numpy, matplotlib only

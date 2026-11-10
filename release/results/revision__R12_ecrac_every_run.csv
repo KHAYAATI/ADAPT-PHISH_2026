@@ -1,0 +1,891 @@
+track,scenario,seed,variant,windows,attempted_updates,update_count (commits),rejected_updates,false_adaptation_rate,score,score_source,forgetting (max_k retain − final)
+A: CompPhish pool,real (domain-grouped windows),42,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),42,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8611076694337753,final target F1 (CompPhish external test),0.004378581445295904
+A: CompPhish pool,real (domain-grouped windows),42,Replay-only,8,8,8,0,0.0,0.8733805915424102,final target F1 (CompPhish external test),0.0076523896173791295
+A: CompPhish pool,real (domain-grouped windows),42,Drift-triggered,8,8,8,0,0.0,0.8582432600323021,final target F1 (CompPhish external test),0.003909619144983667
+A: CompPhish pool,real (domain-grouped windows),42,Drift + Replay,8,8,8,0,0.0,0.8725622470256348,final target F1 (CompPhish external test),0.007017971921313149
+A: CompPhish pool,real (domain-grouped windows),42,ECRAC (A0 full),8,1,1,0,0.0,0.7945904001773639,final target F1 (CompPhish external test),0.0011675210851749274
+A: CompPhish pool,real (domain-grouped windows),42,A1 − evidence consistency,8,3,2,1,0.0,0.8200316527243952,final target F1 (CompPhish external test),0.0021212740207710024
+A: CompPhish pool,real (domain-grouped windows),42,A2 − Need–Risk separation,8,1,1,0,0.0,0.7944629014396456,final target F1 (CompPhish external test),0.0008435058400355633
+A: CompPhish pool,real (domain-grouped windows),42,A3 − gradient-conflict test,8,1,1,0,0.0,0.7984375,final target F1 (CompPhish external test),0.0013308739121599134
+A: CompPhish pool,real (domain-grouped windows),42,A4 − trust gate / quarantine,8,1,1,0,0.0,0.7950365610458675,final target F1 (CompPhish external test),0.0010055098342103275
+A: CompPhish pool,real (domain-grouped windows),42,A5 − adaptive budget,8,1,1,0,0.0,0.8083670715249662,final target F1 (CompPhish external test),0.0032606293933310493
+A: CompPhish pool,real (domain-grouped windows),42,A6 − rare-class protection,8,1,1,0,0.0,0.800625488663018,final target F1 (CompPhish external test),0.000688136878694956
+A: CompPhish pool,real (domain-grouped windows),42,A7 − adaptation certificate,8,1,1,0,0.0,0.7945933968535343,final target F1 (CompPhish external test),0.0011662197683999231
+A: CompPhish pool,real (domain-grouped windows),42,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8229827742520399,final target F1 (CompPhish external test),0.0045274346601889
+A: CompPhish pool,real (domain-grouped windows),42,"A1-cal (− evidence consistency, calibrated tau_N)",8,8,7,1,0.0,0.8367655613728913,final target F1 (CompPhish external test),0.0027849401537900498
+A: CompPhish pool,real (domain-grouped windows),123,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),123,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8607943866683373,final target F1 (CompPhish external test),0.00833362455822606
+A: CompPhish pool,real (domain-grouped windows),123,Replay-only,8,8,8,0,0.0,0.8733431516936672,final target F1 (CompPhish external test),0.010104933246019576
+A: CompPhish pool,real (domain-grouped windows),123,Drift-triggered,8,7,7,0,0.0,0.8592927012791572,final target F1 (CompPhish external test),0.005429677647880382
+A: CompPhish pool,real (domain-grouped windows),123,Drift + Replay,8,8,8,0,0.0,0.8736311061892458,final target F1 (CompPhish external test),0.011245355022680426
+A: CompPhish pool,real (domain-grouped windows),123,ECRAC (A0 full),8,2,2,0,0.0,0.8152592257188137,final target F1 (CompPhish external test),0.0022937830716607266
+A: CompPhish pool,real (domain-grouped windows),123,A1 − evidence consistency,8,4,3,1,0.0,0.8276646570356045,final target F1 (CompPhish external test),0.004372838529254408
+A: CompPhish pool,real (domain-grouped windows),123,A2 − Need–Risk separation,8,2,2,0,0.0,0.8151669496321449,final target F1 (CompPhish external test),0.001972356358395544
+A: CompPhish pool,real (domain-grouped windows),123,A3 − gradient-conflict test,8,2,2,0,0.0,0.8163543441226576,final target F1 (CompPhish external test),0.0031079366046034007
+A: CompPhish pool,real (domain-grouped windows),123,A4 − trust gate / quarantine,8,1,1,0,0.0,0.795043316153087,final target F1 (CompPhish external test),0.0008209916552817109
+A: CompPhish pool,real (domain-grouped windows),123,A5 − adaptive budget,8,1,1,0,0.0,0.8133408705483324,final target F1 (CompPhish external test),0.0032632036395809916
+A: CompPhish pool,real (domain-grouped windows),123,A6 − rare-class protection,8,1,1,0,0.0,0.7976788304876687,final target F1 (CompPhish external test),0.0016563378532725714
+A: CompPhish pool,real (domain-grouped windows),123,A7 − adaptation certificate,8,2,2,0,0.0,0.8200502397807719,final target F1 (CompPhish external test),0.0031137048691710634
+A: CompPhish pool,real (domain-grouped windows),123,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.125,0.8327018027328051,final target F1 (CompPhish external test),0.002775823747065087
+A: CompPhish pool,real (domain-grouped windows),123,"A1-cal (− evidence consistency, calibrated tau_N)",8,8,8,0,0.0,0.8476256339326879,final target F1 (CompPhish external test),0.005977588545704071
+A: CompPhish pool,real (domain-grouped windows),2024,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),2024,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8648778726988329,final target F1 (CompPhish external test),0.005077139814932297
+A: CompPhish pool,real (domain-grouped windows),2024,Replay-only,8,8,8,0,0.0,0.8686941829592083,final target F1 (CompPhish external test),0.00505172780041252
+A: CompPhish pool,real (domain-grouped windows),2024,Drift-triggered,8,8,8,0,0.0,0.8640019205377506,final target F1 (CompPhish external test),0.005544660969480475
+A: CompPhish pool,real (domain-grouped windows),2024,Drift + Replay,8,8,8,0,0.0,0.8689771766694844,final target F1 (CompPhish external test),0.005218613389182725
+A: CompPhish pool,real (domain-grouped windows),2024,ECRAC (A0 full),8,1,1,0,0.0,0.7885590933621155,final target F1 (CompPhish external test),0.0012915992117732422
+A: CompPhish pool,real (domain-grouped windows),2024,A1 − evidence consistency,8,5,5,0,0.0,0.8505747126436781,final target F1 (CompPhish external test),0.0033006392841765653
+A: CompPhish pool,real (domain-grouped windows),2024,A2 − Need–Risk separation,8,1,1,0,0.0,0.7885985748218527,final target F1 (CompPhish external test),0.0011305238288430441
+A: CompPhish pool,real (domain-grouped windows),2024,A3 − gradient-conflict test,8,1,1,0,0.0,0.7947826086956522,final target F1 (CompPhish external test),0.002099772430272484
+A: CompPhish pool,real (domain-grouped windows),2024,A4 − trust gate / quarantine,8,1,1,0,0.0,0.7891950297136683,final target F1 (CompPhish external test),0.001776181393380094
+A: CompPhish pool,real (domain-grouped windows),2024,A5 − adaptive budget,8,1,0,1,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),2024,A6 − rare-class protection,8,1,1,0,0.0,0.7966641062218808,final target F1 (CompPhish external test),0.0014629833961414818
+A: CompPhish pool,real (domain-grouped windows),2024,A7 − adaptation certificate,8,2,2,0,0.0,0.8092280390417036,final target F1 (CompPhish external test),0.0033987581369037123
+A: CompPhish pool,real (domain-grouped windows),2024,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8272633862313049,final target F1 (CompPhish external test),0.0034201024972948524
+A: CompPhish pool,real (domain-grouped windows),2024,"A1-cal (− evidence consistency, calibrated tau_N)",8,8,8,0,0.0,0.8501257936983347,final target F1 (CompPhish external test),0.003347871394129509
+A: CompPhish pool,real (domain-grouped windows),3407,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8718639089462734,final target F1 (CompPhish external test),0.005924773889579571
+A: CompPhish pool,real (domain-grouped windows),3407,Replay-only,8,8,8,0,0.0,0.8753174507195549,final target F1 (CompPhish external test),0.005216375673318563
+A: CompPhish pool,real (domain-grouped windows),3407,Drift-triggered,8,8,8,0,0.0,0.8710741781742637,final target F1 (CompPhish external test),0.006570697534476588
+A: CompPhish pool,real (domain-grouped windows),3407,Drift + Replay,8,8,8,0,0.0,0.8748489973423532,final target F1 (CompPhish external test),0.005695998220574872
+A: CompPhish pool,real (domain-grouped windows),3407,ECRAC (A0 full),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A1 − evidence consistency,8,4,4,0,0.0,0.845226843100189,final target F1 (CompPhish external test),0.002480153725306189
+A: CompPhish pool,real (domain-grouped windows),3407,A2 − Need–Risk separation,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A3 − gradient-conflict test,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A4 − trust gate / quarantine,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A5 − adaptive budget,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A6 − rare-class protection,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,A7 − adaptation certificate,8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),3407,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8256035934868051,final target F1 (CompPhish external test),0.004354874052660329
+A: CompPhish pool,real (domain-grouped windows),3407,"A1-cal (− evidence consistency, calibrated tau_N)",8,8,8,0,0.0,0.8519165792846324,final target F1 (CompPhish external test),0.00468963835324665
+A: CompPhish pool,real (domain-grouped windows),777,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+A: CompPhish pool,real (domain-grouped windows),777,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.868241989360386,final target F1 (CompPhish external test),0.005590125206940799
+A: CompPhish pool,real (domain-grouped windows),777,Replay-only,8,8,8,0,0.0,0.8664738491202699,final target F1 (CompPhish external test),0.0035900773439891953
+A: CompPhish pool,real (domain-grouped windows),777,Drift-triggered,8,8,8,0,0.0,0.869350456902939,final target F1 (CompPhish external test),0.0060738145025633905
+A: CompPhish pool,real (domain-grouped windows),777,Drift + Replay,8,8,8,0,0.0,0.8651252408477842,final target F1 (CompPhish external test),0.003906482313887016
+A: CompPhish pool,real (domain-grouped windows),777,ECRAC (A0 full),8,2,2,0,0.0,0.8113102526995436,final target F1 (CompPhish external test),0.0027498048474295933
+A: CompPhish pool,real (domain-grouped windows),777,A1 − evidence consistency,8,3,2,1,0.0,0.8143575674439872,final target F1 (CompPhish external test),0.002623189253263769
+A: CompPhish pool,real (domain-grouped windows),777,A2 − Need–Risk separation,8,1,1,0,0.0,0.7962106190790923,final target F1 (CompPhish external test),0.0009883267912325078
+A: CompPhish pool,real (domain-grouped windows),777,A3 − gradient-conflict test,8,2,2,0,0.0,0.8233928985843583,final target F1 (CompPhish external test),0.0015409369918748528
+A: CompPhish pool,real (domain-grouped windows),777,A4 − trust gate / quarantine,8,2,2,0,0.0,0.812206572769953,final target F1 (CompPhish external test),0.0014645862669458998
+A: CompPhish pool,real (domain-grouped windows),777,A5 − adaptive budget,8,2,2,0,0.0,0.8204607046070461,final target F1 (CompPhish external test),0.0035612925128213346
+A: CompPhish pool,real (domain-grouped windows),777,A6 − rare-class protection,8,2,1,1,0.0,0.79884290164664,final target F1 (CompPhish external test),0.001160021054549265
+A: CompPhish pool,real (domain-grouped windows),777,A7 − adaptation certificate,8,2,2,0,0.0,0.8106304903814078,final target F1 (CompPhish external test),0.002589548385643514
+A: CompPhish pool,real (domain-grouped windows),777,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.838348015101247,final target F1 (CompPhish external test),0.002911902750563078
+A: CompPhish pool,real (domain-grouped windows),777,"A1-cal (− evidence consistency, calibrated tau_N)",8,8,7,1,0.0,0.8412057915974365,final target F1 (CompPhish external test),0.001627323307065831
+B: PhishTankNovel,weekly windows (prequential),42,Frozen (static),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,Naive (periodic fine-tuning = A8),26,26,26,0,0.46153846153846156,0.9821880321933064,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),42,Replay-only,26,26,26,0,0.2692307692307692,0.9615413264743048,prequential recall,0.026923731382328064
+B: PhishTankNovel,weekly windows (prequential),42,Drift-triggered,26,26,26,0,0.46153846153846156,0.9820769196480124,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),42,Drift + Replay,26,26,26,0,0.2692307692307692,0.9616279586518008,prequential recall,0.026115990691527702
+B: PhishTankNovel,weekly windows (prequential),42,ECRAC (A0 full),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A1 − evidence consistency,26,26,1,25,0.0,0.9245790628586879,prequential recall,0.0035517446485640036
+B: PhishTankNovel,weekly windows (prequential),42,A2 − Need–Risk separation,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A3 − gradient-conflict test,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A4 − trust gate / quarantine,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A5 − adaptive budget,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A6 − rare-class protection,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,A7 − adaptation certificate,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),42,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,7,19,0.0,0.9374558957134689,prequential recall,0.009652220427365688
+B: PhishTankNovel,weekly windows (prequential),42,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,2,24,0.0,0.9248664791457989,prequential recall,0.004555386420044161
+B: PhishTankNovel,weekly windows (prequential),123,Frozen (static),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,Naive (periodic fine-tuning = A8),26,26,26,0,0.38461538461538464,0.9836246888449486,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),123,Replay-only,26,26,26,0,0.34615384615384615,0.9624438164583982,prequential recall,0.028304917901577742
+B: PhishTankNovel,weekly windows (prequential),123,Drift-triggered,26,26,26,0,0.38461538461538464,0.9838702358046445,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),123,Drift + Replay,26,26,26,0,0.34615384615384615,0.962905260763103,prequential recall,0.027118015714996835
+B: PhishTankNovel,weekly windows (prequential),123,ECRAC (A0 full),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A1 − evidence consistency,26,26,3,23,0.038461538461538464,0.9270091759728292,prequential recall,0.009982832353032434
+B: PhishTankNovel,weekly windows (prequential),123,A2 − Need–Risk separation,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A3 − gradient-conflict test,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A4 − trust gate / quarantine,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A5 − adaptive budget,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A6 − rare-class protection,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,A7 − adaptation certificate,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),123,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,8,18,0.0,0.9338958326028427,prequential recall,0.007196640760908757
+B: PhishTankNovel,weekly windows (prequential),123,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,3,23,0.0,0.9378024235004166,prequential recall,0.0054115225243711595
+B: PhishTankNovel,weekly windows (prequential),2024,Frozen (static),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,Naive (periodic fine-tuning = A8),26,26,26,0,0.5,0.9829745391910216,prequential recall,0.5703366961775143
+B: PhishTankNovel,weekly windows (prequential),2024,Replay-only,26,26,26,0,0.3076923076923077,0.9624654047092289,prequential recall,0.02179992872727521
+B: PhishTankNovel,weekly windows (prequential),2024,Drift-triggered,26,26,26,0,0.5,0.9829424611772922,prequential recall,0.5717436537543845
+B: PhishTankNovel,weekly windows (prequential),2024,Drift + Replay,26,26,26,0,0.3076923076923077,0.9623860449121382,prequential recall,0.020788617934097475
+B: PhishTankNovel,weekly windows (prequential),2024,ECRAC (A0 full),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A1 − evidence consistency,26,26,1,25,0.0,0.9251431989080571,prequential recall,0.0030926413741336756
+B: PhishTankNovel,weekly windows (prequential),2024,A2 − Need–Risk separation,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A3 − gradient-conflict test,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A4 − trust gate / quarantine,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A5 − adaptive budget,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A6 − rare-class protection,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,A7 − adaptation certificate,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),2024,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,5,21,0.0,0.9330190828893599,prequential recall,0.00587603457646213
+B: PhishTankNovel,weekly windows (prequential),2024,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,1,25,0.0,0.92442060731444,prequential recall,0.00276661689352109
+B: PhishTankNovel,weekly windows (prequential),3407,Frozen (static),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,Naive (periodic fine-tuning = A8),26,26,26,0,0.34615384615384615,0.9830380587758106,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),3407,Replay-only,26,26,26,0,0.2692307692307692,0.9591017079840023,prequential recall,0.01729283180140484
+B: PhishTankNovel,weekly windows (prequential),3407,Drift-triggered,26,26,26,0,0.34615384615384615,0.9831715680095302,prequential recall,0.5731536965307592
+B: PhishTankNovel,weekly windows (prequential),3407,Drift + Replay,26,26,26,0,0.19230769230769232,0.9593535930924664,prequential recall,0.022886662285376613
+B: PhishTankNovel,weekly windows (prequential),3407,ECRAC (A0 full),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A1 − evidence consistency,26,26,3,23,0.0,0.9290486791620196,prequential recall,0.005396297089588886
+B: PhishTankNovel,weekly windows (prequential),3407,A2 − Need–Risk separation,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A3 − gradient-conflict test,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A4 − trust gate / quarantine,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A5 − adaptive budget,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A6 − rare-class protection,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,A7 − adaptation certificate,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),3407,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,6,20,0.0,0.9342827587225356,prequential recall,0.005405652071132971
+B: PhishTankNovel,weekly windows (prequential),3407,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,4,22,0.0,0.9295557665891429,prequential recall,0.009336781987154374
+B: PhishTankNovel,weekly windows (prequential),777,Frozen (static),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,Naive (periodic fine-tuning = A8),26,26,26,0,0.46153846153846156,0.9828684339277245,prequential recall,0.5675319873639864
+B: PhishTankNovel,weekly windows (prequential),777,Replay-only,26,26,26,0,0.23076923076923078,0.9615114828833207,prequential recall,0.018165253434979545
+B: PhishTankNovel,weekly windows (prequential),777,Drift-triggered,26,26,26,0,0.4230769230769231,0.9829315891632936,prequential recall,0.5710397900880668
+B: PhishTankNovel,weekly windows (prequential),777,Drift + Replay,26,26,26,0,0.23076923076923078,0.9606125366796919,prequential recall,0.017531365864512982
+B: PhishTankNovel,weekly windows (prequential),777,ECRAC (A0 full),26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A1 − evidence consistency,26,26,3,23,0.0,0.9351807504427379,prequential recall,0.00883379566393594
+B: PhishTankNovel,weekly windows (prequential),777,A2 − Need–Risk separation,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A3 − gradient-conflict test,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A4 − trust gate / quarantine,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A5 − adaptive budget,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A6 − rare-class protection,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,A7 − adaptation certificate,26,0,0,0,0.0,0.910050097452019,prequential recall,0.0
+B: PhishTankNovel,weekly windows (prequential),777,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,8,18,0.0,0.9334417690426869,prequential recall,0.01032445598681242
+B: PhishTankNovel,weekly windows (prequential),777,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,3,23,0.0,0.936240721451101,prequential recall,0.007207522394030663
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,Frozen (static),26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,Naive (periodic fine-tuning = A8),26,26,26,0,0.11538461538461539,0.8907007222135939,prequential F1,0.0009214122731684427
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,Replay-only,26,26,26,0,0.038461538461538464,0.8933637742476119,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,Drift-triggered,26,25,25,0,0.16,0.8903842527520778,prequential F1,0.0020587187816389907
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,Drift + Replay,26,26,26,0,0.0,0.8940253468725554,prequential F1,0.0013474156427131234
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,ECRAC (A0 full),26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A1 − evidence consistency,26,19,14,5,0.15789473684210525,0.8856669135839527,prequential F1,0.0006435892163068058
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A2 − Need–Risk separation,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A3 − gradient-conflict test,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A4 − trust gate / quarantine,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A5 − adaptive budget,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A6 − rare-class protection,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,A7 − adaptation certificate,26,0,0,0,0.0,0.8820049846339966,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,24,2,0.23076923076923078,0.8846209604607572,prequential F1,0.0006433661786874323
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),42,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,19,7,0.23076923076923078,0.8840617009630847,prequential F1,0.007136839127197536
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,Frozen (static),26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,Naive (periodic fine-tuning = A8),26,26,26,0,0.07692307692307693,0.8921344830902508,prequential F1,0.01149298457695569
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,Replay-only,26,26,26,0,0.07692307692307693,0.8931513018522915,prequential F1,0.004180490177623453
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,Drift-triggered,26,26,26,0,0.11538461538461539,0.891950709029389,prequential F1,0.01084671360777889
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,Drift + Replay,26,26,26,0,0.038461538461538464,0.8938413511306524,prequential F1,0.004634490862934992
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,ECRAC (A0 full),26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A1 − evidence consistency,26,21,19,2,0.14285714285714285,0.8876313491053758,prequential F1,0.00014740297574511452
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A2 − Need–Risk separation,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A3 − gradient-conflict test,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A4 − trust gate / quarantine,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A5 − adaptive budget,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A6 − rare-class protection,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,A7 − adaptation certificate,26,0,0,0,0.0,0.8825854865015844,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,26,0,0.19230769230769232,0.8850749645028303,prequential F1,0.00016138337522786372
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),123,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,23,3,0.23076923076923078,0.885973705366546,prequential F1,0.0017816096651240843
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,Frozen (static),26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,Naive (periodic fine-tuning = A8),26,26,26,0,0.11538461538461539,0.8949389788669257,prequential F1,0.0035339529128656233
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,Replay-only,26,26,26,0,0.11538461538461539,0.8953656934281717,prequential F1,0.00405508150200018
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,Drift-triggered,26,26,26,0,0.11538461538461539,0.8955360184546403,prequential F1,0.0035088865905211764
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,Drift + Replay,26,26,26,0,0.11538461538461539,0.894614986241242,prequential F1,0.006092722901796632
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,ECRAC (A0 full),26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A1 − evidence consistency,26,19,10,9,0.10526315789473684,0.8877894843998819,prequential F1,0.0014439426788011023
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A2 − Need–Risk separation,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A3 − gradient-conflict test,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A4 − trust gate / quarantine,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A5 − adaptive budget,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A6 − rare-class protection,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,A7 − adaptation certificate,26,0,0,0,0.0,0.8831010045489756,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,21,5,0.23076923076923078,0.8863523764643878,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),2024,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,23,3,0.15384615384615385,0.8896397458716139,prequential F1,0.0004663178444902494
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,Frozen (static),26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,Naive (periodic fine-tuning = A8),26,26,26,0,0.038461538461538464,0.8946714125532154,prequential F1,0.002224850119542321
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,Replay-only,26,26,26,0,0.11538461538461539,0.8962774220241165,prequential F1,0.0025234038338336484
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,Drift-triggered,26,25,25,0,0.04,0.8944291085746788,prequential F1,0.001749799397023688
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,Drift + Replay,26,26,26,0,0.07692307692307693,0.8960857285775903,prequential F1,0.0031983580876442375
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,ECRAC (A0 full),26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A1 − evidence consistency,26,20,16,4,0.1,0.8878380516434888,prequential F1,0.0014484235616352148
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A2 − Need–Risk separation,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A3 − gradient-conflict test,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A4 − trust gate / quarantine,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A5 − adaptive budget,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A6 − rare-class protection,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,A7 − adaptation certificate,26,0,0,0,0.0,0.8836592316065549,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,22,4,0.5,0.8840769492569351,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),3407,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,18,8,0.3076923076923077,0.884335240035105,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,Frozen (static),26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,Naive (periodic fine-tuning = A8),26,26,26,0,0.07692307692307693,0.8890327845875551,prequential F1,0.0019180839415444684
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,Replay-only,26,26,26,0,0.07692307692307693,0.8919642448442406,prequential F1,0.004173310858502033
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,Drift-triggered,26,26,26,0,0.11538461538461539,0.8891706447928838,prequential F1,0.00429184734556709
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,Drift + Replay,26,26,26,0,0.07692307692307693,0.8915943972490307,prequential F1,0.003668705972917685
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,ECRAC (A0 full),26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A1 − evidence consistency,26,21,16,5,0.23809523809523808,0.88323957994273,prequential F1,0.000791048770440228
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A2 − Need–Risk separation,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A3 − gradient-conflict test,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A4 − trust gate / quarantine,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A5 − adaptive budget,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A6 − rare-class protection,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,A7 − adaptation certificate,26,0,0,0,0.0,0.881109778932688,prequential F1,0.0
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,ECRAC-cal (tau_N calibrated on no-drift development windows),26,26,23,3,0.3076923076923077,0.8828966621272619,prequential F1,1.8983769929370453e-06
+B-mix: PhishTankNovel + benign,weekly windows + benign (prequential),777,"A1-cal (− evidence consistency, calibrated tau_N)",26,26,23,3,0.38461538461538464,0.8829580758666703,prequential F1,0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8536957073914148,final target F1 (CompPhish external test),0.008431387150569902
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,Drift + Replay,8,8,8,0,0.0,0.8668232966489428,final target F1 (CompPhish external test),0.009305456311203608
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,ECRAC (A0 full),8,4,4,0,0.0,0.8340474811812392,final target F1 (CompPhish external test),0.003752000746597095
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,6,2,0.0,0.8254549616573195,final target F1 (CompPhish external test),0.001971075417027346
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,A4 − trust gate / quarantine,8,3,3,0,0.0,0.8210018382352942,final target F1 (CompPhish external test),0.001995667002515411
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,42,A7 − adaptation certificate,8,4,4,0,0.0,0.818407960199005,final target F1 (CompPhish external test),0.0045441311656799765
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,Naive (periodic fine-tuning = A8),8,8,8,0,0.25,0.8340299975411851,final target F1 (CompPhish external test),0.009073430366026702
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,Drift + Replay,8,8,8,0,0.0,0.8506243996157541,final target F1 (CompPhish external test),0.009421537553526926
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,ECRAC (A0 full),8,8,8,0,0.125,0.8107757221681272,final target F1 (CompPhish external test),0.0033863140571879224
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.125,0.8213502849627357,final target F1 (CompPhish external test),0.004190403867103121
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,A4 − trust gate / quarantine,8,8,7,1,0.25,0.8010166260722228,final target F1 (CompPhish external test),0.009535169152384948
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,42,A7 − adaptation certificate,8,8,8,0,0.25,0.7937710437710438,final target F1 (CompPhish external test),0.005027574117044797
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,Naive (periodic fine-tuning = A8),8,8,8,0,0.25,0.8392456811288408,final target F1 (CompPhish external test),0.013235581761391835
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,Drift + Replay,8,8,8,0,0.0,0.8582985716091518,final target F1 (CompPhish external test),0.008170187159032283
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,ECRAC (A0 full),8,4,3,1,0.0,0.8373486755363778,final target F1 (CompPhish external test),0.0004897008109570056
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.849248074336716,final target F1 (CompPhish external test),0.001635703881365691
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,A4 − trust gate / quarantine,8,8,3,5,0.0,0.83235610865143,final target F1 (CompPhish external test),0.005331372329251849
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,42,A7 − adaptation certificate,8,4,4,0,0.0,0.8438148736109415,final target F1 (CompPhish external test),0.0018247302907989926
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,Naive (periodic fine-tuning = A8),8,8,8,0,0.25,0.8339522546419098,final target F1 (CompPhish external test),0.023683586831099723
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,Drift + Replay,8,8,8,0,0.25,0.8466710613052076,final target F1 (CompPhish external test),0.023097997167779827
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,ECRAC (A0 full),8,6,4,2,0.0,0.8401770346692894,final target F1 (CompPhish external test),0.00333577396928586
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,6,2,0.0,0.8424344479191724,final target F1 (CompPhish external test),0.0008155034978245546
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,A4 − trust gate / quarantine,8,7,4,3,0.0,0.8401459854014599,final target F1 (CompPhish external test),0.002933548868083724
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,42,A7 − adaptation certificate,8,5,5,0,0.0,0.8442622950819673,final target F1 (CompPhish external test),0.004676228516853342
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8598356694055099,final target F1 (CompPhish external test),0.005736399785140733
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,Drift + Replay,8,8,8,0,0.0,0.8695547533092659,final target F1 (CompPhish external test),0.008611950727244078
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,ECRAC (A0 full),8,6,5,1,0.16666666666666666,0.8275785500166537,final target F1 (CompPhish external test),0.004192819814246795
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.125,0.8394892840857273,final target F1 (CompPhish external test),0.0032316848549556187
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,A4 − trust gate / quarantine,8,5,4,1,0.2,0.825828186412128,final target F1 (CompPhish external test),0.005486824863782269
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,123,A7 − adaptation certificate,8,4,4,0,0.25,0.81402810045359,final target F1 (CompPhish external test),0.002742912155785371
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,Naive (periodic fine-tuning = A8),8,8,8,0,0.125,0.8338136407300673,final target F1 (CompPhish external test),0.00725385999312822
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,Drift + Replay,8,8,8,0,0.0,0.8281677301731997,final target F1 (CompPhish external test),0.00807930134561663
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,ECRAC (A0 full),8,8,4,4,0.25,0.7680694860924413,final target F1 (CompPhish external test),0.005498823231787631
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,4,4,0.125,0.7665361631980219,final target F1 (CompPhish external test),0.005985077801403005
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,A4 − trust gate / quarantine,8,8,6,2,0.375,0.7805849669776707,final target F1 (CompPhish external test),0.007907159862139856
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,123,A7 − adaptation certificate,8,8,8,0,0.75,0.7554450522128294,final target F1 (CompPhish external test),0.00927789917248445
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,Naive (periodic fine-tuning = A8),8,8,8,0,0.375,0.8089731085411732,final target F1 (CompPhish external test),0.03669743218247212
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,Drift + Replay,8,8,8,0,0.125,0.8627101375445746,final target F1 (CompPhish external test),0.01342598704273168
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,ECRAC (A0 full),8,5,5,0,0.0,0.839584063558827,final target F1 (CompPhish external test),0.0016597637512448804
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8461264681456875,final target F1 (CompPhish external test),0.0020007399210203447
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,A4 − trust gate / quarantine,8,4,4,0,0.0,0.8220702445809668,final target F1 (CompPhish external test),0.0018410869150133902
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,123,A7 − adaptation certificate,8,5,5,0,0.0,0.8398784478728378,final target F1 (CompPhish external test),0.0018203810126221631
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,Naive (periodic fine-tuning = A8),8,8,8,0,0.375,0.8262694651320244,final target F1 (CompPhish external test),0.03228889470092444
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,Drift + Replay,8,8,8,0,0.375,0.8343163538873994,final target F1 (CompPhish external test),0.0271885383697823
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,ECRAC (A0 full),8,4,4,0,0.0,0.8207190160832545,final target F1 (CompPhish external test),0.003505887318627998
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8493857493857494,final target F1 (CompPhish external test),0.003565809387336527
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,A4 − trust gate / quarantine,8,7,6,1,0.0,0.8275615851481614,final target F1 (CompPhish external test),0.005779124036770167
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,123,A7 − adaptation certificate,8,4,4,0,0.0,0.8203069657615112,final target F1 (CompPhish external test),0.003667903763677094
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8615647087496954,final target F1 (CompPhish external test),0.0036731685874704656
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,Drift + Replay,8,8,8,0,0.0,0.863768115942029,final target F1 (CompPhish external test),0.006851791272414198
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,ECRAC (A0 full),8,3,3,0,0.3333333333333333,0.814798155852918,final target F1 (CompPhish external test),0.004699429812959233
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,6,2,0.125,0.8192071468453378,final target F1 (CompPhish external test),0.0027466304514502937
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,A4 − trust gate / quarantine,8,3,2,1,0.3333333333333333,0.8006586169045006,final target F1 (CompPhish external test),0.0033907131276973423
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,2024,A7 − adaptation certificate,8,4,4,0,0.25,0.8175231300858321,final target F1 (CompPhish external test),0.0046811264803952035
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,Naive (periodic fine-tuning = A8),8,8,8,0,0.125,0.8418457203240578,final target F1 (CompPhish external test),0.003275825632671814
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,Drift + Replay,8,8,8,0,0.0,0.8312043795620438,final target F1 (CompPhish external test),0.004855353060439382
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,ECRAC (A0 full),8,8,6,2,0.125,0.8034613304488913,final target F1 (CompPhish external test),0.0032229307484638037
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.25,0.7633403678022309,final target F1 (CompPhish external test),0.008277704007532805
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,A4 − trust gate / quarantine,8,8,5,3,0.25,0.7566693613581245,final target F1 (CompPhish external test),0.006143217677069268
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,2024,A7 − adaptation certificate,8,8,8,0,0.25,0.7928525572437406,final target F1 (CompPhish external test),0.0035458699385649828
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,Naive (periodic fine-tuning = A8),8,8,8,0,0.125,0.8447351209941139,final target F1 (CompPhish external test),0.013077234650638259
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,Drift + Replay,8,8,8,0,0.0,0.857685009487666,final target F1 (CompPhish external test),0.011128948702359032
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,ECRAC (A0 full),8,4,4,0,0.0,0.8337528466978306,final target F1 (CompPhish external test),0.002743706661227252
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.8453758986231266,final target F1 (CompPhish external test),0.0027544234032064185
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,A4 − trust gate / quarantine,8,6,3,3,0.0,0.8191538819153882,final target F1 (CompPhish external test),0.003490581114557023
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,2024,A7 − adaptation certificate,8,5,5,0,0.0,0.8431864325809149,final target F1 (CompPhish external test),0.0028555283549860366
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,Naive (periodic fine-tuning = A8),8,8,8,0,0.5,0.8137227886470102,final target F1 (CompPhish external test),0.03959045771366021
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,Drift + Replay,8,8,8,0,0.25,0.8432757718472004,final target F1 (CompPhish external test),0.015910011176988537
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,ECRAC (A0 full),8,6,6,0,0.0,0.837910482645787,final target F1 (CompPhish external test),0.0077882773589303955
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,6,2,0.0,0.8422600808922662,final target F1 (CompPhish external test),0.005902947234185607
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,A4 − trust gate / quarantine,8,6,5,1,0.0,0.8464382548681292,final target F1 (CompPhish external test),0.004926138913580624
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,2024,A7 − adaptation certificate,8,7,7,0,0.0,0.8532846715328467,final target F1 (CompPhish external test),0.004185916338099505
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,Naive (periodic fine-tuning = A8),8,8,8,0,0.0,0.8640846764493625,final target F1 (CompPhish external test),0.004403212223817121
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,Drift + Replay,8,8,8,0,0.0,0.8705122067975107,final target F1 (CompPhish external test),0.006324380311141908
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,ECRAC (A0 full),8,4,3,1,0.0,0.8146743978590544,final target F1 (CompPhish external test),0.0016091407540604896
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.8483192778239695,final target F1 (CompPhish external test),0.0018554534165504677
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,A4 − trust gate / quarantine,8,4,3,1,0.0,0.8072343293641878,final target F1 (CompPhish external test),0.0034153235920015845
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,3407,A7 − adaptation certificate,8,3,3,0,0.3333333333333333,0.8030871003307607,final target F1 (CompPhish external test),0.002752012107563373
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,Naive (periodic fine-tuning = A8),8,8,8,0,0.25,0.8352900151110078,final target F1 (CompPhish external test),0.003566732183610477
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,Drift + Replay,8,8,8,0,0.375,0.812975835815955,final target F1 (CompPhish external test),0.0037064762166519882
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,ECRAC (A0 full),8,8,5,3,0.5,0.7497032053818757,final target F1 (CompPhish external test),0.0063381842324320425
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,3,5,0.375,0.756734693877551,final target F1 (CompPhish external test),0.0037127805603538455
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,A4 − trust gate / quarantine,8,8,5,3,0.5,0.760832064941654,final target F1 (CompPhish external test),0.007437465392750697
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,3407,A7 − adaptation certificate,8,8,8,0,0.875,0.7562826451167833,final target F1 (CompPhish external test),0.009623888283931015
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,Naive (periodic fine-tuning = A8),8,8,8,0,0.375,0.8349462365591398,final target F1 (CompPhish external test),0.021382620832953725
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,Drift + Replay,8,8,8,0,0.0,0.864953803316036,final target F1 (CompPhish external test),0.005749857774331901
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,ECRAC (A0 full),8,5,4,1,0.0,0.8367129135538954,final target F1 (CompPhish external test),0.001885690433601317
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.851372596444552,final target F1 (CompPhish external test),0.0038515568408943324
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,A4 − trust gate / quarantine,8,6,4,2,0.0,0.8285410010649628,final target F1 (CompPhish external test),0.004309834055731154
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,3407,A7 − adaptation certificate,8,7,7,0,0.0,0.8469135802469135,final target F1 (CompPhish external test),0.006175164480925255
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,Naive (periodic fine-tuning = A8),8,8,8,0,0.125,0.8471295933045638,final target F1 (CompPhish external test),0.014661069527561188
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,Drift + Replay,8,8,8,0,0.25,0.8512461059190031,final target F1 (CompPhish external test),0.011342470793951565
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,ECRAC (A0 full),8,6,5,1,0.0,0.8462006079027355,final target F1 (CompPhish external test),0.003881355981333323
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.8456987922109933,final target F1 (CompPhish external test),0.003614698637568914
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,A4 − trust gate / quarantine,8,5,4,1,0.0,0.8368421052631579,final target F1 (CompPhish external test),0.0036826342820486246
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,3407,A7 − adaptation certificate,8,5,5,0,0.0,0.8428831011508177,final target F1 (CompPhish external test),0.0030538598420115637
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,Naive (periodic fine-tuning = A8),8,8,8,0,0.125,0.861026823643646,final target F1 (CompPhish external test),0.006035117815029745
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,Drift + Replay,8,8,8,0,0.0,0.8562330463498053,final target F1 (CompPhish external test),0.00259268838509763
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,ECRAC (A0 full),8,3,3,0,0.0,0.8199320498301246,final target F1 (CompPhish external test),0.001953377472900031
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,8,0,0.0,0.8482878699941961,final target F1 (CompPhish external test),0.004214586070423798
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,A4 − trust gate / quarantine,8,5,4,1,0.0,0.8259587020648967,final target F1 (CompPhish external test),0.001959403845932739
+"A-contam: CompPhish pool, corrupted labels",random flips 10%,777,A7 − adaptation certificate,8,4,4,0,0.0,0.8244361328346368,final target F1 (CompPhish external test),0.002106923672720473
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,Naive (periodic fine-tuning = A8),8,8,8,0,0.25,0.8334314302530901,final target F1 (CompPhish external test),0.007467163070110527
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,Drift + Replay,8,8,8,0,0.25,0.8126801152737753,final target F1 (CompPhish external test),0.006133436231656519
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,ECRAC (A0 full),8,8,3,5,0.0,0.7891682785299806,final target F1 (CompPhish external test),0.0017722136421188805
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,4,4,0.0,0.8046577429535314,final target F1 (CompPhish external test),0.004029057700995153
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,A4 − trust gate / quarantine,8,8,4,4,0.125,0.7698866590412811,final target F1 (CompPhish external test),0.0038691481696276897
+"A-contam: CompPhish pool, corrupted labels",random flips 30%,777,A7 − adaptation certificate,8,8,8,0,0.375,0.7653749370910921,final target F1 (CompPhish external test),0.007794358397409162
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,Naive (periodic fine-tuning = A8),8,8,8,0,0.5,0.8019718309859155,final target F1 (CompPhish external test),0.04270710265595601
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,Drift + Replay,8,8,8,0,0.25,0.8585690515806988,final target F1 (CompPhish external test),0.012299353929263734
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,ECRAC (A0 full),8,6,5,1,0.0,0.8415488629379225,final target F1 (CompPhish external test),0.004633085352157451
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,7,1,0.0,0.8454983327158206,final target F1 (CompPhish external test),0.004276129790018457
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,A4 − trust gate / quarantine,8,5,3,2,0.0,0.8152851263962375,final target F1 (CompPhish external test),0.0035555149510813067
+"A-contam: CompPhish pool, corrupted labels",targeted: 30% of phishing labels -> benign,777,A7 − adaptation certificate,8,5,5,0,0.0,0.841299246634556,final target F1 (CompPhish external test),0.002869512357302151
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,Frozen (static),8,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,Naive (periodic fine-tuning = A8),8,8,8,0,0.375,0.8251291813978787,final target F1 (CompPhish external test),0.017385163285684735
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,Drift + Replay,8,8,8,0,0.375,0.8492832235567609,final target F1 (CompPhish external test),0.00880115400962378
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,ECRAC (A0 full),8,5,4,1,0.0,0.8445805266380894,final target F1 (CompPhish external test),0.003764428666137354
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,ECRAC-cal (tau_N calibrated on no-drift development windows),8,8,6,2,0.0,0.8422456650903358,final target F1 (CompPhish external test),0.003892015850279984
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,A4 − trust gate / quarantine,8,4,3,1,0.0,0.8288899660688318,final target F1 (CompPhish external test),0.0034890564315539496
+"A-contam: CompPhish pool, corrupted labels",campaign: every phishing label of 30% of domains -> benign,777,A7 − adaptation certificate,8,4,4,0,0.0,0.8420923979467123,final target F1 (CompPhish external test),0.003601269846617461
+C: controlled drift,no_drift,42,Frozen (static),10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.5,0.8747611653150305,prequential F1,0.0029010714588527664
+C: controlled drift,no_drift,42,Replay-only,10,10,10,0,0.2,0.8824158039338009,prequential F1,0.0035612476052566677
+C: controlled drift,no_drift,42,Drift-triggered,10,3,3,0,0.0,0.8812555871573424,prequential F1,0.0027411844373037564
+C: controlled drift,no_drift,42,Drift + Replay,10,3,3,0,0.0,0.8795381485344234,prequential F1,0.0028891771363042107
+C: controlled drift,no_drift,42,ECRAC (A0 full),10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A1 − evidence consistency,10,10,8,2,0.2,0.8819205962104697,prequential F1,0.0
+C: controlled drift,no_drift,42,A2 − Need–Risk separation,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A3 − gradient-conflict test,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A4 − trust gate / quarantine,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A5 − adaptive budget,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A6 − rare-class protection,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,A7 − adaptation certificate,10,0,0,0,0.0,0.8800083627254616,prequential F1,0.0
+C: controlled drift,no_drift,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.2,0.8813273490003614,prequential F1,0.001776070913551142
+C: controlled drift,no_drift,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,8,2,0.3,0.8810107412897649,prequential F1,0.0
+C: controlled drift,no_drift,123,Frozen (static),10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8812785118056778,prequential F1,0.0
+C: controlled drift,no_drift,123,Replay-only,10,10,10,0,0.2,0.8812163213067239,prequential F1,0.00015598331797084253
+C: controlled drift,no_drift,123,Drift-triggered,10,1,1,0,0.0,0.8737002280966462,prequential F1,0.0
+C: controlled drift,no_drift,123,Drift + Replay,10,1,1,0,0.0,0.8741880329746948,prequential F1,0.0
+C: controlled drift,no_drift,123,ECRAC (A0 full),10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A1 − evidence consistency,10,10,10,0,0.1,0.879864152648666,prequential F1,0.0009709947581529876
+C: controlled drift,no_drift,123,A2 − Need–Risk separation,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A3 − gradient-conflict test,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A4 − trust gate / quarantine,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A5 − adaptive budget,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A6 − rare-class protection,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,A7 − adaptation certificate,10,0,0,0,0.0,0.8737512354753504,prequential F1,0.0
+C: controlled drift,no_drift,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.3,0.876750516335291,prequential F1,0.0006464771255941804
+C: controlled drift,no_drift,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.1,0.879696914447402,prequential F1,0.0
+C: controlled drift,no_drift,2024,Frozen (static),10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.5,0.8849451152543519,prequential F1,0.003945475743028837
+C: controlled drift,no_drift,2024,Replay-only,10,10,10,0,0.5,0.8832708910139205,prequential F1,0.0015676636841353009
+C: controlled drift,no_drift,2024,Drift-triggered,10,1,1,0,0.0,0.884345049822507,prequential F1,0.0012935273326628582
+C: controlled drift,no_drift,2024,Drift + Replay,10,1,1,0,0.0,0.884345049822507,prequential F1,0.0011255786294503967
+C: controlled drift,no_drift,2024,ECRAC (A0 full),10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A1 − evidence consistency,10,10,10,0,0.5,0.885712802757691,prequential F1,0.0
+C: controlled drift,no_drift,2024,A2 − Need–Risk separation,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A3 − gradient-conflict test,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A4 − trust gate / quarantine,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A5 − adaptive budget,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A6 − rare-class protection,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,A7 − adaptation certificate,10,0,0,0,0.0,0.884345049822507,prequential F1,0.0
+C: controlled drift,no_drift,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.4,0.8858689860649761,prequential F1,0.0
+C: controlled drift,no_drift,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.5,0.8864903496788837,prequential F1,0.0
+C: controlled drift,no_drift,3407,Frozen (static),10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.4,0.8811260873146113,prequential F1,0.0
+C: controlled drift,no_drift,3407,Replay-only,10,10,10,0,0.4,0.8818109759624504,prequential F1,0.0
+C: controlled drift,no_drift,3407,Drift-triggered,10,7,7,0,0.5714285714285714,0.8806303305086661,prequential F1,0.0
+C: controlled drift,no_drift,3407,Drift + Replay,10,8,8,0,0.5,0.8799695140798258,prequential F1,0.0
+C: controlled drift,no_drift,3407,ECRAC (A0 full),10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A1 − evidence consistency,10,8,8,0,0.375,0.8825781848480805,prequential F1,0.0009657327179719566
+C: controlled drift,no_drift,3407,A2 − Need–Risk separation,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A3 − gradient-conflict test,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A4 − trust gate / quarantine,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A5 − adaptive budget,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A6 − rare-class protection,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,A7 − adaptation certificate,10,0,0,0,0.0,0.8805565585965602,prequential F1,0.0
+C: controlled drift,no_drift,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,8,8,0,0.125,0.8813416039538279,prequential F1,0.0008061871654825303
+C: controlled drift,no_drift,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.5,0.8811309419033458,prequential F1,0.0022471448270962036
+C: controlled drift,no_drift,777,Frozen (static),10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8856006388886117,prequential F1,0.0026256095448020655
+C: controlled drift,no_drift,777,Replay-only,10,10,10,0,0.2,0.8861565891274982,prequential F1,0.0014527023381714077
+C: controlled drift,no_drift,777,Drift-triggered,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,Drift + Replay,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,ECRAC (A0 full),10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A1 − evidence consistency,10,10,10,0,0.6,0.8799853841330274,prequential F1,0.00032191211887711013
+C: controlled drift,no_drift,777,A2 − Need–Risk separation,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A3 − gradient-conflict test,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A4 − trust gate / quarantine,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A5 − adaptive budget,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A6 − rare-class protection,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,A7 − adaptation certificate,10,0,0,0,0.0,0.8807021046773311,prequential F1,0.0
+C: controlled drift,no_drift,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.4,0.882356747977572,prequential F1,0.0011274164663344077
+C: controlled drift,no_drift,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.2,0.8831529676937219,prequential F1,0.00015872640224123824
+C: controlled drift,abrupt,42,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8535554750694193,final target F1 (CompPhish external test),0.003516628007136924
+C: controlled drift,abrupt,42,Replay-only,10,10,10,0,0.0,0.8500521860141482,final target F1 (CompPhish external test),0.004538276093561167
+C: controlled drift,abrupt,42,Drift-triggered,10,7,7,0,0.0,0.851749428880606,final target F1 (CompPhish external test),0.0031736160576605332
+C: controlled drift,abrupt,42,Drift + Replay,10,7,7,0,0.2857142857142857,0.8454061559824115,final target F1 (CompPhish external test),0.002911957276421573
+C: controlled drift,abrupt,42,ECRAC (A0 full),10,1,1,0,0.0,0.7774241459792065,final target F1 (CompPhish external test),0.0009650165566891244
+C: controlled drift,abrupt,42,A1 − evidence consistency,10,8,7,1,0.25,0.8102094240837696,final target F1 (CompPhish external test),0.002738513240590823
+C: controlled drift,abrupt,42,A2 − Need–Risk separation,10,1,1,0,0.0,0.7779193205944799,final target F1 (CompPhish external test),0.0003196879485254378
+C: controlled drift,abrupt,42,A3 − gradient-conflict test,10,1,1,0,0.0,0.779300818191478,final target F1 (CompPhish external test),0.00048105804031650656
+C: controlled drift,abrupt,42,A4 − trust gate / quarantine,10,1,1,0,0.0,0.7746910320059153,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,42,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,42,A6 − rare-class protection,10,1,1,0,0.0,0.7865289434043469,final target F1 (CompPhish external test),0.0008074881038689918
+C: controlled drift,abrupt,42,A7 − adaptation certificate,10,1,1,0,0.0,0.7779310344827586,final target F1 (CompPhish external test),0.00048077325335793564
+C: controlled drift,abrupt,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.3,0.8005660788155889,final target F1 (CompPhish external test),0.0025824661655391434
+C: controlled drift,abrupt,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.3,0.8211905568733763,final target F1 (CompPhish external test),0.004046845300740953
+C: controlled drift,abrupt,123,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8495944949619071,final target F1 (CompPhish external test),0.005748943216031477
+C: controlled drift,abrupt,123,Replay-only,10,10,10,0,0.2,0.8443157132512672,final target F1 (CompPhish external test),0.0040570704619191655
+C: controlled drift,abrupt,123,Drift-triggered,10,5,5,0,0.0,0.855350553505535,final target F1 (CompPhish external test),0.0032810217855565593
+C: controlled drift,abrupt,123,Drift + Replay,10,5,5,0,0.0,0.844023498381489,final target F1 (CompPhish external test),0.0006609511869125617
+C: controlled drift,abrupt,123,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,A1 − evidence consistency,10,9,8,1,0.3333333333333333,0.8145635459068294,final target F1 (CompPhish external test),0.0019744392569179814
+C: controlled drift,abrupt,123,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,A5 − adaptive budget,10,2,2,0,0.0,0.8005354752342704,final target F1 (CompPhish external test),0.0024490891460872133
+C: controlled drift,abrupt,123,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.6,0.7784520387522623,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.4,0.8103467499163787,final target F1 (CompPhish external test),0.0029265727748506443
+C: controlled drift,abrupt,2024,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8425645376318022,final target F1 (CompPhish external test),0.007151259875214477
+C: controlled drift,abrupt,2024,Replay-only,10,10,10,0,0.3,0.8447028117214379,final target F1 (CompPhish external test),0.0025556962071350275
+C: controlled drift,abrupt,2024,Drift-triggered,10,5,5,0,0.0,0.8479631425800194,final target F1 (CompPhish external test),0.0029457787424418402
+C: controlled drift,abrupt,2024,Drift + Replay,10,5,5,0,0.0,0.8410329305851694,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A1 − evidence consistency,10,9,9,0,0.5555555555555556,0.8208304657031429,final target F1 (CompPhish external test),0.0016632645472876018
+C: controlled drift,abrupt,2024,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.5,0.7801433615063657,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.5,0.8269364968597348,final target F1 (CompPhish external test),0.0013471433098037888
+C: controlled drift,abrupt,3407,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8458323088271453,final target F1 (CompPhish external test),0.007205121600257547
+C: controlled drift,abrupt,3407,Replay-only,10,10,10,0,0.2,0.8245965366945459,final target F1 (CompPhish external test),0.0048692609393098385
+C: controlled drift,abrupt,3407,Drift-triggered,10,9,9,0,0.2222222222222222,0.8473160545387545,final target F1 (CompPhish external test),0.006010175579858501
+C: controlled drift,abrupt,3407,Drift + Replay,10,8,8,0,0.125,0.8325845353511468,final target F1 (CompPhish external test),0.0031335874342958148
+C: controlled drift,abrupt,3407,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A1 − evidence consistency,10,9,9,0,0.2222222222222222,0.8070768537299977,final target F1 (CompPhish external test),0.003403325122116163
+C: controlled drift,abrupt,3407,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.4,0.7834278985119366,final target F1 (CompPhish external test),0.001130382574549893
+C: controlled drift,abrupt,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.3,0.8177384597935806,final target F1 (CompPhish external test),0.004532158979364986
+C: controlled drift,abrupt,777,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.2,0.8365175332527207,final target F1 (CompPhish external test),0.004532308061031554
+C: controlled drift,abrupt,777,Replay-only,10,10,10,0,0.4,0.8359421675230015,final target F1 (CompPhish external test),0.005457532455143688
+C: controlled drift,abrupt,777,Drift-triggered,10,5,5,0,0.0,0.8425736620565244,final target F1 (CompPhish external test),0.003537201503243659
+C: controlled drift,abrupt,777,Drift + Replay,10,5,5,0,0.0,0.8368072003789673,final target F1 (CompPhish external test),0.006076815824234583
+C: controlled drift,abrupt,777,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A1 − evidence consistency,10,8,7,1,0.5,0.8050509525919362,final target F1 (CompPhish external test),0.005338790364053825
+C: controlled drift,abrupt,777,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,abrupt,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.3,0.7965766951942067,final target F1 (CompPhish external test),0.001621956872018604
+C: controlled drift,abrupt,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.2,0.8173054854257517,final target F1 (CompPhish external test),0.0018717122085295523
+C: controlled drift,gradual,42,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8508664876739077,final target F1 (CompPhish external test),0.003146952527694147
+C: controlled drift,gradual,42,Replay-only,10,10,10,0,0.1,0.8534513697810743,final target F1 (CompPhish external test),0.0025076443077147736
+C: controlled drift,gradual,42,Drift-triggered,10,8,8,0,0.0,0.8471196454948301,final target F1 (CompPhish external test),0.003916230345341387
+C: controlled drift,gradual,42,Drift + Replay,10,7,7,0,0.0,0.851311261421621,final target F1 (CompPhish external test),0.0021103604634619133
+C: controlled drift,gradual,42,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A1 − evidence consistency,10,8,8,0,0.375,0.8052147239263804,final target F1 (CompPhish external test),0.002742658198512271
+C: controlled drift,gradual,42,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.4,0.7911642300714972,final target F1 (CompPhish external test),0.0003225827934754122
+C: controlled drift,gradual,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.3,0.8196216454025517,final target F1 (CompPhish external test),0.0022551831484842744
+C: controlled drift,gradual,123,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.0,0.850124010865714,final target F1 (CompPhish external test),0.00179967722645058
+C: controlled drift,gradual,123,Replay-only,10,10,10,0,0.3,0.838144209419189,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,123,Drift-triggered,10,7,7,0,0.14285714285714285,0.846081208687441,final target F1 (CompPhish external test),0.001974080511739862
+C: controlled drift,gradual,123,Drift + Replay,10,8,8,0,0.25,0.8366180758017493,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,123,ECRAC (A0 full),10,1,1,0,0.0,0.7902942468159859,final target F1 (CompPhish external test),0.00018524540252096156
+C: controlled drift,gradual,123,A1 − evidence consistency,10,7,7,0,0.2857142857142857,0.8065008726003491,final target F1 (CompPhish external test),0.0033911059010172107
+C: controlled drift,gradual,123,A2 − Need–Risk separation,10,1,1,0,0.0,0.7918636613523914,final target F1 (CompPhish external test),0.0003481889339542743
+C: controlled drift,gradual,123,A3 − gradient-conflict test,10,1,1,0,0.0,0.7955727725511899,final target F1 (CompPhish external test),0.0008349992666617512
+C: controlled drift,gradual,123,A4 − trust gate / quarantine,10,1,1,0,0.0,0.794415127528584,final target F1 (CompPhish external test),0.0006666660562263393
+C: controlled drift,gradual,123,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,123,A6 − rare-class protection,10,1,1,0,0.0,0.7967443416211395,final target F1 (CompPhish external test),0.00036404130254430456
+C: controlled drift,gradual,123,A7 − adaptation certificate,10,1,1,0,0.0,0.7895949950609154,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.4,0.8040368193412443,final target F1 (CompPhish external test),0.0032422339867722583
+C: controlled drift,gradual,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.3,0.8339366515837104,final target F1 (CompPhish external test),0.00566645561912793
+C: controlled drift,gradual,2024,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.2,0.8385600976205003,final target F1 (CompPhish external test),0.003877730613961017
+C: controlled drift,gradual,2024,Replay-only,10,10,10,0,0.0,0.8306508047585724,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,Drift-triggered,10,8,8,0,0.25,0.8388827905842176,final target F1 (CompPhish external test),0.0031459999304688235
+C: controlled drift,gradual,2024,Drift + Replay,10,7,7,0,0.14285714285714285,0.8263459068083615,final target F1 (CompPhish external test),0.0014501900342078766
+C: controlled drift,gradual,2024,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A1 − evidence consistency,10,6,5,1,0.3333333333333333,0.776468089625146,final target F1 (CompPhish external test),0.0019295114009464376
+C: controlled drift,gradual,2024,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.5,0.7681880758233612,final target F1 (CompPhish external test),0.00016642082386231216
+C: controlled drift,gradual,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.3,0.8045255965049849,final target F1 (CompPhish external test),0.0022784323986836386
+C: controlled drift,gradual,3407,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8562529947292765,final target F1 (CompPhish external test),0.002066360391647981
+C: controlled drift,gradual,3407,Replay-only,10,10,10,0,0.0,0.8361649043602234,final target F1 (CompPhish external test),0.002509977870360003
+C: controlled drift,gradual,3407,Drift-triggered,10,9,9,0,0.2222222222222222,0.8562888570062172,final target F1 (CompPhish external test),0.0015593713937454012
+C: controlled drift,gradual,3407,Drift + Replay,10,9,9,0,0.1111111111111111,0.8397328881469115,final target F1 (CompPhish external test),0.0018259180734491176
+C: controlled drift,gradual,3407,ECRAC (A0 full),10,1,1,0,1.0,0.7765786943049471,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A1 − evidence consistency,10,7,7,0,0.2857142857142857,0.8194925673410082,final target F1 (CompPhish external test),0.003069964723372509
+C: controlled drift,gradual,3407,A2 − Need–Risk separation,10,1,1,0,0.0,0.7753839590443686,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A3 − gradient-conflict test,10,1,1,0,0.0,0.7773730447825156,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A4 − trust gate / quarantine,10,1,1,0,0.0,0.7781833798582779,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A5 − adaptive budget,10,1,1,0,0.0,0.7906926871113017,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A6 − rare-class protection,10,1,1,0,0.0,0.7759551046837903,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,A7 − adaptation certificate,10,1,1,0,1.0,0.7746689448953439,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,9,1,0.3,0.7827105291174279,final target F1 (CompPhish external test),0.0004833932237348071
+C: controlled drift,gradual,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.2,0.8224442736356649,final target F1 (CompPhish external test),0.0037098228561175395
+C: controlled drift,gradual,777,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8428588763499575,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,Replay-only,10,10,10,0,0.2,0.8324531925108017,final target F1 (CompPhish external test),0.0010373733211018754
+C: controlled drift,gradual,777,Drift-triggered,10,7,7,0,0.0,0.8423978728547257,final target F1 (CompPhish external test),0.001035308357989262
+C: controlled drift,gradual,777,Drift + Replay,10,8,8,0,0.0,0.8322758290434574,final target F1 (CompPhish external test),0.0012321988499884862
+C: controlled drift,gradual,777,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A1 − evidence consistency,10,7,6,1,0.42857142857142855,0.7925473959468293,final target F1 (CompPhish external test),0.0012975336844983643
+C: controlled drift,gradual,777,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,gradual,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.3,0.8035578696170951,final target F1 (CompPhish external test),0.0022537882560738076
+C: controlled drift,gradual,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.3,0.8022302394227616,final target F1 (CompPhish external test),0.0035507324710700727
+C: controlled drift,recurring,42,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8318500059333096,final target F1 (CompPhish external test),0.0027126434980129233
+C: controlled drift,recurring,42,Replay-only,10,10,10,0,0.4,0.8404794836330106,final target F1 (CompPhish external test),0.0029939317810252497
+C: controlled drift,recurring,42,Drift-triggered,10,7,7,0,0.42857142857142855,0.8422069298563323,final target F1 (CompPhish external test),0.0023756481843737465
+C: controlled drift,recurring,42,Drift + Replay,10,4,4,0,0.25,0.8370851705732189,final target F1 (CompPhish external test),0.004398862199295861
+C: controlled drift,recurring,42,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A1 − evidence consistency,10,10,9,1,0.3,0.8194816800714924,final target F1 (CompPhish external test),0.0038775347495411117
+C: controlled drift,recurring,42,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A5 − adaptive budget,10,1,1,0,0.0,0.7856684491978609,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,9,1,0.5,0.7921712802768166,final target F1 (CompPhish external test),0.00016365211676139246
+C: controlled drift,recurring,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.4,0.8206098375250389,final target F1 (CompPhish external test),0.002901785074000851
+C: controlled drift,recurring,123,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8424778761061947,final target F1 (CompPhish external test),0.002267048619545853
+C: controlled drift,recurring,123,Replay-only,10,10,10,0,0.4,0.8269521703712324,final target F1 (CompPhish external test),0.001474313506908187
+C: controlled drift,recurring,123,Drift-triggered,10,6,6,0,0.5,0.8447704685281591,final target F1 (CompPhish external test),0.0028285526902300795
+C: controlled drift,recurring,123,Drift + Replay,10,5,5,0,0.4,0.8372147729945895,final target F1 (CompPhish external test),5.4692307700277e-05
+C: controlled drift,recurring,123,ECRAC (A0 full),10,1,1,0,0.0,0.7775140267587397,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A1 − evidence consistency,10,9,9,0,0.4444444444444444,0.7947617003005581,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A2 − Need–Risk separation,10,1,1,0,0.0,0.7798592311857065,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A3 − gradient-conflict test,10,1,1,0,0.0,0.7815116911364872,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A4 − trust gate / quarantine,10,1,1,0,0.0,0.7777537796976242,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A6 − rare-class protection,10,1,1,0,0.0,0.7848601206801975,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,A7 − adaptation certificate,10,1,1,0,0.0,0.7792685565894828,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.5,0.7919739696312365,final target F1 (CompPhish external test),0.000969841869605137
+C: controlled drift,recurring,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.3,0.8201691749972536,final target F1 (CompPhish external test),0.0025822135799699053
+C: controlled drift,recurring,2024,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8361457569087797,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,Replay-only,10,10,10,0,0.2,0.8475147430497051,final target F1 (CompPhish external test),0.00190994645538356
+C: controlled drift,recurring,2024,Drift-triggered,10,5,5,0,0.6,0.8356450227077452,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,Drift + Replay,10,8,8,0,0.5,0.8433240863587022,final target F1 (CompPhish external test),0.001264457095754068
+C: controlled drift,recurring,2024,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A1 − evidence consistency,10,10,9,1,0.6,0.8202983725135624,final target F1 (CompPhish external test),0.002592025012068011
+C: controlled drift,recurring,2024,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A5 − adaptive budget,10,1,0,1,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,8,2,0.4,0.7877009995654063,final target F1 (CompPhish external test),0.0009671269374242897
+C: controlled drift,recurring,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,8,2,0.5,0.831078737426292,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.6,0.8348384030418251,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,Replay-only,10,10,10,0,0.3,0.8106556435870939,final target F1 (CompPhish external test),0.0004799652792374376
+C: controlled drift,recurring,3407,Drift-triggered,10,8,8,0,0.5,0.8365316275764036,final target F1 (CompPhish external test),0.000746765680481154
+C: controlled drift,recurring,3407,Drift + Replay,10,9,9,0,0.3333333333333333,0.81291504465308,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,ECRAC (A0 full),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A1 − evidence consistency,10,8,7,1,0.5,0.8247492392651865,final target F1 (CompPhish external test),0.002430592255642905
+C: controlled drift,recurring,3407,A2 − Need–Risk separation,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A3 − gradient-conflict test,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A5 − adaptive budget,10,1,1,0,0.0,0.7865409344192027,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A6 − rare-class protection,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,A7 − adaptation certificate,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,9,1,0.5,0.7730652424337627,final target F1 (CompPhish external test),0.0011291111459748038
+C: controlled drift,recurring,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.4,0.797310486932003,final target F1 (CompPhish external test),0.0009679442795621496
+C: controlled drift,recurring,777,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8497545791931043,final target F1 (CompPhish external test),0.0005593204051664857
+C: controlled drift,recurring,777,Replay-only,10,10,10,0,0.4,0.8510587102983638,final target F1 (CompPhish external test),0.0006067256612611871
+C: controlled drift,recurring,777,Drift-triggered,10,7,7,0,0.2857142857142857,0.8523489932885906,final target F1 (CompPhish external test),0.002074731892334425
+C: controlled drift,recurring,777,Drift + Replay,10,8,8,0,0.25,0.8521843207660084,final target F1 (CompPhish external test),9.735234783159186e-05
+C: controlled drift,recurring,777,ECRAC (A0 full),10,1,1,0,0.0,0.7877998480408119,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,A1 − evidence consistency,10,7,6,1,0.2857142857142857,0.8002612387068684,final target F1 (CompPhish external test),0.0025787232731455667
+C: controlled drift,recurring,777,A2 − Need–Risk separation,10,1,1,0,0.0,0.7875176075414454,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,A3 − gradient-conflict test,10,1,1,0,0.0,0.7878656554712893,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,A4 − trust gate / quarantine,10,1,1,0,0.0,0.7879379542249701,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,A5 − adaptive budget,10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,A6 − rare-class protection,10,1,1,0,0.0,0.7898271496201695,final target F1 (CompPhish external test),0.00035507798466216656
+C: controlled drift,recurring,777,A7 − adaptation certificate,10,1,1,0,0.0,0.7871233470626491,final target F1 (CompPhish external test),0.0
+C: controlled drift,recurring,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.6,0.7921993499458289,final target F1 (CompPhish external test),0.000324442386071766
+C: controlled drift,recurring,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.3,0.8112669881630864,final target F1 (CompPhish external test),0.001925307706896362
+C: controlled drift,class_prior,42,Frozen (static),10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.6,0.7471293770659778,prequential F1,0.005236153872863469
+C: controlled drift,class_prior,42,Replay-only,10,10,10,0,0.6,0.740802736931103,prequential F1,0.0
+C: controlled drift,class_prior,42,Drift-triggered,10,10,10,0,0.6,0.7464079715358878,prequential F1,0.0036148100428277097
+C: controlled drift,class_prior,42,Drift + Replay,10,10,10,0,0.6,0.7400680673015163,prequential F1,0.0
+C: controlled drift,class_prior,42,ECRAC (A0 full),10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A1 − evidence consistency,10,7,7,0,0.5714285714285714,0.7306555994749179,prequential F1,0.0003247343951613413
+C: controlled drift,class_prior,42,A2 − Need–Risk separation,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A3 − gradient-conflict test,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A5 − adaptive budget,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A6 − rare-class protection,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,A7 − adaptation certificate,10,0,0,0,0.0,0.7257820305167811,prequential F1,0.0
+C: controlled drift,class_prior,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,9,1,0.2,0.7293814296753016,prequential F1,0.00016684172077063852
+C: controlled drift,class_prior,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.6,0.7302865243084959,prequential F1,0.0016098708086867974
+C: controlled drift,class_prior,123,Frozen (static),10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.7532142323803811,prequential F1,0.0036315170491312276
+C: controlled drift,class_prior,123,Replay-only,10,10,10,0,0.3,0.7575777262075246,prequential F1,0.0009392433714001669
+C: controlled drift,class_prior,123,Drift-triggered,10,8,8,0,0.375,0.7458466560739139,prequential F1,0.0
+C: controlled drift,class_prior,123,Drift + Replay,10,9,9,0,0.3333333333333333,0.7494949782340437,prequential F1,0.0006210750203450299
+C: controlled drift,class_prior,123,ECRAC (A0 full),10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A1 − evidence consistency,10,6,6,0,0.5,0.7284668763373675,prequential F1,0.0003238560214431363
+C: controlled drift,class_prior,123,A2 − Need–Risk separation,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A3 − gradient-conflict test,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A5 − adaptive budget,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A6 − rare-class protection,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,A7 − adaptation certificate,10,0,0,0,0.0,0.7297188674175852,prequential F1,0.0
+C: controlled drift,class_prior,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.6666666666666666,0.7283755773065447,prequential F1,0.0008145594265658307
+C: controlled drift,class_prior,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,9,0,0.4444444444444444,0.7290300483179208,prequential F1,0.0027334945511165998
+C: controlled drift,class_prior,2024,Frozen (static),10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.7359735013478537,prequential F1,0.008918996889231923
+C: controlled drift,class_prior,2024,Replay-only,10,10,10,0,0.2,0.7342040952527065,prequential F1,0.0
+C: controlled drift,class_prior,2024,Drift-triggered,10,9,9,0,0.3333333333333333,0.7345447244648714,prequential F1,0.009234577445511483
+C: controlled drift,class_prior,2024,Drift + Replay,10,9,9,0,0.2222222222222222,0.729436317604746,prequential F1,0.0
+C: controlled drift,class_prior,2024,ECRAC (A0 full),10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A1 − evidence consistency,10,6,6,0,0.5,0.7183576892936125,prequential F1,0.0019711857187265647
+C: controlled drift,class_prior,2024,A2 − Need–Risk separation,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A3 − gradient-conflict test,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A5 − adaptive budget,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A6 − rare-class protection,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,A7 − adaptation certificate,10,0,0,0,0.0,0.7180533662831461,prequential F1,0.0
+C: controlled drift,class_prior,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.6666666666666666,0.7168036996610518,prequential F1,0.0003226304077961206
+C: controlled drift,class_prior,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,8,1,0.4444444444444444,0.7195543874645723,prequential F1,0.001284858417702539
+C: controlled drift,class_prior,3407,Frozen (static),10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.7795524101824481,prequential F1,0.0014797418378671434
+C: controlled drift,class_prior,3407,Replay-only,10,10,10,0,0.5,0.7701810949323454,prequential F1,0.0018665367469110627
+C: controlled drift,class_prior,3407,Drift-triggered,10,9,9,0,0.4444444444444444,0.7619505835876946,prequential F1,0.0014864288608578136
+C: controlled drift,class_prior,3407,Drift + Replay,10,9,9,0,0.3333333333333333,0.7594341122905,prequential F1,0.0
+C: controlled drift,class_prior,3407,ECRAC (A0 full),10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A1 − evidence consistency,10,5,5,0,0.2,0.7443136709790199,prequential F1,0.00016647810047076828
+C: controlled drift,class_prior,3407,A2 − Need–Risk separation,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A3 − gradient-conflict test,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A5 − adaptive budget,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A6 − rare-class protection,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,A7 − adaptation certificate,10,0,0,0,0.0,0.7402976902958651,prequential F1,0.0
+C: controlled drift,class_prior,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,8,8,0,0.375,0.743120187733136,prequential F1,0.0
+C: controlled drift,class_prior,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,9,0,0.3333333333333333,0.7464035970324099,prequential F1,0.0
+C: controlled drift,class_prior,777,Frozen (static),10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.4,0.7548933375712337,prequential F1,0.00794156292115722
+C: controlled drift,class_prior,777,Replay-only,10,10,10,0,0.3,0.7437678540064813,prequential F1,0.008906230123647663
+C: controlled drift,class_prior,777,Drift-triggered,10,9,9,0,0.4444444444444444,0.751905631987708,prequential F1,0.01012675364719362
+C: controlled drift,class_prior,777,Drift + Replay,10,9,9,0,0.3333333333333333,0.7458500607166806,prequential F1,0.007855977989145169
+C: controlled drift,class_prior,777,ECRAC (A0 full),10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A1 − evidence consistency,10,7,7,0,0.14285714285714285,0.7445712403250445,prequential F1,0.0006093215990033984
+C: controlled drift,class_prior,777,A2 − Need–Risk separation,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A3 − gradient-conflict test,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A4 − trust gate / quarantine,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A5 − adaptive budget,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A6 − rare-class protection,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,A7 − adaptation certificate,10,0,0,0,0.0,0.7309525434013431,prequential F1,0.0
+C: controlled drift,class_prior,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.2222222222222222,0.7372000325436976,prequential F1,0.0
+C: controlled drift,class_prior,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,8,1,0.1111111111111111,0.7460902269788576,prequential F1,0.0010923900293664524
+C: controlled drift,rare_class,42,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,rare_class,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.5,0.6848839045964302,final target F1 (CompPhish external test),0.11770179376937828
+C: controlled drift,rare_class,42,Replay-only,10,10,10,0,0.3,0.8391478029294275,final target F1 (CompPhish external test),0.02053148186127307
+C: controlled drift,rare_class,42,Drift-triggered,10,10,10,0,0.5,0.6902627025326412,final target F1 (CompPhish external test),0.11549366552908391
+C: controlled drift,rare_class,42,Drift + Replay,10,10,10,0,0.3,0.8406950523942167,final target F1 (CompPhish external test),0.020473725185081282
+C: controlled drift,rare_class,42,ECRAC (A0 full),10,2,2,0,0.0,0.8208659120084024,final target F1 (CompPhish external test),0.0017240839598009483
+C: controlled drift,rare_class,42,A1 − evidence consistency,10,4,4,0,0.0,0.8401770346692894,final target F1 (CompPhish external test),0.004330727227303766
+C: controlled drift,rare_class,42,A2 − Need–Risk separation,10,2,2,0,0.0,0.8201657136188587,final target F1 (CompPhish external test),0.0012429229662231922
+C: controlled drift,rare_class,42,A3 − gradient-conflict test,10,2,2,0,0.0,0.8248907781320108,final target F1 (CompPhish external test),0.002428568166864875
+C: controlled drift,rare_class,42,A4 − trust gate / quarantine,10,3,3,0,0.0,0.8350403663091939,final target F1 (CompPhish external test),0.0024536392837545273
+C: controlled drift,rare_class,42,A5 − adaptive budget,10,2,2,0,0.0,0.8347657668563128,final target F1 (CompPhish external test),0.0020157306677994757
+C: controlled drift,rare_class,42,A6 − rare-class protection,10,2,2,0,0.0,0.8209113387495585,final target F1 (CompPhish external test),1.1612846481656725e-05
+C: controlled drift,rare_class,42,A7 − adaptation certificate,10,2,2,0,0.0,0.8198019801980198,final target F1 (CompPhish external test),0.0020427142679756427
+C: controlled drift,rare_class,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.0,0.8409460643223626,final target F1 (CompPhish external test),0.006181412918525808
+C: controlled drift,rare_class,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.0,0.8437896875793751,final target F1 (CompPhish external test),0.008676619916250128
+C: controlled drift,rare_class,123,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,rare_class,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.6,0.7208448117539027,final target F1 (CompPhish external test),0.11160545044337578
+C: controlled drift,rare_class,123,Replay-only,10,10,10,0,0.4,0.8288065843621399,final target F1 (CompPhish external test),0.03649671879785843
+C: controlled drift,rare_class,123,Drift-triggered,10,10,10,0,0.6,0.7022995649471722,final target F1 (CompPhish external test),0.12046376012368842
+C: controlled drift,rare_class,123,Drift + Replay,10,10,10,0,0.4,0.8294956140350878,final target F1 (CompPhish external test),0.0361507099290167
+C: controlled drift,rare_class,123,ECRAC (A0 full),10,2,2,0,0.0,0.821972358866245,final target F1 (CompPhish external test),0.0025508714036976965
+C: controlled drift,rare_class,123,A1 − evidence consistency,10,3,3,0,0.0,0.8365523901496862,final target F1 (CompPhish external test),0.002806810016375838
+C: controlled drift,rare_class,123,A2 − Need–Risk separation,10,2,2,0,0.0,0.8231952662721893,final target F1 (CompPhish external test),0.0008263419707150721
+C: controlled drift,rare_class,123,A3 − gradient-conflict test,10,2,2,0,0.0,0.8286700797714014,final target F1 (CompPhish external test),0.0019533532031512646
+C: controlled drift,rare_class,123,A4 − trust gate / quarantine,10,2,2,0,0.0,0.8216836436014519,final target F1 (CompPhish external test),0.0015794810709286455
+C: controlled drift,rare_class,123,A5 − adaptive budget,10,2,2,0,0.0,0.8300108735048931,final target F1 (CompPhish external test),0.0037894671651530487
+C: controlled drift,rare_class,123,A6 − rare-class protection,10,2,2,0,0.0,0.8254644420778606,final target F1 (CompPhish external test),0.0017849634505154865
+C: controlled drift,rare_class,123,A7 − adaptation certificate,10,2,2,0,0.0,0.8214620431115276,final target F1 (CompPhish external test),0.0015818189785867798
+C: controlled drift,rare_class,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,9,1,0.0,0.8430684382050639,final target F1 (CompPhish external test),0.004734523383002509
+C: controlled drift,rare_class,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.0,0.8415272634401737,final target F1 (CompPhish external test),0.007416972296634405
+C: controlled drift,rare_class,2024,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,rare_class,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.6,0.5793718894800068,final target F1 (CompPhish external test),0.19035797017426292
+C: controlled drift,rare_class,2024,Replay-only,10,10,10,0,0.0,0.8247169553948984,final target F1 (CompPhish external test),0.026272042751057434
+C: controlled drift,rare_class,2024,Drift-triggered,10,10,10,0,0.6,0.5764402407566638,final target F1 (CompPhish external test),0.18671968703750963
+C: controlled drift,rare_class,2024,Drift + Replay,10,10,10,0,0.0,0.825037501704623,final target F1 (CompPhish external test),0.025652925071789512
+C: controlled drift,rare_class,2024,ECRAC (A0 full),10,3,3,0,0.0,0.8325242718446602,final target F1 (CompPhish external test),0.0023423199477681234
+C: controlled drift,rare_class,2024,A1 − evidence consistency,10,3,3,0,0.0,0.8339376359680928,final target F1 (CompPhish external test),0.0029858667497265623
+C: controlled drift,rare_class,2024,A2 − Need–Risk separation,10,3,3,0,0.0,0.8368241597661958,final target F1 (CompPhish external test),0.002675498457852199
+C: controlled drift,rare_class,2024,A3 − gradient-conflict test,10,2,2,0,0.0,0.8254953449510624,final target F1 (CompPhish external test),0.0021450277729352374
+C: controlled drift,rare_class,2024,A4 − trust gate / quarantine,10,2,2,0,0.0,0.8227117446106726,final target F1 (CompPhish external test),0.0007923212991026718
+C: controlled drift,rare_class,2024,A5 − adaptive budget,10,2,2,0,0.0,0.8361252731245448,final target F1 (CompPhish external test),0.004759556722412794
+C: controlled drift,rare_class,2024,A6 − rare-class protection,10,2,2,0,0.0,0.8208174904942965,final target F1 (CompPhish external test),0.0021450277729352374
+C: controlled drift,rare_class,2024,A7 − adaptation certificate,10,3,3,0,0.0,0.833699097781029,final target F1 (CompPhish external test),0.0030157105309687182
+C: controlled drift,rare_class,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.0,0.8391414141414142,final target F1 (CompPhish external test),0.005428249945488961
+C: controlled drift,rare_class,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,7,3,0.0,0.8401700850425212,final target F1 (CompPhish external test),0.00409096279631771
+C: controlled drift,rare_class,3407,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,rare_class,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.6,0.7068992128414879,final target F1 (CompPhish external test),0.10716248071645307
+C: controlled drift,rare_class,3407,Replay-only,10,10,10,0,0.4,0.8148962484540333,final target F1 (CompPhish external test),0.025376730313917184
+C: controlled drift,rare_class,3407,Drift-triggered,10,10,10,0,0.6,0.7050448777468276,final target F1 (CompPhish external test),0.10773752094896794
+C: controlled drift,rare_class,3407,Drift + Replay,10,10,10,0,0.4,0.812267913629487,final target F1 (CompPhish external test),0.025209462876088717
+C: controlled drift,rare_class,3407,ECRAC (A0 full),10,2,2,0,0.0,0.8201657136188587,final target F1 (CompPhish external test),0.0009288778602738468
+C: controlled drift,rare_class,3407,A1 − evidence consistency,10,6,5,1,0.0,0.8458951040239193,final target F1 (CompPhish external test),0.0048287759479865855
+C: controlled drift,rare_class,3407,A2 − Need–Risk separation,10,2,2,0,0.0,0.8177065179505054,final target F1 (CompPhish external test),0.0013968330149628505
+C: controlled drift,rare_class,3407,A3 − gradient-conflict test,10,2,2,0,0.0,0.823296447291788,final target F1 (CompPhish external test),0.000746765680481154
+C: controlled drift,rare_class,3407,A4 − trust gate / quarantine,10,3,3,0,0.0,0.8342885014022681,final target F1 (CompPhish external test),0.0028660221884215797
+C: controlled drift,rare_class,3407,A5 − adaptive budget,10,2,2,0,0.0,0.8294386894724163,final target F1 (CompPhish external test),0.0029487359012416725
+C: controlled drift,rare_class,3407,A6 − rare-class protection,10,3,3,0,0.0,0.8330058939096268,final target F1 (CompPhish external test),0.003869048834844624
+C: controlled drift,rare_class,3407,A7 − adaptation certificate,10,2,2,0,0.0,0.8177385651265382,final target F1 (CompPhish external test),0.0012280549505977456
+C: controlled drift,rare_class,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.0,0.8425982990262542,final target F1 (CompPhish external test),0.003022575125903648
+C: controlled drift,rare_class,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,9,1,0.0,0.8424719391046317,final target F1 (CompPhish external test),0.008069794298490751
+C: controlled drift,rare_class,777,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,rare_class,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.5,0.7117964533538936,final target F1 (CompPhish external test),0.1111323498393928
+C: controlled drift,rare_class,777,Replay-only,10,10,10,0,0.3,0.8297699594046009,final target F1 (CompPhish external test),0.03376193285940288
+C: controlled drift,rare_class,777,Drift-triggered,10,10,10,0,0.5,0.691764705882353,final target F1 (CompPhish external test),0.12219869945209938
+C: controlled drift,rare_class,777,Drift + Replay,10,10,10,0,0.3,0.8321385094007845,final target F1 (CompPhish external test),0.034042654159280206
+C: controlled drift,rare_class,777,ECRAC (A0 full),10,3,3,0,0.0,0.835882495751396,final target F1 (CompPhish external test),0.0036358764195927318
+C: controlled drift,rare_class,777,A1 − evidence consistency,10,3,3,0,0.0,0.8390776699029127,final target F1 (CompPhish external test),0.003472555672406674
+C: controlled drift,rare_class,777,A2 − Need–Risk separation,10,2,2,0,0.0,0.8193698949824971,final target F1 (CompPhish external test),0.002220856889787015
+C: controlled drift,rare_class,777,A3 − gradient-conflict test,10,3,3,0,0.0,0.837778321507218,final target F1 (CompPhish external test),0.0031860558466023647
+C: controlled drift,rare_class,777,A4 − trust gate / quarantine,10,3,2,1,0.0,0.8183832963956608,final target F1 (CompPhish external test),0.0028738888787347427
+C: controlled drift,rare_class,777,A5 − adaptive budget,10,2,2,0,0.0,0.8264365098131946,final target F1 (CompPhish external test),0.0014460670810091392
+C: controlled drift,rare_class,777,A6 − rare-class protection,10,3,3,0,0.0,0.8396145871447738,final target F1 (CompPhish external test),0.004295961200422749
+C: controlled drift,rare_class,777,A7 − adaptation certificate,10,3,3,0,0.0,0.8358426420592521,final target F1 (CompPhish external test),0.0036326241376779533
+C: controlled drift,rare_class,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.0,0.8396391881733901,final target F1 (CompPhish external test),0.004726469932817445
+C: controlled drift,rare_class,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,10,0,0.0,0.8408593850508169,final target F1 (CompPhish external test),0.011545134114778755
+C: controlled drift,mixed,42,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,42,Naive (periodic fine-tuning = A8),10,10,10,0,0.2,0.830922955561399,final target F1 (CompPhish external test),0.018884240708079814
+C: controlled drift,mixed,42,Replay-only,10,10,10,0,0.0,0.8459798994974874,final target F1 (CompPhish external test),0.00790043175872479
+C: controlled drift,mixed,42,Drift-triggered,10,6,6,0,0.16666666666666666,0.8352390852390852,final target F1 (CompPhish external test),0.014805027101054469
+C: controlled drift,mixed,42,Drift + Replay,10,6,6,0,0.0,0.8474280732345248,final target F1 (CompPhish external test),0.004174347399570344
+C: controlled drift,mixed,42,ECRAC (A0 full),10,1,1,0,0.0,0.7945235975066786,final target F1 (CompPhish external test),0.001016559250303084
+C: controlled drift,mixed,42,A1 − evidence consistency,10,6,5,1,0.0,0.8235018177553654,final target F1 (CompPhish external test),0.0005926685133735843
+C: controlled drift,mixed,42,A2 − Need–Risk separation,10,1,1,0,0.0,0.7936402045808316,final target F1 (CompPhish external test),0.0015014255353821282
+C: controlled drift,mixed,42,A3 − gradient-conflict test,10,1,1,0,0.0,0.7987852884939827,final target F1 (CompPhish external test),0.0023217520077691844
+C: controlled drift,mixed,42,A4 − trust gate / quarantine,10,1,1,0,0.0,0.792507204610951,final target F1 (CompPhish external test),0.0010055098342103275
+C: controlled drift,mixed,42,A5 − adaptive budget,10,1,1,0,0.0,0.796029887364782,final target F1 (CompPhish external test),0.0016620639309798957
+C: controlled drift,mixed,42,A6 − rare-class protection,10,1,1,0,0.0,0.7928348909657321,final target F1 (CompPhish external test),0.00248231767499274
+C: controlled drift,mixed,42,A7 − adaptation certificate,10,1,1,0,0.0,0.7945205479452054,final target F1 (CompPhish external test),0.0013407898727618717
+C: controlled drift,mixed,42,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.1111111111111111,0.8095077165709136,final target F1 (CompPhish external test),0.0022848002063988737
+C: controlled drift,mixed,42,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,8,1,0.0,0.8413152251608291,final target F1 (CompPhish external test),0.00014490649854048687
+C: controlled drift,mixed,123,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,Naive (periodic fine-tuning = A8),10,10,10,0,0.2,0.8336559556071751,final target F1 (CompPhish external test),0.011819562928458094
+C: controlled drift,mixed,123,Replay-only,10,10,10,0,0.0,0.842714620027097,final target F1 (CompPhish external test),0.0005548040678995392
+C: controlled drift,mixed,123,Drift-triggered,10,9,9,0,0.0,0.8363496341933,final target F1 (CompPhish external test),0.011592445243262084
+C: controlled drift,mixed,123,Drift + Replay,10,9,9,0,0.0,0.8449907805777505,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,ECRAC (A0 full),10,1,1,0,0.0,0.7777067348678602,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,A1 − evidence consistency,10,8,7,1,0.25,0.8138377878051603,final target F1 (CompPhish external test),0.0012267568196888679
+C: controlled drift,mixed,123,A2 − Need–Risk separation,10,1,1,0,0.0,0.7793929029499786,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,A3 − gradient-conflict test,10,2,2,0,0.0,0.8110020543254964,final target F1 (CompPhish external test),0.001990081359917406
+C: controlled drift,mixed,123,A4 − trust gate / quarantine,10,3,3,0,0.0,0.8231339823829392,final target F1 (CompPhish external test),0.0018614369269553954
+C: controlled drift,mixed,123,A5 − adaptive budget,10,1,1,0,0.0,0.805397568863611,final target F1 (CompPhish external test),0.0014708441262001326
+C: controlled drift,mixed,123,A6 − rare-class protection,10,1,1,0,0.0,0.7800345721694036,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,A7 − adaptation certificate,10,1,1,0,0.0,0.778713874373467,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,123,ECRAC-cal (tau_N calibrated on no-drift development windows),10,10,10,0,0.2,0.8212029019424292,final target F1 (CompPhish external test),0.0023716779471881777
+C: controlled drift,mixed,123,"A1-cal (− evidence consistency, calibrated tau_N)",10,10,8,2,0.3,0.815343854394655,final target F1 (CompPhish external test),0.002009646509650187
+C: controlled drift,mixed,2024,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,2024,Naive (periodic fine-tuning = A8),10,10,10,0,0.3,0.8204651162790698,final target F1 (CompPhish external test),0.015205095803773494
+C: controlled drift,mixed,2024,Replay-only,10,10,10,0,0.1,0.8350057157373301,final target F1 (CompPhish external test),0.004250929971732487
+C: controlled drift,mixed,2024,Drift-triggered,10,9,9,0,0.1111111111111111,0.8219214437367304,final target F1 (CompPhish external test),0.014822725877884801
+C: controlled drift,mixed,2024,Drift + Replay,10,8,8,0,0.0,0.8352732793522267,final target F1 (CompPhish external test),0.003611433670366093
+C: controlled drift,mixed,2024,ECRAC (A0 full),10,2,2,0,0.0,0.8117713638936049,final target F1 (CompPhish external test),0.002601531573913518
+C: controlled drift,mixed,2024,A1 − evidence consistency,10,3,3,0,0.0,0.8014343343792022,final target F1 (CompPhish external test),0.001778096162887266
+C: controlled drift,mixed,2024,A2 − Need–Risk separation,10,2,2,0,0.0,0.812450481041313,final target F1 (CompPhish external test),0.0024393580174054685
+C: controlled drift,mixed,2024,A3 − gradient-conflict test,10,2,2,0,0.0,0.815692590888173,final target F1 (CompPhish external test),0.002171625575881686
+C: controlled drift,mixed,2024,A4 − trust gate / quarantine,10,2,2,0,0.0,0.8119125806816895,final target F1 (CompPhish external test),0.0026190901004983225
+C: controlled drift,mixed,2024,A5 − adaptive budget,10,2,2,0,0.0,0.8189252336448598,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,2024,A6 − rare-class protection,10,2,2,0,0.0,0.816359633877882,final target F1 (CompPhish external test),0.0017093603066282714
+C: controlled drift,mixed,2024,A7 − adaptation certificate,10,2,2,0,0.0,0.8121184716255935,final target F1 (CompPhish external test),0.0030986481662317322
+C: controlled drift,mixed,2024,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.0,0.8086265607264472,final target F1 (CompPhish external test),0.001966181139454015
+C: controlled drift,mixed,2024,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,9,0,0.0,0.8179749715585893,final target F1 (CompPhish external test),0.003084566498442798
+C: controlled drift,mixed,3407,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,3407,Naive (periodic fine-tuning = A8),10,10,10,0,0.0,0.8373783257624919,final target F1 (CompPhish external test),0.014582964496135165
+C: controlled drift,mixed,3407,Replay-only,10,10,10,0,0.0,0.8421185372005044,final target F1 (CompPhish external test),0.0037098308560337134
+C: controlled drift,mixed,3407,Drift-triggered,10,8,8,0,0.0,0.838275281626311,final target F1 (CompPhish external test),0.01780257591482104
+C: controlled drift,mixed,3407,Drift + Replay,10,8,8,0,0.0,0.8454568336269821,final target F1 (CompPhish external test),0.0014180675188023573
+C: controlled drift,mixed,3407,ECRAC (A0 full),10,2,2,0,0.0,0.8124928497883538,final target F1 (CompPhish external test),0.00427283608407969
+C: controlled drift,mixed,3407,A1 − evidence consistency,10,6,6,0,0.16666666666666666,0.8230366492146597,final target F1 (CompPhish external test),0.002470542434600209
+C: controlled drift,mixed,3407,A2 − Need–Risk separation,10,2,2,0,0.0,0.8119355207499714,final target F1 (CompPhish external test),0.0036309101494900187
+C: controlled drift,mixed,3407,A3 − gradient-conflict test,10,2,2,0,0.0,0.8132197144173192,final target F1 (CompPhish external test),0.003490581114557023
+C: controlled drift,mixed,3407,A4 − trust gate / quarantine,10,2,2,0,0.0,0.7963640394634741,final target F1 (CompPhish external test),0.0022900523037372444
+C: controlled drift,mixed,3407,A5 − adaptive budget,10,1,1,0,0.0,0.8067491563554555,final target F1 (CompPhish external test),0.0005182675195070097
+C: controlled drift,mixed,3407,A6 − rare-class protection,10,2,2,0,0.0,0.8149088391414724,final target F1 (CompPhish external test),0.0021867047394212857
+C: controlled drift,mixed,3407,A7 − adaptation certificate,10,2,2,0,0.0,0.8096270103798334,final target F1 (CompPhish external test),0.003466657669472406
+C: controlled drift,mixed,3407,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.2222222222222222,0.8175753393144698,final target F1 (CompPhish external test),0.0031327927211888262
+C: controlled drift,mixed,3407,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,9,0,0.3333333333333333,0.8386562573929501,final target F1 (CompPhish external test),0.0013480302438714231
+C: controlled drift,mixed,777,Frozen (static),10,0,0,0,0.0,0.7699292577341358,final target F1 (CompPhish external test),0.0
+C: controlled drift,mixed,777,Naive (periodic fine-tuning = A8),10,10,10,0,0.1,0.8318788501026694,final target F1 (CompPhish external test),0.0031766777162643978
+C: controlled drift,mixed,777,Replay-only,10,10,10,0,0.1,0.8407485438096418,final target F1 (CompPhish external test),0.002801951212428322
+C: controlled drift,mixed,777,Drift-triggered,10,7,7,0,0.14285714285714285,0.8404580152671756,final target F1 (CompPhish external test),0.003997028813804482
+C: controlled drift,mixed,777,Drift + Replay,10,7,7,0,0.14285714285714285,0.8391590993904714,final target F1 (CompPhish external test),0.005302960344850005
+C: controlled drift,mixed,777,ECRAC (A0 full),10,1,1,0,0.0,0.7968992248062016,final target F1 (CompPhish external test),0.001317327376506805
+C: controlled drift,mixed,777,A1 − evidence consistency,10,6,6,0,0.16666666666666666,0.8150987224157956,final target F1 (CompPhish external test),0.0035020099061957577
+C: controlled drift,mixed,777,A2 − Need–Risk separation,10,1,1,0,0.0,0.7971159179145868,final target F1 (CompPhish external test),0.0011588428749351731
+C: controlled drift,mixed,777,A3 − gradient-conflict test,10,1,1,0,0.0,0.800223089793642,final target F1 (CompPhish external test),0.0013244080557501814
+C: controlled drift,mixed,777,A4 − trust gate / quarantine,10,1,1,0,0.0,0.7950928381962865,final target F1 (CompPhish external test),0.0009957720386611912
+C: controlled drift,mixed,777,A5 − adaptive budget,10,1,1,0,0.0,0.8055461616503212,final target F1 (CompPhish external test),0.001016559250303084
+C: controlled drift,mixed,777,A6 − rare-class protection,10,1,1,0,0.0,0.7974176313446126,final target F1 (CompPhish external test),0.0021293123578073336
+C: controlled drift,mixed,777,A7 − adaptation certificate,10,1,1,0,0.0,0.7966759002770083,final target F1 (CompPhish external test),0.0011576852128768467
+C: controlled drift,mixed,777,ECRAC-cal (tau_N calibrated on no-drift development windows),10,9,9,0,0.3333333333333333,0.8219464099292425,final target F1 (CompPhish external test),0.0028219394033124345
+C: controlled drift,mixed,777,"A1-cal (− evidence consistency, calibrated tau_N)",10,9,9,0,0.2222222222222222,0.8315429111084878,final target F1 (CompPhish external test),0.0007660751783580277

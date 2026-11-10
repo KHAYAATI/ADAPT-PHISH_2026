@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Need statistic N from the controller's own per-window logs (tau\_N a priori 0.25, calibrated 0.0000).}
+\label{tab:rev_R12_ecrac_need_statistic_from_logs}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+track & variant & runs & windows & N\_mean & N\_q95 & N\_max & share\_N\_ge\_tau & share\_N\_ge\_tau\_cal & share\_R\_ge\_tau\_R & share\_L\_pos \\
+\midrule
+A-contam: CompPhish pool, corrupted labels & ECRAC (A0 full) & 5 & 160 & 0.3416 & 0.5953 & 0.6708 & 0.6937 & 1.0000 & 0.1750 & 0.9812 \\
+A-contam: CompPhish pool, corrupted labels & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 5 & 160 & 0.3391 & 0.5947 & 0.7380 & 0.6813 & 1.0000 & 0.1750 & 0.9500 \\
+A: CompPhish pool & ECRAC (A0 full) & 5 & 40 & 0.1880 & 0.3798 & 0.3925 & 0.1500 & 1.0000 & 0.0000 & 0.8250 \\
+A: CompPhish pool & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 5 & 40 & 0.1545 & 0.3234 & 0.3865 & 0.1750 & 1.0000 & 0.0000 & 0.6000 \\
+B-mix: PhishTankNovel + benign & ECRAC (A0 full) & 5 & 130 & 0.0112 & 0.0420 & 0.0917 & 0.0000 & 1.0000 & 0.0000 & 0.1077 \\
+B-mix: PhishTankNovel + benign & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 5 & 130 & 0.0204 & 0.0564 & 0.1990 & 0.0000 & 1.0000 & 0.0000 & 0.1077 \\
+B: PhishTankNovel & ECRAC (A0 full) & 5 & 130 & 0.0388 & 0.1219 & 0.1318 & 0.0000 & 1.0000 & 0.0000 & 0.0385 \\
+B: PhishTankNovel & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 5 & 130 & 0.0957 & 0.1791 & 0.1826 & 0.0000 & 1.0000 & 0.0000 & 0.0077 \\
+C: controlled drift & ECRAC (A0 full) & 5 & 350 & 0.0715 & 0.2755 & 0.5403 & 0.0686 & 0.9600 & 0.0029 & 0.2743 \\
+C: controlled drift & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 5 & 350 & 0.0561 & 0.2276 & 0.5403 & 0.0429 & 0.9686 & 0.0057 & 0.2314 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Selected configuration of every family (equal number of trials; trial 0 = v13 default).}
+\label{tab:rev_R15_v14_selected_configs}
+\begin{tabular}{llrrrr}
+\toprule
+family & selected trial & selected configuration & VALIDATION worst-corpus ROC-AUC (short budget) & score of the v13 default (trial 0) & selected score \\
+\midrule
+ADAPT-PHISH v2 & 15 & \{"url\_rnn": "patch", "d": 128, "url\_layers": 2, "lr": 0.0005, "dann\_weight": 0.1, "native\_drop": 0.7, "alpha": 1.0, "md\_p": 0.2, "dro": true, "wd": 0.0001, "ema": 0.99\} & 0.9585 & 0.9341 & 0.9594 \\
+BiGRU & 8 & \{"d": 96, "h": 128, "lr": 0.002, "alpha": 0.5, "wd": 0.001, "ema": 0.998\} & 0.9543 & 0.9512 & 0.9553 \\
+URLNet-style & 3 & \{"d": 32, "nf": 64, "lr": 0.0005, "alpha": 0.5, "wd": 0.0001, "ema": 0.998\} & 0.9383 & 0.9285 & 0.9393 \\
+LightGBM (P) & 15 & \{"num\_leaves": 127, "learning\_rate": 0.05, "min\_child\_samples": 200, "colsample\_bytree": 0.8, "reg\_lambda": 5.0, "subsample": 0.7\} & 0.9198 & 0.9180 & 0.9207 \\
+LightGBM (P) + hashed n-grams & 6 & \{"num\_leaves": 15, "learning\_rate": 0.1, "min\_child\_samples": 200, "colsample\_bytree": 0.3, "reg\_lambda": 5.0, "subsample": 0.7\} & 0.9545 & 0.9513 & 0.9555 \\
+char n-gram LR & 4 & \{"ngram": [1, 5], "C": 0.5, "max\_features": 300000, "min\_df": 3\} & 0.9294 & 0.9043 & 0.9303 \\
+\bottomrule
+\end{tabular}
+\end{table*}

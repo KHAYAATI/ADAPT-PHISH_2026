@@ -1,0 +1,41 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Overlap between every reference and evaluated set, per key, after all purges (counts of rows of B whose key occurs in A).}
+\label{tab:rev_R5_overlap_by_key_all_pairs}
+\begin{tabular}{llrrrrr}
+\toprule
+A (reference) & B (evaluated) & rows B & normalized URL: rows of B found in A & model-input string (encoder key): rows of B found in A & model-input bytes after truncation: rows of B found in A & truncation-only collisions (bytes equal, strings differ) \\
+\midrule
+TRAIN & VALIDATION & 53878 & 0 & 0 & 0 & 0 \\
+TRAIN & PhreshTest & 96319 & 0 & 0 & 5 & 5 \\
+VALIDATION & PhreshTest & 96319 & 0 & 0 & 0 & 0 \\
+development (all rows) & PhreshTest & 96319 & 0 & 0 & 5 & 5 \\
+TRAIN & Crawling2024 & 46322 & 0 & 0 & 0 & 0 \\
+VALIDATION & Crawling2024 & 46322 & 0 & 0 & 0 & 0 \\
+development (all rows) & Crawling2024 & 46322 & 0 & 0 & 0 & 0 \\
+TRAIN & CompPhish & 9353 & 0 & 0 & 0 & 0 \\
+VALIDATION & CompPhish & 9353 & 0 & 0 & 0 & 0 \\
+development (all rows) & CompPhish & 9353 & 0 & 0 & 0 & 0 \\
+TRAIN & D4v & 962 & 0 & 0 & 0 & 0 \\
+VALIDATION & D4v & 962 & 0 & 0 & 0 & 0 \\
+development (all rows) & D4v & 962 & 0 & 0 & 0 & 0 \\
+PhreshTest & Crawling2024 & 46322 & 670 & 696 & 696 & 0 \\
+PhreshTest & CompPhish & 9353 & 101 & 155 & 154 & 0 \\
+PhreshTest & D4v & 962 & 6 & 8 & 8 & 0 \\
+Crawling2024 & CompPhish & 9353 & 317 & 665 & 665 & 0 \\
+Crawling2024 & D4v & 962 & 73 & 94 & 94 & 0 \\
+CompPhish & D4v & 962 & 29 & 87 & 87 & 0 \\
+TRAIN & TrackA\_pool & 5073 & 0 & 0 & 0 & 0 \\
+VALIDATION & TrackA\_pool & 5073 & 0 & 0 & 0 & 0 \\
+TrackA\_pool & CompPhish & 9353 & 0 & 0 & 0 & 0 \\
+TRAIN & PhishTank & 63822 & 0 & 0 & 1 & 1 \\
+VALIDATION & PhishTank & 63822 & 0 & 0 & 0 & 0 \\
+development (all rows) & PhishTank & 63822 & 0 & 0 & 1 & 1 \\
+PhreshTest & PhishTank & 63822 & 2849 & 2860 & 2860 & 0 \\
+Crawling2024 & PhishTank & 63822 & 3045 & 3044 & 3044 & 0 \\
+CompPhish & PhishTank & 63822 & 616 & 637 & 637 & 0 \\
+D4v & PhishTank & 63822 & 26 & 27 & 27 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

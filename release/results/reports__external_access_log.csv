@@ -1,0 +1,9 @@
+open_no,dataset,purpose,time,frozen_hashes_verified
+1,PhreshTest,"IID test + seen/unseen registrable-domain subsets (frozen models, VALIDATION thresholds)",2026-11-04T00:58:38,True
+2,Crawling2024,domain-shift test + seen/unseen domain + ROOT/DEEP strata (frozen models),2026-11-04T02:02:22,True
+3,CompPhish,external test + seen/unseen domain + metadata subgroups (frozen models),2026-11-04T02:22:58,True
+4,D4v,"external test, small sample (frozen models)",2026-11-04T02:29:05,True
+5,PhishTank,"temporal stream, frozen models, recall per window (purged; PhishTankNovel primary)",2026-11-04T02:30:12,True
+6,PhreshTest,"ECRAC v13: external retention set + benign pool of Track B-mix (frozen base model, no decision)",2026-11-04T02:57:18,True
+7,CompPhish,"ECRAC Track A target evaluation (pre-registered second use; frozen base model, adapted copies)",2026-11-04T02:59:31,True
+8,ALL TEST SETS,"post-freeze model-ablation ANALYSIS (no decision, frozen models untouched)",2026-11-04T04:44:15,True

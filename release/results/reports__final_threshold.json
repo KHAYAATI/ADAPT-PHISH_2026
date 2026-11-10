@@ -1,0 +1,1052 @@
+{
+  "ADAPT-PHISH (P) s42": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.940336872756481,
+    "val_fpr@0.1%": 0.9828353060305087,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.948646931231022,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) s42": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.9504327913582316,
+    "val_fpr@0.1%": 0.9882720949053753,
+    "val_minimax_mcc": 0.55,
+    "val_maxfpr@1%": 0.9733050200879576,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (P) s123": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9371572732925415,
+    "val_fpr@0.1%": 0.9830303420126435,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9581526906371117,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) s123": {
+    "val_mcc": 0.62,
+    "val_fpr@1%": 0.9610255379378768,
+    "val_fpr@0.1%": 0.9905659215152265,
+    "val_minimax_mcc": 0.64,
+    "val_maxfpr@1%": 0.9816848376572133,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (P) s2024": {
+    "val_mcc": 0.65,
+    "val_fpr@1%": 0.9551394581794739,
+    "val_fpr@0.1%": 0.9889025623440746,
+    "val_minimax_mcc": 0.59,
+    "val_maxfpr@1%": 0.9611407580018048,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) s2024": {
+    "val_mcc": 0.64,
+    "val_fpr@1%": 0.9666454628109908,
+    "val_fpr@0.1%": 0.996164306783676,
+    "val_minimax_mcc": 0.7,
+    "val_maxfpr@1%": 0.9822933669149881,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (P) s3407": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9556655883789062,
+    "val_fpr@0.1%": 0.990227381122113,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9684526982665068,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) s3407": {
+    "val_mcc": 0.6,
+    "val_fpr@1%": 0.9559499488711357,
+    "val_fpr@0.1%": 0.9911846828460692,
+    "val_minimax_mcc": 0.64,
+    "val_maxfpr@1%": 0.9752590626120567,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (P) s777": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.9291775593400017,
+    "val_fpr@0.1%": 0.990312186777592,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9438083934307108,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) s777": {
+    "val_mcc": 0.4,
+    "val_fpr@1%": 0.9455758108973495,
+    "val_fpr@0.1%": 0.9928355435967451,
+    "val_minimax_mcc": 0.56,
+    "val_maxfpr@1%": 0.9804496402978897,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (P) seed-ens": {
+    "val_mcc": 0.66,
+    "val_fpr@1%": 0.9405467856410701,
+    "val_fpr@0.1%": 0.9897090582819775,
+    "val_minimax_mcc": 0.66,
+    "val_maxfpr@1%": 0.9642724820223791,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH (E) seed-ens": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.9365283784727615,
+    "val_fpr@0.1%": 0.9942531456041285,
+    "val_minimax_mcc": 0.63,
+    "val_maxfpr@1%": 0.978079548196772,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) s42": {
+    "val_mcc": 0.53,
+    "val_fpr@1%": 0.9556485389965517,
+    "val_fpr@0.1%": 0.9947359749811627,
+    "val_minimax_mcc": 0.53,
+    "val_maxfpr@1%": 0.9752100436606056,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) s123": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9540854957902105,
+    "val_fpr@0.1%": 0.9939213511962997,
+    "val_minimax_mcc": 0.56,
+    "val_maxfpr@1%": 0.9703745510709284,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) s2024": {
+    "val_mcc": 0.53,
+    "val_fpr@1%": 0.9521727661276835,
+    "val_fpr@0.1%": 0.9959923251920823,
+    "val_minimax_mcc": 0.36,
+    "val_maxfpr@1%": 0.9774496064375829,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) s3407": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.954012926004445,
+    "val_fpr@0.1%": 0.9949633951284048,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9775433095802448,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) s777": {
+    "val_mcc": 0.52,
+    "val_fpr@1%": 0.9455401901960806,
+    "val_fpr@0.1%": 0.993480590015908,
+    "val_minimax_mcc": 0.29,
+    "val_maxfpr@1%": 0.9728144139333866,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) seed-ens": {
+    "val_mcc": 0.56,
+    "val_fpr@1%": 0.9532214404041112,
+    "val_fpr@0.1%": 0.9942639975182338,
+    "val_minimax_mcc": 0.56,
+    "val_maxfpr@1%": 0.9706770259860824,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) s42": {
+    "val_mcc": 0.52,
+    "val_fpr@1%": 0.9401123510119288,
+    "val_fpr@0.1%": 1.0,
+    "val_minimax_mcc": 0.56,
+    "val_maxfpr@1%": 0.9697625921036204,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) s123": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9396341265960401,
+    "val_fpr@0.1%": 0.997567484848954,
+    "val_minimax_mcc": 0.59,
+    "val_maxfpr@1%": 0.974837787932081,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) s2024": {
+    "val_mcc": 0.53,
+    "val_fpr@1%": 0.9353136403205892,
+    "val_fpr@0.1%": 1.0,
+    "val_minimax_mcc": 0.53,
+    "val_maxfpr@1%": 0.9738409648570233,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) s3407": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9267649632032978,
+    "val_fpr@0.1%": 0.998557440676878,
+    "val_minimax_mcc": 0.62,
+    "val_maxfpr@1%": 0.9704802798910447,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) s777": {
+    "val_mcc": 0.49,
+    "val_fpr@1%": 0.9418342584469725,
+    "val_fpr@0.1%": 0.9980456647108291,
+    "val_minimax_mcc": 0.64,
+    "val_maxfpr@1%": 0.9704891617749214,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (E) seed-ens": {
+    "val_mcc": 0.56,
+    "val_fpr@1%": 0.9427319957294821,
+    "val_fpr@0.1%": 0.9983691878833842,
+    "val_minimax_mcc": 0.66,
+    "val_maxfpr@1%": 0.9688901159459697,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "char 3-5-gram LR": {
+    "val_mcc": 0.49,
+    "val_fpr@1%": 0.9171468174750651,
+    "val_fpr@0.1%": 0.9920104923042647,
+    "val_minimax_mcc": 0.49,
+    "val_maxfpr@1%": 0.9503246892924002,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-X stack (P)": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9486550985093437,
+    "val_fpr@0.1%": 0.9985479807738102,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9840065870556163,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-X stack (E)": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9360901934353777,
+    "val_fpr@0.1%": 0.9996634399764314,
+    "val_minimax_mcc": 0.44,
+    "val_maxfpr@1%": 0.974742290135671,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Sanity: url_len only (LR)": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.5532357913352516,
+    "val_fpr@0.1%": 0.6181913764360539,
+    "val_minimax_mcc": 0.58,
+    "val_maxfpr@1%": 0.5535152999246097,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Sanity: has_path only (LR)": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 1.0,
+    "val_fpr@0.1%": 1.0,
+    "val_minimax_mcc": 0.99,
+    "val_maxfpr@1%": 1.0,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Sanity: url_len + path depth (LR)": {
+    "val_mcc": 0.6,
+    "val_fpr@1%": 0.691703367441948,
+    "val_fpr@0.1%": 0.8445484212828543,
+    "val_minimax_mcc": 0.63,
+    "val_maxfpr@1%": 0.6943873855877584,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams s42": {
+    "val_mcc": 0.52,
+    "val_fpr@1%": 0.9414849365287226,
+    "val_fpr@0.1%": 0.9959838867972355,
+    "val_minimax_mcc": 0.52,
+    "val_maxfpr@1%": 0.9760704404535216,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams s123": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.927164802101042,
+    "val_fpr@0.1%": 0.9949649193409107,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9775842555985493,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams s2024": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.9369173230196438,
+    "val_fpr@0.1%": 0.9942159451700672,
+    "val_minimax_mcc": 0.6,
+    "val_maxfpr@1%": 0.9771643261043244,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams s3407": {
+    "val_mcc": 0.56,
+    "val_fpr@1%": 0.9348353628242765,
+    "val_fpr@0.1%": 0.9960416684325347,
+    "val_minimax_mcc": 0.56,
+    "val_maxfpr@1%": 0.974057238351415,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams s777": {
+    "val_mcc": 0.37,
+    "val_fpr@1%": 0.9282920724258741,
+    "val_fpr@0.1%": 0.995114992805416,
+    "val_minimax_mcc": 0.37,
+    "val_maxfpr@1%": 0.9798260611176589,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) + hashed char n-grams seed-ens": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.9331773690942843,
+    "val_fpr@0.1%": 0.9949156376014516,
+    "val_minimax_mcc": 0.55,
+    "val_maxfpr@1%": 0.9758486156546499,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN s42": {
+    "val_mcc": 0.39,
+    "val_fpr@1%": 0.9087282678782941,
+    "val_fpr@0.1%": 0.9655417660355562,
+    "val_minimax_mcc": 0.39,
+    "val_maxfpr@1%": 0.9237179543912417,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN s123": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.96330819709301,
+    "val_fpr@0.1%": 0.9978414726138115,
+    "val_minimax_mcc": 0.43,
+    "val_maxfpr@1%": 0.9901408964633944,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN s2024": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.942664278411864,
+    "val_fpr@0.1%": 0.9924599096298216,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9827566141963008,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN s3407": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9504787416815764,
+    "val_fpr@0.1%": 0.9844733633816267,
+    "val_minimax_mcc": 0.48,
+    "val_maxfpr@1%": 0.9660057917714122,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN s777": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.9537063163101667,
+    "val_fpr@0.1%": 0.9846276987612268,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9642593528091915,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet-style char+word CNN seed-ens": {
+    "val_mcc": 0.52,
+    "val_fpr@1%": 0.9466526256211079,
+    "val_fpr@0.1%": 0.9939147890396554,
+    "val_minimax_mcc": 0.52,
+    "val_maxfpr@1%": 0.9886619285598826,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model s42": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9398908131718624,
+    "val_fpr@0.1%": 0.9892739446997642,
+    "val_minimax_mcc": 0.44,
+    "val_maxfpr@1%": 0.9616595944941049,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model s123": {
+    "val_mcc": 0.4,
+    "val_fpr@1%": 0.9762965396642689,
+    "val_fpr@0.1%": 0.9954369908094409,
+    "val_minimax_mcc": 0.63,
+    "val_maxfpr@1%": 0.9831762676179409,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model s2024": {
+    "val_mcc": 0.39,
+    "val_fpr@1%": 0.9630631001591683,
+    "val_fpr@0.1%": 0.9858972154855733,
+    "val_minimax_mcc": 0.39,
+    "val_maxfpr@1%": 0.9720264509797097,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model s3407": {
+    "val_mcc": 0.54,
+    "val_fpr@1%": 0.9504160873651504,
+    "val_fpr@0.1%": 0.9933384587168694,
+    "val_minimax_mcc": 0.54,
+    "val_maxfpr@1%": 0.9683101353526117,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model s777": {
+    "val_mcc": 0.65,
+    "val_fpr@1%": 0.9372763339519491,
+    "val_fpr@0.1%": 0.9879312906265265,
+    "val_minimax_mcc": 0.72,
+    "val_maxfpr@1%": 0.9604556482911112,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU character model seed-ens": {
+    "val_mcc": 0.54,
+    "val_fpr@1%": 0.9605338627959316,
+    "val_fpr@0.1%": 0.9884383848064637,
+    "val_minimax_mcc": 0.54,
+    "val_maxfpr@1%": 0.9727351952917306,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Pretrained google/canine-s (fine-tuned)": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9139958011865617,
+    "val_fpr@0.1%": 0.9414411776900292,
+    "val_minimax_mcc": 0.7,
+    "val_maxfpr@1%": 0.9266932663798335,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned)": {
+    "val_mcc": 0.4,
+    "val_fpr@1%": 0.9588602752685548,
+    "val_fpr@0.1%": 0.9720226325750351,
+    "val_minimax_mcc": 0.4,
+    "val_maxfpr@1%": 0.9667094484686851,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Simple stack (P): LightGBM + char-LR, no neural": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9488268977614264,
+    "val_fpr@0.1%": 0.9989416164597783,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9881776578293036,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) s42": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9236186146736145,
+    "val_fpr@0.1%": 0.9818607032239429,
+    "val_minimax_mcc": 0.58,
+    "val_maxfpr@1%": 0.9473731849908833,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) s42": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9366741814792138,
+    "val_fpr@0.1%": 0.9892342120289802,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.954039273053408,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) s123": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9550664016485213,
+    "val_fpr@0.1%": 0.987093916749955,
+    "val_minimax_mcc": 0.53,
+    "val_maxfpr@1%": 0.965594334214926,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) s123": {
+    "val_mcc": 0.37,
+    "val_fpr@1%": 0.9613772222518909,
+    "val_fpr@0.1%": 0.9922049245893946,
+    "val_minimax_mcc": 0.64,
+    "val_maxfpr@1%": 0.9768162131428724,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) s2024": {
+    "val_mcc": 0.42,
+    "val_fpr@1%": 0.9641037094116195,
+    "val_fpr@0.1%": 0.9857750670909885,
+    "val_minimax_mcc": 0.42,
+    "val_maxfpr@1%": 0.9738734137773515,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) s2024": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9710799161612986,
+    "val_fpr@0.1%": 0.9896375942587855,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9807417900562286,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) s3407": {
+    "val_mcc": 0.4,
+    "val_fpr@1%": 0.9546533823013306,
+    "val_fpr@0.1%": 0.9855484450221066,
+    "val_minimax_mcc": 0.4,
+    "val_maxfpr@1%": 0.9629861798286441,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) s3407": {
+    "val_mcc": 0.38,
+    "val_fpr@1%": 0.9331032543659209,
+    "val_fpr@0.1%": 0.9916933246374137,
+    "val_minimax_mcc": 0.61,
+    "val_maxfpr@1%": 0.9687070635676385,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) s777": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.938725979828835,
+    "val_fpr@0.1%": 0.9846889554858205,
+    "val_minimax_mcc": 0.57,
+    "val_maxfpr@1%": 0.9588977539241315,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) s777": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.9587712537825105,
+    "val_fpr@0.1%": 0.9924739808440209,
+    "val_minimax_mcc": 0.61,
+    "val_maxfpr@1%": 0.9786507273733621,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) seed-ens": {
+    "val_mcc": 0.49,
+    "val_fpr@1%": 0.9466448813195524,
+    "val_fpr@0.1%": 0.9807591702970933,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9608964391030023,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (E) seed-ens": {
+    "val_mcc": 0.37,
+    "val_fpr@1%": 0.9591534866540782,
+    "val_fpr@0.1%": 0.9920798351493461,
+    "val_minimax_mcc": 0.37,
+    "val_maxfpr@1%": 0.9782714058096775,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned s42": {
+    "val_mcc": 0.38,
+    "val_fpr@1%": 0.9264425674080847,
+    "val_fpr@0.1%": 0.9790445043921467,
+    "val_minimax_mcc": 0.36,
+    "val_maxfpr@1%": 0.9501306260049345,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned s123": {
+    "val_mcc": 0.4,
+    "val_fpr@1%": 0.946137535905838,
+    "val_fpr@0.1%": 0.9855322562932991,
+    "val_minimax_mcc": 0.4,
+    "val_maxfpr@1%": 0.9639360342860224,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned s2024": {
+    "val_mcc": 0.57,
+    "val_fpr@1%": 0.9146711862385278,
+    "val_fpr@0.1%": 0.9705391691923142,
+    "val_minimax_mcc": 0.57,
+    "val_maxfpr@1%": 0.9156628003209829,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned s3407": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9438062420725818,
+    "val_fpr@0.1%": 0.9858275581359865,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9536322989702227,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned s777": {
+    "val_mcc": 0.37,
+    "val_fpr@1%": 0.933791968375445,
+    "val_fpr@0.1%": 0.9825962408065786,
+    "val_minimax_mcc": 0.37,
+    "val_maxfpr@1%": 0.9461702953338624,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned seed-ens": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9314183779090662,
+    "val_fpr@0.1%": 0.9799232297452637,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9521362922352843,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned s42": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9318416330814352,
+    "val_fpr@0.1%": 0.9785523930549562,
+    "val_minimax_mcc": 0.45,
+    "val_maxfpr@1%": 0.9474124038755897,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned s123": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9561199609816079,
+    "val_fpr@0.1%": 0.9957113551497474,
+    "val_minimax_mcc": 0.42,
+    "val_maxfpr@1%": 0.9811702098488813,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned s2024": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9521796623229981,
+    "val_fpr@0.1%": 0.9969871126651766,
+    "val_minimax_mcc": 0.61,
+    "val_maxfpr@1%": 0.9927472745239735,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned s3407": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9324795263290405,
+    "val_fpr@0.1%": 0.9775716462254526,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9571929335534575,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned s777": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.9482069014787674,
+    "val_fpr@0.1%": 0.984439503324033,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9628698126852521,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "URLNet tuned seed-ens": {
+    "val_mcc": 0.36,
+    "val_fpr@1%": 0.9481492835546972,
+    "val_fpr@0.1%": 0.9925753052577557,
+    "val_minimax_mcc": 0.36,
+    "val_maxfpr@1%": 0.9890711920315697,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned s42": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9445809100027089,
+    "val_fpr@0.1%": 0.9915676480075661,
+    "val_minimax_mcc": 0.33,
+    "val_maxfpr@1%": 0.9640664514786561,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned s123": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9395709607301325,
+    "val_fpr@0.1%": 0.9887384484266895,
+    "val_minimax_mcc": 0.44,
+    "val_maxfpr@1%": 0.959388515070517,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned s2024": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.9422148494752984,
+    "val_fpr@0.1%": 0.9895432371259357,
+    "val_minimax_mcc": 0.62,
+    "val_maxfpr@1%": 0.9665439577881456,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned s3407": {
+    "val_mcc": 0.54,
+    "val_fpr@1%": 0.9468791585546725,
+    "val_fpr@0.1%": 0.9913227133899787,
+    "val_minimax_mcc": 0.54,
+    "val_maxfpr@1%": 0.9669208833277493,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned s777": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.944857302216946,
+    "val_fpr@0.1%": 0.9921725773060078,
+    "val_minimax_mcc": 0.48,
+    "val_maxfpr@1%": 0.9667036908365119,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM (P) tuned seed-ens": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.9421059144561483,
+    "val_fpr@0.1%": 0.9899640399658955,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9612182316458039,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned s42": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9410824618212325,
+    "val_fpr@0.1%": 0.9993839167719948,
+    "val_minimax_mcc": 0.48,
+    "val_maxfpr@1%": 0.9605492149011406,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned s123": {
+    "val_mcc": 0.52,
+    "val_fpr@1%": 0.9207541066596961,
+    "val_fpr@0.1%": 0.9996231574328802,
+    "val_minimax_mcc": 0.52,
+    "val_maxfpr@1%": 0.9684297360670369,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned s2024": {
+    "val_mcc": 0.44,
+    "val_fpr@1%": 0.9374364658317553,
+    "val_fpr@0.1%": 0.9992961366114422,
+    "val_minimax_mcc": 0.44,
+    "val_maxfpr@1%": 0.9697255447375668,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned s3407": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.9301101096699903,
+    "val_fpr@0.1%": 0.9996663634035616,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9739607991971563,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned s777": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9426648636756085,
+    "val_fpr@0.1%": 0.9990475130388097,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.970717918309775,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "LightGBM + n-grams tuned seed-ens": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9249830870136513,
+    "val_fpr@0.1%": 0.9994066657571175,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9631711783798431,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "char n-gram LR tuned": {
+    "val_mcc": 0.5,
+    "val_fpr@1%": 0.9057411811910543,
+    "val_fpr@0.1%": 0.9944372090847234,
+    "val_minimax_mcc": 0.53,
+    "val_maxfpr@1%": 0.961335759687074,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-X2 stack (P)": {
+    "val_mcc": 0.42,
+    "val_fpr@1%": 0.9523941964526578,
+    "val_fpr@0.1%": 0.9968978388949635,
+    "val_minimax_mcc": 0.42,
+    "val_maxfpr@1%": 0.9782170017622693,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-X2 stack (E)": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9591304214171744,
+    "val_fpr@0.1%": 0.9967817967047928,
+    "val_minimax_mcc": 0.45,
+    "val_maxfpr@1%": 0.9844327171751329,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "Baseline stack (P): tuned baselines, no ADAPT": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9506619973859889,
+    "val_fpr@0.1%": 0.996761425353912,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9794118120703622,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) s42": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9441608786582947,
+    "val_fpr@0.1%": 0.9826498436152928,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9494267247021202,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) s123": {
+    "val_mcc": 0.51,
+    "val_fpr@1%": 0.944082495701312,
+    "val_fpr@0.1%": 0.9845616077184688,
+    "val_minimax_mcc": 0.51,
+    "val_maxfpr@1%": 0.9617913201689721,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) s2024": {
+    "val_mcc": 0.43,
+    "val_fpr@1%": 0.9474563170194636,
+    "val_fpr@0.1%": 0.9830177451372152,
+    "val_minimax_mcc": 0.48,
+    "val_maxfpr@1%": 0.9631678487718108,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) s3407": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.9461040462493885,
+    "val_fpr@0.1%": 0.9851870963633058,
+    "val_minimax_mcc": 0.47,
+    "val_maxfpr@1%": 0.9681385275781156,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) s777": {
+    "val_mcc": 0.42,
+    "val_fpr@1%": 0.949830958127976,
+    "val_fpr@0.1%": 0.9883930055618294,
+    "val_minimax_mcc": 0.42,
+    "val_maxfpr@1%": 0.9680928418397909,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2-KD (P) seed-ens": {
+    "val_mcc": 0.42,
+    "val_fpr@1%": 0.9492924826451579,
+    "val_fpr@0.1%": 0.984236046076693,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9565077727064217,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned s42": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9470916422963152,
+    "val_fpr@0.1%": 0.988518955731392,
+    "val_minimax_mcc": 0.61,
+    "val_maxfpr@1%": 0.9679409499108799,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned s123": {
+    "val_mcc": 0.48,
+    "val_fpr@1%": 0.9407043125152588,
+    "val_fpr@0.1%": 0.9875640491127966,
+    "val_minimax_mcc": 0.48,
+    "val_maxfpr@1%": 0.9528320586025716,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned s2024": {
+    "val_mcc": 0.56,
+    "val_fpr@1%": 0.9515470754384994,
+    "val_fpr@0.1%": 0.9877347055554411,
+    "val_minimax_mcc": 0.6,
+    "val_maxfpr@1%": 0.9708121653079987,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned s3407": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9465151601672183,
+    "val_fpr@0.1%": 0.9915542368650443,
+    "val_minimax_mcc": 0.46,
+    "val_maxfpr@1%": 0.9671236605644229,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned s777": {
+    "val_mcc": 0.46,
+    "val_fpr@1%": 0.9555290179848671,
+    "val_fpr@0.1%": 0.9854825307965285,
+    "val_minimax_mcc": 0.57,
+    "val_maxfpr@1%": 0.9662044105768205,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU-KD tuned seed-ens": {
+    "val_mcc": 0.47,
+    "val_fpr@1%": 0.9411014797628745,
+    "val_fpr@0.1%": 0.989860574422174,
+    "val_minimax_mcc": 0.62,
+    "val_maxfpr@1%": 0.9711478864505878,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "ADAPT-PHISH v2 (P) 2x budget s42": {
+    "val_mcc": 0.55,
+    "val_fpr@1%": 0.9446664452552795,
+    "val_fpr@0.1%": 0.987331008005142,
+    "val_minimax_mcc": 0.55,
+    "val_maxfpr@1%": 0.959064062970877,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  },
+  "BiGRU tuned 2x budget s42": {
+    "val_mcc": 0.45,
+    "val_fpr@1%": 0.9586422549724578,
+    "val_fpr@0.1%": 0.9885382243692881,
+    "val_minimax_mcc": 0.5,
+    "val_maxfpr@1%": 0.9672453072905545,
+    "criterion_val_mcc": "max weighted MCC on VALIDATION (grid 0.01\u20130.99), weighted F1 secondary",
+    "criterion_val_fpr": "smallest threshold with macro-corpus benign FPR \u2264 target on VALIDATION",
+    "frozen": true
+  }
+}

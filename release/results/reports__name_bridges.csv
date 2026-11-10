@@ -1,0 +1,23 @@
+native,shares name prior with
+nb_dots,url::n_dots
+nb_hyphens,url::n_hyphens
+nb_at,url::n_at
+nb_qm,url::n_question
+nb_and,url::n_ampersand
+nb_eq,url::n_equals
+nb_underscore,url::n_underscores
+nb_tilde,url::n_tilde
+nb_percent,url::n_percent
+ratio_digits_url,url::digit_ratio
+ratio_digits_host,url::host_digit_ratio
+URLLetterRatio,url::letter_ratio
+DigitCntInURL,url::n_digits
+URLDigitRatio,url::digit_ratio
+EqualCharCntInURL,url::n_equals
+QuesMarkCntInURL,url::n_question
+AmpCharCntInURL,url::n_ampersand
+IsDomainIP,url::ip_host
+TLDLength,url::tld_len
+NumberOfSubdomains,url::n_subdomains
+PathLength,url::path_len
+ShannonEntropy,url::url_entropy

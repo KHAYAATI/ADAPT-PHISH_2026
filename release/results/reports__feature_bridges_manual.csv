@@ -1,0 +1,35 @@
+native,canonical,claimed_definition,status,spearman_rho,median_rel_diff,rows
+length_url,url::url_len,URL length,NOT_USED (canonical partner removed by the shortcut filter),,,
+LengthOfURL,url::url_len,URL length,NOT_USED (canonical partner removed by the shortcut filter),,,
+length_hostname,url::host_len,hostname length,"EXCLUDED (manual decision, definition not verified)",,,
+DomainLengthOfURL,url::host_len,domain length,"EXCLUDED (manual decision, definition not verified)",,,
+nb_dots,url::n_dots,count '.',VERIFIED,0.9999,0.0,8934.0
+nb_hyphens,url::n_hyphens,count '-',VERIFIED,0.9999,0.0,8934.0
+nb_at,url::n_at,count '@',VERIFIED,1.0,0.0,8934.0
+nb_qm,url::n_question,count '?',VERIFIED,0.9913,0.0,8934.0
+nb_and,url::n_ampersand,count '&',VERIFIED,0.9975,0.0,8934.0
+nb_eq,url::n_equals,count '=',VERIFIED,0.996,0.0,8934.0
+nb_underscore,url::n_underscores,count '_',VERIFIED,0.998,0.0,8934.0
+nb_tilde,url::n_tilde,count '~',VERIFIED,1.0,0.0,8934.0
+nb_percent,url::n_percent,count '%',VERIFIED,1.0,0.0,8934.0
+nb_slash,url::n_slashes,count '/',NOT_USED (canonical partner removed by the shortcut filter),,,
+ratio_digits_url,url::digit_ratio,digits / URL length,VERIFIED,0.999,0.0,8934.0
+ratio_digits_host,url::host_digit_ratio,digits / host length,VERIFIED,1.0,0.0,8934.0
+punycode,url::punycode,xn-- in host,NOT_AVAILABLE (column absent or removed),,,
+port,url::has_port,explicit port,NOT_AVAILABLE (column absent or removed),,,
+ip,url::ip_host,IP host,REJECTED (definition mismatch),0.2155,0.0,8934.0
+shortening_service,url::shortener,shortener host,REJECTED (definition mismatch),0.0926,0.0,8934.0
+nb_subdomains,url::n_subdomains,subdomain count,REJECTED (definition mismatch),0.6668,0.5,8934.0
+LetterCntInURL,url::n_letters,letters in URL,NOT_USED (canonical partner removed by the shortcut filter),,,
+URLLetterRatio,url::letter_ratio,letters / URL length,VERIFIED,0.9996,0.0,248233.0
+DigitCntInURL,url::n_digits,digits in URL,VERIFIED,0.9993,0.0,248233.0
+URLDigitRatio,url::digit_ratio,digits / URL length,VERIFIED,0.9996,0.0,248233.0
+URLDigitRatio,url::host_digit_ratio,(similarity bridge of v10),"EXCLUDED (manual decision, definition not verified)",,,
+EqualCharCntInURL,url::n_equals,count '=',VERIFIED,0.9886,0.0,248233.0
+QuesMarkCntInURL,url::n_question,count '?',VERIFIED,0.9877,0.0,248233.0
+AmpCharCntInURL,url::n_ampersand,count '&',VERIFIED,0.9883,0.0,248233.0
+IsDomainIP,url::ip_host,IP host,VERIFIED,0.9872,0.0,248233.0
+TLDLength,url::tld_len,TLD length,VERIFIED,0.9757,0.0,248233.0
+NumberOfSubdomains,url::n_subdomains,subdomain count,VERIFIED,0.9807,0.0,248233.0
+PathLength,url::path_len,path length,VERIFIED,0.998,0.0,248233.0
+ShannonEntropy,url::url_entropy,URL entropy,VERIFIED,0.9988,0.0,248233.0

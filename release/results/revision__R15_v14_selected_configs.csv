@@ -1,0 +1,7 @@
+family,selected trial,selected configuration,VALIDATION worst-corpus ROC-AUC (short budget),score of the v13 default (trial 0),selected score
+ADAPT-PHISH v2,15,"{""url_rnn"": ""patch"", ""d"": 128, ""url_layers"": 2, ""lr"": 0.0005, ""dann_weight"": 0.1, ""native_drop"": 0.7, ""alpha"": 1.0, ""md_p"": 0.2, ""dro"": true, ""wd"": 0.0001, ""ema"": 0.99}",0.9584646380142424,0.934123659193395,0.959427396725021
+BiGRU,8,"{""d"": 96, ""h"": 128, ""lr"": 0.002, ""alpha"": 0.5, ""wd"": 0.001, ""ema"": 0.998}",0.9543087126775502,0.9512003248445161,0.9552730910486289
+URLNet-style,3,"{""d"": 32, ""nf"": 64, ""lr"": 0.0005, ""alpha"": 0.5, ""wd"": 0.0001, ""ema"": 0.998}",0.9383226370444872,0.9284654828162275,0.939262723978802
+LightGBM (P),15,"{""num_leaves"": 127, ""learning_rate"": 0.05, ""min_child_samples"": 200, ""colsample_bytree"": 0.8, ""reg_lambda"": 5.0, ""subsample"": 0.7}",0.9197672587812575,0.9180304474023218,0.9207032430355425
+LightGBM (P) + hashed n-grams,6,"{""num_leaves"": 15, ""learning_rate"": 0.1, ""min_child_samples"": 200, ""colsample_bytree"": 0.3, ""reg_lambda"": 5.0, ""subsample"": 0.7}",0.9545241267700184,0.9512670296611402,0.9554929316408427
+char n-gram LR,4,"{""ngram"": [1, 5], ""C"": 0.5, ""max_features"": 300000, ""min_df"": 3}",0.9293786439252052,0.904306928598489,0.9303356915986106

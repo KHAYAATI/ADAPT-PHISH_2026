@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Control: the R22 frame constructor on 1,000 PhreshTest URLs reproduces the stored scores.}
+\label{tab:rev_R22_constructor_control}
+\begin{tabular}{ll}
+\toprule
+model & max |Δp| vs stored PhreshTest scores \\
+\midrule
+ADAPT-X2 stack (P) & 0.0000 \\
+ADAPT-PHISH v2 (P) & 0.0000 \\
+BiGRU tuned & 0.0000 \\
+URLNet tuned & 0.0000 \\
+LightGBM (P) tuned & 0.0000 \\
+LightGBM + n-grams tuned & 0.0000 \\
+char n-gram LR tuned & 0.0000 \\
+Baseline stack (P): tuned baselines, no ADAPT & 0.0000 \\
+ADAPT-PHISH v2-KD (P) & 0.0000 \\
+BiGRU-KD tuned & 0.0000 \\
+ADAPT-X (P) & 0.0000 \\
+ADAPT-PHISH (P) & 0.0000 \\
+LightGBM (P) & 0.0000 \\
+char-LR & 0.0000 \\
+LightGBM (P) + hashed char n-grams & 0.0000 \\
+URLNet-style char+word CNN & 0.0000 \\
+BiGRU character model & 0.0000 \\
+Pretrained google/canine-s (fine-tuned) & 0.0000 \\
+Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & 0.0000 \\
+Simple stack (P): LightGBM + char-LR, no neural & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

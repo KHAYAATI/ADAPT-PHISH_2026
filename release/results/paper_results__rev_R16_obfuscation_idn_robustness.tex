@@ -1,0 +1,1452 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Frozen portable models on rewritten test URLs (same pipeline, VALIDATION thresholds); Δ against the unperturbed URLs.}
+\label{tab:rev_R16_obfuscation_idn_robustness}
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & perturbation & model & threshold rule & roc\_auc & recall & fpr & Δrecall vs unperturbed & Δfpr vs unperturbed \\
+\midrule
+PhreshTest & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_mcc & 0.9921 & 0.9617 & 0.0575 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9921 & 0.7748 & 0.0032 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9921 & 0.6825 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9868 & 0.9443 & 0.0698 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9868 & 0.7418 & 0.0057 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9868 & 0.7007 & 0.0043 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU tuned & val\_mcc & 0.9874 & 0.9283 & 0.0457 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU tuned & val\_fpr@1\% & 0.9874 & 0.7545 & 0.0047 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU tuned & val\_maxfpr@1\% & 0.9874 & 0.6880 & 0.0030 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet tuned & val\_mcc & 0.9884 & 0.9540 & 0.0693 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet tuned & val\_fpr@1\% & 0.9884 & 0.6830 & 0.0025 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet tuned & val\_maxfpr@1\% & 0.9884 & 0.4268 & 0.0003 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) tuned & val\_mcc & 0.9743 & 0.9190 & 0.0940 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) tuned & val\_fpr@1\% & 0.9743 & 0.6060 & 0.0025 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9743 & 0.5413 & 0.0015 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM + n-grams tuned & val\_mcc & 0.9911 & 0.9565 & 0.0532 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9911 & 0.8055 & 0.0050 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9911 & 0.7342 & 0.0027 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char n-gram LR tuned & val\_mcc & 0.9884 & 0.9327 & 0.0398 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char n-gram LR tuned & val\_fpr@1\% & 0.9884 & 0.7782 & 0.0055 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9884 & 0.6745 & 0.0022 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9923 & 0.9540 & 0.0457 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9923 & 0.7790 & 0.0032 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9923 & 0.6695 & 0.0015 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9892 & 0.9600 & 0.0703 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9892 & 0.7652 & 0.0057 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9892 & 0.7430 & 0.0043 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU-KD tuned & val\_mcc & 0.9915 & 0.9473 & 0.0372 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU-KD tuned & val\_fpr@1\% & 0.9915 & 0.7798 & 0.0027 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9915 & 0.6783 & 0.0015 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-X (P) & val\_mcc & 0.9950 & 0.9690 & 0.0442 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-X (P) & val\_fpr@1\% & 0.9950 & 0.7935 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9950 & 0.6723 & 0.0008 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH (P) & val\_mcc & 0.9796 & 0.8865 & 0.0527 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9796 & 0.6930 & 0.0040 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9796 & 0.6075 & 0.0020 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) & val\_mcc & 0.9724 & 0.8978 & 0.0818 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) & val\_fpr@1\% & 0.9724 & 0.5647 & 0.0020 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) & val\_maxfpr@1\% & 0.9724 & 0.4960 & 0.0008 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char-LR & val\_mcc & 0.9937 & 0.9530 & 0.0310 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char-LR & val\_fpr@1\% & 0.9937 & 0.7823 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & char-LR & val\_maxfpr@1\% & 0.9937 & 0.7087 & 0.0010 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9933 & 0.9515 & 0.0348 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9933 & 0.8097 & 0.0022 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9933 & 0.6990 & 0.0005 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet-style char+word CNN & val\_mcc & 0.9865 & 0.9293 & 0.0460 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9865 & 0.6890 & 0.0035 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9865 & 0.4387 & 0.0005 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU character model & val\_mcc & 0.9922 & 0.9477 & 0.0320 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU character model & val\_fpr@1\% & 0.9922 & 0.7445 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & BiGRU character model & val\_maxfpr@1\% & 0.9922 & 0.6740 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9924 & 0.9555 & 0.0307 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9924 & 0.8195 & 0.0040 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9924 & 0.7782 & 0.0035 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9909 & 0.9427 & 0.0345 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9909 & 0.7412 & 0.0025 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9909 & 0.6577 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9949 & 0.9702 & 0.0460 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9949 & 0.7820 & 0.0020 & 0.0000 & 0.0000 \\
+PhreshTest & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9949 & 0.6145 & 0.0005 & 0.0000 & 0.0000 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_mcc & 0.9867 & 0.9950 & 0.2527 & 0.0333 & 0.1952 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9867 & 0.8630 & 0.0227 & 0.0882 & 0.0195 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9867 & 0.7198 & 0.0067 & 0.0373 & 0.0050 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9800 & 0.9898 & 0.2343 & 0.0455 & 0.1645 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9800 & 0.8760 & 0.0415 & 0.1342 & 0.0358 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9800 & 0.8317 & 0.0285 & 0.1310 & 0.0243 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU tuned & val\_mcc & 0.9721 & 0.9890 & 0.2570 & 0.0607 & 0.2112 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU tuned & val\_fpr@1\% & 0.9721 & 0.8545 & 0.0508 & 0.1000 & 0.0460 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU tuned & val\_maxfpr@1\% & 0.9721 & 0.7833 & 0.0328 & 0.0953 & 0.0298 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet tuned & val\_mcc & 0.9721 & 0.9910 & 0.2360 & 0.0370 & 0.1667 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet tuned & val\_fpr@1\% & 0.9721 & 0.4055 & 0.0063 & -0.2775 & 0.0038 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet tuned & val\_maxfpr@1\% & 0.9721 & 0.1350 & 0.0005 & -0.2918 & 0.0003 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_mcc & 0.9329 & 0.9815 & 0.4870 & 0.0625 & 0.3930 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_fpr@1\% & 0.9329 & 0.7860 & 0.1047 & 0.1800 & 0.1022 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9329 & 0.7190 & 0.0617 & 0.1777 & 0.0602 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_mcc & 0.9804 & 0.9922 & 0.2420 & 0.0357 & 0.1888 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9804 & 0.8598 & 0.0355 & 0.0543 & 0.0305 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9804 & 0.7140 & 0.0143 & -0.0202 & 0.0115 \\
+PhreshTest & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_mcc & 0.9819 & 0.9742 & 0.1375 & 0.0415 & 0.0978 \\
+PhreshTest & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_fpr@1\% & 0.9819 & 0.7422 & 0.0110 & -0.0360 & 0.0055 \\
+PhreshTest & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9819 & 0.5262 & 0.0057 & -0.1482 & 0.0035 \\
+PhreshTest & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9857 & 0.9960 & 0.2522 & 0.0420 & 0.2065 \\
+PhreshTest & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9857 & 0.8565 & 0.0235 & 0.0775 & 0.0203 \\
+PhreshTest & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9857 & 0.6737 & 0.0060 & 0.0042 & 0.0045 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9822 & 0.9930 & 0.2587 & 0.0330 & 0.1885 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9822 & 0.8805 & 0.0355 & 0.1152 & 0.0297 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9822 & 0.8580 & 0.0288 & 0.1150 & 0.0245 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_mcc & 0.9822 & 0.9955 & 0.2712 & 0.0483 & 0.2340 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_fpr@1\% & 0.9822 & 0.8642 & 0.0315 & 0.0845 & 0.0288 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9822 & 0.7375 & 0.0123 & 0.0593 & 0.0108 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_mcc & 0.9883 & 0.9965 & 0.2532 & 0.0275 & 0.2090 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_fpr@1\% & 0.9883 & 0.8745 & 0.0175 & 0.0810 & 0.0158 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9883 & 0.6370 & 0.0032 & -0.0353 & 0.0025 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_mcc & 0.9570 & 0.9730 & 0.3210 & 0.0865 & 0.2682 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9570 & 0.8775 & 0.0900 & 0.1845 & 0.0860 \\
+PhreshTest & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9570 & 0.7987 & 0.0525 & 0.1912 & 0.0505 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) & val\_mcc & 0.9362 & 0.9768 & 0.4527 & 0.0790 & 0.3710 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) & val\_fpr@1\% & 0.9362 & 0.7823 & 0.0910 & 0.2175 & 0.0890 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) & val\_maxfpr@1\% & 0.9362 & 0.6997 & 0.0457 & 0.2037 & 0.0450 \\
+PhreshTest & IDN homoglyph host (punycode) & char-LR & val\_mcc & 0.9875 & 0.9765 & 0.1003 & 0.0235 & 0.0693 \\
+PhreshTest & IDN homoglyph host (punycode) & char-LR & val\_fpr@1\% & 0.9875 & 0.5880 & 0.0045 & -0.1943 & 0.0027 \\
+PhreshTest & IDN homoglyph host (punycode) & char-LR & val\_maxfpr@1\% & 0.9875 & 0.4353 & 0.0022 & -0.2735 & 0.0012 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9817 & 0.9892 & 0.2045 & 0.0377 & 0.1697 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9817 & 0.8387 & 0.0280 & 0.0290 & 0.0258 \\
+PhreshTest & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9817 & 0.5595 & 0.0050 & -0.1395 & 0.0045 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_mcc & 0.9692 & 0.9692 & 0.1660 & 0.0400 & 0.1200 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9692 & 0.4130 & 0.0073 & -0.2760 & 0.0038 \\
+PhreshTest & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9692 & 0.1407 & 0.0008 & -0.2980 & 0.0003 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU character model & val\_mcc & 0.9808 & 0.9928 & 0.2500 & 0.0450 & 0.2180 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU character model & val\_fpr@1\% & 0.9808 & 0.8207 & 0.0262 & 0.0762 & 0.0245 \\
+PhreshTest & IDN homoglyph host (punycode) & BiGRU character model & val\_maxfpr@1\% & 0.9808 & 0.7280 & 0.0132 & 0.0540 & 0.0115 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9763 & 0.9918 & 0.2285 & 0.0363 & 0.1978 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9763 & 0.8900 & 0.0583 & 0.0705 & 0.0543 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9763 & 0.8407 & 0.0410 & 0.0625 & 0.0375 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9656 & 0.9908 & 0.2835 & 0.0480 & 0.2490 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9656 & 0.8427 & 0.0670 & 0.1015 & 0.0645 \\
+PhreshTest & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9656 & 0.7580 & 0.0435 & 0.1003 & 0.0417 \\
+PhreshTest & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9875 & 0.9968 & 0.2712 & 0.0265 & 0.2253 \\
+PhreshTest & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9875 & 0.8580 & 0.0175 & 0.0760 & 0.0155 \\
+PhreshTest & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9875 & 0.5457 & 0.0008 & -0.0688 & 0.0003 \\
+PhreshTest & percent-encoded path characters & ADAPT-X2 stack (P) & val\_mcc & 0.9857 & 0.9550 & 0.0912 & -0.0068 & 0.0337 \\
+PhreshTest & percent-encoded path characters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9857 & 0.7185 & 0.0032 & -0.0563 & 0.0000 \\
+PhreshTest & percent-encoded path characters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9857 & 0.6035 & 0.0008 & -0.0790 & -0.0010 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_mcc & 0.9823 & 0.9250 & 0.0620 & -0.0192 & -0.0078 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9823 & 0.6530 & 0.0037 & -0.0887 & -0.0020 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9823 & 0.6010 & 0.0018 & -0.0998 & -0.0025 \\
+PhreshTest & percent-encoded path characters & BiGRU tuned & val\_mcc & 0.9769 & 0.9195 & 0.0675 & -0.0088 & 0.0218 \\
+PhreshTest & percent-encoded path characters & BiGRU tuned & val\_fpr@1\% & 0.9769 & 0.6923 & 0.0050 & -0.0622 & 0.0003 \\
+PhreshTest & percent-encoded path characters & BiGRU tuned & val\_maxfpr@1\% & 0.9769 & 0.6148 & 0.0027 & -0.0732 & -0.0003 \\
+PhreshTest & percent-encoded path characters & URLNet tuned & val\_mcc & 0.9574 & 0.9415 & 0.2420 & -0.0125 & 0.1727 \\
+PhreshTest & percent-encoded path characters & URLNet tuned & val\_fpr@1\% & 0.9574 & 0.5192 & 0.0008 & -0.1638 & -0.0018 \\
+PhreshTest & percent-encoded path characters & URLNet tuned & val\_maxfpr@1\% & 0.9574 & 0.2760 & 0.0000 & -0.1507 & -0.0003 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) tuned & val\_mcc & 0.9348 & 0.8725 & 0.1812 & -0.0465 & 0.0872 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) tuned & val\_fpr@1\% & 0.9348 & 0.4990 & 0.0043 & -0.1070 & 0.0018 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9348 & 0.4320 & 0.0013 & -0.1093 & -0.0003 \\
+PhreshTest & percent-encoded path characters & LightGBM + n-grams tuned & val\_mcc & 0.9766 & 0.9475 & 0.1205 & -0.0090 & 0.0673 \\
+PhreshTest & percent-encoded path characters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9766 & 0.7480 & 0.0067 & -0.0575 & 0.0017 \\
+PhreshTest & percent-encoded path characters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9766 & 0.6575 & 0.0032 & -0.0767 & 0.0005 \\
+PhreshTest & percent-encoded path characters & char n-gram LR tuned & val\_mcc & 0.9642 & 0.9383 & 0.1760 & 0.0055 & 0.1362 \\
+PhreshTest & percent-encoded path characters & char n-gram LR tuned & val\_fpr@1\% & 0.9642 & 0.7768 & 0.0103 & -0.0015 & 0.0048 \\
+PhreshTest & percent-encoded path characters & char n-gram LR tuned & val\_maxfpr@1\% & 0.9642 & 0.6593 & 0.0030 & -0.0152 & 0.0008 \\
+PhreshTest & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9841 & 0.9480 & 0.0850 & -0.0060 & 0.0393 \\
+PhreshTest & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9841 & 0.7245 & 0.0037 & -0.0545 & 0.0005 \\
+PhreshTest & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9841 & 0.5942 & 0.0005 & -0.0753 & -0.0010 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9831 & 0.9533 & 0.0900 & -0.0067 & 0.0197 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9831 & 0.6880 & 0.0030 & -0.0773 & -0.0027 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9831 & 0.6635 & 0.0020 & -0.0795 & -0.0023 \\
+PhreshTest & percent-encoded path characters & BiGRU-KD tuned & val\_mcc & 0.9842 & 0.9357 & 0.0587 & -0.0115 & 0.0215 \\
+PhreshTest & percent-encoded path characters & BiGRU-KD tuned & val\_fpr@1\% & 0.9842 & 0.7248 & 0.0022 & -0.0550 & -0.0005 \\
+PhreshTest & percent-encoded path characters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9842 & 0.6015 & 0.0005 & -0.0767 & -0.0010 \\
+PhreshTest & percent-encoded path characters & ADAPT-X (P) & val\_mcc & 0.9922 & 0.9520 & 0.0390 & -0.0170 & -0.0052 \\
+PhreshTest & percent-encoded path characters & ADAPT-X (P) & val\_fpr@1\% & 0.9922 & 0.7097 & 0.0005 & -0.0837 & -0.0013 \\
+PhreshTest & percent-encoded path characters & ADAPT-X (P) & val\_maxfpr@1\% & 0.9922 & 0.5657 & 0.0000 & -0.1065 & -0.0008 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH (P) & val\_mcc & 0.9746 & 0.8170 & 0.0278 & -0.0695 & -0.0250 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9746 & 0.5845 & 0.0020 & -0.1085 & -0.0020 \\
+PhreshTest & percent-encoded path characters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9746 & 0.5022 & 0.0008 & -0.1053 & -0.0013 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) & val\_mcc & 0.9345 & 0.8438 & 0.1450 & -0.0540 & 0.0632 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) & val\_fpr@1\% & 0.9345 & 0.4680 & 0.0037 & -0.0967 & 0.0017 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) & val\_maxfpr@1\% & 0.9345 & 0.3977 & 0.0013 & -0.0983 & 0.0005 \\
+PhreshTest & percent-encoded path characters & char-LR & val\_mcc & 0.9860 & 0.9403 & 0.0517 & -0.0127 & 0.0207 \\
+PhreshTest & percent-encoded path characters & char-LR & val\_fpr@1\% & 0.9860 & 0.7272 & 0.0013 & -0.0550 & -0.0005 \\
+PhreshTest & percent-encoded path characters & char-LR & val\_maxfpr@1\% & 0.9860 & 0.6292 & 0.0003 & -0.0795 & -0.0008 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9784 & 0.9445 & 0.1085 & -0.0070 & 0.0737 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9784 & 0.7568 & 0.0047 & -0.0530 & 0.0025 \\
+PhreshTest & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9784 & 0.6130 & 0.0003 & -0.0860 & -0.0003 \\
+PhreshTest & percent-encoded path characters & URLNet-style char+word CNN & val\_mcc & 0.9484 & 0.9067 & 0.1512 & -0.0225 & 0.1052 \\
+PhreshTest & percent-encoded path characters & URLNet-style char+word CNN & val\_fpr@1\% & 0.9484 & 0.5268 & 0.0013 & -0.1622 & -0.0023 \\
+PhreshTest & percent-encoded path characters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9484 & 0.2843 & 0.0000 & -0.1545 & -0.0005 \\
+PhreshTest & percent-encoded path characters & BiGRU character model & val\_mcc & 0.9840 & 0.9293 & 0.0435 & -0.0185 & 0.0115 \\
+PhreshTest & percent-encoded path characters & BiGRU character model & val\_fpr@1\% & 0.9840 & 0.6415 & 0.0003 & -0.1030 & -0.0015 \\
+PhreshTest & percent-encoded path characters & BiGRU character model & val\_maxfpr@1\% & 0.9840 & 0.5570 & 0.0000 & -0.1170 & -0.0018 \\
+PhreshTest & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9821 & 0.9095 & 0.0357 & -0.0460 & 0.0050 \\
+PhreshTest & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9821 & 0.7130 & 0.0045 & -0.1065 & 0.0005 \\
+PhreshTest & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9821 & 0.6670 & 0.0030 & -0.1112 & -0.0005 \\
+PhreshTest & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9779 & 0.8962 & 0.0405 & -0.0465 & 0.0060 \\
+PhreshTest & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9779 & 0.6042 & 0.0015 & -0.1370 & -0.0010 \\
+PhreshTest & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9779 & 0.5138 & 0.0008 & -0.1440 & -0.0010 \\
+PhreshTest & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9890 & 0.9610 & 0.0810 & -0.0092 & 0.0350 \\
+PhreshTest & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9890 & 0.7010 & 0.0013 & -0.0810 & -0.0008 \\
+PhreshTest & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9890 & 0.5152 & 0.0000 & -0.0993 & -0.0005 \\
+PhreshTest & extra query parameters & ADAPT-X2 stack (P) & val\_mcc & 0.9929 & 0.9968 & 0.2293 & 0.0350 & 0.1718 \\
+PhreshTest & extra query parameters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9929 & 0.8868 & 0.0107 & 0.1120 & 0.0075 \\
+PhreshTest & extra query parameters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9929 & 0.7943 & 0.0035 & 0.1118 & 0.0018 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2 (P) & val\_mcc & 0.9867 & 0.9922 & 0.2335 & 0.0480 & 0.1638 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9867 & 0.8353 & 0.0160 & 0.0935 & 0.0103 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9867 & 0.7910 & 0.0103 & 0.0903 & 0.0060 \\
+PhreshTest & extra query parameters & BiGRU tuned & val\_mcc & 0.9877 & 0.9620 & 0.0810 & 0.0337 & 0.0353 \\
+PhreshTest & extra query parameters & BiGRU tuned & val\_fpr@1\% & 0.9877 & 0.6973 & 0.0040 & -0.0572 & -0.0007 \\
+PhreshTest & extra query parameters & BiGRU tuned & val\_maxfpr@1\% & 0.9877 & 0.6100 & 0.0022 & -0.0780 & -0.0008 \\
+PhreshTest & extra query parameters & URLNet tuned & val\_mcc & 0.9866 & 0.9985 & 0.4333 & 0.0445 & 0.3640 \\
+PhreshTest & extra query parameters & URLNet tuned & val\_fpr@1\% & 0.9866 & 0.6787 & 0.0045 & -0.0043 & 0.0020 \\
+PhreshTest & extra query parameters & URLNet tuned & val\_maxfpr@1\% & 0.9866 & 0.3160 & 0.0000 & -0.1108 & -0.0003 \\
+PhreshTest & extra query parameters & LightGBM (P) tuned & val\_mcc & 0.9404 & 0.9908 & 0.5905 & 0.0717 & 0.4965 \\
+PhreshTest & extra query parameters & LightGBM (P) tuned & val\_fpr@1\% & 0.9404 & 0.5857 & 0.0173 & -0.0202 & 0.0148 \\
+PhreshTest & extra query parameters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9404 & 0.4580 & 0.0073 & -0.0832 & 0.0057 \\
+PhreshTest & extra query parameters & LightGBM + n-grams tuned & val\_mcc & 0.9905 & 0.9970 & 0.2895 & 0.0405 & 0.2362 \\
+PhreshTest & extra query parameters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9905 & 0.9423 & 0.0440 & 0.1368 & 0.0390 \\
+PhreshTest & extra query parameters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9905 & 0.8872 & 0.0168 & 0.1530 & 0.0140 \\
+PhreshTest & extra query parameters & char n-gram LR tuned & val\_mcc & 0.9901 & 0.9968 & 0.2510 & 0.0640 & 0.2112 \\
+PhreshTest & extra query parameters & char n-gram LR tuned & val\_fpr@1\% & 0.9901 & 0.9143 & 0.0260 & 0.1360 & 0.0205 \\
+PhreshTest & extra query parameters & char n-gram LR tuned & val\_maxfpr@1\% & 0.9901 & 0.8040 & 0.0060 & 0.1295 & 0.0038 \\
+PhreshTest & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9929 & 0.9962 & 0.1925 & 0.0423 & 0.1467 \\
+PhreshTest & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9929 & 0.8782 & 0.0088 & 0.0992 & 0.0055 \\
+PhreshTest & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9929 & 0.7728 & 0.0027 & 0.1033 & 0.0012 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9866 & 0.9948 & 0.2298 & 0.0348 & 0.1595 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9866 & 0.8205 & 0.0145 & 0.0553 & 0.0088 \\
+PhreshTest & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9866 & 0.7980 & 0.0120 & 0.0550 & 0.0077 \\
+PhreshTest & extra query parameters & BiGRU-KD tuned & val\_mcc & 0.9909 & 0.9958 & 0.2345 & 0.0485 & 0.1972 \\
+PhreshTest & extra query parameters & BiGRU-KD tuned & val\_fpr@1\% & 0.9909 & 0.9340 & 0.0365 & 0.1542 & 0.0337 \\
+PhreshTest & extra query parameters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9909 & 0.8455 & 0.0103 & 0.1673 & 0.0088 \\
+PhreshTest & extra query parameters & ADAPT-X (P) & val\_mcc & 0.9939 & 0.9992 & 0.3578 & 0.0302 & 0.3135 \\
+PhreshTest & extra query parameters & ADAPT-X (P) & val\_fpr@1\% & 0.9939 & 0.9437 & 0.0270 & 0.1502 & 0.0252 \\
+PhreshTest & extra query parameters & ADAPT-X (P) & val\_maxfpr@1\% & 0.9939 & 0.8160 & 0.0030 & 0.1437 & 0.0023 \\
+PhreshTest & extra query parameters & ADAPT-PHISH (P) & val\_mcc & 0.9371 & 0.9655 & 0.3780 & 0.0790 & 0.3252 \\
+PhreshTest & extra query parameters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9371 & 0.7550 & 0.0775 & 0.0620 & 0.0735 \\
+PhreshTest & extra query parameters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9371 & 0.6430 & 0.0335 & 0.0355 & 0.0315 \\
+PhreshTest & extra query parameters & LightGBM (P) & val\_mcc & 0.9388 & 0.9840 & 0.4710 & 0.0862 & 0.3892 \\
+PhreshTest & extra query parameters & LightGBM (P) & val\_fpr@1\% & 0.9388 & 0.5515 & 0.0125 & -0.0132 & 0.0105 \\
+PhreshTest & extra query parameters & LightGBM (P) & val\_maxfpr@1\% & 0.9388 & 0.4308 & 0.0043 & -0.0652 & 0.0035 \\
+PhreshTest & extra query parameters & char-LR & val\_mcc & 0.9924 & 0.9975 & 0.2077 & 0.0445 & 0.1767 \\
+PhreshTest & extra query parameters & char-LR & val\_fpr@1\% & 0.9924 & 0.9253 & 0.0290 & 0.1430 & 0.0272 \\
+PhreshTest & extra query parameters & char-LR & val\_maxfpr@1\% & 0.9924 & 0.8635 & 0.0127 & 0.1548 & 0.0118 \\
+PhreshTest & extra query parameters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9922 & 0.9980 & 0.3053 & 0.0465 & 0.2705 \\
+PhreshTest & extra query parameters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9922 & 0.9507 & 0.0365 & 0.1410 & 0.0342 \\
+PhreshTest & extra query parameters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9922 & 0.8403 & 0.0077 & 0.1413 & 0.0072 \\
+PhreshTest & extra query parameters & URLNet-style char+word CNN & val\_mcc & 0.9861 & 0.9965 & 0.2787 & 0.0673 & 0.2328 \\
+PhreshTest & extra query parameters & URLNet-style char+word CNN & val\_fpr@1\% & 0.9861 & 0.6667 & 0.0045 & -0.0222 & 0.0010 \\
+PhreshTest & extra query parameters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9861 & 0.3260 & 0.0000 & -0.1127 & -0.0005 \\
+PhreshTest & extra query parameters & BiGRU character model & val\_mcc & 0.9905 & 0.9890 & 0.1507 & 0.0413 & 0.1187 \\
+PhreshTest & extra query parameters & BiGRU character model & val\_fpr@1\% & 0.9905 & 0.7993 & 0.0037 & 0.0547 & 0.0020 \\
+PhreshTest & extra query parameters & BiGRU character model & val\_maxfpr@1\% & 0.9905 & 0.7420 & 0.0030 & 0.0680 & 0.0013 \\
+PhreshTest & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9790 & 0.9513 & 0.1140 & -0.0042 & 0.0833 \\
+PhreshTest & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9790 & 0.7853 & 0.0182 & -0.0343 & 0.0142 \\
+PhreshTest & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9790 & 0.7308 & 0.0110 & -0.0475 & 0.0075 \\
+PhreshTest & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9794 & 0.9617 & 0.1298 & 0.0190 & 0.0953 \\
+PhreshTest & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9794 & 0.6963 & 0.0097 & -0.0450 & 0.0072 \\
+PhreshTest & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9794 & 0.6155 & 0.0057 & -0.0422 & 0.0040 \\
+PhreshTest & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9942 & 0.9995 & 0.3470 & 0.0293 & 0.3010 \\
+PhreshTest & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9942 & 0.9353 & 0.0195 & 0.1532 & 0.0175 \\
+PhreshTest & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9942 & 0.7332 & 0.0020 & 0.1187 & 0.0015 \\
+PhreshTest & random case in path & ADAPT-X2 stack (P) & val\_mcc & 0.9873 & 0.9688 & 0.1040 & 0.0070 & 0.0465 \\
+PhreshTest & random case in path & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9873 & 0.7943 & 0.0085 & 0.0195 & 0.0053 \\
+PhreshTest & random case in path & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9873 & 0.7053 & 0.0043 & 0.0228 & 0.0025 \\
+PhreshTest & random case in path & ADAPT-PHISH v2 (P) & val\_mcc & 0.9759 & 0.9440 & 0.1185 & -0.0003 & 0.0487 \\
+PhreshTest & random case in path & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9759 & 0.7515 & 0.0118 & 0.0097 & 0.0060 \\
+PhreshTest & random case in path & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9759 & 0.7083 & 0.0092 & 0.0075 & 0.0050 \\
+PhreshTest & random case in path & BiGRU tuned & val\_mcc & 0.9723 & 0.9217 & 0.0983 & -0.0065 & 0.0525 \\
+PhreshTest & random case in path & BiGRU tuned & val\_fpr@1\% & 0.9723 & 0.7415 & 0.0132 & -0.0130 & 0.0085 \\
+PhreshTest & random case in path & BiGRU tuned & val\_maxfpr@1\% & 0.9723 & 0.6860 & 0.0097 & -0.0020 & 0.0067 \\
+PhreshTest & random case in path & URLNet tuned & val\_mcc & 0.9801 & 0.9600 & 0.1447 & 0.0060 & 0.0755 \\
+PhreshTest & random case in path & URLNet tuned & val\_fpr@1\% & 0.9801 & 0.7117 & 0.0070 & 0.0287 & 0.0045 \\
+PhreshTest & random case in path & URLNet tuned & val\_maxfpr@1\% & 0.9801 & 0.4502 & 0.0008 & 0.0235 & 0.0005 \\
+PhreshTest & random case in path & LightGBM (P) tuned & val\_mcc & 0.9556 & 0.9350 & 0.1973 & 0.0160 & 0.1033 \\
+PhreshTest & random case in path & LightGBM (P) tuned & val\_fpr@1\% & 0.9556 & 0.6310 & 0.0118 & 0.0250 & 0.0092 \\
+PhreshTest & random case in path & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9556 & 0.5625 & 0.0060 & 0.0212 & 0.0045 \\
+PhreshTest & random case in path & LightGBM + n-grams tuned & val\_mcc & 0.9839 & 0.9673 & 0.1263 & 0.0108 & 0.0730 \\
+PhreshTest & random case in path & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9839 & 0.8430 & 0.0170 & 0.0375 & 0.0120 \\
+PhreshTest & random case in path & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9839 & 0.7795 & 0.0075 & 0.0453 & 0.0047 \\
+PhreshTest & random case in path & char n-gram LR tuned & val\_mcc & 0.9884 & 0.9327 & 0.0398 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & char n-gram LR tuned & val\_fpr@1\% & 0.9884 & 0.7782 & 0.0055 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & char n-gram LR tuned & val\_maxfpr@1\% & 0.9884 & 0.6745 & 0.0022 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9872 & 0.9623 & 0.0910 & 0.0083 & 0.0452 \\
+PhreshTest & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9872 & 0.8025 & 0.0075 & 0.0235 & 0.0043 \\
+PhreshTest & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9872 & 0.7003 & 0.0040 & 0.0308 & 0.0025 \\
+PhreshTest & random case in path & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9789 & 0.9590 & 0.1303 & -0.0010 & 0.0600 \\
+PhreshTest & random case in path & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9789 & 0.7718 & 0.0115 & 0.0065 & 0.0057 \\
+PhreshTest & random case in path & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9789 & 0.7520 & 0.0103 & 0.0090 & 0.0060 \\
+PhreshTest & random case in path & BiGRU-KD tuned & val\_mcc & 0.9791 & 0.9450 & 0.1067 & -0.0023 & 0.0695 \\
+PhreshTest & random case in path & BiGRU-KD tuned & val\_fpr@1\% & 0.9791 & 0.7748 & 0.0105 & -0.0050 & 0.0078 \\
+PhreshTest & random case in path & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9791 & 0.6823 & 0.0055 & 0.0040 & 0.0040 \\
+PhreshTest & random case in path & ADAPT-X (P) & val\_mcc & 0.9934 & 0.9770 & 0.0725 & 0.0080 & 0.0282 \\
+PhreshTest & random case in path & ADAPT-X (P) & val\_fpr@1\% & 0.9934 & 0.8207 & 0.0030 & 0.0272 & 0.0013 \\
+PhreshTest & random case in path & ADAPT-X (P) & val\_maxfpr@1\% & 0.9934 & 0.7020 & 0.0013 & 0.0297 & 0.0005 \\
+PhreshTest & random case in path & ADAPT-PHISH (P) & val\_mcc & 0.9653 & 0.9187 & 0.1333 & 0.0323 & 0.0805 \\
+PhreshTest & random case in path & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9653 & 0.7508 & 0.0208 & 0.0578 & 0.0168 \\
+PhreshTest & random case in path & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9653 & 0.6657 & 0.0110 & 0.0582 & 0.0090 \\
+PhreshTest & random case in path & LightGBM (P) & val\_mcc & 0.9535 & 0.9175 & 0.1742 & 0.0197 & 0.0925 \\
+PhreshTest & random case in path & LightGBM (P) & val\_fpr@1\% & 0.9535 & 0.5907 & 0.0097 & 0.0260 & 0.0077 \\
+PhreshTest & random case in path & LightGBM (P) & val\_maxfpr@1\% & 0.9535 & 0.5165 & 0.0037 & 0.0205 & 0.0030 \\
+PhreshTest & random case in path & char-LR & val\_mcc & 0.9937 & 0.9530 & 0.0310 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & char-LR & val\_fpr@1\% & 0.9937 & 0.7823 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & char-LR & val\_maxfpr@1\% & 0.9937 & 0.7087 & 0.0010 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9871 & 0.9625 & 0.0927 & 0.0110 & 0.0580 \\
+PhreshTest & random case in path & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9871 & 0.8460 & 0.0110 & 0.0363 & 0.0087 \\
+PhreshTest & random case in path & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9871 & 0.7390 & 0.0025 & 0.0400 & 0.0020 \\
+PhreshTest & random case in path & URLNet-style char+word CNN & val\_mcc & 0.9782 & 0.9373 & 0.0910 & 0.0080 & 0.0450 \\
+PhreshTest & random case in path & URLNet-style char+word CNN & val\_fpr@1\% & 0.9782 & 0.7157 & 0.0073 & 0.0268 & 0.0038 \\
+PhreshTest & random case in path & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9782 & 0.4627 & 0.0008 & 0.0240 & 0.0003 \\
+PhreshTest & random case in path & BiGRU character model & val\_mcc & 0.9764 & 0.9490 & 0.1123 & 0.0012 & 0.0803 \\
+PhreshTest & random case in path & BiGRU character model & val\_fpr@1\% & 0.9764 & 0.7472 & 0.0088 & 0.0027 & 0.0070 \\
+PhreshTest & random case in path & BiGRU character model & val\_maxfpr@1\% & 0.9764 & 0.6883 & 0.0053 & 0.0142 & 0.0035 \\
+PhreshTest & random case in path & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9706 & 0.9683 & 0.1797 & 0.0128 & 0.1490 \\
+PhreshTest & random case in path & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9706 & 0.8632 & 0.0517 & 0.0437 & 0.0478 \\
+PhreshTest & random case in path & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9706 & 0.8337 & 0.0387 & 0.0555 & 0.0352 \\
+PhreshTest & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9909 & 0.9427 & 0.0345 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9909 & 0.7412 & 0.0025 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9909 & 0.6577 & 0.0018 & 0.0000 & 0.0000 \\
+PhreshTest & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9934 & 0.9750 & 0.0673 & 0.0048 & 0.0213 \\
+PhreshTest & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9934 & 0.7970 & 0.0030 & 0.0150 & 0.0010 \\
+PhreshTest & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9934 & 0.6302 & 0.0005 & 0.0157 & 0.0000 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_mcc & 0.9902 & 0.9982 & 0.3710 & 0.0365 & 0.3135 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9902 & 0.8905 & 0.0155 & 0.1157 & 0.0123 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9902 & 0.8083 & 0.0045 & 0.1258 & 0.0027 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9795 & 0.9992 & 0.6012 & 0.0550 & 0.5315 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9795 & 0.9555 & 0.1227 & 0.2137 & 0.1170 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9795 & 0.9320 & 0.0850 & 0.2313 & 0.0808 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU tuned & val\_mcc & 0.9731 & 0.9945 & 0.3528 & 0.0663 & 0.3070 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU tuned & val\_fpr@1\% & 0.9731 & 0.8805 & 0.0628 & 0.1260 & 0.0580 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU tuned & val\_maxfpr@1\% & 0.9731 & 0.8240 & 0.0398 & 0.1360 & 0.0367 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet tuned & val\_mcc & 0.9676 & 0.9643 & 0.2050 & 0.0103 & 0.1357 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet tuned & val\_fpr@1\% & 0.9676 & 0.4993 & 0.0013 & -0.1838 & -0.0013 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet tuned & val\_maxfpr@1\% & 0.9676 & 0.2095 & 0.0003 & -0.2173 & 0.0000 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_mcc & 0.9655 & 0.9972 & 0.5555 & 0.0782 & 0.4615 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_fpr@1\% & 0.9655 & 0.8495 & 0.0673 & 0.2435 & 0.0648 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9655 & 0.7760 & 0.0380 & 0.2348 & 0.0365 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_mcc & 0.9890 & 0.9925 & 0.2125 & 0.0360 & 0.1593 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9890 & 0.8715 & 0.0145 & 0.0660 & 0.0095 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9890 & 0.7940 & 0.0055 & 0.0598 & 0.0027 \\
+PhreshTest & userinfo prefix (@ trick) & char n-gram LR tuned & val\_mcc & 0.9842 & 0.9595 & 0.1025 & 0.0268 & 0.0628 \\
+PhreshTest & userinfo prefix (@ trick) & char n-gram LR tuned & val\_fpr@1\% & 0.9842 & 0.7788 & 0.0077 & 0.0005 & 0.0023 \\
+PhreshTest & userinfo prefix (@ trick) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9842 & 0.6488 & 0.0030 & -0.0257 & 0.0008 \\
+PhreshTest & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9900 & 0.9972 & 0.2865 & 0.0433 & 0.2407 \\
+PhreshTest & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9900 & 0.8725 & 0.0120 & 0.0935 & 0.0088 \\
+PhreshTest & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9900 & 0.7620 & 0.0032 & 0.0925 & 0.0017 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9837 & 0.9988 & 0.5765 & 0.0388 & 0.5062 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9837 & 0.9337 & 0.0690 & 0.1685 & 0.0633 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9837 & 0.9175 & 0.0540 & 0.1745 & 0.0498 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_mcc & 0.9824 & 0.9930 & 0.2620 & 0.0457 & 0.2248 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_fpr@1\% & 0.9824 & 0.8367 & 0.0160 & 0.0570 & 0.0133 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9824 & 0.7290 & 0.0060 & 0.0507 & 0.0045 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X (P) & val\_mcc & 0.9942 & 0.9985 & 0.2372 & 0.0295 & 0.1930 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X (P) & val\_fpr@1\% & 0.9942 & 0.8660 & 0.0050 & 0.0725 & 0.0033 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9942 & 0.6883 & 0.0010 & 0.0160 & 0.0003 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_mcc & 0.9520 & 0.9972 & 0.6883 & 0.1108 & 0.6355 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9520 & 0.9225 & 0.1570 & 0.2295 & 0.1530 \\
+PhreshTest & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9520 & 0.8423 & 0.0887 & 0.2348 & 0.0867 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) & val\_mcc & 0.9666 & 0.9935 & 0.4682 & 0.0958 & 0.3865 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) & val\_fpr@1\% & 0.9666 & 0.8235 & 0.0530 & 0.2588 & 0.0510 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) & val\_maxfpr@1\% & 0.9666 & 0.7222 & 0.0250 & 0.2262 & 0.0243 \\
+PhreshTest & userinfo prefix (@ trick) & char-LR & val\_mcc & 0.9910 & 0.9290 & 0.0265 & -0.0240 & -0.0045 \\
+PhreshTest & userinfo prefix (@ trick) & char-LR & val\_fpr@1\% & 0.9910 & 0.6425 & 0.0015 & -0.1398 & -0.0003 \\
+PhreshTest & userinfo prefix (@ trick) & char-LR & val\_maxfpr@1\% & 0.9910 & 0.5212 & 0.0008 & -0.1875 & -0.0003 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9924 & 0.9888 & 0.1260 & 0.0373 & 0.0912 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9924 & 0.8470 & 0.0057 & 0.0373 & 0.0035 \\
+PhreshTest & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9924 & 0.6555 & 0.0005 & -0.0435 & 0.0000 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_mcc & 0.9672 & 0.8740 & 0.0808 & -0.0553 & 0.0348 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9672 & 0.4545 & 0.0010 & -0.2345 & -0.0025 \\
+PhreshTest & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9672 & 0.1933 & 0.0000 & -0.2455 & -0.0005 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU character model & val\_mcc & 0.9786 & 0.9928 & 0.2985 & 0.0450 & 0.2665 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU character model & val\_fpr@1\% & 0.9786 & 0.8060 & 0.0200 & 0.0615 & 0.0182 \\
+PhreshTest & userinfo prefix (@ trick) & BiGRU character model & val\_maxfpr@1\% & 0.9786 & 0.7280 & 0.0090 & 0.0540 & 0.0072 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9721 & 0.7685 & 0.0100 & -0.1870 & -0.0207 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9721 & 0.4205 & 0.0008 & -0.3990 & -0.0033 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9721 & 0.3212 & 0.0008 & -0.4570 & -0.0027 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9642 & 0.7033 & 0.0195 & -0.2395 & -0.0150 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9642 & 0.3262 & 0.0020 & -0.4150 & -0.0005 \\
+PhreshTest & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9642 & 0.2422 & 0.0010 & -0.4155 & -0.0008 \\
+PhreshTest & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9950 & 0.9980 & 0.1690 & 0.0278 & 0.1230 \\
+PhreshTest & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9950 & 0.8347 & 0.0030 & 0.0527 & 0.0010 \\
+PhreshTest & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9950 & 0.5895 & 0.0003 & -0.0250 & -0.0003 \\
+PhreshTest & host only (path removed) & ADAPT-X2 stack (P) & val\_mcc & 0.9570 & 0.9077 & 0.1360 & -0.0540 & 0.0785 \\
+PhreshTest & host only (path removed) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9570 & 0.5962 & 0.0030 & -0.1785 & -0.0002 \\
+PhreshTest & host only (path removed) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9570 & 0.5215 & 0.0013 & -0.1610 & -0.0005 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9370 & 0.8190 & 0.1108 & -0.1253 & 0.0410 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9370 & 0.5880 & 0.0070 & -0.1538 & 0.0013 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9370 & 0.5537 & 0.0043 & -0.1470 & 0.0000 \\
+PhreshTest & host only (path removed) & BiGRU tuned & val\_mcc & 0.9274 & 0.7630 & 0.0663 & -0.1653 & 0.0205 \\
+PhreshTest & host only (path removed) & BiGRU tuned & val\_fpr@1\% & 0.9274 & 0.5845 & 0.0050 & -0.1700 & 0.0003 \\
+PhreshTest & host only (path removed) & BiGRU tuned & val\_maxfpr@1\% & 0.9274 & 0.5292 & 0.0030 & -0.1587 & 0.0000 \\
+PhreshTest & host only (path removed) & URLNet tuned & val\_mcc & 0.9554 & 0.9055 & 0.1245 & -0.0485 & 0.0552 \\
+PhreshTest & host only (path removed) & URLNet tuned & val\_fpr@1\% & 0.9554 & 0.4995 & 0.0010 & -0.1835 & -0.0015 \\
+PhreshTest & host only (path removed) & URLNet tuned & val\_maxfpr@1\% & 0.9554 & 0.2770 & 0.0000 & -0.1497 & -0.0003 \\
+PhreshTest & host only (path removed) & LightGBM (P) tuned & val\_mcc & 0.8468 & 0.8270 & 0.3028 & -0.0920 & 0.2088 \\
+PhreshTest & host only (path removed) & LightGBM (P) tuned & val\_fpr@1\% & 0.8468 & 0.4300 & 0.0085 & -0.1760 & 0.0060 \\
+PhreshTest & host only (path removed) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8468 & 0.3688 & 0.0037 & -0.1725 & 0.0022 \\
+PhreshTest & host only (path removed) & LightGBM + n-grams tuned & val\_mcc & 0.9390 & 0.9100 & 0.1900 & -0.0465 & 0.1368 \\
+PhreshTest & host only (path removed) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9390 & 0.6258 & 0.0060 & -0.1797 & 0.0010 \\
+PhreshTest & host only (path removed) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9390 & 0.5643 & 0.0030 & -0.1700 & 0.0003 \\
+PhreshTest & host only (path removed) & char n-gram LR tuned & val\_mcc & 0.9639 & 0.8838 & 0.0717 & -0.0490 & 0.0320 \\
+PhreshTest & host only (path removed) & char n-gram LR tuned & val\_fpr@1\% & 0.9639 & 0.7037 & 0.0055 & -0.0745 & 0.0000 \\
+PhreshTest & host only (path removed) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9639 & 0.5880 & 0.0010 & -0.0865 & -0.0012 \\
+PhreshTest & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9542 & 0.8882 & 0.1082 & -0.0657 & 0.0625 \\
+PhreshTest & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9542 & 0.5960 & 0.0035 & -0.1830 & 0.0003 \\
+PhreshTest & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9542 & 0.5070 & 0.0013 & -0.1625 & -0.0003 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9373 & 0.8415 & 0.1365 & -0.1185 & 0.0663 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9373 & 0.5900 & 0.0032 & -0.1753 & -0.0025 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9373 & 0.5715 & 0.0020 & -0.1715 & -0.0023 \\
+PhreshTest & host only (path removed) & BiGRU-KD tuned & val\_mcc & 0.9428 & 0.7910 & 0.0703 & -0.1562 & 0.0330 \\
+PhreshTest & host only (path removed) & BiGRU-KD tuned & val\_fpr@1\% & 0.9428 & 0.5960 & 0.0018 & -0.1838 & -0.0010 \\
+PhreshTest & host only (path removed) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9428 & 0.5002 & 0.0010 & -0.1780 & -0.0005 \\
+PhreshTest & host only (path removed) & ADAPT-X (P) & val\_mcc & 0.9765 & 0.9485 & 0.1245 & -0.0205 & 0.0803 \\
+PhreshTest & host only (path removed) & ADAPT-X (P) & val\_fpr@1\% & 0.9765 & 0.6727 & 0.0025 & -0.1208 & 0.0008 \\
+PhreshTest & host only (path removed) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9765 & 0.5463 & 0.0003 & -0.1260 & -0.0005 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH (P) & val\_mcc & 0.9037 & 0.7618 & 0.0955 & -0.1247 & 0.0428 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9037 & 0.5700 & 0.0132 & -0.1230 & 0.0092 \\
+PhreshTest & host only (path removed) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9037 & 0.4672 & 0.0070 & -0.1403 & 0.0050 \\
+PhreshTest & host only (path removed) & LightGBM (P) & val\_mcc & 0.8461 & 0.8075 & 0.2460 & -0.0903 & 0.1643 \\
+PhreshTest & host only (path removed) & LightGBM (P) & val\_fpr@1\% & 0.8461 & 0.3970 & 0.0060 & -0.1677 & 0.0040 \\
+PhreshTest & host only (path removed) & LightGBM (P) & val\_maxfpr@1\% & 0.8461 & 0.3262 & 0.0032 & -0.1698 & 0.0025 \\
+PhreshTest & host only (path removed) & char-LR & val\_mcc & 0.9718 & 0.9275 & 0.1015 & -0.0255 & 0.0705 \\
+PhreshTest & host only (path removed) & char-LR & val\_fpr@1\% & 0.9718 & 0.7308 & 0.0045 & -0.0515 & 0.0027 \\
+PhreshTest & host only (path removed) & char-LR & val\_maxfpr@1\% & 0.9718 & 0.6580 & 0.0013 & -0.0507 & 0.0003 \\
+PhreshTest & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9288 & 0.8435 & 0.1812 & -0.1080 & 0.1465 \\
+PhreshTest & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9288 & 0.6262 & 0.0065 & -0.1835 & 0.0043 \\
+PhreshTest & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9288 & 0.5407 & 0.0010 & -0.1583 & 0.0005 \\
+PhreshTest & host only (path removed) & URLNet-style char+word CNN & val\_mcc & 0.9535 & 0.8565 & 0.0607 & -0.0727 & 0.0147 \\
+PhreshTest & host only (path removed) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9535 & 0.4980 & 0.0013 & -0.1910 & -0.0023 \\
+PhreshTest & host only (path removed) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9535 & 0.2843 & 0.0000 & -0.1545 & -0.0005 \\
+PhreshTest & host only (path removed) & BiGRU character model & val\_mcc & 0.9383 & 0.7875 & 0.0710 & -0.1603 & 0.0390 \\
+PhreshTest & host only (path removed) & BiGRU character model & val\_fpr@1\% & 0.9383 & 0.5487 & 0.0018 & -0.1958 & 0.0000 \\
+PhreshTest & host only (path removed) & BiGRU character model & val\_maxfpr@1\% & 0.9383 & 0.4813 & 0.0010 & -0.1928 & -0.0008 \\
+PhreshTest & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8995 & 0.8397 & 0.1852 & -0.1158 & 0.1545 \\
+PhreshTest & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8995 & 0.6663 & 0.0138 & -0.1532 & 0.0097 \\
+PhreshTest & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8995 & 0.6328 & 0.0107 & -0.1455 & 0.0072 \\
+PhreshTest & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9545 & 0.8615 & 0.0617 & -0.0812 & 0.0272 \\
+PhreshTest & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9545 & 0.6062 & 0.0045 & -0.1350 & 0.0020 \\
+PhreshTest & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9545 & 0.5305 & 0.0020 & -0.1272 & 0.0003 \\
+PhreshTest & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9748 & 0.9580 & 0.1785 & -0.0122 & 0.1325 \\
+PhreshTest & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9748 & 0.6597 & 0.0027 & -0.1223 & 0.0007 \\
+PhreshTest & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9748 & 0.4695 & 0.0003 & -0.1450 & -0.0003 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_mcc & 0.9897 & 0.9500 & 0.0575 & -0.0118 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9897 & 0.6905 & 0.0032 & -0.0843 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9897 & 0.5523 & 0.0018 & -0.1302 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9800 & 0.9157 & 0.0698 & -0.0285 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9800 & 0.6290 & 0.0057 & -0.1128 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9800 & 0.5760 & 0.0043 & -0.1248 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_mcc & 0.9810 & 0.8982 & 0.0457 & -0.0300 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_fpr@1\% & 0.9810 & 0.5923 & 0.0047 & -0.1622 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_maxfpr@1\% & 0.9810 & 0.4988 & 0.0030 & -0.1892 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_mcc & 0.9770 & 0.9235 & 0.0693 & -0.0305 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_fpr@1\% & 0.9770 & 0.1842 & 0.0025 & -0.4988 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_maxfpr@1\% & 0.9770 & 0.0187 & 0.0003 & -0.4080 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_mcc & 0.9615 & 0.8590 & 0.0940 & -0.0600 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_fpr@1\% & 0.9615 & 0.4313 & 0.0025 & -0.1747 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9615 & 0.3267 & 0.0015 & -0.2145 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_mcc & 0.9871 & 0.9405 & 0.0532 & -0.0160 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9871 & 0.6983 & 0.0050 & -0.1072 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9871 & 0.5590 & 0.0027 & -0.1752 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_mcc & 0.9859 & 0.9250 & 0.0398 & -0.0077 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_fpr@1\% & 0.9859 & 0.6727 & 0.0055 & -0.1055 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9859 & 0.4395 & 0.0022 & -0.2350 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9901 & 0.9425 & 0.0457 & -0.0115 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9901 & 0.6863 & 0.0032 & -0.0927 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9901 & 0.5152 & 0.0015 & -0.1542 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9845 & 0.9437 & 0.0703 & -0.0162 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9845 & 0.6538 & 0.0057 & -0.1115 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9845 & 0.6240 & 0.0043 & -0.1190 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_mcc & 0.9880 & 0.9257 & 0.0372 & -0.0215 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_fpr@1\% & 0.9880 & 0.6803 & 0.0027 & -0.0995 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9880 & 0.5463 & 0.0015 & -0.1320 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_mcc & 0.9921 & 0.9483 & 0.0442 & -0.0207 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_fpr@1\% & 0.9921 & 0.6893 & 0.0018 & -0.1042 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9921 & 0.4703 & 0.0008 & -0.2020 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_mcc & 0.9631 & 0.7987 & 0.0527 & -0.0877 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9631 & 0.5030 & 0.0040 & -0.1900 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9631 & 0.4068 & 0.0020 & -0.2008 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_mcc & 0.9587 & 0.8287 & 0.0818 & -0.0690 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_fpr@1\% & 0.9587 & 0.3867 & 0.0020 & -0.1780 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_maxfpr@1\% & 0.9587 & 0.2968 & 0.0008 & -0.1992 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_mcc & 0.9878 & 0.9093 & 0.0310 & -0.0437 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_fpr@1\% & 0.9878 & 0.4328 & 0.0018 & -0.3495 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_maxfpr@1\% & 0.9878 & 0.2595 & 0.0010 & -0.4492 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9907 & 0.9337 & 0.0348 & -0.0178 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9907 & 0.6875 & 0.0022 & -0.1222 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9907 & 0.4105 & 0.0005 & -0.2885 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_mcc & 0.9708 & 0.8333 & 0.0460 & -0.0960 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9708 & 0.1860 & 0.0035 & -0.5030 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9708 & 0.0208 & 0.0005 & -0.4180 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_mcc & 0.9887 & 0.9183 & 0.0320 & -0.0295 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_fpr@1\% & 0.9887 & 0.5697 & 0.0018 & -0.1748 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_maxfpr@1\% & 0.9887 & 0.4607 & 0.0018 & -0.2133 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9615 & 0.7127 & 0.0307 & -0.2428 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9615 & 0.3230 & 0.0040 & -0.4965 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9615 & 0.2303 & 0.0035 & -0.5480 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9509 & 0.6685 & 0.0345 & -0.2742 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9509 & 0.2233 & 0.0025 & -0.5180 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9509 & 0.1452 & 0.0018 & -0.5125 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9928 & 0.9565 & 0.0460 & -0.0137 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9928 & 0.6747 & 0.0020 & -0.1073 & 0.0000 \\
+PhreshTest & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9928 & 0.3915 & 0.0005 & -0.2230 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_mcc & 0.9546 & 0.9365 & 0.1690 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9546 & 0.6773 & 0.0213 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9546 & 0.5810 & 0.0152 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9497 & 0.9287 & 0.1762 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9497 & 0.6535 & 0.0203 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9497 & 0.6020 & 0.0180 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU tuned & val\_mcc & 0.9571 & 0.8985 & 0.0770 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU tuned & val\_fpr@1\% & 0.9571 & 0.6643 & 0.0210 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU tuned & val\_maxfpr@1\% & 0.9571 & 0.6032 & 0.0170 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet tuned & val\_mcc & 0.9427 & 0.9197 & 0.1720 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet tuned & val\_fpr@1\% & 0.9427 & 0.5407 & 0.0118 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet tuned & val\_maxfpr@1\% & 0.9427 & 0.2848 & 0.0020 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) tuned & val\_mcc & 0.9006 & 0.8585 & 0.2767 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) tuned & val\_fpr@1\% & 0.9006 & 0.4635 & 0.0248 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9006 & 0.4098 & 0.0185 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM + n-grams tuned & val\_mcc & 0.9359 & 0.9197 & 0.2455 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9359 & 0.7063 & 0.0260 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9359 & 0.6222 & 0.0200 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char n-gram LR tuned & val\_mcc & 0.9228 & 0.8772 & 0.1685 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char n-gram LR tuned & val\_fpr@1\% & 0.9228 & 0.6520 & 0.0340 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9228 & 0.5045 & 0.0147 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9533 & 0.9225 & 0.1207 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9533 & 0.6810 & 0.0213 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9533 & 0.5595 & 0.0150 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9544 & 0.9380 & 0.2092 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9544 & 0.6745 & 0.0217 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9544 & 0.6522 & 0.0198 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU-KD tuned & val\_mcc & 0.9529 & 0.9073 & 0.0968 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU-KD tuned & val\_fpr@1\% & 0.9529 & 0.6803 & 0.0260 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9529 & 0.5660 & 0.0185 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X (P) & val\_mcc & 0.9529 & 0.9327 & 0.1762 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X (P) & val\_fpr@1\% & 0.9529 & 0.6593 & 0.0235 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9529 & 0.4845 & 0.0092 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH (P) & val\_mcc & 0.9293 & 0.8283 & 0.0998 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9293 & 0.5593 & 0.0232 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9293 & 0.4870 & 0.0168 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) & val\_mcc & 0.8972 & 0.8243 & 0.2223 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) & val\_fpr@1\% & 0.8972 & 0.4385 & 0.0245 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) & val\_maxfpr@1\% & 0.8972 & 0.3745 & 0.0173 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char-LR & val\_mcc & 0.9147 & 0.8812 & 0.2278 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char-LR & val\_fpr@1\% & 0.9147 & 0.5825 & 0.0198 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & char-LR & val\_maxfpr@1\% & 0.9147 & 0.5172 & 0.0092 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9373 & 0.9015 & 0.1797 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9373 & 0.6985 & 0.0267 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9373 & 0.5440 & 0.0175 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet-style char+word CNN & val\_mcc & 0.9454 & 0.8725 & 0.0900 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9454 & 0.5357 & 0.0120 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9454 & 0.3015 & 0.0020 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU character model & val\_mcc & 0.9522 & 0.9067 & 0.0910 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU character model & val\_fpr@1\% & 0.9522 & 0.6315 & 0.0232 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & BiGRU character model & val\_maxfpr@1\% & 0.9522 & 0.5660 & 0.0187 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9227 & 0.8955 & 0.1915 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9227 & 0.6735 & 0.0375 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9227 & 0.6252 & 0.0318 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9493 & 0.8890 & 0.1062 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9493 & 0.6482 & 0.0200 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9493 & 0.5545 & 0.0143 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9421 & 0.9235 & 0.2142 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9421 & 0.6432 & 0.0255 & 0.0000 & 0.0000 \\
+CompPhish & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9421 & 0.4075 & 0.0085 & 0.0000 & 0.0000 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_mcc & 0.8733 & 0.9855 & 0.8815 & 0.0490 & 0.7125 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8733 & 0.7512 & 0.1205 & 0.0740 & 0.0992 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8733 & 0.5988 & 0.0390 & 0.0178 & 0.0238 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8878 & 0.9745 & 0.7755 & 0.0458 & 0.5992 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8878 & 0.8033 & 0.1608 & 0.1498 & 0.1405 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8878 & 0.7475 & 0.1072 & 0.1455 & 0.0892 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU tuned & val\_mcc & 0.8312 & 0.9852 & 0.8700 & 0.0867 & 0.7930 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU tuned & val\_fpr@1\% & 0.8312 & 0.7500 & 0.2392 & 0.0857 & 0.2182 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU tuned & val\_maxfpr@1\% & 0.8312 & 0.6787 & 0.1345 & 0.0755 & 0.1175 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet tuned & val\_mcc & 0.8049 & 0.9692 & 0.8217 & 0.0495 & 0.6498 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet tuned & val\_fpr@1\% & 0.8049 & 0.3172 & 0.0265 & -0.2235 & 0.0147 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet tuned & val\_maxfpr@1\% & 0.8049 & 0.1005 & 0.0015 & -0.1842 & -0.0005 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_mcc & 0.7724 & 0.9825 & 0.9485 & 0.1240 & 0.6718 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_fpr@1\% & 0.7724 & 0.7192 & 0.3123 & 0.2557 & 0.2875 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7724 & 0.6392 & 0.2132 & 0.2295 & 0.1948 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_mcc & 0.8279 & 0.9583 & 0.8293 & 0.0385 & 0.5837 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8279 & 0.7568 & 0.2165 & 0.0505 & 0.1905 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8279 & 0.6195 & 0.0938 & -0.0027 & 0.0737 \\
+CompPhish & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_mcc & 0.8508 & 0.9410 & 0.6633 & 0.0637 & 0.4948 \\
+CompPhish & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_fpr@1\% & 0.8508 & 0.6028 & 0.0607 & -0.0493 & 0.0267 \\
+CompPhish & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8508 & 0.3752 & 0.0230 & -0.1292 & 0.0083 \\
+CompPhish & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8566 & 0.9848 & 0.8872 & 0.0623 & 0.7665 \\
+CompPhish & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8566 & 0.7422 & 0.1313 & 0.0612 & 0.1100 \\
+CompPhish & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8566 & 0.5590 & 0.0390 & -0.0005 & 0.0240 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8870 & 0.9855 & 0.8240 & 0.0475 & 0.6147 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8870 & 0.7827 & 0.1323 & 0.1082 & 0.1105 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8870 & 0.7598 & 0.1070 & 0.1075 & 0.0872 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_mcc & 0.8554 & 0.9882 & 0.9130 & 0.0810 & 0.8163 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_fpr@1\% & 0.8554 & 0.7475 & 0.1620 & 0.0673 & 0.1360 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8554 & 0.6172 & 0.0475 & 0.0513 & 0.0290 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_mcc & 0.8515 & 0.9898 & 0.9005 & 0.0570 & 0.7242 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_fpr@1\% & 0.8515 & 0.7378 & 0.1445 & 0.0785 & 0.1210 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_maxfpr@1\% & 0.8515 & 0.4500 & 0.0272 & -0.0345 & 0.0180 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_mcc & 0.7797 & 0.9742 & 0.8240 & 0.1460 & 0.7242 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.7797 & 0.7802 & 0.4283 & 0.2210 & 0.4050 \\
+CompPhish & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.7797 & 0.6855 & 0.2642 & 0.1985 & 0.2475 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) & val\_mcc & 0.7624 & 0.9800 & 0.9323 & 0.1557 & 0.7100 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) & val\_fpr@1\% & 0.7624 & 0.7040 & 0.3162 & 0.2655 & 0.2917 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) & val\_maxfpr@1\% & 0.7624 & 0.6100 & 0.1985 & 0.2355 & 0.1813 \\
+CompPhish & IDN homoglyph host (punycode) & char-LR & val\_mcc & 0.8261 & 0.9265 & 0.6620 & 0.0453 & 0.4343 \\
+CompPhish & IDN homoglyph host (punycode) & char-LR & val\_fpr@1\% & 0.8261 & 0.3912 & 0.0335 & -0.1913 & 0.0138 \\
+CompPhish & IDN homoglyph host (punycode) & char-LR & val\_maxfpr@1\% & 0.8261 & 0.2600 & 0.0132 & -0.2572 & 0.0040 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8163 & 0.9557 & 0.8363 & 0.0543 & 0.6565 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8163 & 0.7322 & 0.2062 & 0.0337 & 0.1795 \\
+CompPhish & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8163 & 0.4895 & 0.0470 & -0.0545 & 0.0295 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_mcc & 0.8206 & 0.9207 & 0.6248 & 0.0482 & 0.5348 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_fpr@1\% & 0.8206 & 0.3140 & 0.0253 & -0.2217 & 0.0133 \\
+CompPhish & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8206 & 0.1085 & 0.0025 & -0.1930 & 0.0005 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU character model & val\_mcc & 0.8215 & 0.9865 & 0.9005 & 0.0798 & 0.8095 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU character model & val\_fpr@1\% & 0.8215 & 0.7103 & 0.1722 & 0.0788 & 0.1490 \\
+CompPhish & IDN homoglyph host (punycode) & BiGRU character model & val\_maxfpr@1\% & 0.8215 & 0.6232 & 0.0950 & 0.0573 & 0.0762 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.7088 & 0.9647 & 0.9307 & 0.0693 & 0.7392 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.7088 & 0.7678 & 0.5100 & 0.0943 & 0.4725 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.7088 & 0.7065 & 0.4150 & 0.0813 & 0.3832 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.6141 & 0.9655 & 0.9323 & 0.0765 & 0.8260 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.6141 & 0.7432 & 0.6815 & 0.0950 & 0.6615 \\
+CompPhish & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.6141 & 0.6540 & 0.5443 & 0.0995 & 0.5300 \\
+CompPhish & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8525 & 0.9895 & 0.9387 & 0.0660 & 0.7245 \\
+CompPhish & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8525 & 0.7258 & 0.1155 & 0.0825 & 0.0900 \\
+CompPhish & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8525 & 0.3603 & 0.0182 & -0.0472 & 0.0097 \\
+CompPhish & percent-encoded path characters & ADAPT-X2 stack (P) & val\_mcc & 0.9551 & 0.9403 & 0.1795 & 0.0038 & 0.0105 \\
+CompPhish & percent-encoded path characters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9551 & 0.6468 & 0.0203 & -0.0305 & -0.0010 \\
+CompPhish & percent-encoded path characters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9551 & 0.5238 & 0.0138 & -0.0572 & -0.0015 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_mcc & 0.9377 & 0.8922 & 0.1757 & -0.0365 & -0.0005 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9377 & 0.5938 & 0.0217 & -0.0597 & 0.0015 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9377 & 0.5493 & 0.0165 & -0.0527 & -0.0015 \\
+CompPhish & percent-encoded path characters & BiGRU tuned & val\_mcc & 0.9574 & 0.9045 & 0.0920 & 0.0060 & 0.0150 \\
+CompPhish & percent-encoded path characters & BiGRU tuned & val\_fpr@1\% & 0.9574 & 0.6362 & 0.0195 & -0.0280 & -0.0015 \\
+CompPhish & percent-encoded path characters & BiGRU tuned & val\_maxfpr@1\% & 0.9574 & 0.5685 & 0.0135 & -0.0347 & -0.0035 \\
+CompPhish & percent-encoded path characters & URLNet tuned & val\_mcc & 0.9435 & 0.9235 & 0.1890 & 0.0038 & 0.0170 \\
+CompPhish & percent-encoded path characters & URLNet tuned & val\_fpr@1\% & 0.9435 & 0.4245 & 0.0065 & -0.1162 & -0.0053 \\
+CompPhish & percent-encoded path characters & URLNet tuned & val\_maxfpr@1\% & 0.9435 & 0.1978 & 0.0000 & -0.0870 & -0.0020 \\
+CompPhish & percent-encoded path characters & LightGBM (P) tuned & val\_mcc & 0.8843 & 0.8330 & 0.2752 & -0.0255 & -0.0015 \\
+CompPhish & percent-encoded path characters & LightGBM (P) tuned & val\_fpr@1\% & 0.8843 & 0.4335 & 0.0272 & -0.0300 & 0.0025 \\
+CompPhish & percent-encoded path characters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8843 & 0.3665 & 0.0182 & -0.0433 & -0.0003 \\
+CompPhish & percent-encoded path characters & LightGBM + n-grams tuned & val\_mcc & 0.9349 & 0.9140 & 0.2575 & -0.0057 & 0.0120 \\
+CompPhish & percent-encoded path characters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9349 & 0.6713 & 0.0267 & -0.0350 & 0.0008 \\
+CompPhish & percent-encoded path characters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9349 & 0.5547 & 0.0200 & -0.0675 & 0.0000 \\
+CompPhish & percent-encoded path characters & char n-gram LR tuned & val\_mcc & 0.9325 & 0.8972 & 0.1885 & 0.0200 & 0.0200 \\
+CompPhish & percent-encoded path characters & char n-gram LR tuned & val\_fpr@1\% & 0.9325 & 0.6573 & 0.0387 & 0.0052 & 0.0047 \\
+CompPhish & percent-encoded path characters & char n-gram LR tuned & val\_maxfpr@1\% & 0.9325 & 0.5095 & 0.0160 & 0.0050 & 0.0013 \\
+CompPhish & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9570 & 0.9317 & 0.1345 & 0.0092 & 0.0138 \\
+CompPhish & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9570 & 0.6500 & 0.0198 & -0.0310 & -0.0015 \\
+CompPhish & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9570 & 0.4985 & 0.0127 & -0.0610 & -0.0023 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9504 & 0.9317 & 0.2150 & -0.0062 & 0.0058 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9504 & 0.6300 & 0.0227 & -0.0445 & 0.0010 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9504 & 0.6078 & 0.0187 & -0.0445 & -0.0010 \\
+CompPhish & percent-encoded path characters & BiGRU-KD tuned & val\_mcc & 0.9546 & 0.9127 & 0.1110 & 0.0055 & 0.0142 \\
+CompPhish & percent-encoded path characters & BiGRU-KD tuned & val\_fpr@1\% & 0.9546 & 0.6558 & 0.0250 & -0.0245 & -0.0010 \\
+CompPhish & percent-encoded path characters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9546 & 0.5385 & 0.0127 & -0.0275 & -0.0057 \\
+CompPhish & percent-encoded path characters & ADAPT-X (P) & val\_mcc & 0.9368 & 0.8862 & 0.1770 & -0.0465 & 0.0008 \\
+CompPhish & percent-encoded path characters & ADAPT-X (P) & val\_fpr@1\% & 0.9368 & 0.6045 & 0.0195 & -0.0547 & -0.0040 \\
+CompPhish & percent-encoded path characters & ADAPT-X (P) & val\_maxfpr@1\% & 0.9368 & 0.4120 & 0.0057 & -0.0725 & -0.0035 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH (P) & val\_mcc & 0.8898 & 0.7342 & 0.0872 & -0.0940 & -0.0125 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8898 & 0.4888 & 0.0208 & -0.0705 & -0.0025 \\
+CompPhish & percent-encoded path characters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8898 & 0.4220 & 0.0118 & -0.0650 & -0.0050 \\
+CompPhish & percent-encoded path characters & LightGBM (P) & val\_mcc & 0.8768 & 0.8003 & 0.2215 & -0.0240 & -0.0008 \\
+CompPhish & percent-encoded path characters & LightGBM (P) & val\_fpr@1\% & 0.8768 & 0.4128 & 0.0250 & -0.0257 & 0.0005 \\
+CompPhish & percent-encoded path characters & LightGBM (P) & val\_maxfpr@1\% & 0.8768 & 0.3458 & 0.0195 & -0.0287 & 0.0022 \\
+CompPhish & percent-encoded path characters & char-LR & val\_mcc & 0.9103 & 0.8735 & 0.2318 & -0.0077 & 0.0040 \\
+CompPhish & percent-encoded path characters & char-LR & val\_fpr@1\% & 0.9103 & 0.5595 & 0.0145 & -0.0230 & -0.0052 \\
+CompPhish & percent-encoded path characters & char-LR & val\_maxfpr@1\% & 0.9103 & 0.4890 & 0.0070 & -0.0282 & -0.0022 \\
+CompPhish & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9425 & 0.9067 & 0.1933 & 0.0052 & 0.0135 \\
+CompPhish & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9425 & 0.6787 & 0.0290 & -0.0198 & 0.0023 \\
+CompPhish & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9425 & 0.4950 & 0.0165 & -0.0490 & -0.0010 \\
+CompPhish & percent-encoded path characters & URLNet-style char+word CNN & val\_mcc & 0.9470 & 0.8655 & 0.1047 & -0.0070 & 0.0147 \\
+CompPhish & percent-encoded path characters & URLNet-style char+word CNN & val\_fpr@1\% & 0.9470 & 0.4345 & 0.0047 & -0.1012 & -0.0073 \\
+CompPhish & percent-encoded path characters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9470 & 0.2065 & 0.0000 & -0.0950 & -0.0020 \\
+CompPhish & percent-encoded path characters & BiGRU character model & val\_mcc & 0.9509 & 0.8940 & 0.1030 & -0.0127 & 0.0120 \\
+CompPhish & percent-encoded path characters & BiGRU character model & val\_fpr@1\% & 0.9509 & 0.5787 & 0.0155 & -0.0527 & -0.0077 \\
+CompPhish & percent-encoded path characters & BiGRU character model & val\_maxfpr@1\% & 0.9509 & 0.5128 & 0.0097 & -0.0532 & -0.0090 \\
+CompPhish & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9036 & 0.8370 & 0.1903 & -0.0585 & -0.0013 \\
+CompPhish & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9036 & 0.5805 & 0.0243 & -0.0930 & -0.0132 \\
+CompPhish & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9036 & 0.5310 & 0.0182 & -0.0942 & -0.0135 \\
+CompPhish & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9437 & 0.8568 & 0.1047 & -0.0323 & -0.0015 \\
+CompPhish & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9437 & 0.5480 & 0.0123 & -0.1002 & -0.0077 \\
+CompPhish & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9437 & 0.4733 & 0.0070 & -0.0812 & -0.0073 \\
+CompPhish & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9345 & 0.9050 & 0.2193 & -0.0185 & 0.0050 \\
+CompPhish & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9345 & 0.6072 & 0.0225 & -0.0360 & -0.0030 \\
+CompPhish & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9345 & 0.3710 & 0.0053 & -0.0365 & -0.0033 \\
+CompPhish & extra query parameters & ADAPT-X2 stack (P) & val\_mcc & 0.9335 & 0.9888 & 0.8632 & 0.0523 & 0.6942 \\
+CompPhish & extra query parameters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9335 & 0.8205 & 0.0545 & 0.1432 & 0.0333 \\
+CompPhish & extra query parameters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9335 & 0.7040 & 0.0225 & 0.1230 & 0.0072 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2 (P) & val\_mcc & 0.9125 & 0.9778 & 0.7738 & 0.0490 & 0.5975 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9125 & 0.7730 & 0.0877 & 0.1195 & 0.0675 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9125 & 0.7015 & 0.0510 & 0.0995 & 0.0330 \\
+CompPhish & extra query parameters & BiGRU tuned & val\_mcc & 0.9070 & 0.9297 & 0.3997 & 0.0312 & 0.3227 \\
+CompPhish & extra query parameters & BiGRU tuned & val\_fpr@1\% & 0.9070 & 0.6150 & 0.0310 & -0.0493 & 0.0100 \\
+CompPhish & extra query parameters & BiGRU tuned & val\_maxfpr@1\% & 0.9070 & 0.5353 & 0.0200 & -0.0680 & 0.0030 \\
+CompPhish & extra query parameters & URLNet tuned & val\_mcc & 0.8455 & 0.9912 & 0.9635 & 0.0715 & 0.7915 \\
+CompPhish & extra query parameters & URLNet tuned & val\_fpr@1\% & 0.8455 & 0.5620 & 0.0493 & 0.0213 & 0.0375 \\
+CompPhish & extra query parameters & URLNet tuned & val\_maxfpr@1\% & 0.8455 & 0.1988 & 0.0005 & -0.0860 & -0.0015 \\
+CompPhish & extra query parameters & LightGBM (P) tuned & val\_mcc & 0.8403 & 0.9788 & 0.8830 & 0.1202 & 0.6062 \\
+CompPhish & extra query parameters & LightGBM (P) tuned & val\_fpr@1\% & 0.8403 & 0.5098 & 0.0338 & 0.0463 & 0.0090 \\
+CompPhish & extra query parameters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8403 & 0.3995 & 0.0227 & -0.0102 & 0.0043 \\
+CompPhish & extra query parameters & LightGBM + n-grams tuned & val\_mcc & 0.9251 & 0.9868 & 0.8528 & 0.0670 & 0.6073 \\
+CompPhish & extra query parameters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9251 & 0.8978 & 0.2062 & 0.1915 & 0.1802 \\
+CompPhish & extra query parameters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9251 & 0.8227 & 0.0897 & 0.2005 & 0.0697 \\
+CompPhish & extra query parameters & char n-gram LR tuned & val\_mcc & 0.8706 & 0.9832 & 0.9265 & 0.1060 & 0.7580 \\
+CompPhish & extra query parameters & char n-gram LR tuned & val\_fpr@1\% & 0.8706 & 0.8397 & 0.2908 & 0.1877 & 0.2568 \\
+CompPhish & extra query parameters & char n-gram LR tuned & val\_maxfpr@1\% & 0.8706 & 0.6620 & 0.0478 & 0.1575 & 0.0330 \\
+CompPhish & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9317 & 0.9815 & 0.8153 & 0.0590 & 0.6945 \\
+CompPhish & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9317 & 0.8185 & 0.0460 & 0.1375 & 0.0247 \\
+CompPhish & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9317 & 0.6800 & 0.0205 & 0.1205 & 0.0055 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9199 & 0.9850 & 0.7087 & 0.0470 & 0.4995 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9199 & 0.7365 & 0.0633 & 0.0620 & 0.0415 \\
+CompPhish & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9199 & 0.7105 & 0.0467 & 0.0583 & 0.0270 \\
+CompPhish & extra query parameters & BiGRU-KD tuned & val\_mcc & 0.8747 & 0.9855 & 0.9097 & 0.0783 & 0.8130 \\
+CompPhish & extra query parameters & BiGRU-KD tuned & val\_fpr@1\% & 0.8747 & 0.8838 & 0.3663 & 0.2035 & 0.3402 \\
+CompPhish & extra query parameters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8747 & 0.7620 & 0.1403 & 0.1960 & 0.1218 \\
+CompPhish & extra query parameters & ADAPT-X (P) & val\_mcc & 0.8992 & 0.9962 & 0.9540 & 0.0635 & 0.7777 \\
+CompPhish & extra query parameters & ADAPT-X (P) & val\_fpr@1\% & 0.8992 & 0.8715 & 0.2918 & 0.2123 & 0.2682 \\
+CompPhish & extra query parameters & ADAPT-X (P) & val\_maxfpr@1\% & 0.8992 & 0.6927 & 0.0510 & 0.2082 & 0.0417 \\
+CompPhish & extra query parameters & ADAPT-PHISH (P) & val\_mcc & 0.8740 & 0.9573 & 0.5373 & 0.1290 & 0.4375 \\
+CompPhish & extra query parameters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8740 & 0.7210 & 0.1422 & 0.1617 & 0.1190 \\
+CompPhish & extra query parameters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8740 & 0.6160 & 0.0645 & 0.1290 & 0.0478 \\
+CompPhish & extra query parameters & LightGBM (P) & val\_mcc & 0.8516 & 0.9655 & 0.7205 & 0.1412 & 0.4983 \\
+CompPhish & extra query parameters & LightGBM (P) & val\_fpr@1\% & 0.8516 & 0.4810 & 0.0312 & 0.0425 & 0.0067 \\
+CompPhish & extra query parameters & LightGBM (P) & val\_maxfpr@1\% & 0.8516 & 0.3905 & 0.0208 & 0.0160 & 0.0035 \\
+CompPhish & extra query parameters & char-LR & val\_mcc & 0.7992 & 0.9798 & 0.9313 & 0.0985 & 0.7035 \\
+CompPhish & extra query parameters & char-LR & val\_fpr@1\% & 0.7992 & 0.7798 & 0.4532 & 0.1973 & 0.4335 \\
+CompPhish & extra query parameters & char-LR & val\_maxfpr@1\% & 0.7992 & 0.6997 & 0.2427 & 0.1825 & 0.2335 \\
+CompPhish & extra query parameters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9096 & 0.9862 & 0.8730 & 0.0847 & 0.6933 \\
+CompPhish & extra query parameters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9096 & 0.8922 & 0.2395 & 0.1937 & 0.2127 \\
+CompPhish & extra query parameters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9096 & 0.7390 & 0.0665 & 0.1950 & 0.0490 \\
+CompPhish & extra query parameters & URLNet-style char+word CNN & val\_mcc & 0.8413 & 0.9870 & 0.9125 & 0.1145 & 0.8225 \\
+CompPhish & extra query parameters & URLNet-style char+word CNN & val\_fpr@1\% & 0.8413 & 0.5457 & 0.0387 & 0.0100 & 0.0267 \\
+CompPhish & extra query parameters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8413 & 0.1865 & 0.0005 & -0.1150 & -0.0015 \\
+CompPhish & extra query parameters & BiGRU character model & val\_mcc & 0.8753 & 0.9583 & 0.7582 & 0.0515 & 0.6673 \\
+CompPhish & extra query parameters & BiGRU character model & val\_fpr@1\% & 0.8753 & 0.7235 & 0.1120 & 0.0920 & 0.0887 \\
+CompPhish & extra query parameters & BiGRU character model & val\_maxfpr@1\% & 0.8753 & 0.6665 & 0.0760 & 0.1005 & 0.0572 \\
+CompPhish & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8728 & 0.9250 & 0.5325 & 0.0295 & 0.3410 \\
+CompPhish & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8728 & 0.7582 & 0.1500 & 0.0847 & 0.1125 \\
+CompPhish & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8728 & 0.6893 & 0.1020 & 0.0640 & 0.0702 \\
+CompPhish & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9227 & 0.9260 & 0.3593 & 0.0370 & 0.2530 \\
+CompPhish & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9227 & 0.6445 & 0.0230 & -0.0038 & 0.0030 \\
+CompPhish & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9227 & 0.5425 & 0.0150 & -0.0120 & 0.0007 \\
+CompPhish & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8812 & 0.9955 & 0.9613 & 0.0720 & 0.7470 \\
+CompPhish & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8812 & 0.8337 & 0.2490 & 0.1905 & 0.2235 \\
+CompPhish & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8812 & 0.5800 & 0.0175 & 0.1725 & 0.0090 \\
+CompPhish & random case in path & ADAPT-X2 stack (P) & val\_mcc & 0.9610 & 0.9597 & 0.1918 & 0.0232 & 0.0227 \\
+CompPhish & random case in path & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9610 & 0.7188 & 0.0283 & 0.0415 & 0.0070 \\
+CompPhish & random case in path & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9610 & 0.6272 & 0.0190 & 0.0463 & 0.0037 \\
+CompPhish & random case in path & ADAPT-PHISH v2 (P) & val\_mcc & 0.9540 & 0.9423 & 0.1928 & 0.0135 & 0.0165 \\
+CompPhish & random case in path & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9540 & 0.6895 & 0.0262 & 0.0360 & 0.0060 \\
+CompPhish & random case in path & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9540 & 0.6398 & 0.0227 & 0.0378 & 0.0048 \\
+CompPhish & random case in path & BiGRU tuned & val\_mcc & 0.9574 & 0.9197 & 0.0973 & 0.0212 & 0.0203 \\
+CompPhish & random case in path & BiGRU tuned & val\_fpr@1\% & 0.9574 & 0.6993 & 0.0260 & 0.0350 & 0.0050 \\
+CompPhish & random case in path & BiGRU tuned & val\_maxfpr@1\% & 0.9574 & 0.6430 & 0.0210 & 0.0398 & 0.0040 \\
+CompPhish & random case in path & URLNet tuned & val\_mcc & 0.9499 & 0.9353 & 0.1867 & 0.0155 & 0.0148 \\
+CompPhish & random case in path & URLNet tuned & val\_fpr@1\% & 0.9499 & 0.5840 & 0.0182 & 0.0433 & 0.0065 \\
+CompPhish & random case in path & URLNet tuned & val\_maxfpr@1\% & 0.9499 & 0.3332 & 0.0025 & 0.0485 & 0.0005 \\
+CompPhish & random case in path & LightGBM (P) tuned & val\_mcc & 0.9121 & 0.8940 & 0.2918 & 0.0355 & 0.0150 \\
+CompPhish & random case in path & LightGBM (P) tuned & val\_fpr@1\% & 0.9121 & 0.4900 & 0.0295 & 0.0265 & 0.0047 \\
+CompPhish & random case in path & LightGBM (P) tuned & val\_maxfpr@1\% & 0.9121 & 0.4335 & 0.0220 & 0.0237 & 0.0035 \\
+CompPhish & random case in path & LightGBM + n-grams tuned & val\_mcc & 0.9470 & 0.9435 & 0.2710 & 0.0238 & 0.0255 \\
+CompPhish & random case in path & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9470 & 0.7648 & 0.0350 & 0.0585 & 0.0090 \\
+CompPhish & random case in path & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9470 & 0.6903 & 0.0275 & 0.0680 & 0.0075 \\
+CompPhish & random case in path & char n-gram LR tuned & val\_mcc & 0.9228 & 0.8772 & 0.1685 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & char n-gram LR tuned & val\_fpr@1\% & 0.9228 & 0.6520 & 0.0340 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & char n-gram LR tuned & val\_maxfpr@1\% & 0.9228 & 0.5045 & 0.0147 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9610 & 0.9493 & 0.1460 & 0.0268 & 0.0252 \\
+CompPhish & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9610 & 0.7232 & 0.0280 & 0.0422 & 0.0067 \\
+CompPhish & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9610 & 0.6165 & 0.0182 & 0.0570 & 0.0032 \\
+CompPhish & random case in path & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9589 & 0.9580 & 0.2288 & 0.0200 & 0.0195 \\
+CompPhish & random case in path & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9589 & 0.7113 & 0.0267 & 0.0368 & 0.0050 \\
+CompPhish & random case in path & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9589 & 0.6957 & 0.0243 & 0.0435 & 0.0045 \\
+CompPhish & random case in path & BiGRU-KD tuned & val\_mcc & 0.9560 & 0.9357 & 0.1242 & 0.0285 & 0.0275 \\
+CompPhish & random case in path & BiGRU-KD tuned & val\_fpr@1\% & 0.9560 & 0.7140 & 0.0318 & 0.0337 & 0.0058 \\
+CompPhish & random case in path & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9560 & 0.6178 & 0.0235 & 0.0518 & 0.0050 \\
+CompPhish & random case in path & ADAPT-X (P) & val\_mcc & 0.9578 & 0.9480 & 0.1860 & 0.0152 & 0.0098 \\
+CompPhish & random case in path & ADAPT-X (P) & val\_fpr@1\% & 0.9578 & 0.6840 & 0.0255 & 0.0248 & 0.0020 \\
+CompPhish & random case in path & ADAPT-X (P) & val\_maxfpr@1\% & 0.9578 & 0.5393 & 0.0112 & 0.0548 & 0.0020 \\
+CompPhish & random case in path & ADAPT-PHISH (P) & val\_mcc & 0.9385 & 0.8730 & 0.1177 & 0.0447 & 0.0180 \\
+CompPhish & random case in path & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9385 & 0.6298 & 0.0315 & 0.0705 & 0.0083 \\
+CompPhish & random case in path & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9385 & 0.5553 & 0.0250 & 0.0683 & 0.0083 \\
+CompPhish & random case in path & LightGBM (P) & val\_mcc & 0.9084 & 0.8628 & 0.2370 & 0.0385 & 0.0147 \\
+CompPhish & random case in path & LightGBM (P) & val\_fpr@1\% & 0.9084 & 0.4682 & 0.0275 & 0.0297 & 0.0030 \\
+CompPhish & random case in path & LightGBM (P) & val\_maxfpr@1\% & 0.9084 & 0.3982 & 0.0213 & 0.0237 & 0.0040 \\
+CompPhish & random case in path & char-LR & val\_mcc & 0.9147 & 0.8812 & 0.2278 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & char-LR & val\_fpr@1\% & 0.9147 & 0.5825 & 0.0198 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & char-LR & val\_maxfpr@1\% & 0.9147 & 0.5172 & 0.0092 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9500 & 0.9310 & 0.2042 & 0.0295 & 0.0245 \\
+CompPhish & random case in path & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9500 & 0.7505 & 0.0330 & 0.0520 & 0.0063 \\
+CompPhish & random case in path & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9500 & 0.6120 & 0.0227 & 0.0680 & 0.0052 \\
+CompPhish & random case in path & URLNet-style char+word CNN & val\_mcc & 0.9517 & 0.8928 & 0.1013 & 0.0202 & 0.0113 \\
+CompPhish & random case in path & URLNet-style char+word CNN & val\_fpr@1\% & 0.9517 & 0.5805 & 0.0177 & 0.0448 & 0.0057 \\
+CompPhish & random case in path & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9517 & 0.3445 & 0.0025 & 0.0430 & 0.0005 \\
+CompPhish & random case in path & BiGRU character model & val\_mcc & 0.9546 & 0.9310 & 0.1202 & 0.0243 & 0.0292 \\
+CompPhish & random case in path & BiGRU character model & val\_fpr@1\% & 0.9546 & 0.6717 & 0.0305 & 0.0403 & 0.0072 \\
+CompPhish & random case in path & BiGRU character model & val\_maxfpr@1\% & 0.9546 & 0.6155 & 0.0250 & 0.0495 & 0.0063 \\
+CompPhish & random case in path & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9336 & 0.9320 & 0.2253 & 0.0365 & 0.0338 \\
+CompPhish & random case in path & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9336 & 0.7590 & 0.0595 & 0.0855 & 0.0220 \\
+CompPhish & random case in path & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9336 & 0.7202 & 0.0498 & 0.0950 & 0.0180 \\
+CompPhish & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9493 & 0.8890 & 0.1062 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9493 & 0.6482 & 0.0200 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9493 & 0.5545 & 0.0143 & 0.0000 & 0.0000 \\
+CompPhish & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9479 & 0.9363 & 0.2223 & 0.0128 & 0.0080 \\
+CompPhish & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9479 & 0.6587 & 0.0260 & 0.0155 & 0.0005 \\
+CompPhish & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9479 & 0.4375 & 0.0085 & 0.0300 & 0.0000 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_mcc & 0.9046 & 0.9918 & 0.9780 & 0.0553 & 0.8090 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9046 & 0.8210 & 0.0948 & 0.1437 & 0.0735 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9046 & 0.6997 & 0.0333 & 0.1188 & 0.0180 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8334 & 0.9952 & 0.9958 & 0.0665 & 0.8195 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8334 & 0.9225 & 0.7160 & 0.2690 & 0.6957 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8334 & 0.8868 & 0.5667 & 0.2848 & 0.5487 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU tuned & val\_mcc & 0.8108 & 0.9832 & 0.9563 & 0.0847 & 0.8793 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU tuned & val\_fpr@1\% & 0.8108 & 0.8075 & 0.4005 & 0.1432 & 0.3795 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU tuned & val\_maxfpr@1\% & 0.8108 & 0.7295 & 0.2512 & 0.1263 & 0.2342 \\
+CompPhish & userinfo prefix (@ trick) & URLNet tuned & val\_mcc & 0.7707 & 0.9147 & 0.7472 & -0.0050 & 0.5753 \\
+CompPhish & userinfo prefix (@ trick) & URLNet tuned & val\_fpr@1\% & 0.7707 & 0.3710 & 0.0140 & -0.1697 & 0.0023 \\
+CompPhish & userinfo prefix (@ trick) & URLNet tuned & val\_maxfpr@1\% & 0.7707 & 0.0988 & 0.0005 & -0.1860 & -0.0015 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_mcc & 0.7995 & 0.9945 & 0.9802 & 0.1360 & 0.7035 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_fpr@1\% & 0.7995 & 0.7702 & 0.3317 & 0.3067 & 0.3070 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7995 & 0.6785 & 0.1837 & 0.2687 & 0.1653 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_mcc & 0.9133 & 0.9660 & 0.7863 & 0.0463 & 0.5408 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9133 & 0.7907 & 0.0568 & 0.0845 & 0.0308 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9133 & 0.7025 & 0.0310 & 0.0803 & 0.0110 \\
+CompPhish & userinfo prefix (@ trick) & char n-gram LR tuned & val\_mcc & 0.8764 & 0.9195 & 0.5507 & 0.0423 & 0.3822 \\
+CompPhish & userinfo prefix (@ trick) & char n-gram LR tuned & val\_fpr@1\% & 0.8764 & 0.6580 & 0.0470 & 0.0060 & 0.0130 \\
+CompPhish & userinfo prefix (@ trick) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8764 & 0.4910 & 0.0175 & -0.0135 & 0.0028 \\
+CompPhish & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9074 & 0.9820 & 0.9423 & 0.0595 & 0.8215 \\
+CompPhish & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9074 & 0.7895 & 0.0612 & 0.1085 & 0.0400 \\
+CompPhish & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9074 & 0.6552 & 0.0265 & 0.0958 & 0.0115 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8812 & 0.9952 & 0.9938 & 0.0573 & 0.7845 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8812 & 0.8802 & 0.3623 & 0.2057 & 0.3405 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8812 & 0.8572 & 0.2815 & 0.2050 & 0.2617 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_mcc & 0.8662 & 0.9815 & 0.9058 & 0.0743 & 0.8090 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_fpr@1\% & 0.8662 & 0.7468 & 0.1242 & 0.0665 & 0.0983 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8662 & 0.6098 & 0.0420 & 0.0438 & 0.0235 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X (P) & val\_mcc & 0.8975 & 0.9885 & 0.9477 & 0.0558 & 0.7715 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X (P) & val\_fpr@1\% & 0.8975 & 0.7470 & 0.0508 & 0.0877 & 0.0273 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-X (P) & val\_maxfpr@1\% & 0.8975 & 0.5275 & 0.0168 & 0.0430 & 0.0075 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_mcc & 0.7572 & 0.9948 & 0.9910 & 0.1665 & 0.8912 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.7572 & 0.8655 & 0.7528 & 0.3063 & 0.7295 \\
+CompPhish & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.7572 & 0.7700 & 0.4487 & 0.2830 & 0.4320 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) & val\_mcc & 0.7987 & 0.9910 & 0.9745 & 0.1667 & 0.7523 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) & val\_fpr@1\% & 0.7987 & 0.7382 & 0.2955 & 0.2997 & 0.2710 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) & val\_maxfpr@1\% & 0.7987 & 0.6235 & 0.1432 & 0.2490 & 0.1260 \\
+CompPhish & userinfo prefix (@ trick) & char-LR & val\_mcc & 0.8883 & 0.8465 & 0.2303 & -0.0347 & 0.0025 \\
+CompPhish & userinfo prefix (@ trick) & char-LR & val\_fpr@1\% & 0.8883 & 0.4743 & 0.0085 & -0.1083 & -0.0112 \\
+CompPhish & userinfo prefix (@ trick) & char-LR & val\_maxfpr@1\% & 0.8883 & 0.3600 & 0.0035 & -0.1573 & -0.0057 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8914 & 0.9483 & 0.7280 & 0.0468 & 0.5483 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8914 & 0.7562 & 0.0548 & 0.0577 & 0.0280 \\
+CompPhish & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8914 & 0.5258 & 0.0225 & -0.0182 & 0.0050 \\
+CompPhish & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_mcc & 0.8039 & 0.7857 & 0.4093 & -0.0868 & 0.3193 \\
+CompPhish & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_fpr@1\% & 0.8039 & 0.3270 & 0.0080 & -0.2087 & -0.0040 \\
+CompPhish & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8039 & 0.0882 & 0.0003 & -0.2132 & -0.0018 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU character model & val\_mcc & 0.8060 & 0.9800 & 0.9130 & 0.0733 & 0.8220 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU character model & val\_fpr@1\% & 0.8060 & 0.6837 & 0.2167 & 0.0523 & 0.1935 \\
+CompPhish & userinfo prefix (@ trick) & BiGRU character model & val\_maxfpr@1\% & 0.8060 & 0.5998 & 0.1170 & 0.0338 & 0.0983 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8524 & 0.6522 & 0.0858 & -0.2432 & -0.1057 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8524 & 0.3483 & 0.0200 & -0.3252 & -0.0175 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8524 & 0.2625 & 0.0165 & -0.3627 & -0.0152 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8312 & 0.6580 & 0.1313 & -0.2310 & 0.0250 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8312 & 0.2517 & 0.0127 & -0.3965 & -0.0073 \\
+CompPhish & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8312 & 0.1878 & 0.0063 & -0.3668 & -0.0080 \\
+CompPhish & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8967 & 0.9683 & 0.8695 & 0.0448 & 0.6553 \\
+CompPhish & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8967 & 0.7278 & 0.0328 & 0.0845 & 0.0073 \\
+CompPhish & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8967 & 0.4068 & 0.0085 & -0.0007 & 0.0000 \\
+CompPhish & host only (path removed) & ADAPT-X2 stack (P) & val\_mcc & 0.9342 & 0.8810 & 0.1720 & -0.0555 & 0.0030 \\
+CompPhish & host only (path removed) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9342 & 0.5373 & 0.0040 & -0.1400 & -0.0173 \\
+CompPhish & host only (path removed) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9342 & 0.4502 & 0.0015 & -0.1307 & -0.0138 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9240 & 0.8285 & 0.1268 & -0.1002 & -0.0495 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9240 & 0.5252 & 0.0077 & -0.1282 & -0.0125 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9240 & 0.4908 & 0.0063 & -0.1112 & -0.0117 \\
+CompPhish & host only (path removed) & BiGRU tuned & val\_mcc & 0.9215 & 0.7542 & 0.0510 & -0.1442 & -0.0260 \\
+CompPhish & host only (path removed) & BiGRU tuned & val\_fpr@1\% & 0.9215 & 0.5155 & 0.0050 & -0.1488 & -0.0160 \\
+CompPhish & host only (path removed) & BiGRU tuned & val\_maxfpr@1\% & 0.9215 & 0.4567 & 0.0027 & -0.1465 & -0.0143 \\
+CompPhish & host only (path removed) & URLNet tuned & val\_mcc & 0.9147 & 0.8327 & 0.1517 & -0.0870 & -0.0202 \\
+CompPhish & host only (path removed) & URLNet tuned & val\_fpr@1\% & 0.9147 & 0.4032 & 0.0010 & -0.1375 & -0.0107 \\
+CompPhish & host only (path removed) & URLNet tuned & val\_maxfpr@1\% & 0.9147 & 0.2765 & 0.0000 & -0.0082 & -0.0020 \\
+CompPhish & host only (path removed) & LightGBM (P) tuned & val\_mcc & 0.8667 & 0.8462 & 0.2825 & -0.0123 & 0.0057 \\
+CompPhish & host only (path removed) & LightGBM (P) tuned & val\_fpr@1\% & 0.8667 & 0.3623 & 0.0080 & -0.1013 & -0.0168 \\
+CompPhish & host only (path removed) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8667 & 0.3093 & 0.0045 & -0.1005 & -0.0140 \\
+CompPhish & host only (path removed) & LightGBM + n-grams tuned & val\_mcc & 0.9099 & 0.8768 & 0.2617 & -0.0430 & 0.0162 \\
+CompPhish & host only (path removed) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9099 & 0.5930 & 0.0103 & -0.1133 & -0.0158 \\
+CompPhish & host only (path removed) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9099 & 0.5095 & 0.0035 & -0.1128 & -0.0165 \\
+CompPhish & host only (path removed) & char n-gram LR tuned & val\_mcc & 0.8798 & 0.7843 & 0.1535 & -0.0930 & -0.0150 \\
+CompPhish & host only (path removed) & char n-gram LR tuned & val\_fpr@1\% & 0.8798 & 0.5415 & 0.0145 & -0.1105 & -0.0195 \\
+CompPhish & host only (path removed) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8798 & 0.4387 & 0.0027 & -0.0657 & -0.0120 \\
+CompPhish & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9319 & 0.8538 & 0.1255 & -0.0687 & 0.0048 \\
+CompPhish & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9319 & 0.5365 & 0.0043 & -0.1445 & -0.0170 \\
+CompPhish & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9319 & 0.4288 & 0.0013 & -0.1307 & -0.0138 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9272 & 0.8522 & 0.1810 & -0.0857 & -0.0282 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9272 & 0.5158 & 0.0063 & -0.1587 & -0.0155 \\
+CompPhish & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9272 & 0.5032 & 0.0045 & -0.1490 & -0.0152 \\
+CompPhish & host only (path removed) & BiGRU-KD tuned & val\_mcc & 0.9228 & 0.7552 & 0.0690 & -0.1520 & -0.0277 \\
+CompPhish & host only (path removed) & BiGRU-KD tuned & val\_fpr@1\% & 0.9228 & 0.5190 & 0.0037 & -0.1613 & -0.0222 \\
+CompPhish & host only (path removed) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9228 & 0.4180 & 0.0013 & -0.1480 & -0.0172 \\
+CompPhish & host only (path removed) & ADAPT-X (P) & val\_mcc & 0.9451 & 0.9135 & 0.1825 & -0.0192 & 0.0063 \\
+CompPhish & host only (path removed) & ADAPT-X (P) & val\_fpr@1\% & 0.9451 & 0.5775 & 0.0063 & -0.0817 & -0.0173 \\
+CompPhish & host only (path removed) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9451 & 0.4363 & 0.0015 & -0.0482 & -0.0077 \\
+CompPhish & host only (path removed) & ADAPT-PHISH (P) & val\_mcc & 0.9127 & 0.7805 & 0.0725 & -0.0478 & -0.0273 \\
+CompPhish & host only (path removed) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.9127 & 0.5128 & 0.0112 & -0.0465 & -0.0120 \\
+CompPhish & host only (path removed) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.9127 & 0.4110 & 0.0070 & -0.0760 & -0.0098 \\
+CompPhish & host only (path removed) & LightGBM (P) & val\_mcc & 0.8717 & 0.8265 & 0.2330 & 0.0022 & 0.0108 \\
+CompPhish & host only (path removed) & LightGBM (P) & val\_fpr@1\% & 0.8717 & 0.3380 & 0.0057 & -0.1005 & -0.0188 \\
+CompPhish & host only (path removed) & LightGBM (P) & val\_maxfpr@1\% & 0.8717 & 0.2820 & 0.0027 & -0.0925 & -0.0145 \\
+CompPhish & host only (path removed) & char-LR & val\_mcc & 0.8773 & 0.8145 & 0.2200 & -0.0667 & -0.0078 \\
+CompPhish & host only (path removed) & char-LR & val\_fpr@1\% & 0.8773 & 0.5497 & 0.0120 & -0.0328 & -0.0077 \\
+CompPhish & host only (path removed) & char-LR & val\_maxfpr@1\% & 0.8773 & 0.4895 & 0.0057 & -0.0277 & -0.0035 \\
+CompPhish & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9047 & 0.8652 & 0.2437 & -0.0363 & 0.0640 \\
+CompPhish & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9047 & 0.5925 & 0.0092 & -0.1060 & -0.0175 \\
+CompPhish & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9047 & 0.4630 & 0.0022 & -0.0810 & -0.0153 \\
+CompPhish & host only (path removed) & URLNet-style char+word CNN & val\_mcc & 0.9123 & 0.7498 & 0.0698 & -0.1228 & -0.0202 \\
+CompPhish & host only (path removed) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9123 & 0.4007 & 0.0013 & -0.1350 & -0.0108 \\
+CompPhish & host only (path removed) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9123 & 0.2797 & 0.0000 & -0.0217 & -0.0020 \\
+CompPhish & host only (path removed) & BiGRU character model & val\_mcc & 0.9241 & 0.7722 & 0.0660 & -0.1345 & -0.0250 \\
+CompPhish & host only (path removed) & BiGRU character model & val\_fpr@1\% & 0.9241 & 0.4660 & 0.0015 & -0.1655 & -0.0217 \\
+CompPhish & host only (path removed) & BiGRU character model & val\_maxfpr@1\% & 0.9241 & 0.3967 & 0.0015 & -0.1692 & -0.0172 \\
+CompPhish & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.9031 & 0.8315 & 0.1845 & -0.0640 & -0.0070 \\
+CompPhish & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.9031 & 0.5535 & 0.0163 & -0.1200 & -0.0212 \\
+CompPhish & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.9031 & 0.5190 & 0.0123 & -0.1062 & -0.0195 \\
+CompPhish & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9411 & 0.8337 & 0.0830 & -0.0553 & -0.0232 \\
+CompPhish & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9411 & 0.5640 & 0.0070 & -0.0843 & -0.0130 \\
+CompPhish & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9411 & 0.5060 & 0.0040 & -0.0485 & -0.0103 \\
+CompPhish & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9296 & 0.9060 & 0.2597 & -0.0175 & 0.0455 \\
+CompPhish & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9296 & 0.5673 & 0.0047 & -0.0760 & -0.0207 \\
+CompPhish & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9296 & 0.3708 & 0.0010 & -0.0367 & -0.0075 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_mcc & 0.9463 & 0.9243 & 0.1690 & -0.0122 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.9463 & 0.5978 & 0.0213 & -0.0795 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.9463 & 0.4407 & 0.0152 & -0.1402 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_mcc & 0.9299 & 0.8848 & 0.1762 & -0.0440 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9299 & 0.5570 & 0.0203 & -0.0965 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9299 & 0.5070 & 0.0180 & -0.0950 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_mcc & 0.9449 & 0.8662 & 0.0770 & -0.0323 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_fpr@1\% & 0.9449 & 0.5292 & 0.0210 & -0.1350 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_maxfpr@1\% & 0.9449 & 0.4422 & 0.0170 & -0.1610 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_mcc & 0.9043 & 0.8645 & 0.1720 & -0.0552 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_fpr@1\% & 0.9043 & 0.1435 & 0.0118 & -0.3972 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_maxfpr@1\% & 0.9043 & 0.0260 & 0.0020 & -0.2587 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_mcc & 0.8647 & 0.8003 & 0.2767 & -0.0583 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_fpr@1\% & 0.8647 & 0.3755 & 0.0248 & -0.0880 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8647 & 0.3197 & 0.0185 & -0.0900 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_mcc & 0.9179 & 0.8875 & 0.2455 & -0.0323 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.9179 & 0.6020 & 0.0260 & -0.1043 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.9179 & 0.4430 & 0.0200 & -0.1792 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_mcc & 0.9079 & 0.8622 & 0.1685 & -0.0150 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_fpr@1\% & 0.9079 & 0.5188 & 0.0340 & -0.1332 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_maxfpr@1\% & 0.9079 & 0.2737 & 0.0147 & -0.2307 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9456 & 0.9133 & 0.1207 & -0.0092 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9456 & 0.5880 & 0.0213 & -0.0930 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9456 & 0.3977 & 0.0150 & -0.1618 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9429 & 0.9207 & 0.2092 & -0.0172 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9429 & 0.5810 & 0.0217 & -0.0935 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9429 & 0.5550 & 0.0198 & -0.0972 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_mcc & 0.9451 & 0.8975 & 0.0968 & -0.0098 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_fpr@1\% & 0.9451 & 0.5885 & 0.0260 & -0.0917 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9451 & 0.4427 & 0.0185 & -0.1232 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_mcc & 0.9287 & 0.8822 & 0.1762 & -0.0505 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_fpr@1\% & 0.9287 & 0.5650 & 0.0235 & -0.0943 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9287 & 0.2895 & 0.0092 & -0.1950 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_mcc & 0.8771 & 0.7230 & 0.0998 & -0.1053 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8771 & 0.4477 & 0.0232 & -0.1115 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8771 & 0.3723 & 0.0168 & -0.1147 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_mcc & 0.8568 & 0.7580 & 0.2223 & -0.0663 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_fpr@1\% & 0.8568 & 0.3578 & 0.0245 & -0.0807 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_maxfpr@1\% & 0.8568 & 0.3045 & 0.0173 & -0.0700 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_mcc & 0.8622 & 0.8163 & 0.2278 & -0.0650 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_fpr@1\% & 0.8622 & 0.2692 & 0.0198 & -0.3133 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_maxfpr@1\% & 0.8622 & 0.1590 & 0.0092 & -0.3582 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.9207 & 0.8688 & 0.1797 & -0.0327 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.9207 & 0.5893 & 0.0267 & -0.1092 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.9207 & 0.3272 & 0.0175 & -0.2168 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_mcc & 0.8980 & 0.7410 & 0.0900 & -0.1315 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_fpr@1\% & 0.8980 & 0.1340 & 0.0120 & -0.4017 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8980 & 0.0297 & 0.0020 & -0.2717 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_mcc & 0.9396 & 0.8808 & 0.0910 & -0.0260 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_fpr@1\% & 0.9396 & 0.4978 & 0.0232 & -0.1337 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_maxfpr@1\% & 0.9396 & 0.4150 & 0.0187 & -0.1510 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.7892 & 0.5972 & 0.1915 & -0.2983 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.7892 & 0.2777 & 0.0375 & -0.3957 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.7892 & 0.2170 & 0.0318 & -0.4083 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8515 & 0.6190 & 0.1062 & -0.2700 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8515 & 0.2060 & 0.0200 & -0.4423 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8515 & 0.1475 & 0.0143 & -0.4070 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9240 & 0.8960 & 0.2142 & -0.0275 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9240 & 0.5437 & 0.0255 & -0.0995 & 0.0000 \\
+CompPhish & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9240 & 0.2338 & 0.0085 & -0.1737 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_mcc & 0.8876 & 0.9543 & 0.4580 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8876 & 0.7140 & 0.1045 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8876 & 0.5767 & 0.0715 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8943 & 0.9375 & 0.4253 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8943 & 0.6925 & 0.0905 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8943 & 0.6438 & 0.0752 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU tuned & val\_mcc & 0.8896 & 0.9113 & 0.3023 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU tuned & val\_fpr@1\% & 0.8896 & 0.7220 & 0.1077 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU tuned & val\_maxfpr@1\% & 0.8896 & 0.6408 & 0.0828 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet tuned & val\_mcc & 0.8686 & 0.9393 & 0.4610 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet tuned & val\_fpr@1\% & 0.8686 & 0.6462 & 0.1045 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet tuned & val\_maxfpr@1\% & 0.8686 & 0.3797 & 0.0430 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) tuned & val\_mcc & 0.8482 & 0.9025 & 0.4973 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) tuned & val\_fpr@1\% & 0.8482 & 0.5128 & 0.0545 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8482 & 0.4490 & 0.0352 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM + n-grams tuned & val\_mcc & 0.8577 & 0.9435 & 0.5467 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8577 & 0.7310 & 0.1405 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8577 & 0.6110 & 0.1020 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char n-gram LR tuned & val\_mcc & 0.8746 & 0.9140 & 0.3972 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char n-gram LR tuned & val\_fpr@1\% & 0.8746 & 0.7560 & 0.1308 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8746 & 0.6118 & 0.0730 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8837 & 0.9415 & 0.3942 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8837 & 0.7090 & 0.1108 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8837 & 0.5535 & 0.0747 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8959 & 0.9517 & 0.4803 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8959 & 0.7143 & 0.0985 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8959 & 0.6910 & 0.0932 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU-KD tuned & val\_mcc & 0.8855 & 0.9250 & 0.3252 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU-KD tuned & val\_fpr@1\% & 0.8855 & 0.7240 & 0.1165 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8855 & 0.5795 & 0.0825 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X (P) & val\_mcc & 0.9154 & 0.9527 & 0.4263 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X (P) & val\_fpr@1\% & 0.9154 & 0.7632 & 0.0825 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9154 & 0.5988 & 0.0423 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH (P) & val\_mcc & 0.8943 & 0.8830 & 0.2420 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8943 & 0.6610 & 0.0775 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8943 & 0.5825 & 0.0537 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) & val\_mcc & 0.8459 & 0.8808 & 0.4325 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) & val\_fpr@1\% & 0.8459 & 0.4815 & 0.0525 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) & val\_maxfpr@1\% & 0.8459 & 0.4215 & 0.0312 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char-LR & val\_mcc & 0.8869 & 0.9227 & 0.4022 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char-LR & val\_fpr@1\% & 0.8869 & 0.7212 & 0.0882 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & char-LR & val\_maxfpr@1\% & 0.8869 & 0.5875 & 0.0583 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8690 & 0.9295 & 0.4510 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8690 & 0.7255 & 0.1235 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8690 & 0.5355 & 0.0772 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet-style char+word CNN & val\_mcc & 0.8614 & 0.9052 & 0.3755 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet-style char+word CNN & val\_fpr@1\% & 0.8614 & 0.6520 & 0.1105 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8614 & 0.3837 & 0.0455 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU character model & val\_mcc & 0.8943 & 0.9195 & 0.2958 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU character model & val\_fpr@1\% & 0.8943 & 0.6488 & 0.0838 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & BiGRU character model & val\_maxfpr@1\% & 0.8943 & 0.5583 & 0.0668 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8957 & 0.9265 & 0.3382 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8957 & 0.7362 & 0.1278 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8957 & 0.6885 & 0.1022 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8813 & 0.8992 & 0.3157 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8813 & 0.6430 & 0.1057 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8813 & 0.5500 & 0.0765 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9087 & 0.9530 & 0.4655 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9087 & 0.7438 & 0.0813 & 0.0000 & 0.0000 \\
+Crawling2024 & none (pipeline re-run) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9087 & 0.4660 & 0.0325 & 0.0000 & 0.0000 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_mcc & 0.8417 & 0.9965 & 0.8968 & 0.0423 & 0.4388 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8417 & 0.8300 & 0.2715 & 0.1160 & 0.1670 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8417 & 0.6917 & 0.1353 & 0.1150 & 0.0638 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8676 & 0.9900 & 0.8540 & 0.0525 & 0.4287 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8676 & 0.8700 & 0.2908 & 0.1775 & 0.2003 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8676 & 0.8290 & 0.2200 & 0.1852 & 0.1447 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU tuned & val\_mcc & 0.8209 & 0.9878 & 0.8712 & 0.0765 & 0.5690 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU tuned & val\_fpr@1\% & 0.8209 & 0.8490 & 0.3440 & 0.1270 & 0.2362 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU tuned & val\_maxfpr@1\% & 0.8209 & 0.7760 & 0.2380 & 0.1352 & 0.1552 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet tuned & val\_mcc & 0.7798 & 0.9878 & 0.8820 & 0.0485 & 0.4210 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet tuned & val\_fpr@1\% & 0.7798 & 0.4743 & 0.1318 & -0.1720 & 0.0273 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet tuned & val\_maxfpr@1\% & 0.7798 & 0.1893 & 0.0432 & -0.1905 & 0.0003 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_mcc & 0.8070 & 0.9850 & 0.8485 & 0.0825 & 0.3513 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_fpr@1\% & 0.8070 & 0.6873 & 0.2193 & 0.1745 & 0.1648 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8070 & 0.5965 & 0.1460 & 0.1475 & 0.1107 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_mcc & 0.7849 & 0.9865 & 0.8545 & 0.0430 & 0.3078 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.7849 & 0.8150 & 0.3812 & 0.0840 & 0.2407 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.7849 & 0.6935 & 0.2245 & 0.0825 & 0.1225 \\
+Crawling2024 & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_mcc & 0.8168 & 0.9640 & 0.7500 & 0.0500 & 0.3528 \\
+Crawling2024 & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_fpr@1\% & 0.8168 & 0.7255 & 0.1988 & -0.0305 & 0.0680 \\
+Crawling2024 & IDN homoglyph host (punycode) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8168 & 0.5288 & 0.1077 & -0.0830 & 0.0348 \\
+Crawling2024 & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8256 & 0.9962 & 0.8952 & 0.0547 & 0.5010 \\
+Crawling2024 & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8256 & 0.8197 & 0.2868 & 0.1108 & 0.1760 \\
+Crawling2024 & IDN homoglyph host (punycode) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8256 & 0.6505 & 0.1330 & 0.0970 & 0.0583 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8569 & 0.9938 & 0.8795 & 0.0420 & 0.3992 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8569 & 0.8580 & 0.2802 & 0.1437 & 0.1817 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8569 & 0.8373 & 0.2492 & 0.1463 & 0.1560 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_mcc & 0.8208 & 0.9938 & 0.8998 & 0.0687 & 0.5745 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_fpr@1\% & 0.8208 & 0.8458 & 0.3065 & 0.1218 & 0.1900 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8208 & 0.7010 & 0.1777 & 0.1215 & 0.0952 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_mcc & 0.8665 & 0.9952 & 0.8905 & 0.0425 & 0.4642 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_fpr@1\% & 0.8665 & 0.8470 & 0.2480 & 0.0837 & 0.1655 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-X (P) & val\_maxfpr@1\% & 0.8665 & 0.6255 & 0.0830 & 0.0267 & 0.0408 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_mcc & 0.8122 & 0.9815 & 0.8150 & 0.0985 & 0.5730 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8122 & 0.8862 & 0.4780 & 0.2252 & 0.4005 \\
+Crawling2024 & IDN homoglyph host (punycode) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8122 & 0.8137 & 0.3417 & 0.2312 & 0.2880 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) & val\_mcc & 0.8045 & 0.9802 & 0.8250 & 0.0995 & 0.3925 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) & val\_fpr@1\% & 0.8045 & 0.6830 & 0.2268 & 0.2015 & 0.1743 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) & val\_maxfpr@1\% & 0.8045 & 0.5843 & 0.1447 & 0.1628 & 0.1135 \\
+Crawling2024 & IDN homoglyph host (punycode) & char-LR & val\_mcc & 0.8196 & 0.9570 & 0.6955 & 0.0343 & 0.2933 \\
+Crawling2024 & IDN homoglyph host (punycode) & char-LR & val\_fpr@1\% & 0.8196 & 0.5565 & 0.1210 & -0.1647 & 0.0328 \\
+Crawling2024 & IDN homoglyph host (punycode) & char-LR & val\_maxfpr@1\% & 0.8196 & 0.3820 & 0.0783 & -0.2055 & 0.0200 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8017 & 0.9825 & 0.8175 & 0.0530 & 0.3665 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8017 & 0.7847 & 0.3075 & 0.0592 & 0.1840 \\
+Crawling2024 & IDN homoglyph host (punycode) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8017 & 0.5525 & 0.1247 & 0.0170 & 0.0475 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_mcc & 0.7744 & 0.9547 & 0.7420 & 0.0495 & 0.3665 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_fpr@1\% & 0.7744 & 0.4733 & 0.1400 & -0.1788 & 0.0295 \\
+Crawling2024 & IDN homoglyph host (punycode) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.7744 & 0.1978 & 0.0460 & -0.1860 & 0.0005 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU character model & val\_mcc & 0.8030 & 0.9900 & 0.8712 & 0.0705 & 0.5755 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU character model & val\_fpr@1\% & 0.8030 & 0.7802 & 0.2725 & 0.1315 & 0.1888 \\
+Crawling2024 & IDN homoglyph host (punycode) & BiGRU character model & val\_maxfpr@1\% & 0.8030 & 0.6767 & 0.2020 & 0.1185 & 0.1353 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8097 & 0.9915 & 0.8485 & 0.0650 & 0.5103 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8097 & 0.8732 & 0.4733 & 0.1370 & 0.3455 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8097 & 0.8237 & 0.3900 & 0.1352 & 0.2878 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.7046 & 0.9882 & 0.8875 & 0.0890 & 0.5717 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.7046 & 0.8060 & 0.5633 & 0.1630 & 0.4575 \\
+Crawling2024 & IDN homoglyph host (punycode) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.7046 & 0.7060 & 0.4480 & 0.1560 & 0.3715 \\
+Crawling2024 & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8761 & 0.9955 & 0.8888 & 0.0425 & 0.4233 \\
+Crawling2024 & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8761 & 0.8015 & 0.1713 & 0.0577 & 0.0900 \\
+Crawling2024 & IDN homoglyph host (punycode) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8761 & 0.4427 & 0.0460 & -0.0233 & 0.0135 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X2 stack (P) & val\_mcc & 0.8985 & 0.9520 & 0.4427 & -0.0023 & -0.0153 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8985 & 0.6505 & 0.0760 & -0.0635 & -0.0285 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8985 & 0.5000 & 0.0470 & -0.0767 & -0.0245 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_mcc & 0.8957 & 0.9197 & 0.3757 & -0.0178 & -0.0495 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8957 & 0.6112 & 0.0602 & -0.0813 & -0.0302 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8957 & 0.5527 & 0.0440 & -0.0910 & -0.0312 \\
+Crawling2024 & percent-encoded path characters & BiGRU tuned & val\_mcc & 0.9065 & 0.9095 & 0.2905 & -0.0018 & -0.0118 \\
+Crawling2024 & percent-encoded path characters & BiGRU tuned & val\_fpr@1\% & 0.9065 & 0.6605 & 0.0638 & -0.0615 & -0.0440 \\
+Crawling2024 & percent-encoded path characters & BiGRU tuned & val\_maxfpr@1\% & 0.9065 & 0.5717 & 0.0445 & -0.0690 & -0.0383 \\
+Crawling2024 & percent-encoded path characters & URLNet tuned & val\_mcc & 0.8736 & 0.9377 & 0.4895 & -0.0015 & 0.0285 \\
+Crawling2024 & percent-encoded path characters & URLNet tuned & val\_fpr@1\% & 0.8736 & 0.4430 & 0.0352 & -0.2032 & -0.0693 \\
+Crawling2024 & percent-encoded path characters & URLNet tuned & val\_maxfpr@1\% & 0.8736 & 0.2050 & 0.0013 & -0.1747 & -0.0417 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) tuned & val\_mcc & 0.7868 & 0.7950 & 0.4813 & -0.1075 & -0.0160 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) tuned & val\_fpr@1\% & 0.7868 & 0.4278 & 0.0480 & -0.0850 & -0.0065 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7868 & 0.3822 & 0.0275 & -0.0668 & -0.0077 \\
+Crawling2024 & percent-encoded path characters & LightGBM + n-grams tuned & val\_mcc & 0.8578 & 0.9320 & 0.5300 & -0.0115 & -0.0167 \\
+Crawling2024 & percent-encoded path characters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8578 & 0.6613 & 0.1138 & -0.0697 & -0.0268 \\
+Crawling2024 & percent-encoded path characters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8578 & 0.5337 & 0.0798 & -0.0773 & -0.0222 \\
+Crawling2024 & percent-encoded path characters & char n-gram LR tuned & val\_mcc & 0.8787 & 0.9250 & 0.4805 & 0.0110 & 0.0832 \\
+Crawling2024 & percent-encoded path characters & char n-gram LR tuned & val\_fpr@1\% & 0.8787 & 0.7625 & 0.1295 & 0.0065 & -0.0013 \\
+Crawling2024 & percent-encoded path characters & char n-gram LR tuned & val\_maxfpr@1\% & 0.8787 & 0.6178 & 0.0663 & 0.0060 & -0.0067 \\
+Crawling2024 & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8958 & 0.9430 & 0.3842 & 0.0015 & -0.0100 \\
+Crawling2024 & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8958 & 0.6475 & 0.0820 & -0.0615 & -0.0287 \\
+Crawling2024 & percent-encoded path characters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8958 & 0.4810 & 0.0480 & -0.0725 & -0.0267 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9009 & 0.9493 & 0.4703 & -0.0025 & -0.0100 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9009 & 0.6295 & 0.0688 & -0.0848 & -0.0297 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9009 & 0.5972 & 0.0597 & -0.0938 & -0.0335 \\
+Crawling2024 & percent-encoded path characters & BiGRU-KD tuned & val\_mcc & 0.9065 & 0.9253 & 0.3162 & 0.0002 & -0.0090 \\
+Crawling2024 & percent-encoded path characters & BiGRU-KD tuned & val\_fpr@1\% & 0.9065 & 0.6633 & 0.0722 & -0.0607 & -0.0443 \\
+Crawling2024 & percent-encoded path characters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9065 & 0.5038 & 0.0377 & -0.0757 & -0.0448 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X (P) & val\_mcc & 0.9100 & 0.9305 & 0.3718 & -0.0222 & -0.0545 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X (P) & val\_fpr@1\% & 0.9100 & 0.6178 & 0.0450 & -0.1455 & -0.0375 \\
+Crawling2024 & percent-encoded path characters & ADAPT-X (P) & val\_maxfpr@1\% & 0.9100 & 0.4743 & 0.0195 & -0.1245 & -0.0228 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH (P) & val\_mcc & 0.8665 & 0.7940 & 0.1830 & -0.0890 & -0.0590 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8665 & 0.5327 & 0.0535 & -0.1283 & -0.0240 \\
+Crawling2024 & percent-encoded path characters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8665 & 0.4723 & 0.0390 & -0.1103 & -0.0147 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) & val\_mcc & 0.7792 & 0.7562 & 0.4062 & -0.1245 & -0.0262 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) & val\_fpr@1\% & 0.7792 & 0.4078 & 0.0495 & -0.0737 & -0.0030 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) & val\_maxfpr@1\% & 0.7792 & 0.3625 & 0.0293 & -0.0590 & -0.0020 \\
+Crawling2024 & percent-encoded path characters & char-LR & val\_mcc & 0.8964 & 0.9135 & 0.3608 & -0.0092 & -0.0415 \\
+Crawling2024 & percent-encoded path characters & char-LR & val\_fpr@1\% & 0.8964 & 0.6070 & 0.0505 & -0.1142 & -0.0377 \\
+Crawling2024 & percent-encoded path characters & char-LR & val\_maxfpr@1\% & 0.8964 & 0.4600 & 0.0262 & -0.1275 & -0.0320 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8703 & 0.9307 & 0.4530 & 0.0012 & 0.0020 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8703 & 0.6530 & 0.1032 & -0.0725 & -0.0203 \\
+Crawling2024 & percent-encoded path characters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8703 & 0.4680 & 0.0565 & -0.0675 & -0.0207 \\
+Crawling2024 & percent-encoded path characters & URLNet-style char+word CNN & val\_mcc & 0.8657 & 0.9008 & 0.3915 & -0.0045 & 0.0160 \\
+Crawling2024 & percent-encoded path characters & URLNet-style char+word CNN & val\_fpr@1\% & 0.8657 & 0.4487 & 0.0382 & -0.2033 & -0.0723 \\
+Crawling2024 & percent-encoded path characters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8657 & 0.2060 & 0.0010 & -0.1777 & -0.0445 \\
+Crawling2024 & percent-encoded path characters & BiGRU character model & val\_mcc & 0.9101 & 0.9073 & 0.2645 & -0.0122 & -0.0312 \\
+Crawling2024 & percent-encoded path characters & BiGRU character model & val\_fpr@1\% & 0.9101 & 0.5343 & 0.0357 & -0.1145 & -0.0480 \\
+Crawling2024 & percent-encoded path characters & BiGRU character model & val\_maxfpr@1\% & 0.9101 & 0.4465 & 0.0222 & -0.1118 & -0.0445 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8850 & 0.8452 & 0.2560 & -0.0813 & -0.0822 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8850 & 0.5890 & 0.0590 & -0.1472 & -0.0688 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8850 & 0.5487 & 0.0445 & -0.1398 & -0.0577 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8748 & 0.8237 & 0.2362 & -0.0755 & -0.0795 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8748 & 0.4850 & 0.0415 & -0.1580 & -0.0643 \\
+Crawling2024 & percent-encoded path characters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8748 & 0.4108 & 0.0238 & -0.1393 & -0.0527 \\
+Crawling2024 & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8983 & 0.9455 & 0.4382 & -0.0075 & -0.0273 \\
+Crawling2024 & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8983 & 0.5785 & 0.0505 & -0.1653 & -0.0307 \\
+Crawling2024 & percent-encoded path characters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8983 & 0.3820 & 0.0118 & -0.0840 & -0.0208 \\
+Crawling2024 & extra query parameters & ADAPT-X2 stack (P) & val\_mcc & 0.8933 & 0.9962 & 0.8920 & 0.0420 & 0.4340 \\
+Crawling2024 & extra query parameters & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8933 & 0.8622 & 0.1900 & 0.1482 & 0.0855 \\
+Crawling2024 & extra query parameters & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8933 & 0.7605 & 0.1095 & 0.1837 & 0.0380 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2 (P) & val\_mcc & 0.8803 & 0.9920 & 0.8602 & 0.0545 & 0.4350 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8803 & 0.8237 & 0.2055 & 0.1312 & 0.1150 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8803 & 0.7738 & 0.1467 & 0.1300 & 0.0715 \\
+Crawling2024 & extra query parameters & BiGRU tuned & val\_mcc & 0.8840 & 0.9507 & 0.5140 & 0.0395 & 0.2117 \\
+Crawling2024 & extra query parameters & BiGRU tuned & val\_fpr@1\% & 0.8840 & 0.6993 & 0.1003 & -0.0227 & -0.0075 \\
+Crawling2024 & extra query parameters & BiGRU tuned & val\_maxfpr@1\% & 0.8840 & 0.5972 & 0.0717 & -0.0435 & -0.0110 \\
+Crawling2024 & extra query parameters & URLNet tuned & val\_mcc & 0.8287 & 0.9995 & 0.9815 & 0.0603 & 0.5205 \\
+Crawling2024 & extra query parameters & URLNet tuned & val\_fpr@1\% & 0.8287 & 0.6392 & 0.1505 & -0.0070 & 0.0460 \\
+Crawling2024 & extra query parameters & URLNet tuned & val\_maxfpr@1\% & 0.8287 & 0.1745 & 0.0335 & -0.2052 & -0.0095 \\
+Crawling2024 & extra query parameters & LightGBM (P) tuned & val\_mcc & 0.7893 & 0.9882 & 0.9360 & 0.0857 & 0.4388 \\
+Crawling2024 & extra query parameters & LightGBM (P) tuned & val\_fpr@1\% & 0.7893 & 0.6220 & 0.1207 & 0.1092 & 0.0663 \\
+Crawling2024 & extra query parameters & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7893 & 0.5390 & 0.0670 & 0.0900 & 0.0318 \\
+Crawling2024 & extra query parameters & LightGBM + n-grams tuned & val\_mcc & 0.8630 & 0.9978 & 0.8942 & 0.0543 & 0.3475 \\
+Crawling2024 & extra query parameters & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8630 & 0.9197 & 0.4497 & 0.1887 & 0.3092 \\
+Crawling2024 & extra query parameters & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8630 & 0.8505 & 0.2687 & 0.2395 & 0.1668 \\
+Crawling2024 & extra query parameters & char n-gram LR tuned & val\_mcc & 0.8847 & 0.9965 & 0.9080 & 0.0825 & 0.5108 \\
+Crawling2024 & extra query parameters & char n-gram LR tuned & val\_fpr@1\% & 0.8847 & 0.8988 & 0.3623 & 0.1428 & 0.2315 \\
+Crawling2024 & extra query parameters & char n-gram LR tuned & val\_maxfpr@1\% & 0.8847 & 0.7808 & 0.1245 & 0.1690 & 0.0515 \\
+Crawling2024 & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8915 & 0.9952 & 0.8618 & 0.0537 & 0.4675 \\
+Crawling2024 & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8915 & 0.8502 & 0.1815 & 0.1412 & 0.0707 \\
+Crawling2024 & extra query parameters & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8915 & 0.7372 & 0.1032 & 0.1837 & 0.0285 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8715 & 0.9920 & 0.8738 & 0.0403 & 0.3935 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8715 & 0.8035 & 0.1970 & 0.0892 & 0.0985 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8715 & 0.7837 & 0.1710 & 0.0927 & 0.0778 \\
+Crawling2024 & extra query parameters & BiGRU-KD tuned & val\_mcc & 0.8811 & 0.9945 & 0.8832 & 0.0695 & 0.5580 \\
+Crawling2024 & extra query parameters & BiGRU-KD tuned & val\_fpr@1\% & 0.8811 & 0.9187 & 0.3745 & 0.1947 & 0.2580 \\
+Crawling2024 & extra query parameters & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8811 & 0.8195 & 0.1820 & 0.2400 & 0.0995 \\
+Crawling2024 & extra query parameters & ADAPT-X (P) & val\_mcc & 0.9010 & 0.9988 & 0.9535 & 0.0460 & 0.5272 \\
+Crawling2024 & extra query parameters & ADAPT-X (P) & val\_fpr@1\% & 0.9010 & 0.9335 & 0.4795 & 0.1703 & 0.3970 \\
+Crawling2024 & extra query parameters & ADAPT-X (P) & val\_maxfpr@1\% & 0.9010 & 0.8023 & 0.1205 & 0.2035 & 0.0782 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH (P) & val\_mcc & 0.8260 & 0.9702 & 0.8245 & 0.0872 & 0.5825 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8260 & 0.8005 & 0.3310 & 0.1395 & 0.2535 \\
+Crawling2024 & extra query parameters & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8260 & 0.7105 & 0.1837 & 0.1280 & 0.1300 \\
+Crawling2024 & extra query parameters & LightGBM (P) & val\_mcc & 0.7915 & 0.9782 & 0.8925 & 0.0975 & 0.4600 \\
+Crawling2024 & extra query parameters & LightGBM (P) & val\_fpr@1\% & 0.7915 & 0.6068 & 0.1130 & 0.1253 & 0.0605 \\
+Crawling2024 & extra query parameters & LightGBM (P) & val\_maxfpr@1\% & 0.7915 & 0.5228 & 0.0638 & 0.1013 & 0.0325 \\
+Crawling2024 & extra query parameters & char-LR & val\_mcc & 0.8732 & 0.9950 & 0.8692 & 0.0723 & 0.4670 \\
+Crawling2024 & extra query parameters & char-LR & val\_fpr@1\% & 0.8732 & 0.8940 & 0.4073 & 0.1728 & 0.3190 \\
+Crawling2024 & extra query parameters & char-LR & val\_maxfpr@1\% & 0.8732 & 0.8213 & 0.2420 & 0.2338 & 0.1837 \\
+Crawling2024 & extra query parameters & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8566 & 0.9975 & 0.9120 & 0.0680 & 0.4610 \\
+Crawling2024 & extra query parameters & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8566 & 0.9253 & 0.4878 & 0.1997 & 0.3643 \\
+Crawling2024 & extra query parameters & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8566 & 0.7887 & 0.2070 & 0.2532 & 0.1297 \\
+Crawling2024 & extra query parameters & URLNet-style char+word CNN & val\_mcc & 0.8237 & 0.9955 & 0.9487 & 0.0903 & 0.5733 \\
+Crawling2024 & extra query parameters & URLNet-style char+word CNN & val\_fpr@1\% & 0.8237 & 0.6352 & 0.1445 & -0.0168 & 0.0340 \\
+Crawling2024 & extra query parameters & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8237 & 0.1948 & 0.0375 & -0.1890 & -0.0080 \\
+Crawling2024 & extra query parameters & BiGRU character model & val\_mcc & 0.8795 & 0.9805 & 0.7582 & 0.0610 & 0.4625 \\
+Crawling2024 & extra query parameters & BiGRU character model & val\_fpr@1\% & 0.8795 & 0.7595 & 0.1455 & 0.1107 & 0.0617 \\
+Crawling2024 & extra query parameters & BiGRU character model & val\_maxfpr@1\% & 0.8795 & 0.6783 & 0.1042 & 0.1200 & 0.0375 \\
+Crawling2024 & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8554 & 0.9520 & 0.6085 & 0.0255 & 0.2703 \\
+Crawling2024 & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8554 & 0.7810 & 0.2380 & 0.0448 & 0.1102 \\
+Crawling2024 & extra query parameters & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8554 & 0.7208 & 0.1737 & 0.0323 & 0.0715 \\
+Crawling2024 & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8630 & 0.9583 & 0.5480 & 0.0590 & 0.2323 \\
+Crawling2024 & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8630 & 0.6753 & 0.1445 & 0.0323 & 0.0387 \\
+Crawling2024 & extra query parameters & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8630 & 0.5960 & 0.1010 & 0.0460 & 0.0245 \\
+Crawling2024 & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8998 & 0.9990 & 0.9560 & 0.0460 & 0.4905 \\
+Crawling2024 & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8998 & 0.9145 & 0.4253 & 0.1707 & 0.3440 \\
+Crawling2024 & extra query parameters & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8998 & 0.6945 & 0.0555 & 0.2285 & 0.0230 \\
+Crawling2024 & random case in path & ADAPT-X2 stack (P) & val\_mcc & 0.8901 & 0.9613 & 0.5145 & 0.0070 & 0.0565 \\
+Crawling2024 & random case in path & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8901 & 0.7875 & 0.1260 & 0.0735 & 0.0215 \\
+Crawling2024 & random case in path & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8901 & 0.6623 & 0.0862 & 0.0855 & 0.0147 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2 (P) & val\_mcc & 0.9026 & 0.9440 & 0.4517 & 0.0065 & 0.0265 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.9026 & 0.7538 & 0.1000 & 0.0613 & 0.0095 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.9026 & 0.7165 & 0.0818 & 0.0727 & 0.0065 \\
+Crawling2024 & random case in path & BiGRU tuned & val\_mcc & 0.9009 & 0.9145 & 0.3225 & 0.0032 & 0.0202 \\
+Crawling2024 & random case in path & BiGRU tuned & val\_fpr@1\% & 0.9009 & 0.7502 & 0.0983 & 0.0282 & -0.0095 \\
+Crawling2024 & random case in path & BiGRU tuned & val\_maxfpr@1\% & 0.9009 & 0.6937 & 0.0742 & 0.0530 & -0.0085 \\
+Crawling2024 & random case in path & URLNet tuned & val\_mcc & 0.8478 & 0.9475 & 0.5315 & 0.0082 & 0.0705 \\
+Crawling2024 & random case in path & URLNet tuned & val\_fpr@1\% & 0.8478 & 0.6845 & 0.1600 & 0.0383 & 0.0555 \\
+Crawling2024 & random case in path & URLNet tuned & val\_maxfpr@1\% & 0.8478 & 0.4400 & 0.0615 & 0.0603 & 0.0185 \\
+Crawling2024 & random case in path & LightGBM (P) tuned & val\_mcc & 0.8355 & 0.9153 & 0.5827 & 0.0128 & 0.0855 \\
+Crawling2024 & random case in path & LightGBM (P) tuned & val\_fpr@1\% & 0.8355 & 0.6188 & 0.1022 & 0.1060 & 0.0477 \\
+Crawling2024 & random case in path & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8355 & 0.5640 & 0.0727 & 0.1150 & 0.0375 \\
+Crawling2024 & random case in path & LightGBM + n-grams tuned & val\_mcc & 0.8440 & 0.9590 & 0.6388 & 0.0155 & 0.0920 \\
+Crawling2024 & random case in path & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8440 & 0.8155 & 0.2213 & 0.0845 & 0.0807 \\
+Crawling2024 & random case in path & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8440 & 0.7115 & 0.1705 & 0.1005 & 0.0685 \\
+Crawling2024 & random case in path & char n-gram LR tuned & val\_mcc & 0.8746 & 0.9140 & 0.3972 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & char n-gram LR tuned & val\_fpr@1\% & 0.8746 & 0.7560 & 0.1308 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & char n-gram LR tuned & val\_maxfpr@1\% & 0.8746 & 0.6118 & 0.0730 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8835 & 0.9500 & 0.4622 & 0.0085 & 0.0680 \\
+Crawling2024 & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8835 & 0.7860 & 0.1385 & 0.0770 & 0.0278 \\
+Crawling2024 & random case in path & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8835 & 0.6438 & 0.0910 & 0.0903 & 0.0163 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.9064 & 0.9590 & 0.5085 & 0.0072 & 0.0282 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.9064 & 0.7712 & 0.1062 & 0.0570 & 0.0077 \\
+Crawling2024 & random case in path & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.9064 & 0.7545 & 0.0968 & 0.0635 & 0.0035 \\
+Crawling2024 & random case in path & BiGRU-KD tuned & val\_mcc & 0.9019 & 0.9353 & 0.3603 & 0.0102 & 0.0350 \\
+Crawling2024 & random case in path & BiGRU-KD tuned & val\_fpr@1\% & 0.9019 & 0.7780 & 0.1070 & 0.0540 & -0.0095 \\
+Crawling2024 & random case in path & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9019 & 0.6595 & 0.0720 & 0.0800 & -0.0105 \\
+Crawling2024 & random case in path & ADAPT-X (P) & val\_mcc & 0.9058 & 0.9585 & 0.4948 & 0.0058 & 0.0685 \\
+Crawling2024 & random case in path & ADAPT-X (P) & val\_fpr@1\% & 0.9058 & 0.8015 & 0.1163 & 0.0383 & 0.0338 \\
+Crawling2024 & random case in path & ADAPT-X (P) & val\_maxfpr@1\% & 0.9058 & 0.6697 & 0.0610 & 0.0710 & 0.0187 \\
+Crawling2024 & random case in path & ADAPT-PHISH (P) & val\_mcc & 0.8683 & 0.9087 & 0.3618 & 0.0257 & 0.1198 \\
+Crawling2024 & random case in path & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8683 & 0.7432 & 0.1625 & 0.0822 & 0.0850 \\
+Crawling2024 & random case in path & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8683 & 0.6803 & 0.1250 & 0.0978 & 0.0713 \\
+Crawling2024 & random case in path & LightGBM (P) & val\_mcc & 0.8320 & 0.8952 & 0.5122 & 0.0145 & 0.0797 \\
+Crawling2024 & random case in path & LightGBM (P) & val\_fpr@1\% & 0.8320 & 0.5915 & 0.0948 & 0.1100 & 0.0423 \\
+Crawling2024 & random case in path & LightGBM (P) & val\_maxfpr@1\% & 0.8320 & 0.5397 & 0.0693 & 0.1182 & 0.0380 \\
+Crawling2024 & random case in path & char-LR & val\_mcc & 0.8869 & 0.9227 & 0.4022 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & char-LR & val\_fpr@1\% & 0.8869 & 0.7212 & 0.0882 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & char-LR & val\_maxfpr@1\% & 0.8869 & 0.5875 & 0.0583 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8661 & 0.9470 & 0.5353 & 0.0175 & 0.0842 \\
+Crawling2024 & random case in path & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8661 & 0.8195 & 0.1867 & 0.0940 & 0.0633 \\
+Crawling2024 & random case in path & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8661 & 0.6518 & 0.1138 & 0.1163 & 0.0365 \\
+Crawling2024 & random case in path & URLNet-style char+word CNN & val\_mcc & 0.8392 & 0.9157 & 0.4522 & 0.0105 & 0.0767 \\
+Crawling2024 & random case in path & URLNet-style char+word CNN & val\_fpr@1\% & 0.8392 & 0.6855 & 0.1703 & 0.0335 & 0.0598 \\
+Crawling2024 & random case in path & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.8392 & 0.4425 & 0.0670 & 0.0588 & 0.0215 \\
+Crawling2024 & random case in path & BiGRU character model & val\_mcc & 0.8875 & 0.9323 & 0.3635 & 0.0128 & 0.0677 \\
+Crawling2024 & random case in path & BiGRU character model & val\_fpr@1\% & 0.8875 & 0.7250 & 0.1145 & 0.0762 & 0.0307 \\
+Crawling2024 & random case in path & BiGRU character model & val\_maxfpr@1\% & 0.8875 & 0.6570 & 0.0907 & 0.0988 & 0.0240 \\
+Crawling2024 & random case in path & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8594 & 0.9483 & 0.5105 & 0.0218 & 0.1722 \\
+Crawling2024 & random case in path & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8594 & 0.8343 & 0.2908 & 0.0980 & 0.1630 \\
+Crawling2024 & random case in path & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8594 & 0.7983 & 0.2540 & 0.1098 & 0.1517 \\
+Crawling2024 & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.8813 & 0.8992 & 0.3157 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.8813 & 0.6430 & 0.1057 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.8813 & 0.5500 & 0.0765 & 0.0000 & 0.0000 \\
+Crawling2024 & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9033 & 0.9597 & 0.5112 & 0.0068 & 0.0457 \\
+Crawling2024 & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9033 & 0.7638 & 0.1037 & 0.0200 & 0.0225 \\
+Crawling2024 & random case in path & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9033 & 0.5553 & 0.0413 & 0.0892 & 0.0088 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_mcc & 0.8620 & 0.9980 & 0.9625 & 0.0437 & 0.5045 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8620 & 0.8600 & 0.2647 & 0.1460 & 0.1603 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8620 & 0.7498 & 0.1530 & 0.1730 & 0.0815 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8492 & 1.0000 & 0.9885 & 0.0625 & 0.5633 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8492 & 0.9500 & 0.6915 & 0.2575 & 0.6010 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8492 & 0.9237 & 0.5583 & 0.2800 & 0.4830 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU tuned & val\_mcc & 0.8407 & 0.9922 & 0.9157 & 0.0810 & 0.6135 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU tuned & val\_fpr@1\% & 0.8407 & 0.8605 & 0.3222 & 0.1385 & 0.2145 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU tuned & val\_maxfpr@1\% & 0.8407 & 0.7897 & 0.2263 & 0.1490 & 0.1435 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet tuned & val\_mcc & 0.7793 & 0.9440 & 0.7515 & 0.0047 & 0.2905 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet tuned & val\_fpr@1\% & 0.7793 & 0.4542 & 0.1105 & -0.1920 & 0.0060 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet tuned & val\_maxfpr@1\% & 0.7793 & 0.1113 & 0.0380 & -0.2685 & -0.0050 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_mcc & 0.7989 & 0.9972 & 0.9535 & 0.0948 & 0.4562 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_fpr@1\% & 0.7989 & 0.8113 & 0.4647 & 0.2985 & 0.4103 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7989 & 0.7222 & 0.2762 & 0.2732 & 0.2410 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_mcc & 0.8357 & 0.9912 & 0.8600 & 0.0477 & 0.3133 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8357 & 0.8220 & 0.2615 & 0.0910 & 0.1210 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8357 & 0.7200 & 0.1762 & 0.1090 & 0.0742 \\
+Crawling2024 & userinfo prefix (@ trick) & char n-gram LR tuned & val\_mcc & 0.8579 & 0.9427 & 0.5633 & 0.0287 & 0.1660 \\
+Crawling2024 & userinfo prefix (@ trick) & char n-gram LR tuned & val\_fpr@1\% & 0.8579 & 0.7592 & 0.1530 & 0.0032 & 0.0222 \\
+Crawling2024 & userinfo prefix (@ trick) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8579 & 0.6028 & 0.0850 & -0.0090 & 0.0120 \\
+Crawling2024 & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8573 & 0.9955 & 0.9230 & 0.0540 & 0.5288 \\
+Crawling2024 & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8573 & 0.8320 & 0.2260 & 0.1230 & 0.1153 \\
+Crawling2024 & userinfo prefix (@ trick) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8573 & 0.6840 & 0.1335 & 0.1305 & 0.0588 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8610 & 0.9998 & 0.9850 & 0.0480 & 0.5048 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8610 & 0.9225 & 0.4622 & 0.2082 & 0.3638 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8610 & 0.9052 & 0.4017 & 0.2143 & 0.3085 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_mcc & 0.8428 & 0.9885 & 0.8638 & 0.0635 & 0.5385 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_fpr@1\% & 0.8428 & 0.8010 & 0.2208 & 0.0770 & 0.1042 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8428 & 0.6478 & 0.1415 & 0.0683 & 0.0590 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X (P) & val\_mcc & 0.8894 & 0.9972 & 0.9333 & 0.0445 & 0.5070 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X (P) & val\_fpr@1\% & 0.8894 & 0.8295 & 0.1698 & 0.0663 & 0.0873 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-X (P) & val\_maxfpr@1\% & 0.8894 & 0.6643 & 0.0683 & 0.0655 & 0.0260 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_mcc & 0.7984 & 0.9972 & 0.9855 & 0.1142 & 0.7435 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.7984 & 0.9363 & 0.7502 & 0.2752 & 0.6727 \\
+Crawling2024 & userinfo prefix (@ trick) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.7984 & 0.8585 & 0.5002 & 0.2760 & 0.4465 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) & val\_mcc & 0.7950 & 0.9940 & 0.9237 & 0.1132 & 0.4912 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) & val\_fpr@1\% & 0.7950 & 0.7827 & 0.4163 & 0.3012 & 0.3638 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) & val\_maxfpr@1\% & 0.7950 & 0.6685 & 0.2213 & 0.2470 & 0.1900 \\
+Crawling2024 & userinfo prefix (@ trick) & char-LR & val\_mcc & 0.8739 & 0.8920 & 0.3240 & -0.0307 & -0.0782 \\
+Crawling2024 & userinfo prefix (@ trick) & char-LR & val\_fpr@1\% & 0.8739 & 0.5445 & 0.0622 & -0.1767 & -0.0260 \\
+Crawling2024 & userinfo prefix (@ trick) & char-LR & val\_maxfpr@1\% & 0.8739 & 0.3680 & 0.0420 & -0.2195 & -0.0163 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8346 & 0.9848 & 0.8193 & 0.0553 & 0.3683 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8346 & 0.7735 & 0.1983 & 0.0480 & 0.0748 \\
+Crawling2024 & userinfo prefix (@ trick) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8346 & 0.5343 & 0.0945 & -0.0012 & 0.0173 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_mcc & 0.7737 & 0.8502 & 0.4487 & -0.0550 & 0.0732 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_fpr@1\% & 0.7737 & 0.3685 & 0.0940 & -0.2835 & -0.0165 \\
+Crawling2024 & userinfo prefix (@ trick) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.7737 & 0.0993 & 0.0350 & -0.2845 & -0.0105 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU character model & val\_mcc & 0.8304 & 0.9852 & 0.8558 & 0.0657 & 0.5600 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU character model & val\_fpr@1\% & 0.8304 & 0.7395 & 0.1975 & 0.0907 & 0.1138 \\
+Crawling2024 & userinfo prefix (@ trick) & BiGRU character model & val\_maxfpr@1\% & 0.8304 & 0.6352 & 0.1490 & 0.0770 & 0.0822 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8250 & 0.7278 & 0.1978 & -0.1987 & -0.1405 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8250 & 0.4233 & 0.0780 & -0.3130 & -0.0498 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8250 & 0.3500 & 0.0570 & -0.3385 & -0.0452 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.7895 & 0.6098 & 0.2115 & -0.2895 & -0.1042 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.7895 & 0.2795 & 0.0548 & -0.3635 & -0.0510 \\
+Crawling2024 & userinfo prefix (@ trick) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.7895 & 0.2182 & 0.0345 & -0.3318 & -0.0420 \\
+Crawling2024 & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8993 & 0.9922 & 0.8672 & 0.0393 & 0.4017 \\
+Crawling2024 & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8993 & 0.8033 & 0.1190 & 0.0595 & 0.0377 \\
+Crawling2024 & userinfo prefix (@ trick) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8993 & 0.4835 & 0.0387 & 0.0175 & 0.0062 \\
+Crawling2024 & host only (path removed) & ADAPT-X2 stack (P) & val\_mcc & 0.8978 & 0.8558 & 0.2782 & -0.0985 & -0.1798 \\
+Crawling2024 & host only (path removed) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8978 & 0.4875 & 0.0020 & -0.2265 & -0.1025 \\
+Crawling2024 & host only (path removed) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8978 & 0.4188 & 0.0008 & -0.1580 & -0.0707 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8561 & 0.7342 & 0.2032 & -0.2033 & -0.2220 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8561 & 0.4685 & 0.0020 & -0.2240 & -0.0885 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8561 & 0.4432 & 0.0010 & -0.2005 & -0.0742 \\
+Crawling2024 & host only (path removed) & BiGRU tuned & val\_mcc & 0.8881 & 0.6525 & 0.0558 & -0.2588 & -0.2465 \\
+Crawling2024 & host only (path removed) & BiGRU tuned & val\_fpr@1\% & 0.8881 & 0.4652 & 0.0025 & -0.2567 & -0.1052 \\
+Crawling2024 & host only (path removed) & BiGRU tuned & val\_maxfpr@1\% & 0.8881 & 0.4253 & 0.0018 & -0.2155 & -0.0810 \\
+Crawling2024 & host only (path removed) & URLNet tuned & val\_mcc & 0.9187 & 0.8522 & 0.1680 & -0.0870 & -0.2930 \\
+Crawling2024 & host only (path removed) & URLNet tuned & val\_fpr@1\% & 0.9187 & 0.3842 & 0.0018 & -0.2620 & -0.1027 \\
+Crawling2024 & host only (path removed) & URLNet tuned & val\_maxfpr@1\% & 0.9187 & 0.2273 & 0.0000 & -0.1525 & -0.0430 \\
+Crawling2024 & host only (path removed) & LightGBM (P) tuned & val\_mcc & 0.8252 & 0.8295 & 0.4098 & -0.0730 & -0.0875 \\
+Crawling2024 & host only (path removed) & LightGBM (P) tuned & val\_fpr@1\% & 0.8252 & 0.3812 & 0.0077 & -0.1315 & -0.0467 \\
+Crawling2024 & host only (path removed) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.8252 & 0.3345 & 0.0030 & -0.1145 & -0.0322 \\
+Crawling2024 & host only (path removed) & LightGBM + n-grams tuned & val\_mcc & 0.8706 & 0.8995 & 0.4285 & -0.0440 & -0.1182 \\
+Crawling2024 & host only (path removed) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8706 & 0.5188 & 0.0125 & -0.2122 & -0.1280 \\
+Crawling2024 & host only (path removed) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8706 & 0.4655 & 0.0057 & -0.1455 & -0.0962 \\
+Crawling2024 & host only (path removed) & char n-gram LR tuned & val\_mcc & 0.8873 & 0.7760 & 0.1913 & -0.1380 & -0.2060 \\
+Crawling2024 & host only (path removed) & char n-gram LR tuned & val\_fpr@1\% & 0.8873 & 0.5312 & 0.0145 & -0.2248 & -0.1163 \\
+Crawling2024 & host only (path removed) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8873 & 0.4407 & 0.0020 & -0.1710 & -0.0710 \\
+Crawling2024 & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.9022 & 0.8320 & 0.1923 & -0.1095 & -0.2020 \\
+Crawling2024 & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.9022 & 0.4890 & 0.0027 & -0.2200 & -0.1080 \\
+Crawling2024 & host only (path removed) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.9022 & 0.3942 & 0.0008 & -0.1593 & -0.0740 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8636 & 0.7925 & 0.2890 & -0.1593 & -0.1913 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8636 & 0.4637 & 0.0010 & -0.2505 & -0.0975 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8636 & 0.4515 & 0.0010 & -0.2395 & -0.0922 \\
+Crawling2024 & host only (path removed) & BiGRU-KD tuned & val\_mcc & 0.9040 & 0.7150 & 0.0870 & -0.2100 & -0.2382 \\
+Crawling2024 & host only (path removed) & BiGRU-KD tuned & val\_fpr@1\% & 0.9040 & 0.4790 & 0.0018 & -0.2450 & -0.1148 \\
+Crawling2024 & host only (path removed) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.9040 & 0.3877 & 0.0008 & -0.1918 & -0.0818 \\
+Crawling2024 & host only (path removed) & ADAPT-X (P) & val\_mcc & 0.9408 & 0.9135 & 0.2535 & -0.0393 & -0.1728 \\
+Crawling2024 & host only (path removed) & ADAPT-X (P) & val\_fpr@1\% & 0.9408 & 0.5803 & 0.0037 & -0.1830 & -0.0788 \\
+Crawling2024 & host only (path removed) & ADAPT-X (P) & val\_maxfpr@1\% & 0.9408 & 0.4320 & 0.0005 & -0.1668 & -0.0418 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH (P) & val\_mcc & 0.8854 & 0.7282 & 0.0765 & -0.1548 & -0.1655 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8854 & 0.4725 & 0.0053 & -0.1885 & -0.0722 \\
+Crawling2024 & host only (path removed) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8854 & 0.4198 & 0.0018 & -0.1628 & -0.0520 \\
+Crawling2024 & host only (path removed) & LightGBM (P) & val\_mcc & 0.8282 & 0.8075 & 0.3360 & -0.0733 & -0.0965 \\
+Crawling2024 & host only (path removed) & LightGBM (P) & val\_fpr@1\% & 0.8282 & 0.3498 & 0.0050 & -0.1317 & -0.0475 \\
+Crawling2024 & host only (path removed) & LightGBM (P) & val\_maxfpr@1\% & 0.8282 & 0.3165 & 0.0022 & -0.1050 & -0.0290 \\
+Crawling2024 & host only (path removed) & char-LR & val\_mcc & 0.9119 & 0.8765 & 0.2542 & -0.0463 & -0.1480 \\
+Crawling2024 & host only (path removed) & char-LR & val\_fpr@1\% & 0.9119 & 0.6128 & 0.0150 & -0.1085 & -0.0732 \\
+Crawling2024 & host only (path removed) & char-LR & val\_maxfpr@1\% & 0.9119 & 0.4693 & 0.0063 & -0.1183 & -0.0520 \\
+Crawling2024 & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8706 & 0.8545 & 0.3992 & -0.0750 & -0.0518 \\
+Crawling2024 & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8706 & 0.5228 & 0.0115 & -0.2027 & -0.1120 \\
+Crawling2024 & host only (path removed) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8706 & 0.4402 & 0.0025 & -0.0953 & -0.0747 \\
+Crawling2024 & host only (path removed) & URLNet-style char+word CNN & val\_mcc & 0.9193 & 0.7997 & 0.0745 & -0.1055 & -0.3010 \\
+Crawling2024 & host only (path removed) & URLNet-style char+word CNN & val\_fpr@1\% & 0.9193 & 0.3860 & 0.0013 & -0.2660 & -0.1092 \\
+Crawling2024 & host only (path removed) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.9193 & 0.2220 & 0.0000 & -0.1617 & -0.0455 \\
+Crawling2024 & host only (path removed) & BiGRU character model & val\_mcc & 0.8956 & 0.6640 & 0.0808 & -0.2555 & -0.2150 \\
+Crawling2024 & host only (path removed) & BiGRU character model & val\_fpr@1\% & 0.8956 & 0.4253 & 0.0013 & -0.2235 & -0.0825 \\
+Crawling2024 & host only (path removed) & BiGRU character model & val\_maxfpr@1\% & 0.8956 & 0.3680 & 0.0005 & -0.1903 & -0.0663 \\
+Crawling2024 & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.8660 & 0.8165 & 0.2218 & -0.1100 & -0.1165 \\
+Crawling2024 & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.8660 & 0.5142 & 0.0205 & -0.2220 & -0.1072 \\
+Crawling2024 & host only (path removed) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.8660 & 0.4730 & 0.0147 & -0.2155 & -0.0875 \\
+Crawling2024 & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.9082 & 0.7740 & 0.0885 & -0.1252 & -0.2272 \\
+Crawling2024 & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.9082 & 0.4602 & 0.0057 & -0.1828 & -0.1000 \\
+Crawling2024 & host only (path removed) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.9082 & 0.4027 & 0.0040 & -0.1473 & -0.0725 \\
+Crawling2024 & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.9352 & 0.9363 & 0.3458 & -0.0167 & -0.1198 \\
+Crawling2024 & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.9352 & 0.5810 & 0.0047 & -0.1628 & -0.0765 \\
+Crawling2024 & host only (path removed) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.9352 & 0.3620 & 0.0005 & -0.1040 & -0.0320 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_mcc & 0.8657 & 0.9470 & 0.4580 & -0.0073 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_fpr@1\% & 0.8657 & 0.6158 & 0.1045 & -0.0982 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X2 stack (P) & val\_maxfpr@1\% & 0.8657 & 0.4575 & 0.0715 & -0.1192 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_mcc & 0.8591 & 0.9113 & 0.4253 & -0.0262 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_fpr@1\% & 0.8591 & 0.5810 & 0.0905 & -0.1115 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2 (P) & val\_maxfpr@1\% & 0.8591 & 0.5208 & 0.0752 & -0.1230 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_mcc & 0.8536 & 0.8888 & 0.3023 & -0.0225 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_fpr@1\% & 0.8536 & 0.5683 & 0.1077 & -0.1537 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU tuned & val\_maxfpr@1\% & 0.8536 & 0.4552 & 0.0828 & -0.1855 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_mcc & 0.7669 & 0.9080 & 0.4610 & -0.0312 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_fpr@1\% & 0.7669 & 0.2205 & 0.1045 & -0.4257 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet tuned & val\_maxfpr@1\% & 0.7669 & 0.0203 & 0.0430 & -0.3595 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_mcc & 0.7667 & 0.7853 & 0.4973 & -0.1172 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_fpr@1\% & 0.7667 & 0.4035 & 0.0545 & -0.1093 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) tuned & val\_maxfpr@1\% & 0.7667 & 0.3573 & 0.0352 & -0.0917 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_mcc & 0.8160 & 0.9203 & 0.5467 & -0.0232 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_fpr@1\% & 0.8160 & 0.6112 & 0.1405 & -0.1198 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM + n-grams tuned & val\_maxfpr@1\% & 0.8160 & 0.4735 & 0.1020 & -0.1375 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_mcc & 0.8454 & 0.9070 & 0.3972 & -0.0070 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_fpr@1\% & 0.8454 & 0.6593 & 0.1308 & -0.0968 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char n-gram LR tuned & val\_maxfpr@1\% & 0.8454 & 0.4160 & 0.0730 & -0.1958 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_mcc & 0.8612 & 0.9343 & 0.3942 & -0.0072 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_fpr@1\% & 0.8612 & 0.6050 & 0.1108 & -0.1040 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Baseline stack (P): tuned baselines, no ADAPT & val\_maxfpr@1\% & 0.8612 & 0.4293 & 0.0747 & -0.1242 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_mcc & 0.8662 & 0.9410 & 0.4803 & -0.0108 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_fpr@1\% & 0.8662 & 0.5843 & 0.0985 & -0.1300 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH v2-KD (P) & val\_maxfpr@1\% & 0.8662 & 0.5523 & 0.0932 & -0.1387 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_mcc & 0.8598 & 0.9135 & 0.3252 & -0.0115 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_fpr@1\% & 0.8598 & 0.6248 & 0.1165 & -0.0992 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU-KD tuned & val\_maxfpr@1\% & 0.8598 & 0.4532 & 0.0825 & -0.1263 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_mcc & 0.8734 & 0.9273 & 0.4263 & -0.0255 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_fpr@1\% & 0.8734 & 0.5923 & 0.0825 & -0.1710 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-X (P) & val\_maxfpr@1\% & 0.8734 & 0.3905 & 0.0423 & -0.2082 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_mcc & 0.8257 & 0.7792 & 0.2420 & -0.1038 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_fpr@1\% & 0.8257 & 0.4875 & 0.0775 & -0.1735 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & ADAPT-PHISH (P) & val\_maxfpr@1\% & 0.8257 & 0.4220 & 0.0537 & -0.1605 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_mcc & 0.7578 & 0.7430 & 0.4325 & -0.1378 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_fpr@1\% & 0.7578 & 0.3827 & 0.0525 & -0.0988 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) & val\_maxfpr@1\% & 0.7578 & 0.3400 & 0.0312 & -0.0815 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_mcc & 0.8101 & 0.8705 & 0.4022 & -0.0522 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_fpr@1\% & 0.8101 & 0.3585 & 0.0882 & -0.3627 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & char-LR & val\_maxfpr@1\% & 0.8101 & 0.1840 & 0.0583 & -0.4035 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_mcc & 0.8318 & 0.9113 & 0.4510 & -0.0182 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_fpr@1\% & 0.8318 & 0.5948 & 0.1235 & -0.1308 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & LightGBM (P) + hashed char n-grams & val\_maxfpr@1\% & 0.8318 & 0.3815 & 0.0772 & -0.1540 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_mcc & 0.7427 & 0.8203 & 0.3755 & -0.0850 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_fpr@1\% & 0.7427 & 0.2037 & 0.1105 & -0.4483 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & URLNet-style char+word CNN & val\_maxfpr@1\% & 0.7427 & 0.0227 & 0.0455 & -0.3610 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_mcc & 0.8596 & 0.8938 & 0.2958 & -0.0257 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_fpr@1\% & 0.8596 & 0.4765 & 0.0838 & -0.1723 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & BiGRU character model & val\_maxfpr@1\% & 0.8596 & 0.3650 & 0.0668 & -0.1933 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_mcc & 0.7131 & 0.6488 & 0.3382 & -0.2777 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_fpr@1\% & 0.7131 & 0.3182 & 0.1278 & -0.4180 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/canine-s (fine-tuned) & val\_maxfpr@1\% & 0.7131 & 0.2587 & 0.1022 & -0.4298 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_mcc & 0.6810 & 0.5465 & 0.3157 & -0.3528 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_fpr@1\% & 0.6810 & 0.2003 & 0.1057 & -0.4427 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Pretrained google/bert\_uncased\_L-4\_H-256\_A-4 (fine-tuned) & val\_maxfpr@1\% & 0.6810 & 0.1375 & 0.0765 & -0.4125 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_mcc & 0.8659 & 0.9400 & 0.4655 & -0.0130 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_fpr@1\% & 0.8659 & 0.5375 & 0.0813 & -0.2063 & 0.0000 \\
+Crawling2024 & ADAPTIVE: per-model worst of 5 page-preserving rewrites (phishing only) & Simple stack (P): LightGBM + char-LR, no neural & val\_maxfpr@1\% & 0.8659 & 0.3215 & 0.0325 & -0.1445 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

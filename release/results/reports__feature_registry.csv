@@ -1,0 +1,623 @@
+dataset,feature,group,use
+Mendeley,length_url,B_native,enriched view E only
+Mendeley,length_hostname,B_native,enriched view E only
+Mendeley,ip,B_native,enriched view E only
+Mendeley,nb_dots,B_native,enriched view E only
+Mendeley,nb_hyphens,B_native,enriched view E only
+Mendeley,nb_at,B_native,enriched view E only
+Mendeley,nb_qm,B_native,enriched view E only
+Mendeley,nb_and,B_native,enriched view E only
+Mendeley,nb_or,B_native,enriched view E only
+Mendeley,nb_eq,B_native,enriched view E only
+Mendeley,nb_underscore,B_native,enriched view E only
+Mendeley,nb_tilde,B_native,enriched view E only
+Mendeley,nb_percent,B_native,enriched view E only
+Mendeley,nb_slash,B_native,enriched view E only
+Mendeley,nb_star,B_native,enriched view E only
+Mendeley,nb_colon,B_native,enriched view E only
+Mendeley,nb_comma,B_native,enriched view E only
+Mendeley,nb_semicolumn,B_native,enriched view E only
+Mendeley,nb_dollar,B_native,enriched view E only
+Mendeley,nb_space,B_native,enriched view E only
+Mendeley,nb_www,B_native,enriched view E only
+Mendeley,nb_com,B_native,enriched view E only
+Mendeley,nb_dslash,B_native,enriched view E only
+Mendeley,http_in_path,B_native,enriched view E only
+Mendeley,https_token,B_native,enriched view E only
+Mendeley,ratio_digits_url,B_native,enriched view E only
+Mendeley,ratio_digits_host,B_native,enriched view E only
+Mendeley,punycode,B_native,enriched view E only
+Mendeley,port,B_native,enriched view E only
+Mendeley,tld_in_path,B_native,enriched view E only
+Mendeley,tld_in_subdomain,B_native,enriched view E only
+Mendeley,abnormal_subdomain,B_native,enriched view E only
+Mendeley,nb_subdomains,B_native,enriched view E only
+Mendeley,prefix_suffix,B_native,enriched view E only
+Mendeley,random_domain,B_native,enriched view E only
+Mendeley,shortening_service,B_native,enriched view E only
+Mendeley,path_extension,B_native,enriched view E only
+Mendeley,nb_redirection,B_native,enriched view E only
+Mendeley,nb_external_redirection,B_native,enriched view E only
+Mendeley,length_words_raw,B_native,enriched view E only
+Mendeley,char_repeat,B_native,enriched view E only
+Mendeley,shortest_words_raw,B_native,enriched view E only
+Mendeley,shortest_word_host,B_native,enriched view E only
+Mendeley,shortest_word_path,B_native,enriched view E only
+Mendeley,longest_words_raw,B_native,enriched view E only
+Mendeley,longest_word_host,B_native,enriched view E only
+Mendeley,longest_word_path,B_native,enriched view E only
+Mendeley,avg_words_raw,B_native,enriched view E only
+Mendeley,avg_word_host,B_native,enriched view E only
+Mendeley,avg_word_path,B_native,enriched view E only
+Mendeley,phish_hints,B_native,enriched view E only
+Mendeley,domain_in_brand,B_native,enriched view E only
+Mendeley,brand_in_subdomain,B_native,enriched view E only
+Mendeley,brand_in_path,B_native,enriched view E only
+Mendeley,suspecious_tld,B_native,enriched view E only
+Mendeley,statistical_report,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,nb_hyperlinks,B_native,enriched view E only
+Mendeley,ratio_intHyperlinks,B_native,enriched view E only
+Mendeley,ratio_extHyperlinks,B_native,enriched view E only
+Mendeley,ratio_nullHyperlinks,B_native,enriched view E only
+Mendeley,nb_extCSS,B_native,enriched view E only
+Mendeley,ratio_intRedirection,B_native,enriched view E only
+Mendeley,ratio_extRedirection,B_native,enriched view E only
+Mendeley,ratio_intErrors,B_native,enriched view E only
+Mendeley,ratio_extErrors,B_native,enriched view E only
+Mendeley,login_form,B_native,enriched view E only
+Mendeley,external_favicon,B_native,enriched view E only
+Mendeley,links_in_tags,B_native,enriched view E only
+Mendeley,submit_email,B_native,enriched view E only
+Mendeley,ratio_intMedia,B_native,enriched view E only
+Mendeley,ratio_extMedia,B_native,enriched view E only
+Mendeley,sfh,B_native,enriched view E only
+Mendeley,iframe,B_native,enriched view E only
+Mendeley,popup_window,B_native,enriched view E only
+Mendeley,safe_anchor,B_native,enriched view E only
+Mendeley,onmouseover,B_native,enriched view E only
+Mendeley,right_clic,B_native,enriched view E only
+Mendeley,empty_title,B_native,enriched view E only
+Mendeley,domain_in_title,B_native,enriched view E only
+Mendeley,domain_with_copyright,B_native,enriched view E only
+Mendeley,whois_registered_domain,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,domain_registration_length,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,domain_age,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,web_traffic,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,dns_record,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,google_index,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,page_rank,C_third_party,"excluded from every main model (sensitivity run only, non-deployable)"
+Mendeley,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Mendeley,url::host_len,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::path_len,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::query_len,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::tld_len,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_dots,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Mendeley,url::n_question,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_equals,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_at,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_percent,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_digits,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Mendeley,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Mendeley,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Mendeley,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::has_scheme,A_canonical_url,excluded (shortcut control)
+Mendeley,url::is_https,A_canonical_url,ablation only
+Mendeley,url::ip_host,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::has_port,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::www_prefix,A_canonical_url,excluded (shortcut control)
+Mendeley,url::punycode,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::shortener,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::php_ext,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+Mendeley,url::host_entropy,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,ShannonEntropy,B_native,enriched view E only
+PhreshTrain,KolmogorovComplexity,B_native,enriched view E only
+PhreshTrain,FractalDimension,B_native,enriched view E only
+PhreshTrain,HexPatternCnt,B_native,enriched view E only
+PhreshTrain,Base64PatternCnt,B_native,enriched view E only
+PhreshTrain,LengthOfURL,B_native,enriched view E only
+PhreshTrain,DomainLengthOfURL,B_native,enriched view E only
+PhreshTrain,IsDomainIP,B_native,enriched view E only
+PhreshTrain,TLDLength,B_native,enriched view E only
+PhreshTrain,LetterCntInURL,B_native,enriched view E only
+PhreshTrain,URLLetterRatio,B_native,enriched view E only
+PhreshTrain,DigitCntInURL,B_native,enriched view E only
+PhreshTrain,URLDigitRatio,B_native,enriched view E only
+PhreshTrain,EqualCharCntInURL,B_native,enriched view E only
+PhreshTrain,QuesMarkCntInURL,B_native,enriched view E only
+PhreshTrain,AmpCharCntInURL,B_native,enriched view E only
+PhreshTrain,OtherSpclCharCntInURL,B_native,enriched view E only
+PhreshTrain,URLOtherSpclCharRatio,B_native,enriched view E only
+PhreshTrain,NumberOfHashtags,B_native,enriched view E only
+PhreshTrain,NumberOfSubdomains,B_native,enriched view E only
+PhreshTrain,HavingPath,B_native,enriched view E only
+PhreshTrain,PathLength,B_native,enriched view E only
+PhreshTrain,HavingQuery,B_native,enriched view E only
+PhreshTrain,HavingFragment,B_native,enriched view E only
+PhreshTrain,HavingAnchor,B_native,enriched view E only
+PhreshTrain,HasSSL,B_native,enriched view E only
+PhreshTrain,LineOfCode,B_native,enriched view E only
+PhreshTrain,LongestLineLength,B_native,enriched view E only
+PhreshTrain,CntImages,B_native,enriched view E only
+PhreshTrain,CntFilesCSS,B_native,enriched view E only
+PhreshTrain,CntFilesJS,B_native,enriched view E only
+PhreshTrain,CntSelfHRef,B_native,enriched view E only
+PhreshTrain,CntEmptyRef,B_native,enriched view E only
+PhreshTrain,CntExternalRef,B_native,enriched view E only
+PhreshTrain,CntPopup,B_native,enriched view E only
+PhreshTrain,CntIFrame,B_native,enriched view E only
+PhreshTrain,CntForms,B_native,enriched view E only
+PhreshTrain,HasTitle,B_native,enriched view E only
+PhreshTrain,HasFavicon,B_native,enriched view E only
+PhreshTrain,HasDescription,B_native,enriched view E only
+PhreshTrain,HasSocialMediaPage,B_native,enriched view E only
+PhreshTrain,HasSubmitButton,B_native,enriched view E only
+PhreshTrain,HasPasswordFields,B_native,enriched view E only
+PhreshTrain,HasPopup,B_native,enriched view E only
+PhreshTrain,HasIFrame,B_native,enriched view E only
+PhreshTrain,IsFormSubmitExternal,B_native,enriched view E only
+PhreshTrain,HasHiddenFields,B_native,enriched view E only
+PhreshTrain,IsResponsive,B_native,enriched view E only
+PhreshTrain,HasRobotsBlocked,B_native,enriched view E only
+PhreshTrain,HasBankingKey,B_native,enriched view E only
+PhreshTrain,HasPaymentKey,B_native,enriched view E only
+PhreshTrain,HasCryptoKey,B_native,enriched view E only
+PhreshTrain,HasCopyrightInfoKey,B_native,enriched view E only
+PhreshTrain,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTrain,url::host_len,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::path_len,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::query_len,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::tld_len,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_dots,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTrain,url::n_question,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_equals,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_at,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_percent,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_digits,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTrain,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTrain,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTrain,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::has_scheme,A_canonical_url,excluded (shortcut control)
+PhreshTrain,url::is_https,A_canonical_url,ablation only
+PhreshTrain,url::ip_host,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::has_port,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::www_prefix,A_canonical_url,excluded (shortcut control)
+PhreshTrain,url::punycode,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::shortener,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::php_ext,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+PhreshTrain,url::host_entropy,A_canonical_url,main (portable P + enriched E)
+PhreshTest,ShannonEntropy,B_native,not used (no development counterpart)
+PhreshTest,KolmogorovComplexity,B_native,not used (no development counterpart)
+PhreshTest,FractalDimension,B_native,not used (no development counterpart)
+PhreshTest,HexPatternCnt,B_native,not used (no development counterpart)
+PhreshTest,Base64PatternCnt,B_native,not used (no development counterpart)
+PhreshTest,LengthOfURL,B_native,not used (no development counterpart)
+PhreshTest,DomainLengthOfURL,B_native,not used (no development counterpart)
+PhreshTest,IsDomainIP,B_native,not used (no development counterpart)
+PhreshTest,TLDLength,B_native,not used (no development counterpart)
+PhreshTest,LetterCntInURL,B_native,not used (no development counterpart)
+PhreshTest,URLLetterRatio,B_native,not used (no development counterpart)
+PhreshTest,DigitCntInURL,B_native,not used (no development counterpart)
+PhreshTest,URLDigitRatio,B_native,not used (no development counterpart)
+PhreshTest,EqualCharCntInURL,B_native,not used (no development counterpart)
+PhreshTest,QuesMarkCntInURL,B_native,not used (no development counterpart)
+PhreshTest,AmpCharCntInURL,B_native,not used (no development counterpart)
+PhreshTest,OtherSpclCharCntInURL,B_native,not used (no development counterpart)
+PhreshTest,URLOtherSpclCharRatio,B_native,not used (no development counterpart)
+PhreshTest,NumberOfHashtags,B_native,not used (no development counterpart)
+PhreshTest,NumberOfSubdomains,B_native,not used (no development counterpart)
+PhreshTest,HavingPath,B_native,not used (no development counterpart)
+PhreshTest,PathLength,B_native,not used (no development counterpart)
+PhreshTest,HavingQuery,B_native,not used (no development counterpart)
+PhreshTest,HavingFragment,B_native,not used (no development counterpart)
+PhreshTest,HavingAnchor,B_native,not used (no development counterpart)
+PhreshTest,HasSSL,B_native,not used (no development counterpart)
+PhreshTest,LineOfCode,B_native,not used (no development counterpart)
+PhreshTest,LongestLineLength,B_native,not used (no development counterpart)
+PhreshTest,CntImages,B_native,not used (no development counterpart)
+PhreshTest,CntFilesCSS,B_native,not used (no development counterpart)
+PhreshTest,CntFilesJS,B_native,not used (no development counterpart)
+PhreshTest,CntSelfHRef,B_native,not used (no development counterpart)
+PhreshTest,CntEmptyRef,B_native,not used (no development counterpart)
+PhreshTest,CntExternalRef,B_native,not used (no development counterpart)
+PhreshTest,CntPopup,B_native,not used (no development counterpart)
+PhreshTest,CntIFrame,B_native,not used (no development counterpart)
+PhreshTest,CntForms,B_native,not used (no development counterpart)
+PhreshTest,HasTitle,B_native,not used (no development counterpart)
+PhreshTest,HasFavicon,B_native,not used (no development counterpart)
+PhreshTest,HasDescription,B_native,not used (no development counterpart)
+PhreshTest,HasSocialMediaPage,B_native,not used (no development counterpart)
+PhreshTest,HasSubmitButton,B_native,not used (no development counterpart)
+PhreshTest,HasPasswordFields,B_native,not used (no development counterpart)
+PhreshTest,HasPopup,B_native,not used (no development counterpart)
+PhreshTest,HasIFrame,B_native,not used (no development counterpart)
+PhreshTest,IsFormSubmitExternal,B_native,not used (no development counterpart)
+PhreshTest,HasHiddenFields,B_native,not used (no development counterpart)
+PhreshTest,IsResponsive,B_native,not used (no development counterpart)
+PhreshTest,HasRobotsBlocked,B_native,not used (no development counterpart)
+PhreshTest,HasBankingKey,B_native,not used (no development counterpart)
+PhreshTest,HasPaymentKey,B_native,not used (no development counterpart)
+PhreshTest,HasCryptoKey,B_native,not used (no development counterpart)
+PhreshTest,HasCopyrightInfoKey,B_native,not used (no development counterpart)
+PhreshTest,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTest,url::host_len,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::path_len,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::query_len,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::tld_len,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_dots,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTest,url::n_question,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_equals,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_at,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_percent,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_digits,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTest,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTest,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+PhreshTest,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::has_scheme,A_canonical_url,excluded (shortcut control)
+PhreshTest,url::is_https,A_canonical_url,ablation only
+PhreshTest,url::ip_host,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::has_port,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::www_prefix,A_canonical_url,excluded (shortcut control)
+PhreshTest,url::punycode,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::shortener,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::php_ext,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+PhreshTest,url::host_entropy,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url_len_url,B_native,not used (no development counterpart)
+Crawling2024,url_len_pre,B_native,not used (no development counterpart)
+Crawling2024,url_len_suf,B_native,not used (no development counterpart)
+Crawling2024,url_len_params,B_native,not used (no development counterpart)
+Crawling2024,url_len_query,B_native,not used (no development counterpart)
+Crawling2024,url_len_fragment,B_native,not used (no development counterpart)
+Crawling2024,url_pre_entropy,B_native,not used (no development counterpart)
+Crawling2024,url_suf_entropy,B_native,not used (no development counterpart)
+Crawling2024,url_pre_https_count,B_native,not used (no development counterpart)
+Crawling2024,url_suf_https_count,B_native,not used (no development counterpart)
+Crawling2024,url_pre_http_count,B_native,not used (no development counterpart)
+Crawling2024,url_suf_http_count,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count/,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count%,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count=,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count-,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count@,B_native,not used (no development counterpart)
+Crawling2024,url_pre_count.,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count/,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count%,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count=,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count-,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count@,B_native,not used (no development counterpart)
+Crawling2024,url_suf_count.,B_native,not used (no development counterpart)
+Crawling2024,url_pre_numbers_in_domain,B_native,not used (no development counterpart)
+Crawling2024,url_suf_numbers_in_domain,B_native,not used (no development counterpart)
+Crawling2024,page_len,B_native,not used (no development counterpart)
+Crawling2024,page_tag_num,B_native,not used (no development counterpart)
+Crawling2024,page_tech_num,B_native,not used (no development counterpart)
+Crawling2024,page_domain_type_num,B_native,not used (no development counterpart)
+Crawling2024,page_like_req_domain_num,B_native,not used (no development counterpart)
+Crawling2024,page_unlike_req_domain_num,B_native,not used (no development counterpart)
+Crawling2024,page_hidden_tag_num,B_native,not used (no development counterpart)
+Crawling2024,page_have_copyright,B_native,not used (no development counterpart)
+Crawling2024,page_have_redirect,B_native,not used (no development counterpart)
+Crawling2024,res_is_redirect,B_native,not used (no development counterpart)
+Crawling2024,res_headers_type_num,B_native,not used (no development counterpart)
+Crawling2024,res_constitute_url_num,B_native,not used (no development counterpart)
+Crawling2024,res_constitute_domain_type,B_native,not used (no development counterpart)
+Crawling2024,res_state_code,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_len,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_tag_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_tech_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_domain_type_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_like_req_domain_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_unlike_req_domain_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_hidden_tag_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_have_copyright,B_native,not used (no development counterpart)
+Crawling2024,dyn_page_have_redirect,B_native,not used (no development counterpart)
+Crawling2024,dyn_res_is_redirect,B_native,not used (no development counterpart)
+Crawling2024,dyn_res_headers_type_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_res_constitute_url_num,B_native,not used (no development counterpart)
+Crawling2024,dyn_res_constitute_domain_type,B_native,not used (no development counterpart)
+Crawling2024,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Crawling2024,url::host_len,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::path_len,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::query_len,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::tld_len,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_dots,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Crawling2024,url::n_question,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_equals,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_at,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_percent,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_digits,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Crawling2024,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Crawling2024,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+Crawling2024,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::has_scheme,A_canonical_url,excluded (shortcut control)
+Crawling2024,url::is_https,A_canonical_url,ablation only
+Crawling2024,url::ip_host,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::has_port,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::www_prefix,A_canonical_url,excluded (shortcut control)
+Crawling2024,url::punycode,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::shortener,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::php_ext,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+Crawling2024,url::host_entropy,A_canonical_url,main (portable P + enriched E)
+CompPhish,brand_subdomain,B_native,not used (no development counterpart)
+CompPhish,brand_substring_domain,B_native,not used (no development counterpart)
+CompPhish,brand_typo_dom,B_native,not used (no development counterpart)
+CompPhish,fake_tld,B_native,not used (no development counterpart)
+CompPhish,brand_in_path_query,B_native,not used (no development counterpart)
+CompPhish,dots_path,B_native,not used (no development counterpart)
+CompPhish,url_more_than_mean,B_native,not used (no development counterpart)
+CompPhish,domain_more_than_mean,B_native,not used (no development counterpart)
+CompPhish,gibberish,B_native,not used (no development counterpart)
+CompPhish,domain_length,B_native,not used (no development counterpart)
+CompPhish,url_length,B_native,not used (no development counterpart)
+CompPhish,url_contains_ip,B_native,not used (no development counterpart)
+CompPhish,presence_of_url_shortner,B_native,not used (no development counterpart)
+CompPhish,special_characters_count,B_native,not used (no development counterpart)
+CompPhish,no_of_at,B_native,not used (no development counterpart)
+CompPhish,no_of_comma,B_native,not used (no development counterpart)
+CompPhish,no_of_dollar,B_native,not used (no development counterpart)
+CompPhish,no_of_semicolon,B_native,not used (no development counterpart)
+CompPhish,no_of_space,B_native,not used (no development counterpart)
+CompPhish,no_of_ampersand,B_native,not used (no development counterpart)
+CompPhish,no_of_dots,B_native,not used (no development counterpart)
+CompPhish,no_of_equal,B_native,not used (no development counterpart)
+CompPhish,no_of_percent,B_native,not used (no development counterpart)
+CompPhish,no_of_underscore,B_native,not used (no development counterpart)
+CompPhish,no_of_hyphen,B_native,not used (no development counterpart)
+CompPhish,no_of_questionmark,B_native,not used (no development counterpart)
+CompPhish,no_of_colon,B_native,not used (no development counterpart)
+CompPhish,no_of_slashes_inpath,B_native,not used (no development counterpart)
+CompPhish,has_asterisk,B_native,not used (no development counterpart)
+CompPhish,has_or,B_native,not used (no development counterpart)
+CompPhish,has_embedded_url,B_native,not used (no development counterpart)
+CompPhish,uses_https,B_native,not used (no development counterpart)
+CompPhish,num_query_params,B_native,not used (no development counterpart)
+CompPhish,numeric_proportion,B_native,not used (no development counterpart)
+CompPhish,url_entropy,B_native,not used (no development counterpart)
+CompPhish,hostname_digit_ratio,B_native,not used (no development counterpart)
+CompPhish,has_redirections,B_native,not used (no development counterpart)
+CompPhish,has_punycode,B_native,not used (no development counterpart)
+CompPhish,count_www,B_native,not used (no development counterpart)
+CompPhish,count_com,B_native,not used (no development counterpart)
+CompPhish,url_has_high_risk_extension,B_native,not used (no development counterpart)
+CompPhish,has_explicit_port,B_native,not used (no development counterpart)
+CompPhish,total_words_url,B_native,not used (no development counterpart)
+CompPhish,average_length_of_words,B_native,not used (no development counterpart)
+CompPhish,longest_word_length,B_native,not used (no development counterpart)
+CompPhish,shortest_word_length,B_native,not used (no development counterpart)
+CompPhish,presence_of_free_hosting,B_native,not used (no development counterpart)
+CompPhish,no_of_forms,B_native,not used (no development counterpart)
+CompPhish,no_of_Images,B_native,not used (no development counterpart)
+CompPhish,no_of_hyperlinks,B_native,not used (no development counterpart)
+CompPhish,no_of_external_links,B_native,not used (no development counterpart)
+CompPhish,no_of_internal_links,B_native,not used (no development counterpart)
+CompPhish,no_of_null_links,B_native,not used (no development counterpart)
+CompPhish,no_of_selfreference_links,B_native,not used (no development counterpart)
+CompPhish,no_of_empty_links,B_native,not used (no development counterpart)
+CompPhish,EmptyToExternalLinksRatio,B_native,not used (no development counterpart)
+CompPhish,Risky_extensions_In_Html,B_native,not used (no development counterpart)
+CompPhish,presence_of_shorten_url_html,B_native,not used (no development counterpart)
+CompPhish,hidden_elements_html,B_native,not used (no development counterpart)
+CompPhish,Script_loaded_from_ext_domain,B_native,not used (no development counterpart)
+CompPhish,suspicious_inline_js,B_native,not used (no development counterpart)
+CompPhish,is_footer_mismatch,B_native,not used (no development counterpart)
+CompPhish,is_header_mismatch,B_native,not used (no development counterpart)
+CompPhish,is_copyright_mismatch,B_native,not used (no development counterpart)
+CompPhish,is_socials_mismatch,B_native,not used (no development counterpart)
+CompPhish,is_favicon_mismatch,B_native,not used (no development counterpart)
+CompPhish,has_missing_title,B_native,not used (no development counterpart)
+CompPhish,title_mismatch_with_domain,B_native,not used (no development counterpart)
+CompPhish,has_inline_event_handlers,B_native,not used (no development counterpart)
+CompPhish,form_action_external,B_native,not used (no development counterpart)
+CompPhish,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+CompPhish,url::host_len,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::path_len,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::query_len,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::tld_len,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_dots,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+CompPhish,url::n_question,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_equals,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_at,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_percent,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_digits,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+CompPhish,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+CompPhish,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+CompPhish,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::has_scheme,A_canonical_url,excluded (shortcut control)
+CompPhish,url::is_https,A_canonical_url,ablation only
+CompPhish,url::ip_host,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::has_port,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::www_prefix,A_canonical_url,excluded (shortcut control)
+CompPhish,url::punycode,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::shortener,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::php_ext,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+CompPhish,url::host_entropy,A_canonical_url,main (portable P + enriched E)
+D4v,url::url_len,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+D4v,url::host_len,A_canonical_url,main (portable P + enriched E)
+D4v,url::path_len,A_canonical_url,main (portable P + enriched E)
+D4v,url::query_len,A_canonical_url,main (portable P + enriched E)
+D4v,url::fragment_len,A_canonical_url,main (portable P + enriched E)
+D4v,url::tld_len,A_canonical_url,main (portable P + enriched E)
+D4v,url::longest_host_token,A_canonical_url,main (portable P + enriched E)
+D4v,url::longest_path_token,A_canonical_url,main (portable P + enriched E)
+D4v,url::mean_host_token,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_dots,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_hyphens,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_underscores,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_slashes,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+D4v,url::n_question,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_equals,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_ampersand,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_at,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_tilde,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_percent,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_digits,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_letters,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+D4v,url::n_uppercase,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_special,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+D4v,url::n_host_dots,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_subdomains,A_canonical_url,main (portable P + enriched E)
+D4v,url::path_depth,A_canonical_url,"excluded (shortcut filter, fix A2) — ablation only"
+D4v,url::n_query_params,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_host_digits,A_canonical_url,main (portable P + enriched E)
+D4v,url::digit_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::letter_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::special_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::upper_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::host_digit_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::path_url_ratio,A_canonical_url,main (portable P + enriched E)
+D4v,url::has_scheme,A_canonical_url,excluded (shortcut control)
+D4v,url::is_https,A_canonical_url,ablation only
+D4v,url::ip_host,A_canonical_url,main (portable P + enriched E)
+D4v,url::has_port,A_canonical_url,main (portable P + enriched E)
+D4v,url::has_userinfo,A_canonical_url,main (portable P + enriched E)
+D4v,url::www_prefix,A_canonical_url,excluded (shortcut control)
+D4v,url::punycode,A_canonical_url,main (portable P + enriched E)
+D4v,url::double_slash_path,A_canonical_url,main (portable P + enriched E)
+D4v,url::shortener,A_canonical_url,main (portable P + enriched E)
+D4v,url::risky_tld,A_canonical_url,main (portable P + enriched E)
+D4v,url::tld_in_path,A_canonical_url,main (portable P + enriched E)
+D4v,url::exec_ext,A_canonical_url,main (portable P + enriched E)
+D4v,url::php_ext,A_canonical_url,main (portable P + enriched E)
+D4v,url::n_suspicious_words,A_canonical_url,main (portable P + enriched E)
+D4v,url::hex_escapes,A_canonical_url,main (portable P + enriched E)
+D4v,url::url_entropy,A_canonical_url,main (portable P + enriched E)
+D4v,url::host_entropy,A_canonical_url,main (portable P + enriched E)

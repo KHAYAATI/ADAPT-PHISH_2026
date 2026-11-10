@@ -1,0 +1,289 @@
+dataset,A,B,metric,delta (A−B),ci95,p two-sided (bootstrap),p Holm (whole family),verdict (Holm 0.05)
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),roc_auc,0.005450444452331449,"(0.004211, 0.006984)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),pr_auc,0.0054909448807893835,"(0.003482, 0.008366)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU tuned,roc_auc,0.005489845734191201,"(0.004275, 0.006875)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU tuned,pr_auc,0.005637063731202097,"(0.00357, 0.008474)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),URLNet tuned,roc_auc,0.0032904096619345014,"(0.002431, 0.004401)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),URLNet tuned,pr_auc,0.0030771160463111125,"(0.001892, 0.004764)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P) tuned,roc_auc,0.01647246245252787,"(0.012751, 0.020894)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P) tuned,pr_auc,0.016340204466775532,"(0.010588, 0.024636)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM + n-grams tuned,roc_auc,0.00042643387117358156,"(0.000226, 0.000679)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM + n-grams tuned,pr_auc,0.000374373633248104,"(0.000163, 0.000653)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),char n-gram LR tuned,roc_auc,0.003843435182117272,"(0.002931, 0.005)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),char n-gram LR tuned,pr_auc,0.0034749765677239974,"(0.002173, 0.005299)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",roc_auc,-0.00026925598134808215,"(-0.000384, -0.000185)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",pr_auc,-0.0002646042528121617,"(-0.000448, -0.000145)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),roc_auc,0.0027932125911048766,"(0.002145, 0.00359)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),pr_auc,0.002818498108532963,"(0.001783, 0.004394)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU-KD tuned,roc_auc,0.001030266773296984,"(0.000713, 0.00139)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU-KD tuned,pr_auc,0.0008218809420158513,"(0.000467, 0.001309)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),ADAPT-X (P),roc_auc,-0.002151351007801394,"(-0.002806, -0.001633)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),ADAPT-X (P),pr_auc,-0.002321433595945943,"(-0.003582, -0.001441)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH (P),roc_auc,0.013396661216850458,"(0.010253, 0.017601)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),ADAPT-PHISH (P),pr_auc,0.013380590826852279,"(0.008627, 0.020777)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P),roc_auc,0.018078354514733608,"(0.013851, 0.022931)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P),pr_auc,0.01788930187899318,"(0.011672, 0.026545)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),char-LR,roc_auc,-0.0009751531211833475,"(-0.001443, -0.00057)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),char-LR,pr_auc,-0.0012943847621637028,"(-0.002186, -0.000759)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,roc_auc,-0.001459016017589243,"(-0.00194, -0.001092)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,pr_auc,-0.0017001540833714301,"(-0.002708, -0.001065)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),URLNet-style char+word CNN,roc_auc,0.005210644766540096,"(0.003956, 0.006769)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),URLNet-style char+word CNN,pr_auc,0.004979110662041819,"(0.003149, 0.007611)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU character model,roc_auc,0.0005250258048066225,"(0.000222, 0.000852)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),BiGRU character model,pr_auc,0.00022291307817234873,"(-7.9e-05, 0.000565)",0.162,1.0,n.s.
+PhreshTest,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.00025671561829609946,"(-0.000201, 0.000679)",0.268,1.0,n.s.
+PhreshTest,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.00012725636696964138,"(-0.00074, 0.000333)",0.5840000000000001,1.0,n.s.
+PhreshTest,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.0027599001468626705,"(0.002049, 0.003622)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,0.0026272450647091272,"(0.001623, 0.004053)",0.0,0.0,A better
+PhreshTest,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",roc_auc,-0.0023184533747971914,"(-0.003023, -0.00175)",0.0,0.0,A worse
+PhreshTest,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",pr_auc,-0.0024895339556789686,"(-0.003927, -0.001539)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),BiGRU tuned,roc_auc,3.9401281859752224e-05,"(-0.000563, 0.000605)",0.906,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2 (P),BiGRU tuned,pr_auc,0.0001461188504127131,"(-0.000428, 0.000737)",0.618,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2 (P),URLNet tuned,roc_auc,-0.0021600347903969475,"(-0.002996, -0.001452)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),URLNet tuned,pr_auc,-0.002413828834478271,"(-0.003794, -0.001468)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),BiGRU character model,roc_auc,-0.004925418647524826,"(-0.006367, -0.003773)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),BiGRU character model,pr_auc,-0.005268031802617035,"(-0.008149, -0.003314)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,roc_auc,-0.00023979968579135313,"(-0.000976, 0.000448)",0.476,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,pr_auc,-0.0005118342187475644,"(-0.001239, 0.000119)",0.1259999999999999,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),roc_auc,0.00794621676451901,"(0.005883, 0.010739)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),pr_auc,0.007889645946062895,"(0.004994, 0.012206)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,roc_auc,-0.005024010581157867,"(-0.006539, -0.003866)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,pr_auc,-0.0051165712475412795,"(-0.007924, -0.003192)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),char n-gram LR tuned,roc_auc,-0.001607009270214177,"(-0.002537, -0.000837)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),char n-gram LR tuned,pr_auc,-0.002015968313065386,"(-0.003308, -0.001068)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),roc_auc,-0.005193728834035349,"(-0.006837, -0.00391)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.005618201247759025,"(-0.008963, -0.003442)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,-0.0026905443054687783,"(-0.003783, -0.001864)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.0028636998160802563,"(-0.004675, -0.001748)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,roc_auc,-0.0017629458178078927,"(-0.002388, -0.001301)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,pr_auc,-0.0019966171665171117,"(-0.00312, -0.001266)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),BiGRU tuned,roc_auc,0.0026966331430863244,"(0.002052, 0.003449)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2-KD (P),BiGRU tuned,pr_auc,0.0028185656226691336,"(0.001739, 0.004259)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2-KD (P),URLNet tuned,roc_auc,0.0004971970708296247,"(-7e-06, 0.001041)",0.054,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2-KD (P),URLNet tuned,pr_auc,0.00025861793777814945,"(-0.000232, 0.000857)",0.312,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,roc_auc,-0.002366778719931295,"(-0.003153, -0.001735)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,pr_auc,-0.002444124475284859,"(-0.00393, -0.001464)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,roc_auc,0.0010502225910123952,"(0.000413, 0.001758)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,pr_auc,0.0006564784591910344,"(1.4e-05, 0.001459)",0.048,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),roc_auc,0.002657231861226572,"(0.002015, 0.003414)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),pr_auc,0.0026724467722564205,"(0.001697, 0.004056)",0.0,0.0,A better
+PhreshTest,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),roc_auc,-0.002536496972808777,"(-0.003538, -0.001793)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.0029457544755026044,"(-0.004873, -0.001733)",0.0,0.0,A worse
+PhreshTest,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,-3.331244424220614e-05,"(-0.000586, 0.000475)",0.8839999999999999,1.0,n.s.
+PhreshTest,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.0001912530438238358,"(-0.000866, 0.0003)",0.44599999999999995,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),roc_auc,-0.007069585472164075,"(-0.011713, -0.002938)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),pr_auc,-0.043129506601113476,"(-0.056466, -0.03224)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),BiGRU tuned,roc_auc,-0.0014859948347365481,"(-0.006153, 0.002271)",0.508,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),BiGRU tuned,pr_auc,-0.011155234035157502,"(-0.019188, -0.003413)",0.0020000000000000018,0.25,n.s.
+Crawling2024,ADAPT-X2 stack (P),URLNet tuned,roc_auc,0.021438514961251598,"(0.011721, 0.031503)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),URLNet tuned,pr_auc,0.013645848523906046,"(-0.006148, 0.043955)",0.182,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P) tuned,roc_auc,0.03401234284144661,"(0.022968, 0.046059)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P) tuned,pr_auc,-0.012694924703568033,"(-0.025676, 0.006242)",0.18999999999999995,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),LightGBM + n-grams tuned,roc_auc,0.03026699477059791,"(0.022232, 0.042958)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),LightGBM + n-grams tuned,pr_auc,0.04318231314302312,"(0.034129, 0.053972)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),char n-gram LR tuned,roc_auc,0.014470407818747644,"(0.005215, 0.023531)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),char n-gram LR tuned,pr_auc,0.0014849699357498691,"(-0.008882, 0.015912)",0.78,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",roc_auc,0.004087235079434537,"(0.003284, 0.005011)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",pr_auc,0.011724660410331378,"(0.009659, 0.013615)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),roc_auc,-0.008778637443695003,"(-0.011634, -0.005875)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),pr_auc,-0.037310632332223426,"(-0.04495, -0.029332)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),BiGRU-KD tuned,roc_auc,0.0035328848719280437,"(0.000994, 0.006262)",0.01,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),BiGRU-KD tuned,pr_auc,0.0024256662472427193,"(-0.003475, 0.009303)",0.4,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),ADAPT-X (P),roc_auc,-0.029154206075253875,"(-0.03487, -0.024442)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),ADAPT-X (P),pr_auc,-0.06986536327382331,"(-0.082177, -0.05623)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH (P),roc_auc,-0.007801026121835308,"(-0.013915, -0.001553)",0.01200000000000001,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),ADAPT-PHISH (P),pr_auc,-0.03705787583129372,"(-0.052233, -0.022714)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P),roc_auc,0.03619246305056256,"(0.024447, 0.048813)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P),pr_auc,-0.0040629160888303595,"(-0.019372, 0.016011)",0.746,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),char-LR,roc_auc,0.0013166707202926231,"(-0.007706, 0.010175)",0.744,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),char-LR,pr_auc,-0.02026465086624274,"(-0.031333, -0.007875)",0.0020000000000000018,0.25,n.s.
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,roc_auc,0.01884542130585798,"(0.012869, 0.02715)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,pr_auc,0.018702834124731393,"(0.009084, 0.031771)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),URLNet-style char+word CNN,roc_auc,0.027223632998943037,"(0.016662, 0.038493)",0.0,0.0,A better
+Crawling2024,ADAPT-X2 stack (P),URLNet-style char+word CNN,pr_auc,0.020176617359897397,"(-0.000637, 0.052237)",0.06,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),BiGRU character model,roc_auc,-0.004835918625070046,"(-0.011051, 0.00027)",0.08000000000000007,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),BiGRU character model,pr_auc,-0.005299018532765043,"(-0.018519, 0.006262)",0.32400000000000007,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),roc_auc,-0.007541815099809224,"(-0.013429, -0.001663)",0.014000000000000012,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.04864491927877146,"(-0.062048, -0.036559)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.004485316508013315,"(-0.00412, 0.016266)",0.428,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.00043649121483357867,"(-0.010714, 0.014684)",0.958,1.0,n.s.
+Crawling2024,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",roc_auc,-0.022841595911787138,"(-0.029961, -0.016987)",0.0,0.0,A worse
+Crawling2024,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",pr_auc,-0.06342095571961359,"(-0.074411, -0.05116)",0.0,0.0,A worse
+Crawling2024,ADAPT-PHISH v2 (P),BiGRU tuned,roc_auc,0.005583590637427527,"(-0.000992, 0.010983)",0.092,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),BiGRU tuned,pr_auc,0.031974272565955975,"(0.021874, 0.044086)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),URLNet tuned,roc_auc,0.028508100433415673,"(0.018276, 0.0394)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),URLNet tuned,pr_auc,0.05677535512501952,"(0.031773, 0.092034)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),BiGRU character model,roc_auc,0.002233666847094029,"(-0.006039, 0.010558)",0.632,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),BiGRU character model,pr_auc,0.037830488068348433,"(0.022917, 0.052592)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,roc_auc,0.03429321847110711,"(0.023132, 0.046146)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,pr_auc,0.06330612396101087,"(0.037443, 0.099594)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),roc_auc,-0.0007314406496712333,"(-0.00519, 0.004207)",0.802,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),pr_auc,0.006071630769819758,"(-0.002321, 0.015605)",0.162,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,roc_auc,0.037336580242761985,"(0.027836, 0.050931)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,pr_auc,0.0863118197441366,"(0.068584, 0.105005)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),char n-gram LR tuned,roc_auc,0.02153999329091172,"(0.010192, 0.03296)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),char n-gram LR tuned,pr_auc,0.044614476536863346,"(0.025632, 0.069719)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),roc_auc,-0.00047222962764514875,"(-0.006113, 0.005486)",0.8740000000000001,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.005515412677657983,"(-0.013133, 0.004156)",0.23199999999999998,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.01155490198017739,"(0.001672, 0.024236)",0.012,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,0.0426930153862799,"(0.024469, 0.065274)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,roc_auc,0.012311522315623047,"(0.008751, 0.016669)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,pr_auc,0.039736298579466145,"(0.030248, 0.051023)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),BiGRU tuned,roc_auc,0.007292642608958455,"(0.001916, 0.011285)",0.008,0.88,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),BiGRU tuned,pr_auc,0.026155398297065924,"(0.017094, 0.035471)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),URLNet tuned,roc_auc,0.0302171524049466,"(0.020957, 0.039857)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),URLNet tuned,pr_auc,0.05095648085612947,"(0.029306, 0.08176)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,roc_auc,0.039045632214292914,"(0.030165, 0.052891)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,pr_auc,0.08049294547524655,"(0.066321, 0.094777)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,roc_auc,0.023249045262442647,"(0.013465, 0.032793)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,pr_auc,0.038795602267973295,"(0.022869, 0.058806)",0.0,0.0,A better
+Crawling2024,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),roc_auc,0.0017090519715309282,"(-0.001049, 0.00457)",0.282,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),pr_auc,-0.005818874268890051,"(-0.012529, -7.8e-05)",0.04800000000000004,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.0012368223438857795,"(-0.003903, 0.006379)",0.674,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),pr_auc,-0.011334286946548033,"(-0.021338, -0.001466)",0.03400000000000003,1.0,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.013263953951708318,"(0.003959, 0.025789)",0.002,0.25,n.s.
+Crawling2024,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,0.03687414111738985,"(0.022052, 0.054424)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),roc_auc,0.004612098728627223,"(-0.004129, 0.017313)",0.412,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),pr_auc,0.0017822979935643302,"(-0.006013, 0.011081)",0.656,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU tuned,roc_auc,-0.002396286229991329,"(-0.005655, 0.000748)",0.1499999999999999,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU tuned,pr_auc,-0.0029413136318627853,"(-0.007432, 0.002289)",0.31000000000000005,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),URLNet tuned,roc_auc,0.01091660595152344,"(0.006239, 0.015748)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),URLNet tuned,pr_auc,0.002037153779870682,"(-0.005838, 0.009797)",0.58,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),LightGBM (P) tuned,roc_auc,0.05332505378456187,"(0.042172, 0.065759)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM (P) tuned,pr_auc,0.061597601932211865,"(0.04657, 0.078023)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM + n-grams tuned,roc_auc,0.018608088510837395,"(0.013874, 0.023523)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM + n-grams tuned,pr_auc,0.015594088247539162,"(0.01169, 0.019884)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),char n-gram LR tuned,roc_auc,0.03176263374164556,"(0.024302, 0.039807)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),char n-gram LR tuned,pr_auc,0.025733414264080823,"(0.018358, 0.034218)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",roc_auc,0.0013055032762959717,"(-0.001084, 0.003495)",0.268,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",pr_auc,0.0002840303854781956,"(-0.002031, 0.002144)",0.794,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),roc_auc,0.0001269793949287834,"(-0.005147, 0.005693)",0.96,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),pr_auc,-0.003622051990677666,"(-0.010023, 0.00299)",0.29800000000000004,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU-KD tuned,roc_auc,0.001707314468221366,"(-0.000502, 0.003964)",0.13,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU-KD tuned,pr_auc,0.006924514021663719,"(0.001858, 0.012903)",0.006,0.678,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-X (P),roc_auc,0.001551614372702237,"(-0.001196, 0.004475)",0.298,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-X (P),pr_auc,-0.0014764100675908054,"(-0.006684, 0.003029)",0.704,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH (P),roc_auc,0.024637253140122217,"(0.012275, 0.037329)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),ADAPT-PHISH (P),pr_auc,0.029451037583577477,"(0.018565, 0.042078)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM (P),roc_auc,0.05664711244351639,"(0.045007, 0.069294)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM (P),pr_auc,0.06662116304204102,"(0.051328, 0.083855)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),char-LR,roc_auc,0.040015899705548974,"(0.030398, 0.050614)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),char-LR,pr_auc,0.0276080649614463,"(0.017515, 0.038229)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,roc_auc,0.016910432742248793,"(0.01167, 0.022285)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,pr_auc,0.010912415882681992,"(0.005229, 0.016956)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),URLNet-style char+word CNN,roc_auc,0.008282752859416265,"(0.003888, 0.013015)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),URLNet-style char+word CNN,pr_auc,-9.669536891154795e-05,"(-0.007664, 0.007612)",0.978,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU character model,roc_auc,0.002415696501368192,"(-0.001204, 0.005869)",0.178,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),BiGRU character model,pr_auc,0.0074430707723730505,"(0.000688, 0.015947)",0.038,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.030657223430333613,"(0.022409, 0.040264)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.033917626325741024,"(0.022158, 0.047574)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.004675785779329367,"(0.000485, 0.009026)",0.028,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.001903904458833705,"(-0.010558, 0.006902)",0.736,1.0,n.s.
+CompPhish,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",roc_auc,0.012316235113180918,"(0.007876, 0.017275)",0.0,0.0,A better
+CompPhish,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",pr_auc,0.008483066518073623,"(0.002977, 0.014613)",0.004,0.47200000000000003,n.s.
+CompPhish,ADAPT-PHISH v2 (P),BiGRU tuned,roc_auc,-0.007008384958618552,"(-0.02124, 0.002351)",0.23199999999999998,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),BiGRU tuned,pr_auc,-0.0047236116254271154,"(-0.0159, 0.003848)",0.3779999999999999,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),URLNet tuned,roc_auc,0.006304507222896216,"(-0.009234, 0.018272)",0.36,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),URLNet tuned,pr_auc,0.00025485578630635164,"(-0.012235, 0.010486)",0.93,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),BiGRU character model,roc_auc,-0.002196402227259031,"(-0.016801, 0.008347)",0.792,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),BiGRU character model,pr_auc,0.00566077277880872,"(-0.006953, 0.017327)",0.38,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,roc_auc,0.0036706541307890417,"(-0.010879, 0.014948)",0.552,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,pr_auc,-0.0018789933624758781,"(-0.01383, 0.008221)",0.77,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),roc_auc,0.020025154411494994,"(0.013365, 0.026714)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),pr_auc,0.027668739590013147,"(0.020824, 0.035718)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,roc_auc,0.013995989782210172,"(0.001, 0.025319)",0.038,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,pr_auc,0.013811790253974832,"(0.003935, 0.024001)",0.006,0.678,n.s.
+CompPhish,ADAPT-PHISH v2 (P),char n-gram LR tuned,roc_auc,0.02715053501301834,"(0.011047, 0.042127)",0.002,0.25,n.s.
+CompPhish,ADAPT-PHISH v2 (P),char n-gram LR tuned,pr_auc,0.023951116270516493,"(0.010891, 0.036539)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.02604512470170639,"(0.008207, 0.042224)",0.004,0.47200000000000003,n.s.
+CompPhish,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.032135328332176694,"(0.015303, 0.049151)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,6.368705070214364e-05,"(-0.013693, 0.011396)",0.97,1.0,n.s.
+CompPhish,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.0036862024523980352,"(-0.01591, 0.007226)",0.562,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,roc_auc,0.0015803350732925825,"(-0.004522, 0.007325)",0.598,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,pr_auc,0.010546566012341385,"(0.002269, 0.019191)",0.01,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),BiGRU tuned,roc_auc,-0.0025232656249201124,"(-0.009212, 0.003513)",0.498,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),BiGRU tuned,pr_auc,0.0006807383588148808,"(-0.006249, 0.007803)",0.812,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),URLNet tuned,roc_auc,0.010789626556594656,"(0.002612, 0.019036)",0.008,0.88,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),URLNet tuned,pr_auc,0.005659205770548348,"(-0.002089, 0.013216)",0.168,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,roc_auc,0.01848110911590861,"(0.010295, 0.026918)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,pr_auc,0.019216140238216828,"(0.010802, 0.02717)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,roc_auc,0.03163565434671678,"(0.021381, 0.043065)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,pr_auc,0.02935546625475849,"(0.01947, 0.039906)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),roc_auc,0.00448511933369844,"(-0.000133, 0.012086)",0.074,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),pr_auc,0.005404349984241996,"(0.001627, 0.010506)",0.006,0.678,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.03053024403540483,"(0.019379, 0.043055)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.03753967831641869,"(0.024335, 0.053121)",0.0,0.0,A better
+CompPhish,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,0.004548806384400583,"(-0.003619, 0.012734)",0.284,1.0,n.s.
+CompPhish,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,0.001718147531843961,"(-0.007201, 0.010698)",0.688,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),roc_auc,-0.0038774769166926015,"(-0.02038, 0.014019)",0.6259999999999999,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH v2 (P),pr_auc,-0.004829991013016066,"(-0.014984, 0.004708)",0.30600000000000005,1.0,n.s.
+D4v,ADAPT-X2 stack (P),BiGRU tuned,roc_auc,-0.02801984991527473,"(-0.046038, -0.013774)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),BiGRU tuned,pr_auc,-0.018643273099497093,"(-0.03121, -0.008708)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),URLNet tuned,roc_auc,-0.007949476086730911,"(-0.02337, 0.007575)",0.3380000000000001,1.0,n.s.
+D4v,ADAPT-X2 stack (P),URLNet tuned,pr_auc,-0.004206614650461571,"(-0.014148, 0.005715)",0.42399999999999993,1.0,n.s.
+D4v,ADAPT-X2 stack (P),LightGBM (P) tuned,roc_auc,0.06767213058062738,"(0.0424, 0.093269)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM (P) tuned,pr_auc,0.05657005454102371,"(0.038795, 0.074689)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM + n-grams tuned,roc_auc,0.06321540962063832,"(0.044099, 0.087421)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM + n-grams tuned,pr_auc,0.044007312463493764,"(0.031412, 0.060496)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),char n-gram LR tuned,roc_auc,0.029831068229761115,"(0.011236, 0.046756)",0.004,0.47200000000000003,n.s.
+D4v,ADAPT-X2 stack (P),char n-gram LR tuned,pr_auc,0.050536786760934094,"(0.02566, 0.077355)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",roc_auc,-0.0020273541515369864,"(-0.00675, 0.001439)",0.30400000000000005,1.0,n.s.
+D4v,ADAPT-X2 stack (P),"Baseline stack (P): tuned baselines, no ADAPT",pr_auc,-0.0005211558365905145,"(-0.004138, 0.002081)",0.8160000000000001,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),roc_auc,-0.012752014386001154,"(-0.024227, -0.002222)",0.020000000000000018,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH v2-KD (P),pr_auc,-0.009338374882750688,"(-0.01713, -0.002788)",0.0040000000000000036,0.47200000000000003,n.s.
+D4v,ADAPT-X2 stack (P),BiGRU-KD tuned,roc_auc,-0.03344053670851055,"(-0.049093, -0.020589)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),BiGRU-KD tuned,pr_auc,-0.020839563903280234,"(-0.031282, -0.012992)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),ADAPT-X (P),roc_auc,-0.0055374001452431765,"(-0.017527, 0.004768)",0.27,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-X (P),pr_auc,0.00466349529338006,"(-0.006137, 0.016517)",0.39,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH (P),roc_auc,-0.017360030431925688,"(-0.03813, 0.002276)",0.08600000000000008,1.0,n.s.
+D4v,ADAPT-X2 stack (P),ADAPT-PHISH (P),pr_auc,-0.01125048018073127,"(-0.025065, 0.000947)",0.07400000000000007,1.0,n.s.
+D4v,ADAPT-X2 stack (P),LightGBM (P),roc_auc,0.06700859356088118,"(0.040203, 0.093953)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM (P),pr_auc,0.05388895717479969,"(0.034845, 0.071161)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),char-LR,roc_auc,0.05157433343707851,"(0.033115, 0.070168)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),char-LR,pr_auc,0.08251318794347107,"(0.051102, 0.11371)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,roc_auc,0.05839990317114507,"(0.038762, 0.084808)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),LightGBM (P) + hashed char n-grams,pr_auc,0.04222768163030788,"(0.028881, 0.059552)",0.0,0.0,A better
+D4v,ADAPT-X2 stack (P),URLNet-style char+word CNN,roc_auc,-0.0034797869765190725,"(-0.019527, 0.013337)",0.6699999999999999,1.0,n.s.
+D4v,ADAPT-X2 stack (P),URLNet-style char+word CNN,pr_auc,-0.001705907272522067,"(-0.011858, 0.008412)",0.754,1.0,n.s.
+D4v,ADAPT-X2 stack (P),BiGRU character model,roc_auc,-0.0313180827886711,"(-0.047989, -0.017984)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),BiGRU character model,pr_auc,-0.019931957443214743,"(-0.031637, -0.010925)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.0009553203997648696,"(-0.015009, 0.016098)",0.864,1.0,n.s.
+D4v,ADAPT-X2 stack (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.009168245677352638,"(-0.002174, 0.021657)",0.1,1.0,n.s.
+D4v,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,-0.03516097797143547,"(-0.05344, -0.019719)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.02057692307446468,"(-0.033096, -0.011103)",0.0,0.0,A worse
+D4v,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",roc_auc,0.017087699277241963,"(0.00113, 0.033646)",0.038,1.0,n.s.
+D4v,ADAPT-X2 stack (P),"Simple stack (P): LightGBM + char-LR, no neural",pr_auc,0.023012951729525666,"(0.009906, 0.038842)",0.002,0.25,n.s.
+D4v,ADAPT-PHISH v2 (P),BiGRU tuned,roc_auc,-0.02414237299858213,"(-0.046355, -0.008116)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2 (P),BiGRU tuned,pr_auc,-0.013813282086481027,"(-0.026365, -0.004029)",0.0020000000000000018,0.25,n.s.
+D4v,ADAPT-PHISH v2 (P),URLNet tuned,roc_auc,-0.00407199917003831,"(-0.028603, 0.017179)",0.808,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),URLNet tuned,pr_auc,0.0006233763625544952,"(-0.013666, 0.013351)",0.86,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),BiGRU character model,roc_auc,-0.027440605871978496,"(-0.0507, -0.010589)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2 (P),BiGRU character model,pr_auc,-0.015101966430198677,"(-0.028389, -0.005212)",0.0040000000000000036,0.47200000000000003,n.s.
+D4v,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,roc_auc,0.000397689940173529,"(-0.023415, 0.022299)",0.864,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),URLNet-style char+word CNN,pr_auc,0.003124083740493999,"(-0.010837, 0.01646)",0.572,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),roc_auc,-0.013482553515233087,"(-0.027524, -0.001118)",0.02400000000000002,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),ADAPT-PHISH (P),pr_auc,-0.006420489167715204,"(-0.014891, 0.001313)",0.1180000000000001,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,roc_auc,0.06709288653733092,"(0.036333, 0.103941)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2 (P),LightGBM + n-grams tuned,pr_auc,0.04883730347650983,"(0.03024, 0.072038)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2 (P),char n-gram LR tuned,roc_auc,0.03370854514645372,"(0.00255, 0.061868)",0.042,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),char n-gram LR tuned,pr_auc,0.05536677777395016,"(0.026088, 0.086857)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.004832797316457471,"(-0.021967, 0.027316)",0.624,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.013998236690368704,"(-0.002938, 0.031458)",0.102,1.0,n.s.
+D4v,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,-0.03128350105474287,"(-0.057065, -0.012018)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2 (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.015746932061448615,"(-0.029874, -0.004795)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,roc_auc,-0.020688522322509395,"(-0.034153, -0.009826)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2-KD (P),BiGRU-KD tuned,pr_auc,-0.011501189020529545,"(-0.020564, -0.00455)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2-KD (P),BiGRU tuned,roc_auc,-0.015267835529273577,"(-0.031839, -0.003028)",0.018000000000000016,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),BiGRU tuned,pr_auc,-0.009304898216746404,"(-0.020002, -0.001025)",0.030000000000000027,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),URLNet tuned,roc_auc,0.0048025382992702426,"(-0.012468, 0.021521)",0.534,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),URLNet tuned,pr_auc,0.005131760232289118,"(-0.005907, 0.01619)",0.328,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,roc_auc,0.07596742400663947,"(0.050814, 0.108361)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2-KD (P),LightGBM + n-grams tuned,pr_auc,0.05334568734624445,"(0.036366, 0.074601)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,roc_auc,0.04258308261576227,"(0.018475, 0.065642)",0.002,0.25,n.s.
+D4v,ADAPT-PHISH v2-KD (P),char n-gram LR tuned,pr_auc,0.05987516164368478,"(0.031673, 0.090843)",0.0,0.0,A better
+D4v,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),roc_auc,0.008874537469308552,"(0.001493, 0.018804)",0.018,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),ADAPT-PHISH v2 (P),pr_auc,0.004508383869734622,"(0.000661, 0.009)",0.016,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),roc_auc,0.013707334785766023,"(-0.004925, 0.031597)",0.152,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),Pretrained google/canine-s (fine-tuned),pr_auc,0.018506620560103326,"(0.00456, 0.033516)",0.012,1.0,n.s.
+D4v,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),roc_auc,-0.022408963585434316,"(-0.04009, -0.008022)",0.0,0.0,A worse
+D4v,ADAPT-PHISH v2-KD (P),Pretrained google/bert_uncased_L-4_H-256_A-4 (fine-tuned),pr_auc,-0.011238548191713993,"(-0.022725, -0.002397)",0.01200000000000001,1.0,n.s.

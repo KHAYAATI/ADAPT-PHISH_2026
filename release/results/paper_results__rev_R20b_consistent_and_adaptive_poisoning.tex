@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Label poisoning by a consistent (campaign) and an adaptive (score-aware) attacker, Track A, five stream seeds; metrics use the true labels.}
+\label{tab:rev_R20b_consistent_and_adaptive_poisoning}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+scenario & variant & final\_target\_f1 & final\_target\_recall & final\_target\_fpr & final\_target\_campaign\_recall & frozen\_target\_campaign\_recall & prequential\_mean\_f1 & update\_count (commits) & attempted\_updates & false\_adaptation\_rate \\
+\midrule
+adaptive: 30\% least-confident phishing labels -> benign & A4 − trust gate / quarantine & 0.8078 & 0.8584 & 0.2083 & -- & -- & 0.8126 & 1.8000 & 1.8000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & A7 − adaptation certificate & 0.8131 & 0.8563 & 0.1953 & -- & -- & 0.8151 & 2.0000 & 2.0000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & Drift + Replay & 0.8162 & 0.7311 & 0.0469 & -- & -- & 0.8312 & 8.0000 & 8.0000 & 0.3500 \\
+adaptive: 30\% least-confident phishing labels -> benign & ECRAC (A0 full) & 0.8165 & 0.8490 & 0.1808 & -- & -- & 0.8153 & 2.4000 & 2.4000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 0.8326 & 0.8286 & 0.1262 & -- & -- & 0.8264 & 8.0000 & 8.0000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & 0.8139 & 0.8531 & 0.1905 & -- & -- & 0.8136 & 2.2000 & 2.2000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & Frozen (static) & 0.7699 & 0.8897 & 0.3286 & -- & -- & 0.7900 & 0.0000 & 0.0000 & 0.0000 \\
+adaptive: 30\% least-confident phishing labels -> benign & Naive (periodic fine-tuning = A8) & 0.7822 & 0.6719 & 0.0353 & -- & -- & 0.8213 & 8.0000 & 8.0000 & 0.5000 \\
+campaign: all phishing labels of 30\% of domains -> benign & A4 − trust gate / quarantine & 0.8342 & 0.8470 & 0.1436 & 0.8357 & 0.8773 & 0.8256 & 4.4000 & 5.6000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & A7 − adaptation certificate & 0.8433 & 0.8478 & 0.1272 & 0.8331 & 0.8773 & 0.8318 & 5.2000 & 5.2000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & Drift + Replay & 0.8455 & 0.7879 & 0.0590 & 0.7717 & 0.8773 & 0.8402 & 8.0000 & 8.0000 & 0.3500 \\
+campaign: all phishing labels of 30\% of domains -> benign & ECRAC (A0 full) & 0.8412 & 0.8435 & 0.1264 & 0.8309 & 0.8773 & 0.8305 & 5.0000 & 5.6000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 0.8454 & 0.8443 & 0.1195 & 0.8314 & 0.8773 & 0.8327 & 6.8000 & 8.0000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & 0.8406 & 0.8490 & 0.1334 & 0.8371 & 0.8773 & 0.8285 & 4.8000 & 5.4000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & Frozen (static) & 0.7699 & 0.8897 & 0.3286 & 0.8773 & 0.8773 & 0.7900 & 0.0000 & 0.0000 & 0.0000 \\
+campaign: all phishing labels of 30\% of domains -> benign & Naive (periodic fine-tuning = A8) & 0.8297 & 0.7543 & 0.0495 & 0.7379 & 0.8773 & 0.8334 & 8.0000 & 8.0000 & 0.3500 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & A4 − trust gate / quarantine & 0.8327 & 0.8513 & 0.1512 & -- & -- & 0.8309 & 4.2000 & 4.6000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & A7 − adaptation certificate & 0.8422 & 0.8518 & 0.1334 & -- & -- & 0.8333 & 5.0000 & 5.0000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & Drift + Replay & 0.8598 & 0.8249 & 0.0733 & -- & -- & 0.8454 & 8.0000 & 8.0000 & 0.1000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & ECRAC (A0 full) & 0.8419 & 0.8473 & 0.1291 & -- & -- & 0.8327 & 4.8000 & 5.0000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & ECRAC-cal (tau\_N calibrated on no-drift development windows) & 0.8431 & 0.8439 & 0.1232 & -- & -- & 0.8354 & 6.6000 & 8.0000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & ECRAC-dev (tuned on development streams: A0, tau\_N=0.2500) & 0.8468 & 0.8540 & 0.1272 & -- & -- & 0.8322 & 5.2000 & 5.8000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & Frozen (static) & 0.7699 & 0.8897 & 0.3286 & -- & -- & 0.7900 & 0.0000 & 0.0000 & 0.0000 \\
+targeted: 30\% of phishing labels -> benign (Table 15 reference) & Naive (periodic fine-tuning = A8) & 0.8234 & 0.7394 & 0.0432 & -- & -- & 0.8349 & 8.0000 & 8.0000 & 0.3000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

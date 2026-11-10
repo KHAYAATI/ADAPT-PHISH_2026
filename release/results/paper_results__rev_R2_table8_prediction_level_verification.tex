@@ -1,0 +1,52 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Prediction-level verification of the portable (P) and enriched (E) views.}
+\label{tab:rev_R2_table8_prediction_level_verification}
+\begin{tabular}{llrrr}
+\toprule
+dataset & comparison & max |logit\_E − logit\_P| & ROC-AUC P & ROC-AUC E \\
+\midrule
+PhreshTest & ADAPT-PHISH seed 42: forward pass E vs P & 8.156250 & 0.973225 & 0.987192 \\
+PhreshTest & ADAPT-PHISH seed 123: forward pass E vs P & 7.625000 & 0.975330 & 0.990424 \\
+PhreshTest & ADAPT-PHISH seed 2024: forward pass E vs P & 7.093750 & 0.964378 & 0.988231 \\
+PhreshTest & ADAPT-PHISH seed 3407: forward pass E vs P & 9.734375 & 0.977502 & 0.990735 \\
+PhreshTest & ADAPT-PHISH seed 777: forward pass E vs P & 9.671875 & 0.976145 & 0.990953 \\
+PhreshTest & v13 seed ensemble (mean RAW logit, one temperature) & 8.193750 & 0.979847 & 0.992237 \\
+PhreshTest & v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy & 5.799774 & 0.979577 & 0.992149 \\
+PhreshTest & LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 70 native columns entirely missing here) & -- & 0.975165 & 0.996794 \\
+PhreshTest & ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989\} & -- & 0.995395 & -- \\
+PhreshTest & ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425\} & -- & -- & 0.998702 \\
+Crawling2024 & ADAPT-PHISH seed 42: forward pass E vs P & 0.000000 & 0.897088 & 0.897088 \\
+Crawling2024 & ADAPT-PHISH seed 123: forward pass E vs P & 0.000000 & 0.882546 & 0.882546 \\
+Crawling2024 & ADAPT-PHISH seed 2024: forward pass E vs P & 0.000000 & 0.887196 & 0.887196 \\
+Crawling2024 & ADAPT-PHISH seed 3407: forward pass E vs P & 0.000000 & 0.874837 & 0.874837 \\
+Crawling2024 & ADAPT-PHISH seed 777: forward pass E vs P & 0.000000 & 0.881486 & 0.881486 \\
+Crawling2024 & v13 seed ensemble (mean RAW logit, one temperature) & 0.000000 & 0.899164 & 0.899164 \\
+Crawling2024 & v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy & 0.673544 & 0.900072 & 0.900153 \\
+Crawling2024 & LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here) & -- & 0.855170 & 0.838527 \\
+Crawling2024 & ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989\} & -- & 0.920517 & -- \\
+Crawling2024 & ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425\} & -- & -- & 0.911423 \\
+CompPhish & ADAPT-PHISH seed 42: forward pass E vs P & 0.000000 & 0.907887 & 0.907887 \\
+CompPhish & ADAPT-PHISH seed 123: forward pass E vs P & 0.000000 & 0.917104 & 0.917104 \\
+CompPhish & ADAPT-PHISH seed 2024: forward pass E vs P & 0.000000 & 0.932218 & 0.932218 \\
+CompPhish & ADAPT-PHISH seed 3407: forward pass E vs P & 0.000000 & 0.915313 & 0.915313 \\
+CompPhish & ADAPT-PHISH seed 777: forward pass E vs P & 0.000000 & 0.920906 & 0.920906 \\
+CompPhish & v13 seed ensemble (mean RAW logit, one temperature) & 0.000000 & 0.930058 & 0.930058 \\
+CompPhish & v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy & 0.668780 & 0.930784 & 0.931114 \\
+CompPhish & LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here) & -- & 0.898048 & 0.899251 \\
+CompPhish & ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989\} & -- & 0.953143 & -- \\
+CompPhish & ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425\} & -- & -- & 0.949510 \\
+D4v & ADAPT-PHISH seed 42: forward pass E vs P & 0.000000 & 0.924953 & 0.924953 \\
+D4v & ADAPT-PHISH seed 123: forward pass E vs P & 0.000000 & 0.935512 & 0.935512 \\
+D4v & ADAPT-PHISH seed 2024: forward pass E vs P & 0.000000 & 0.945099 & 0.945099 \\
+D4v & ADAPT-PHISH seed 3407: forward pass E vs P & 0.000000 & 0.938334 & 0.938334 \\
+D4v & ADAPT-PHISH seed 777: forward pass E vs P & 0.000000 & 0.927893 & 0.927893 \\
+D4v & v13 seed ensemble (mean RAW logit, one temperature) & 0.000000 & 0.955100 & 0.955100 \\
+D4v & v12 seed ensemble (each member / its own view-specific T, then mean) — source of the published discrepancy & 0.646282 & 0.955926 & 0.956086 \\
+D4v & LightGBM: two DIFFERENT models (P: 38 canonical features; E: 161 features, of which 123 native; 123 native columns entirely missing here) & -- & 0.870731 & 0.760260 \\
+D4v & ADAPT-X stack (P): bases ['ADAPT-PHISH (P) seed-ens', 'LightGBM (P) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (P) seed-ens': 0.5093, 'LightGBM (P) seed-ens': 0.1848, 'char 3-5-gram LR': 0.6989\} & -- & 0.943277 & -- \\
+D4v & ADAPT-X stack (E): bases ['ADAPT-PHISH (E) seed-ens', 'LightGBM (E) seed-ens', 'char 3-5-gram LR'] weights \{'ADAPT-PHISH (E) seed-ens': 0.1145, 'LightGBM (E) seed-ens': 0.7184, 'char 3-5-gram LR': 0.5425\} & -- & -- & 0.895598 \\
+\bottomrule
+\end{tabular}
+\end{table*}

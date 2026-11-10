@@ -1,0 +1,49 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Forward-in-time evaluation: PhreshPhish re-split by the official dates (train on the earlier 70\%, test on the later rows, both classes).}
+\label{tab:rev_R18b_temporal_split_phreshphish}
+\begin{tabular}{llrrrrr}
+\toprule
+test set & rows & model & threshold rule & roc\_auc & recall & fpr \\
+\midrule
+period boundary & 275784 & train/early before 2025-02-02, later from 2025-02-02 to 2025-09-08 & later rows after purge 120338 (phishing 47019); unseen-domain 62739 & -- & -- & -- \\
+early period, held-out domains (random) & 57244 & ADAPT-Net (P) & val\_mcc & 0.9650 & 0.7593 & 0.0250 \\
+early period, held-out domains (random) & 57244 & ADAPT-Net (P) & val\_fpr@1\% & 0.9650 & 0.6893 & 0.0085 \\
+later period, all rows & 120338 & ADAPT-Net (P) & val\_mcc & 0.9367 & 0.7680 & 0.0227 \\
+later period, all rows & 120338 & ADAPT-Net (P) & val\_fpr@1\% & 0.9367 & 0.6985 & 0.0078 \\
+later period, domains unseen before & 62739 & ADAPT-Net (P) & val\_mcc & 0.9138 & 0.7583 & 0.0469 \\
+later period, domains unseen before & 62739 & ADAPT-Net (P) & val\_fpr@1\% & 0.9138 & 0.6823 & 0.0151 \\
+early period, held-out domains (random) & 57244 & BiGRU, tuned & val\_mcc & 0.9509 & 0.7453 & 0.0441 \\
+early period, held-out domains (random) & 57244 & BiGRU, tuned & val\_fpr@1\% & 0.9509 & 0.6887 & 0.0114 \\
+later period, all rows & 120338 & BiGRU, tuned & val\_mcc & 0.9303 & 0.7879 & 0.0351 \\
+later period, all rows & 120338 & BiGRU, tuned & val\_fpr@1\% & 0.9303 & 0.6856 & 0.0086 \\
+later period, domains unseen before & 62739 & BiGRU, tuned & val\_mcc & 0.9064 & 0.7824 & 0.0754 \\
+later period, domains unseen before & 62739 & BiGRU, tuned & val\_fpr@1\% & 0.9064 & 0.6814 & 0.0181 \\
+early period, held-out domains (random) & 57244 & URLNet, tuned & val\_mcc & 0.9727 & 0.9288 & 0.1185 \\
+early period, held-out domains (random) & 57244 & URLNet, tuned & val\_fpr@1\% & 0.9727 & 0.7324 & 0.0167 \\
+later period, all rows & 120338 & URLNet, tuned & val\_mcc & 0.9247 & 0.8311 & 0.0689 \\
+later period, all rows & 120338 & URLNet, tuned & val\_fpr@1\% & 0.9247 & 0.6658 & 0.0076 \\
+later period, domains unseen before & 62739 & URLNet, tuned & val\_mcc & 0.9038 & 0.8241 & 0.1247 \\
+later period, domains unseen before & 62739 & URLNet, tuned & val\_fpr@1\% & 0.9038 & 0.6468 & 0.0126 \\
+early period, held-out domains (random) & 57244 & LightGBM (P), tuned & val\_mcc & 0.9739 & 0.8360 & 0.0387 \\
+early period, held-out domains (random) & 57244 & LightGBM (P), tuned & val\_fpr@1\% & 0.9739 & 0.6684 & 0.0073 \\
+later period, all rows & 120338 & LightGBM (P), tuned & val\_mcc & 0.9334 & 0.7806 & 0.0361 \\
+later period, all rows & 120338 & LightGBM (P), tuned & val\_fpr@1\% & 0.9334 & 0.6180 & 0.0083 \\
+later period, domains unseen before & 62739 & LightGBM (P), tuned & val\_mcc & 0.9022 & 0.7733 & 0.0726 \\
+later period, domains unseen before & 62739 & LightGBM (P), tuned & val\_fpr@1\% & 0.9022 & 0.6214 & 0.0161 \\
+early period, held-out domains (random) & 57244 & Char-LR, tuned & val\_mcc & 0.9466 & 0.7411 & 0.0558 \\
+early period, held-out domains (random) & 57244 & Char-LR, tuned & val\_fpr@1\% & 0.9466 & 0.6602 & 0.0144 \\
+later period, all rows & 120338 & Char-LR, tuned & val\_mcc & 0.9350 & 0.7427 & 0.0326 \\
+later period, all rows & 120338 & Char-LR, tuned & val\_fpr@1\% & 0.9350 & 0.6171 & 0.0095 \\
+later period, domains unseen before & 62739 & Char-LR, tuned & val\_mcc & 0.9093 & 0.7275 & 0.0643 \\
+later period, domains unseen before & 62739 & Char-LR, tuned & val\_fpr@1\% & 0.9093 & 0.5910 & 0.0198 \\
+early period, held-out domains (random) & 57244 & Stack of all models & val\_mcc & 0.9641 & 0.7486 & 0.0251 \\
+early period, held-out domains (random) & 57244 & Stack of all models & val\_fpr@1\% & 0.9641 & 0.7180 & 0.0111 \\
+later period, all rows & 120338 & Stack of all models & val\_mcc & 0.9391 & 0.7776 & 0.0190 \\
+later period, all rows & 120338 & Stack of all models & val\_fpr@1\% & 0.9391 & 0.7280 & 0.0083 \\
+later period, domains unseen before & 62739 & Stack of all models & val\_mcc & 0.9170 & 0.7685 & 0.0400 \\
+later period, domains unseen before & 62739 & Stack of all models & val\_fpr@1\% & 0.9170 & 0.7133 & 0.0172 \\
+\bottomrule
+\end{tabular}
+\end{table*}

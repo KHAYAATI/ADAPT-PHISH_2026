@@ -1,0 +1,21 @@
+track,variant,final_target_f1,prequential_mean_f1,prequential_mean_recall,forgetting (max_k retain − final),update_count (commits),attempted_updates,false_adaptation_rate
+A: CompPhish pool,ECRAC (A0 full),0.7959296459383945,0.7989907350680613,,0.0015005416432076978,1.2,1.2,0.0
+A: CompPhish pool,ECRAC-cal (tau_N calibrated on no-drift development windows),0.8293799143608404,0.8184195946317374,,0.0035980275415544495,7.4,8.0,0.025
+A: CompPhish pool,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",0.7934307190041162,0.7991210585225114,,0.00144098032684854,1.0,1.0,0.0
+A: CompPhish pool,Frozen (static),0.7699292577341358,0.7899715779436971,,0.0,0.0,0.0,0.0
+A: CompPhish pool,Naive (periodic fine-tuning = A8),0.8653771654215209,0.8508074305507491,,0.005860848982994926,8.0,8.0,0.0
+B-mix: PhishTankNovel + benign,ECRAC (A0 full),,0.8824920972447599,,0.0,0.0,0.0,0.0
+B-mix: PhishTankNovel + benign,ECRAC-cal (tau_N calibrated on no-drift development windows),,0.8846043825624346,,0.0001613295861816466,23.2,26.0,0.2923076923076923
+B-mix: PhishTankNovel + benign,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",,0.8938019380097602,,0.0,0.0,0.0,0.0
+B-mix: PhishTankNovel + benign,Frozen (static),,0.8824920972447599,,0.0,0.0,0.0,0.0
+B-mix: PhishTankNovel + benign,Naive (periodic fine-tuning = A8),,0.8922956762623082,,0.004018256764815309,26.0,26.0,0.08461538461538462
+B: PhishTankNovel,ECRAC (A0 full),,,0.9100500974520191,0.0,0.0,0.0,0.0
+B: PhishTankNovel,ECRAC-cal (tau_N calibrated on no-drift development windows),,,0.9344190677941787,0.007691000764536393,6.8,26.0,0.0
+B: PhishTankNovel,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",,,0.9100500974520191,0.0,0.0,0.0,0.0
+B: PhishTankNovel,Frozen (static),,,0.9100500974520191,0.0,0.0,0.0,0.0
+B: PhishTankNovel,Naive (periodic fine-tuning = A8),,,0.9829387505865623,0.5714659546267556,26.0,26.0,0.43076923076923074
+C: controlled drift,ECRAC (A0 full),0.7893483224877325,0.741124570474639,,0.0006154441667184723,0.6857142857142857,0.6857142857142857,0.02857142857142857
+C: controlled drift,ECRAC-cal (tau_N calibrated on no-drift development windows),0.8044074708382409,0.7505203061541271,,0.0016482344314639765,9.485714285714286,9.685714285714285,0.3120634920634921
+C: controlled drift,"ECRAC-dev (tuned on development streams: A0, tau_N=0.2500)",0.7889101873371193,0.7410554430670103,,0.0005739964251215321,0.6857142857142857,0.6857142857142857,0.0
+C: controlled drift,Frozen (static),0.7699292577341358,0.7262432898195067,,0.0,0.0,0.0,0.0
+C: controlled drift,Naive (periodic fine-tuning = A8),0.8087956365401636,0.7861596580062128,,0.0223683631415617,10.0,10.0,0.3028571428571428

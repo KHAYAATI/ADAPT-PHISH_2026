@@ -1,0 +1,11 @@
+encoder,target (removed or structural feature),5-fold R² mean,sd
+trained ADAPT-PHISH URL encoder (frozen),url_len,0.7779256536612603,0.006347897627282693
+trained ADAPT-PHISH URL encoder (frozen),path depth,0.7265820051227009,0.007829479135983846
+trained ADAPT-PHISH URL encoder (frozen),n_slashes,0.6117448061050392,0.009342225013089754
+trained ADAPT-PHISH URL encoder (frozen),path_url_ratio,0.852787624510043,0.008195930969898386
+trained ADAPT-PHISH URL encoder (frozen),is_root (AUC),0.9968096073146641,
+"same architecture, random initialization (control)",url_len,0.9393613188906116,0.004294951439346528
+"same architecture, random initialization (control)",path depth,0.8073451963518476,0.012462690065582116
+"same architecture, random initialization (control)",n_slashes,0.6762914513542311,0.01814290292678165
+"same architecture, random initialization (control)",path_url_ratio,0.779861226583588,0.004961439743183505
+"same architecture, random initialization (control)",is_root (AUC),0.9948436635562122,

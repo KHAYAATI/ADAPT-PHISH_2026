@@ -1,0 +1,82 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{ECE after re-fitting the temperature on k labelled target rows (mean over repetitions).}
+\label{tab:rev_R6_target_temperature_refit}
+\begin{tabular}{llrrrr}
+\toprule
+dataset & model & k & ECE frozen & ECE re-fitted T & T' \\
+\midrule
+CompPhish & ADAPT-PHISH (P) & 100 & 0.0924 & 0.0941 & 1.0820 \\
+CompPhish & ADAPT-PHISH (P) & 500 & 0.0938 & 0.0947 & 1.0603 \\
+CompPhish & ADAPT-PHISH (P) & 2000 & 0.0991 & 0.1000 & 1.0581 \\
+CompPhish & ADAPT-PHISH v2 (P) & 100 & 0.0848 & 0.0880 & 1.1033 \\
+CompPhish & ADAPT-PHISH v2 (P) & 500 & 0.0859 & 0.0875 & 1.0608 \\
+CompPhish & ADAPT-PHISH v2 (P) & 2000 & 0.0903 & 0.0914 & 1.0569 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 100 & 0.0758 & 0.0773 & 1.0645 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 500 & 0.0769 & 0.0773 & 1.0105 \\
+CompPhish & ADAPT-PHISH v2-KD (P) & 2000 & 0.0811 & 0.0814 & 1.0110 \\
+CompPhish & ADAPT-X (P) & 100 & 0.0904 & 0.0928 & 1.0871 \\
+CompPhish & ADAPT-X (P) & 500 & 0.0914 & 0.0916 & 1.0100 \\
+CompPhish & ADAPT-X (P) & 2000 & 0.0960 & 0.0961 & 1.0024 \\
+CompPhish & ADAPT-X2 stack (P) & 100 & 0.0769 & 0.0827 & 1.1123 \\
+CompPhish & ADAPT-X2 stack (P) & 500 & 0.0780 & 0.0795 & 1.0331 \\
+CompPhish & ADAPT-X2 stack (P) & 2000 & 0.0822 & 0.0831 & 1.0236 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 100 & 0.0728 & 0.0799 & 1.1034 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 500 & 0.0739 & 0.0754 & 1.0243 \\
+CompPhish & Baseline stack (P): tuned baselines, no ADAPT & 2000 & 0.0781 & 0.0787 & 1.0141 \\
+CompPhish & BiGRU tuned & 100 & 0.0351 & 0.0382 & 0.9988 \\
+CompPhish & BiGRU tuned & 500 & 0.0359 & 0.0343 & 0.9484 \\
+CompPhish & BiGRU tuned & 2000 & 0.0399 & 0.0367 & 0.9460 \\
+CompPhish & LightGBM (P) & 100 & 0.0953 & 0.0967 & 1.1550 \\
+CompPhish & LightGBM (P) & 500 & 0.0968 & 0.0971 & 1.1664 \\
+CompPhish & LightGBM (P) & 2000 & 0.1021 & 0.1033 & 1.1531 \\
+CompPhish & URLNet tuned & 100 & 0.0559 & 0.0595 & 1.0324 \\
+CompPhish & URLNet tuned & 500 & 0.0569 & 0.0527 & 0.9161 \\
+CompPhish & URLNet tuned & 2000 & 0.0610 & 0.0552 & 0.8999 \\
+CompPhish & char-LR & 100 & 0.1040 & 0.1100 & 1.1843 \\
+CompPhish & char-LR & 500 & 0.1052 & 0.1069 & 1.1036 \\
+CompPhish & char-LR & 2000 & 0.1113 & 0.1122 & 1.0915 \\
+Crawling2024 & ADAPT-PHISH (P) & 100 & 0.1960 & 0.1786 & 1.6725 \\
+Crawling2024 & ADAPT-PHISH (P) & 500 & 0.1961 & 0.1727 & 1.8097 \\
+Crawling2024 & ADAPT-PHISH (P) & 2000 & 0.1968 & 0.1738 & 1.7689 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 100 & 0.1990 & 0.1768 & 1.8312 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 500 & 0.1991 & 0.1724 & 1.9736 \\
+Crawling2024 & ADAPT-PHISH v2 (P) & 2000 & 0.1997 & 0.1734 & 1.9499 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 100 & 0.1911 & 0.1731 & 1.8170 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 500 & 0.1912 & 0.1684 & 1.9835 \\
+Crawling2024 & ADAPT-PHISH v2-KD (P) & 2000 & 0.1919 & 0.1697 & 1.9541 \\
+Crawling2024 & ADAPT-X (P) & 100 & 0.1994 & 0.1865 & 1.8406 \\
+Crawling2024 & ADAPT-X (P) & 500 & 0.1995 & 0.1831 & 1.9775 \\
+Crawling2024 & ADAPT-X (P) & 2000 & 0.2001 & 0.1842 & 1.9291 \\
+Crawling2024 & ADAPT-X2 stack (P) & 100 & 0.1973 & 0.1771 & 2.1434 \\
+Crawling2024 & ADAPT-X2 stack (P) & 500 & 0.1974 & 0.1722 & 2.3032 \\
+Crawling2024 & ADAPT-X2 stack (P) & 2000 & 0.1981 & 0.1730 & 2.2442 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 100 & 0.1910 & 0.1735 & 2.1855 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 500 & 0.1911 & 0.1684 & 2.3471 \\
+Crawling2024 & Baseline stack (P): tuned baselines, no ADAPT & 2000 & 0.1918 & 0.1690 & 2.2792 \\
+Crawling2024 & BiGRU tuned & 100 & 0.1342 & 0.1299 & 1.6824 \\
+Crawling2024 & BiGRU tuned & 500 & 0.1343 & 0.1281 & 1.7708 \\
+Crawling2024 & BiGRU tuned & 2000 & 0.1348 & 0.1294 & 1.7401 \\
+Crawling2024 & LightGBM (P) & 100 & 0.1934 & 0.1615 & 1.8712 \\
+Crawling2024 & LightGBM (P) & 500 & 0.1936 & 0.1571 & 1.9831 \\
+Crawling2024 & LightGBM (P) & 2000 & 0.1942 & 0.1579 & 1.9515 \\
+Crawling2024 & URLNet tuned & 100 & 0.1744 & 0.1562 & 2.1510 \\
+Crawling2024 & URLNet tuned & 500 & 0.1745 & 0.1539 & 2.2155 \\
+Crawling2024 & URLNet tuned & 2000 & 0.1751 & 0.1552 & 2.1954 \\
+Crawling2024 & char-LR & 100 & 0.1754 & 0.1621 & 1.6809 \\
+Crawling2024 & char-LR & 500 & 0.1755 & 0.1593 & 1.7480 \\
+Crawling2024 & char-LR & 2000 & 0.1762 & 0.1590 & 1.7046 \\
+D4v & ADAPT-PHISH (P) & 100 & 0.1642 & 0.1413 & 0.5555 \\
+D4v & ADAPT-PHISH v2 (P) & 100 & 0.1738 & 0.1619 & 0.7569 \\
+D4v & ADAPT-PHISH v2-KD (P) & 100 & 0.1538 & 0.1254 & 0.6040 \\
+D4v & ADAPT-X (P) & 100 & 0.1428 & 0.1438 & 0.9179 \\
+D4v & ADAPT-X2 stack (P) & 100 & 0.1473 & 0.1391 & 0.8147 \\
+D4v & Baseline stack (P): tuned baselines, no ADAPT & 100 & 0.1264 & 0.1174 & 0.7675 \\
+D4v & BiGRU tuned & 100 & 0.0404 & 0.0302 & 0.7317 \\
+D4v & LightGBM (P) & 100 & 0.1898 & 0.1871 & 1.3752 \\
+D4v & URLNet tuned & 100 & 0.0666 & 0.0464 & 0.6796 \\
+D4v & char-LR & 100 & 0.1155 & 0.1162 & 1.2218 \\
+\bottomrule
+\end{tabular}
+\end{table*}

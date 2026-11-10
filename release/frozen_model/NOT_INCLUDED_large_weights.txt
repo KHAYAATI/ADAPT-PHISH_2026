@@ -1,0 +1,1 @@
+b32a14c83be75590548f89a1fd11c187e050eff1360c55ff4a0d68fa9e87721c  rev_pretrained_google_canine_s.pt  (504 MB, kept in artifacts/frozen_model/; deposit separately, e.g. Zenodo)

@@ -1,0 +1,58 @@
+{
+  "thresholds": {
+    "strong": 0.3,
+    "inversion_hi": 0.6,
+    "inversion_lo": 0.4
+  },
+  "forced_drop": [
+    "feat::url::path_depth"
+  ],
+  "shortcut_drop": [
+    "feat::url::n_letters",
+    "feat::url::n_slashes",
+    "feat::url::n_special",
+    "feat::url::path_depth",
+    "feat::url::url_len"
+  ],
+  "identifiability_input_level": {
+    "all canonical features": 0.8510240112375949,
+    "after shortcut filter (portable view P)": 0.7648999817571512
+  },
+  "flagged": [
+    {
+      "feature": "url::path_depth",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.29
+    },
+    {
+      "feature": "struct::path_depth",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.2831
+    },
+    {
+      "feature": "url::n_slashes",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.2809
+    },
+    {
+      "feature": "url::n_special",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.2074
+    },
+    {
+      "feature": "url::n_letters",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.1905
+    },
+    {
+      "feature": "url::url_len",
+      "flag": "SIGN_INVERSION",
+      "max_|AUC-0.5|": 0.1729
+    },
+    {
+      "feature": "url::path_url_ratio",
+      "flag": "STRONG_UNIVARIATE",
+      "max_|AUC-0.5|": 0.3296
+    }
+  ]
+}

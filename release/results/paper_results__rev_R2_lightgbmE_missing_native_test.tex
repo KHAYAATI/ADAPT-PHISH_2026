@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{LightGBM (E) when native columns are missing (VALIDATION rows, mean over seeds).}
+\label{tab:rev_R2_lightgbmE_missing_native_test}
+\begin{tabular}{llrrrrr}
+\toprule
+VALIDATION corpus & LightGBM (E), natives present (mean) & LightGBM (E), natives present (std) & LightGBM (E), natives set to missing (as on external corpora) (mean) & LightGBM (E), natives set to missing (as on external corpora) (std) & LightGBM (P) (never sees natives) (mean) & LightGBM (P) (never sees natives) (std) \\
+\midrule
+Mendeley & 0.9787 & 0.0003 & 0.8863 & 0.0047 & 0.9187 & 0.0018 \\
+PhreshPhish & 0.9913 & 0.0003 & 0.9357 & 0.0024 & 0.9594 & 0.0009 \\
+\bottomrule
+\end{tabular}
+\end{table*}

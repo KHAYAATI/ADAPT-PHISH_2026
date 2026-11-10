@@ -1,0 +1,8 @@
+# never publish
+**/checkpoints/
+**/cache/
+*audit_key*
+release.zip
+*.pt.tmp
+__pycache__/
+.ipynb_checkpoints/

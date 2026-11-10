@@ -1,0 +1,8 @@
+{
+  "Mendeley_rows": 11194,
+  "WebPage_rows": 7879,
+  "shared_normalized_urls": 7879,
+  "share_of_WebPage_in_Mendeley_%": 100.0,
+  "jaccard": 0.7039,
+  "decision": "EXCLUDED (protocol: probable duplicate of Mendeley; never added as a corpus)"
+}

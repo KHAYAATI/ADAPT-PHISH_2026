@@ -1,0 +1,190 @@
+feature,view,decision
+url::url_len,P+E,kept
+url::host_len,P+E,kept
+url::path_len,P+E,kept
+url::query_len,P+E,kept
+url::fragment_len,P+E,kept
+url::tld_len,P+E,kept
+url::longest_host_token,P+E,kept
+url::longest_path_token,P+E,kept
+url::mean_host_token,P+E,kept
+url::n_dots,P+E,kept
+url::n_hyphens,P+E,kept
+url::n_underscores,P+E,kept
+url::n_slashes,P+E,kept
+url::n_question,P+E,kept
+url::n_equals,P+E,kept
+url::n_ampersand,P+E,kept
+url::n_at,P+E,kept
+url::n_tilde,P+E,kept
+url::n_percent,P+E,kept
+url::n_digits,P+E,kept
+url::n_letters,P+E,kept
+url::n_uppercase,P+E,kept
+url::n_special,P+E,kept
+url::n_host_dots,P+E,kept
+url::n_subdomains,P+E,kept
+url::path_depth,P+E,kept
+url::n_query_params,P+E,kept
+url::n_host_digits,P+E,kept
+url::digit_ratio,P+E,kept
+url::letter_ratio,P+E,kept
+url::special_ratio,P+E,kept
+url::upper_ratio,P+E,kept
+url::host_digit_ratio,P+E,kept
+url::path_url_ratio,P+E,kept
+url::is_https,P+E,kept
+url::ip_host,P+E,kept
+url::has_port,P+E,quasi-constant in TRAIN
+url::has_userinfo,P+E,quasi-constant in TRAIN
+url::punycode,P+E,quasi-constant in TRAIN
+url::double_slash_path,P+E,quasi-constant in TRAIN
+url::shortener,P+E,kept
+url::risky_tld,P+E,kept
+url::tld_in_path,P+E,kept
+url::exec_ext,P+E,quasi-constant in TRAIN
+url::php_ext,P+E,kept
+url::n_suspicious_words,P+E,kept
+url::hex_escapes,P+E,kept
+url::url_entropy,P+E,kept
+url::host_entropy,P+E,kept
+AmpCharCntInURL,E only,kept
+Base64PatternCnt,E only,kept
+CntEmptyRef,E only,kept
+CntExternalRef,E only,kept
+CntFilesCSS,E only,kept
+CntFilesJS,E only,kept
+CntForms,E only,kept
+CntIFrame,E only,kept
+CntImages,E only,kept
+CntPopup,E only,kept
+CntSelfHRef,E only,kept
+DigitCntInURL,E only,kept
+DomainLengthOfURL,E only,kept
+EqualCharCntInURL,E only,kept
+FractalDimension,E only,kept
+HasBankingKey,E only,kept
+HasCopyrightInfoKey,E only,kept
+HasCryptoKey,E only,kept
+HasDescription,E only,kept
+HasFavicon,E only,kept
+HasHiddenFields,E only,kept
+HasIFrame,E only,kept
+HasPasswordFields,E only,kept
+HasPaymentKey,E only,kept
+HasPopup,E only,kept
+HasRobotsBlocked,E only,kept
+HasSSL,E only,kept
+HasSocialMediaPage,E only,kept
+HasSubmitButton,E only,kept
+HasTitle,E only,kept
+HavingAnchor,E only,kept
+HavingFragment,E only,kept
+HavingPath,E only,kept
+HavingQuery,E only,kept
+HexPatternCnt,E only,kept
+IsDomainIP,E only,kept
+IsFormSubmitExternal,E only,kept
+IsResponsive,E only,kept
+KolmogorovComplexity,E only,kept
+LengthOfURL,E only,kept
+LetterCntInURL,E only,kept
+LineOfCode,E only,kept
+LongestLineLength,E only,kept
+NumberOfHashtags,E only,kept
+NumberOfSubdomains,E only,kept
+OtherSpclCharCntInURL,E only,kept
+PathLength,E only,kept
+QuesMarkCntInURL,E only,kept
+ShannonEntropy,E only,kept
+TLDLength,E only,kept
+URLDigitRatio,E only,kept
+URLLetterRatio,E only,kept
+URLOtherSpclCharRatio,E only,kept
+abnormal_subdomain,E only,kept
+avg_word_host,E only,kept
+avg_word_path,E only,kept
+avg_words_raw,E only,kept
+brand_in_path,E only,kept
+brand_in_subdomain,E only,kept
+char_repeat,E only,kept
+dns_record,E only,kept
+domain_age,E only,kept
+domain_in_brand,E only,kept
+domain_in_title,E only,kept
+domain_registration_length,E only,kept
+domain_with_copyright,E only,kept
+empty_title,E only,kept
+external_favicon,E only,kept
+google_index,E only,kept
+http_in_path,E only,kept
+https_token,E only,kept
+iframe,E only,kept
+ip,E only,kept
+length_hostname,E only,kept
+length_url,E only,kept
+length_words_raw,E only,kept
+links_in_tags,E only,kept
+login_form,E only,kept
+longest_word_host,E only,kept
+longest_word_path,E only,kept
+longest_words_raw,E only,kept
+nb_and,E only,kept
+nb_at,E only,kept
+nb_colon,E only,kept
+nb_com,E only,kept
+nb_comma,E only,kept
+nb_dollar,E only,kept
+nb_dots,E only,kept
+nb_dslash,E only,kept
+nb_eq,E only,kept
+nb_extCSS,E only,kept
+nb_external_redirection,E only,kept
+nb_hyperlinks,E only,kept
+nb_hyphens,E only,kept
+nb_or,E only,quasi-constant in TRAIN
+nb_percent,E only,kept
+nb_qm,E only,kept
+nb_redirection,E only,kept
+nb_semicolumn,E only,kept
+nb_slash,E only,kept
+nb_space,E only,kept
+nb_star,E only,quasi-constant in TRAIN
+nb_subdomains,E only,kept
+nb_tilde,E only,kept
+nb_underscore,E only,kept
+nb_www,E only,kept
+onmouseover,E only,kept
+page_rank,E only,kept
+path_extension,E only,quasi-constant in TRAIN
+phish_hints,E only,kept
+popup_window,E only,kept
+port,E only,kept
+prefix_suffix,E only,kept
+punycode,E only,quasi-constant in TRAIN
+random_domain,E only,kept
+ratio_digits_host,E only,kept
+ratio_digits_url,E only,kept
+ratio_extErrors,E only,kept
+ratio_extHyperlinks,E only,kept
+ratio_extMedia,E only,kept
+ratio_extRedirection,E only,kept
+ratio_intErrors,E only,quasi-constant in TRAIN
+ratio_intHyperlinks,E only,kept
+ratio_intMedia,E only,kept
+ratio_intRedirection,E only,quasi-constant in TRAIN
+ratio_nullHyperlinks,E only,quasi-constant in TRAIN
+right_clic,E only,kept
+safe_anchor,E only,kept
+sfh,E only,quasi-constant in TRAIN
+shortening_service,E only,kept
+shortest_word_host,E only,kept
+shortest_word_path,E only,kept
+shortest_words_raw,E only,kept
+statistical_report,E only,kept
+submit_email,E only,quasi-constant in TRAIN
+suspecious_tld,E only,kept
+tld_in_path,E only,kept
+tld_in_subdomain,E only,kept
+web_traffic,E only,kept
+whois_registered_domain,E only,kept
